@@ -42,7 +42,7 @@ the commit is local.
   project, leave the decision to Mike.
 - Nothing here executes until a project wires it in.
 - State the condition, then the fix.
-- Write to instruct. No reasoning, no justification, no persuasion.
+- Write to instruct, not to persuade. No reasons, no justifications.
 
 ## Layout
 
