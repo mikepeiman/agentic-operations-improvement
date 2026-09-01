@@ -39,22 +39,15 @@ now enforces it.
 From: metabrain-mvp
 ```
 
-## Committing and pushing are one act
-
-In this repo and in every other one.
+## Push in the same step as the commit
 
 ```bash
 git commit -m "..." && git push
 ```
 
-A commit that sits unpushed reaches nothing. This repo exists so that a change
-made in one project is available to the others, and a local commit is invisible
-to all of them, and to Mike. The same holds in project repos: work that exists
-on one machine is work nobody can see, review, or build on.
-
-If the push is rejected, rebase on the remote and push again. Never leave the
-commit local and report the work as done — "committed" is not "done" when
-nothing left the machine.
+If the push is rejected, rebase on the remote and push again. Never report work
+as done while the commit is local: Mike and the other agents read the remote,
+not your disk.
 
 ## Rules for changing this repo
 
@@ -70,6 +63,8 @@ nothing left the machine.
 - **State the condition, then the fix.** Rules, checks, and their output say
   what is true and what to do about it. No reassurance, no architecture
   lessons, no inferred causes presented as observations.
+- **Write to instruct, not to persuade.** One reason, stated once. A rule that
+  needs cadence to be convincing is a rule that has not earned its place.
 
 ## Where things go
 
