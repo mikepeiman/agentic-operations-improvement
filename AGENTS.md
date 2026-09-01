@@ -39,9 +39,27 @@ now enforces it.
 From: metabrain-mvp
 ```
 
+## Committing and pushing are one act
+
+In this repo and in every other one.
+
+```bash
+git commit -m "..." && git push
+```
+
+A commit that sits unpushed reaches nothing. This repo exists so that a change
+made in one project is available to the others, and a local commit is invisible
+to all of them, and to Mike. The same holds in project repos: work that exists
+on one machine is work nobody can see, review, or build on.
+
+If the push is rejected, rebase on the remote and push again. Never leave the
+commit local and report the work as done — "committed" is not "done" when
+nothing left the machine.
+
 ## Rules for changing this repo
 
 - **One change per commit.** A commit that does two things cannot be reverted.
+- **Every commit is pushed.** Unpushed work does not exist.
 - **Amend rules in place; never rewrite their history.** The commit says what
   changed and why. Git keeps the old version — that is what it is for.
 - **Disagreeing with a rule is not grounds for deleting it.** Add the
