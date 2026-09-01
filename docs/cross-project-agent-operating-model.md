@@ -19,6 +19,10 @@ It does not activate these practices in another repository. A project must
 select the relevant rules, name its local tools and sources of authority, and
 wire any checks or hooks it needs.
 
+The reviewable Metabrain-sourced package is under
+[`drafts/metabrain-mvp/`](../drafts/metabrain-mvp/README.md). It remains
+inactive until individual rules are reviewed and promoted.
+
 ## Selection test
 
 A protocol belongs in the shared layer when it:
