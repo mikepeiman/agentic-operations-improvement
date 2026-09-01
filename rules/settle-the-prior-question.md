@@ -1,3 +1,12 @@
+---
+date created: 2026-09-01
+last updated: 2026-09-01
+author: agent, at Mike's direction
+derived from: Curatio source and scope incidents
+supersedes: original 2026-09-01 settle-the-prior-question rule
+status: active when wired by a project
+---
+
 # Settle the prior question
 
 Every question presupposes another. Name it and settle it before answering.
@@ -13,6 +22,10 @@ past it.
 
 Apply the same test before asserting: name what the claim assumes, and check
 whether that assumption was verified or inherited.
+
+**Observable completion:** every load-bearing repository, entity, version,
+scope, source, and definition is either verified or named as unresolved. The
+answer does not reason past an unresolved premise.
 
 Worked examples from 2026-09-01:
 

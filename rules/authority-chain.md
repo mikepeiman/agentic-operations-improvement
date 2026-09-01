@@ -1,18 +1,28 @@
+---
+date created: 2026-09-01
+last updated: 2026-09-01
+author: agent, at Mike's direction
+derived from: Curatio replication incident and Pax Fluxia authority and verification rules
+supersedes: original 2026-09-01 authority-chain rule
+status: active when wired by a project
+---
+
 # Authority chain
 
-Order, highest first:
+First name the question being answered. Different questions use different
+authority chains.
 
-1. Mike's stated intent and instructions.
-2. The artifact being replicated, when the work is replication.
-3. Running source code in this repo.
-4. Everything derived: docs, specs, audits, plans, ledgers, built bundles, test
-   fixtures, and your own judgement.
+| Question | Order, highest first |
+|---|---|
+| What should happen? | current owner instruction; repository constitution; current canonical requirement; implementation; derived material |
+| What happens now? | observation at the active boundary; defining source, configuration, or data; focused tests; derived material |
+| What must a replica preserve? | current owner instruction; named reference artifact; defining reference source; derived material |
 
 **No document supersedes an instruction.** Docs are never authoritative over
 intent.
 
-A lower artifact that disagrees with a higher one is defective. Report the
-defect. Do not implement it.
+A lower artifact that disagrees with a higher artifact in the relevant chain
+is defective. Report the defect. Do not implement from it.
 
 Before building from any document:
 
@@ -27,6 +37,10 @@ A document is invention wearing a spec's format when it has any of these:
 - a "canonical" label with no provenance
 
 Finding a document does not end the search. Finding the source does.
+
+**Observable completion:** the finding names the question, governing source,
+and evidence grade. Current code can prove present behavior while remaining
+wrong against the current requirement.
 
 Incident: on 2026-09-01, told to replicate TabsOutliner with perfect fidelity,
 an agent located `2026-08-11_TO_EXTENSION_REBUILD_KICKSTART.md` §4.6 and
