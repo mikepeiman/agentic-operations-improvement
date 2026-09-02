@@ -3,10 +3,10 @@ date created: 2026-09-01
 author: agent, at Mike's direction
 derived from: metabrain-mvp/AGENTS.md and metabrain-mvp/docs/agents
 supersedes: nothing
-status: review draft, not active policy
+status: active universal protocol on import
 ---
 
-# Project agent constitution and router
+# Universal project agent constitution and router
 
 Keep this file small. Load task-specific rules only when their trigger applies.
 
@@ -15,6 +15,9 @@ Keep this file small. Load task-specific rules only when their trigger applies.
 Before substantive work, capture every project-relevant requirement, defect,
 constraint, correction, decision, and follow-up according to
 [`rules/turn-intake.md`](rules/turn-intake.md).
+
+Use `docs/intake/YYYY-MM/` unless the repository already declares an intake
+location.
 
 Create or update the authoritative work item before implementation when the
 turn contains independently actionable work.
@@ -48,6 +51,10 @@ Preserve unrelated work. Stage only owned paths. Verify the claimed result,
 commit the coherent change, and push it before reporting completion. Follow
 [`rules/work-state-and-delivery.md`](rules/work-state-and-delivery.md).
 
+Operate only inside the supplied repository and workspace roots. A Git branch
+is a ref, not authorization to create a clone, worktree, sibling directory, or
+other filesystem location.
+
 ## Context and coordination
 
 Use compact task capsules for long work. Delegate narrow independent questions
@@ -62,23 +69,21 @@ Keep intake, actionable tracking, canonical requirements, implementation,
 verification evidence, and delivery records distinct. Declare one authority
 for each role. Follow [`rules/operational-records.md`](rules/operational-records.md).
 
+When the owner says an outcome works, is correct, or is accepted, follow
+[`rules/owner-acceptance.md`](rules/owner-acceptance.md) before other work.
+
 ## Reporting
 
 Lead with the outcome. Report observed verification, remaining uncertainty,
 task state, and genuine blockers. Follow [`rules/reporting.md`](rules/reporting.md).
 
-## Project adapter
+## Repository-native defaults
 
-The target project must declare:
+Use the repository's existing tracker, canonical documents, search tools,
+tests, build commands, current branch, and configured upstream. If one is not
+declared or available, continue with safe work that does not depend on it and
+report the exact missing boundary. Do not create external infrastructure or
+expand filesystem scope as a substitute.
 
-- `[INTAKE_PATH_AND_COMMAND]`
-- `[TRACKER_AND_COMMANDS]`
-- `[CANONICAL_REQUIREMENT_REGISTRY]`
-- `[STRUCTURAL_RETRIEVAL_COMMANDS]`
-- `[TEST_BUILD_AND_RENDER_COMMANDS]`
-- `[DELIVERY_REMOTE_AND_BRANCH_POLICY]`
-- `[DESTRUCTIVE_ACTION_AND_DATA_PRESERVATION_POLICY]`
-- `[TOKEN_COST_AND_CONCURRENCY_LIMITS]`
-
-Product meaning and project-specific invariants belong below this router or in
-its routed canonical documents.
+Product meaning and project-specific invariants may extend this router through
+routed canonical documents.

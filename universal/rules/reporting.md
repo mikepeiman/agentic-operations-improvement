@@ -3,7 +3,7 @@ date created: 2026-09-01
 author: agent, at Mike's direction
 derived from: metabrain-mvp/docs/agents/practice.md
 supersedes: nothing
-status: review draft, not active policy
+status: active universal protocol on import
 ---
 
 # Reporting

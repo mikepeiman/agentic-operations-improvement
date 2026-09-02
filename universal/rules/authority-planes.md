@@ -2,8 +2,8 @@
 date created: 2026-09-01
 author: agent, at Mike's direction
 derived from: metabrain-mvp/AGENTS.md and agentic-operations-improvement/rules/authority-chain.md
-supersedes: proposed replacement for rules/authority-chain.md after review
-status: review draft, not active policy
+supersedes: rules/authority-chain.md when this package is imported
+status: active universal protocol on import
 ---
 
 # Authority planes

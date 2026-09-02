@@ -3,7 +3,7 @@ date created: 2026-09-01
 author: agent, at Mike's direction
 derived from: metabrain-mvp/docs/agents/turn-intake.md
 supersedes: nothing
-status: review draft, not active policy
+status: active universal protocol on import
 ---
 
 # Turn intake
@@ -12,7 +12,8 @@ Before substantive analysis, planning, investigation, editing, or execution:
 
 1. Scan the current user turn for project-relevant requirements, defects,
    constraints, corrections, decisions, and requested follow-ups.
-2. Write one new append-only intake record under `[INTAKE_PATH]`.
+2. Write one new append-only intake record under `docs/intake/YYYY-MM/`, or the
+   repository's already-declared intake location.
 3. Preserve enough of the user's words and concrete examples to reconstruct the
    request without chat history.
 4. Create or update the authoritative work item for each independently

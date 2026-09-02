@@ -3,7 +3,7 @@ date created: 2026-09-01
 author: agent, at Mike's direction
 derived from: metabrain-mvp/docs/agents/practice.md
 supersedes: nothing
-status: review draft, not active policy
+status: active universal protocol on import
 ---
 
 # Work state and delivery
@@ -11,11 +11,15 @@ status: review draft, not active policy
 ## Preserve shared state
 
 1. Inspect repository and process state before writing.
-2. Identify paths and processes owned by the task.
-3. Preserve unrelated user and agent work.
-4. Stage only owned paths.
-5. Do not stop unrelated processes.
-6. Inspect state again before delivery.
+2. Stay inside the supplied repository and workspace roots.
+3. Treat a Git branch request as authorization for a Git ref only.
+4. Do not create a clone, worktree, sibling directory, or other filesystem
+   location without explicit owner authorization.
+5. Identify paths and processes owned by the task.
+6. Preserve unrelated user and agent work.
+7. Stage only owned paths.
+8. Do not stop unrelated processes.
+9. Inspect state again before delivery.
 
 Do not create `old`, `v2`, backup, or commented-out duplicate implementations
 as a substitute for version control.

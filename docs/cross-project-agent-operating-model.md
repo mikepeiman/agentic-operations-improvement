@@ -3,7 +3,7 @@ date created: 2026-09-01
 author: agent, at Mike's direction
 derived from: metabrain-mvp/AGENTS.md and metabrain-mvp/docs/agents
 supersedes: nothing
-status: distillation, not an activated rule set
+status: active design source for the universal import package
 ---
 
 # Cross-project agent operating model
@@ -15,13 +15,11 @@ product policy and tool-specific wiring. It applies to software projects and
 processing projects where agents inspect evidence, change durable artifacts,
 coordinate concurrent work, and report completion.
 
-It does not activate these practices in another repository. A project must
-select the relevant rules, name its local tools and sources of authority, and
-wire any checks or hooks it needs.
-
-The reviewable Metabrain-sourced package is under
-[`drafts/metabrain-mvp/`](../drafts/metabrain-mvp/README.md). It remains
-inactive until individual rules are reviewed and promoted.
+The ready-to-import protocol is under [`universal/`](../universal/README.md).
+Importing that directory's contents into a repository root activates the rules
+immediately. The package supplies tool-agnostic defaults and uses existing
+repository-native tools when available; it does not require an adoption or
+configuration process.
 
 ## Selection test
 
@@ -266,11 +264,11 @@ make missing evidence noisy and deliver the relevant rule at decision time.
 ```text
 AGENTS.md                 small constitution and router
 rules/                    activated cross-project rules, one failure class each
-docs/                     explorations and distilled guidance, not active policy
+docs/                     explanations and derivation of the active protocol
 checks/                   deterministic checks with corrective failure messages
 adapters/                 project, tracker, IDE, and harness wiring
 ```
 
-Promote a section from this document into `rules/` only after a real project
-incident supplies the failure, scope, and observable correction. Keep the
-incident short and name its originating project in the commit trailer.
+The `universal/` package is the importable standard. Projects may extend it with
+domain rules and concrete commands without weakening its authorization,
+evidence, safety, or completion requirements.
