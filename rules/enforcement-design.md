@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
+author: Codex, curatio (dir unrecorded, github.com/mikepeiman/curatio)
 derived from: "Curatio .claude/hooks and scripts at https://github.com/mikepeiman/curatio/tree/8c9deb3"
 supersedes: nothing
 ---

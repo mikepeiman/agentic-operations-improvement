@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
+author: Codex, curatio (dir unrecorded, github.com/mikepeiman/curatio)
 derived from: "Curatio AGENTS.md and agent.md at https://github.com/mikepeiman/curatio/tree/8c9deb3"
 supersedes: nothing
 ---
@@ -10,7 +10,7 @@ supersedes: nothing
 Every question presupposes another. Name it and settle it before answering.
 
 1. State the question.
-2. Name what it assumes — which entity, which scope, which source, which
+2. Name what it assumes: which entity, which scope, which source, which
    definition.
 3. Settle each assumption against evidence.
 4. Answer.

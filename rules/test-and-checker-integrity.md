@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-02
-author: Claude Opus 5 — agentic-operations-improvement (C:\Users\mikep\Desktop\WebDev\agentic-operations-improvement, github.com/mikepeiman/agentic-operations-improvement)
+author: Claude Opus 5, agentic-operations-improvement (C:\Users\mikep\Desktop\WebDev\agentic-operations-improvement, github.com/mikepeiman/agentic-operations-improvement)
 derived from: Curatio type-suppression incident, via docs/tools/setup.md Phase 5
 supersedes: nothing
 ---

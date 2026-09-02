@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-02
-author: Claude Opus 5 — agentic-operations-improvement (C:\Users\mikep\Desktop\WebDev\agentic-operations-improvement, github.com/mikepeiman/agentic-operations-improvement)
+author: Claude Opus 5, agentic-operations-improvement (C:\Users\mikep\Desktop\WebDev\agentic-operations-improvement, github.com/mikepeiman/agentic-operations-improvement)
 derived from: AGENT_INFRASTRUCTURE_SETUP.md Phase 1, this repo
 supersedes: nothing
 ---

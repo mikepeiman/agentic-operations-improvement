@@ -40,11 +40,11 @@ the change with Mike before committing it to this repository.
 
 ## Repository contents
 
-- `AGENTS.md` — the common drop-in operating protocol.
-- `CLAUDE.md` — compatibility pointer to `AGENTS.md`.
-- `LEXICON.md` — this repository's domain language and an example for projects.
-- `docs/tools/` — setup and operating instructions for selected tools.
-- `checks/` — optional mechanical checks and their limitations.
+- `AGENTS.md`: the common drop-in operating protocol.
+- `CLAUDE.md`: compatibility pointer to `AGENTS.md`.
+- `LEXICON.md`: this repository's domain language and an example for projects.
+- `docs/tools/`: setup and operating instructions for selected tools.
+- `checks/`: optional mechanical checks and their limitations.
 
 Project history preserves superseded approaches; the default branch contains
 the current operating system.

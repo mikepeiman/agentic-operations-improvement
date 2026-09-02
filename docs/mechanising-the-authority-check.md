@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
+author: Codex, curatio (dir unrecorded, github.com/mikepeiman/curatio)
 derived from: the 2026-09-01 Curatio drag session
 supersedes: nothing
 status: exploration, not a rule
@@ -21,7 +21,7 @@ Three steps, in order:
    from it.
 
 The failure it prevents: adopting a derived artifact because it is formatted
-like an authority — a spec heading, a table, a "CANONICAL" label, an expensive
+like an authority: a spec heading, a table, a "CANONICAL" label, an expensive
 audit.
 
 ## What cannot be mechanised
@@ -37,8 +37,8 @@ mechanically detectable. Attack those.
 
 ### 1. Provenance gate (deterministic)
 
-Every document containing normative language — `must`, `shall`, `required`,
-`RETAIN`, `CANONICAL`, `non-negotiable` — carries frontmatter naming:
+Every document containing normative language (`must`, `shall`, `required`,
+`RETAIN`, `CANONICAL`, `non-negotiable`) carries frontmatter naming:
 
 ```
 date created:
@@ -94,9 +94,9 @@ a rule that fires.
 
 Hooks cannot make an agent think. They can:
 
-- **make the hiding conditions fail loudly** — 1, 2, 3
-- **supply the input the reasoning needs** — 4
-- **deliver the rule when it applies** — 5
+- **make the hiding conditions fail loudly**: 1, 2, 3
+- **supply the input the reasoning needs**: 4
+- **deliver the rule when it applies**: 5
 
 That is enough to convert this class of failure from invisible to noisy, which
 is the same trade the backend-features-have-ui hook makes: it cannot tell

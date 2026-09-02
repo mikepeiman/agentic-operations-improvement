@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-02
-author: Claude Opus 5 — agentic-operations-improvement (C:\Users\mikep\Desktop\WebDev\agentic-operations-improvement, github.com/mikepeiman/agentic-operations-improvement)
+author: Claude Opus 5, agentic-operations-improvement (C:\Users\mikep\Desktop\WebDev\agentic-operations-improvement, github.com/mikepeiman/agentic-operations-improvement)
 derived from: AGENT_INFRASTRUCTURE_SETUP.md Phase 2 and rules/graphify.md, this repo
 supersedes: rules/graphify.md
 ---
@@ -35,7 +35,7 @@ graphify hook install
 ```
 
 Adds post-commit and post-checkout hooks that rebuild incrementally. Verify they
-went into the directory `core.hooksPath` points at — if Beads owns that path,
+went into the directory `core.hooksPath` points at. If Beads owns that path,
 confirm both tools' hooks coexist there. See [`setup.md`](setup.md).
 
 ## Exclusions
