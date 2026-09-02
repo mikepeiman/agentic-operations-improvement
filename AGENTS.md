@@ -46,8 +46,14 @@ the commit is local.
 - **Trailers**: `From: <project>`, then the model that wrote the change.
 
 Sign the model. It records which model produced the commit, the same fact the
-frontmatter `author` field carries for a document. A promotional line is not a
-signature: no product name, tagline, or URL.
+frontmatter `author` field carries for a document.
+
+**No email address.** The signature names a model, not a mailbox. The harness
+appends a vendor's `noreply` address by default; it is not the agent's address,
+it is not Mike's, and it does not belong in his history. Strike the address and
+keep the name.
+
+A promotional line is not a signature either: no product name, tagline, or URL.
 
 ```
 commit-messages: cap the subject at 72 characters
@@ -56,7 +62,7 @@ An agent wrote a 400-character subject. `git log --oneline` became
 unreadable, and a pushed message cannot be edited.
 
 From: metabrain-mvp
-Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+Co-Authored-By: Claude Opus 5
 ```
 
 ## Which rule to read

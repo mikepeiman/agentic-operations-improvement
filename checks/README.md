@@ -21,7 +21,7 @@ more than its observable proves (`rules/enforcement-design.md`).
 **Observes:** the `git commit` command string. Subject 72 chars or less, blank
 line 2, body 8 prose lines and 600 chars or less, no promotional line.
 
-A model signature (`Co-Authored-By: <model>`) passes, because it records which model
+A model signature (`Co-Authored-By: <model>`, with no email address) passes, because it records which model
 produced the commit. A product tagline, URL, or emoji badge does not.
 
 **Blocks** with exit 2 and the format to use.

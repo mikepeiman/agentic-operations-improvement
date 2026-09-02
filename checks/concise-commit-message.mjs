@@ -14,6 +14,9 @@ const MAX_BODY_LINES = 8;
 const MAX_BODY_CHARS = 600;
 // A model signature is wanted: it records which model produced the commit.
 // A promotional line is not a signature. Reject product marketing and URLs.
+/** A signature names a model. An address in it belongs to someone else. */
+const EMAIL = /[\w.+-]+@[\w-]+\.[\w.-]+/;
+
 const PROMOTIONAL = [
   /generated\s+with/i,
   /\bhttps?:\/\//i,
@@ -69,6 +72,13 @@ function check(msg) {
       errs.push(
         'Remove the promotional line "' + line.trim() +
         '". Sign the model (Co-Authored-By: <model>); do not advertise a product.'
+      );
+    }
+    if (EMAIL.test(line)) {
+      errs.push(
+        'Remove the email address from "' + line.trim() +
+        '". A signature names a model, not a mailbox, and a vendor noreply ' +
+        'address is not the agent's to put in this history.'
       );
     }
   }
