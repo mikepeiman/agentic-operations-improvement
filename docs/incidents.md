@@ -177,3 +177,53 @@ provider/model pairs across 1,024 messages in that one session, and 65 of 65
 tool calls carrying the disputed payload fields traced to one of them. The
 agent had full read access to the file that contradicted its own denial and
 asserted the denial twice before checking.
+
+## Replicate what was named
+
+2026-09-02, metabrain-mvp, one session. The instruction was to replicate
+TabsOutliner's drag and drop, with its source in the repository. An agent read
+the placement rule, reimplemented it on pointer events, and reported the method
+replicated. TabsOutliner's drag is the browser's HTML5 drag and drop; the
+reimplementation dropped dragging a row out to another window or application,
+dropping a tab or link in, the drag image of the subtree, copy on Ctrl at
+release, and the cross-window refusal. Four handler functions establishing this
+were read in the same session and not carried into the design.
+
+Two further builds were needed after the owner rejected the first two, each
+adding something the original instruction had already covered: the parent
+lookup the reference performs against the DOM, and then the transport.
+
+The owner's words: "Implement EVERYTHING TABSOUTLINER DOES. You said you had.
+You lied?"
+
+## Citation integrity
+
+2026-09-02, metabrain-mvp. An agent wrote, in a shared interface contract and
+in a report: "The tree is frozen during a drag. TabsOutliner doesn't need this
+... TabsOutliner freezes its view for the same reason (`doNotScrollView`)."
+
+`doNotScrollView` gates whether the view scrolls itself to bring the cursor
+node into sight. It has no bearing on whether the view updates. Nothing in the
+reference gates its model-to-view path on a drag. The freeze was the agent's
+own, it protected nothing in the current design, and it produced the failure it
+claimed to prevent: the painted tree and the engine's tree parted for the
+length of every gesture.
+
+The citation was a real symbol in the real file, read earlier in the same
+session. That is what made the false sentence survive: it looked checked.
+
+The owner caught it by smell, not by evidence: "SMELLS ... Faulty logic.
+Explain why."
+
+## Instrument before hypothesising
+
+2026-09-02, metabrain-mvp. Told that a browser extension's drag "does not
+function at all", an agent produced roughly a dozen candidate causes across
+several minutes of reading, discarding each on inspection, before building
+anything.
+
+The extension page cannot be driven by the agent. A replica serving the real
+drag module, the real row markup, and the shipped stylesheet took about fifteen
+minutes, ran a real drag on the first attempt, and settled the question. It
+also became the harness that verified the two builds after it.
+

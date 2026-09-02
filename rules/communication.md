@@ -72,6 +72,17 @@ target and no minimum.
 
 Prefer the plain word. Prefer the short sentence. Prefer the concrete noun.
 
+## Address the reader in identifiers they can see
+
+Ask about, and report on, the identifier the reader can read off their own
+screen: the version string on the extensions page, the build label in the UI,
+the release tag, the filename, the row title.
+
+A commit hash, an internal id, a branch name, or a database key may accompany
+one of those. None of them may replace it. The reader cannot map a hash to
+what they are running, and a question phrased in one costs a round trip to
+translate.
+
 ## Enumerate anything the reader must respond to
 
 A proposal, a set of options, or a list of findings gets stable hierarchical

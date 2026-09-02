@@ -69,6 +69,10 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
 | Consider adding a file, doc, or refactor nobody asked for | `rules/scope-additions.md` |
 | Answer a question whose entity, scope, source, version, or definition may be assumed | `rules/settle-the-prior-question.md` |
 | Assert behaviour, cause, absence, counts, dates, quotes, or completion | `rules/primary-source-first.md` |
+| Name a symbol, file, line, setting, or version in any text | `rules/citation-integrity.md` |
+| Replicate, copy, match, or port a named existing artifact | `rules/replicate-what-was-named.md` |
+| Diagnose a defect on a surface you cannot run | `rules/instrument-before-hypothesising.md` |
+| Build a feature or fix the owner will exercise before you can | `rules/observable-by-default.md` |
 | Fix a status, metric, retry, warning, exception, timeout, or success signal | `rules/root-cause-not-green-indicators.md` |
 | Face a failing test, type error, lint error, or other red check | `rules/test-and-checker-integrity.md` |
 | Respond to disagreement, new evidence, or an agent mistake | `rules/correction-under-challenge.md` |
