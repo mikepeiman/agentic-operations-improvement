@@ -3,6 +3,10 @@
 Rules, checks, hooks, and protocols shared across projects. Change this repo
 when Mike says so.
 
+Before making claims, changing state, processing inputs, recording acceptance,
+or delivering artifacts, open [`rules/README.md`](rules/README.md) and read every
+row whose trigger matches the task.
+
 ## Before you write
 
 ```bash
@@ -35,14 +39,18 @@ the commit is local.
 
 ## Rules
 
-- One change per commit.
+- One coherent outcome per commit. Include the tests, migration, and required
+  documentation that make that outcome complete.
 - Push every commit.
 - Amend rules in place. Do not rewrite their history.
 - Do not delete a rule you disagree with. Add the counter-evidence, name the
   project, leave the decision to Mike.
 - Nothing here executes until a project wires it in.
-- State the condition, then the fix.
-- Write to instruct, not to persuade. No reasons, no justifications.
+- Write each rule as trigger, required action, and completion criterion.
+- Write operative text to instruct. Put provenance and incident evidence in a
+  separate section.
+- Every normative file under `rules/` and `docs/` carries frontmatter naming its
+  creation date, author, source, and what it supersedes.
 
 ## Layout
 

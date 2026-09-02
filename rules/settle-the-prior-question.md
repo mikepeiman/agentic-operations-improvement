@@ -1,3 +1,10 @@
+---
+date created: 2026-09-01
+author: agent, at Mike's direction
+derived from: "Curatio AGENTS.md and agent.md at https://github.com/mikepeiman/curatio/tree/8c9deb3"
+supersedes: nothing
+---
+
 # Settle the prior question
 
 Every question presupposes another. Name it and settle it before answering.
@@ -13,6 +20,10 @@ past it.
 
 Apply the same test before asserting: name what the claim assumes, and check
 whether that assumption was verified or inherited.
+
+Completion criterion: the answer names the entity, scope, source, version, and
+definition on which it depends, or explicitly identifies the one that remains
+unsettled.
 
 Worked examples from 2026-09-01:
 

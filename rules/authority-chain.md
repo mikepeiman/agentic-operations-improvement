@@ -1,36 +1,58 @@
-# Authority chain
+---
+date created: 2026-09-01
+author: agent, at Mike's direction
+derived from: "Curatio AGENTS.md and agent.md at https://github.com/mikepeiman/curatio/tree/8c9deb3"
+supersedes: the original single authority chain in this file
+---
 
-Order, highest first:
+# Authority and evidence chains
 
-1. Mike's stated intent and instructions.
-2. The artifact being replicated, when the work is replication.
-3. Running source code in this repo.
-4. Everything derived: docs, specs, audits, plans, ledgers, built bundles, test
-   fixtures, and your own judgement.
+Keep two questions separate: **what should happen** and **what does happen**.
 
-**No document supersedes an instruction.** Docs are never authoritative over
-intent.
+## Intent authority
 
-A lower artifact that disagrees with a higher one is defective. Report the
-defect. Do not implement it.
+Use this order, highest first:
 
-Before building from any document:
+1. Non-negotiable safety, legal, and platform constraints.
+2. Mike's current stated intent and instructions.
+3. Accepted product decisions and explicit reference artifacts.
+4. Governing specifications with provenance.
+5. Derived plans, audits, summaries, fixtures, and agent judgement.
 
-1. Name what it is derived from.
-2. Check its normative claims against that source.
-3. Treat any claim it does not cite as unverified.
+When the work is replication, the explicitly named reference artifact defines
+the intended behavior inside the stated scope. A lower authority that disagrees
+with a higher one is defective. Report the disagreement and follow the higher
+authority.
 
-A document is invention wearing a spec's format when it has any of these:
+## Factual evidence
 
-- no frontmatter naming date, author, source, and what it supersedes
-- normative tables or lists carrying no citations, beside ones that do
-- a "canonical" label with no provenance
+Use this order, strongest first:
 
-Finding a document does not end the search. Finding the source does.
+1. Direct observation of the exact runtime, data, or artifact in question.
+2. The defining source code or primary input at the exact revision in question.
+3. Executable tests whose failure proves the claimed behavior.
+4. Generated artifacts and derived documents.
+5. Inference.
 
-Incident: on 2026-09-01, told to replicate TabsOutliner with perfect fidelity,
-an agent located `2026-08-11_TO_EXTENSION_REBUILD_KICKSTART.md` §4.6 and
-proposed implementing its five-region drop table. The keyboard table beside it
-cited `treeview.js:740`, `:746`, `:734` line by line. The drop table cited
-nothing, and the reference decides drops by element containment, not regions.
-The document was the invention that produced the defect being fixed.
+Running code is evidence of current behavior, not authority for intended
+behavior. A specification is evidence of intent, not proof that the runtime
+implements it.
+
+A label such as `canonical` does not raise an artifact's authority. Provenance
+and an explicit decision do.
+
+## Before acting from a document
+
+1. Name whether the claim is about intent or current fact.
+2. Name what the document is derived from.
+3. Check each operative claim against that source.
+4. Treat an uncited claim as unverified.
+
+Completion criterion: every load-bearing decision names the chain it used, and
+no lower authority silently overrides a higher one.
+
+## Incident evidence
+
+On 2026-09-01, a derived Curatio drop table was treated as the replication
+authority even though it cited no source and contradicted the named reference
+implementation.

@@ -1,3 +1,10 @@
+---
+date created: 2026-09-01
+author: agent, at Mike's direction
+derived from: "Curatio AGENTS.md and agent.md at https://github.com/mikepeiman/curatio/tree/8c9deb3"
+supersedes: nothing
+---
+
 # Primary source first
 
 Before asserting how something behaves, open the code that defines the
@@ -11,12 +18,17 @@ the source. Read it before designing a replacement.
 
 State the evidence grade with every finding:
 
+- **observed** — measured on the exact runtime, data, or artifact in question
 - **source** — read the defining code
 - **derived** — read something generated from it
 - **inferred** — reasoned, unread
+- **unverified** — the required check is named but has not been performed
 
-An assertion carrying no grade is read as source. Do not let that happen by
-omission.
+An assertion carrying no grade is read as source. Attach a grade or perform the
+check that earns one.
+
+Completion criterion: every material finding is traceable to the exact primary
+artifact or is visibly marked as inference or unverified.
 
 Incident: on 2026-09-01, across one session, an agent asserted that a script
 did not call a stop routine (never opened it, the opposite was true), that

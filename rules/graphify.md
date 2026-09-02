@@ -1,3 +1,10 @@
+---
+date created: 2026-09-01
+author: agent, at Mike's direction
+derived from: metabrain-mvp Graphify workflow
+supersedes: nothing
+---
+
 # Graphify
 
 Applies to any project containing `graphify-out/`.
@@ -18,3 +25,6 @@ graphify affected "<changed-symbol>" --depth 2
 ```
 
 Rebuild cleanly when the graph looks wrong: `graphify update . --force`.
+
+Completion criterion: the code commit contains its current graph output and no
+standalone graph-only commit or unreported post-commit residue is delivered.
