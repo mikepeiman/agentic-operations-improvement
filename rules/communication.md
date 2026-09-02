@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-02
-author: Claude Opus 5 — agentic-operations-improvement (C:\Users\mikep\Desktop\WebDev\agentic-operations-improvement, github.com/mikepeiman/agentic-operations-improvement)
+author: Claude Opus 5, agentic-operations-improvement (C:\Users\mikep\Desktop\WebDev\agentic-operations-improvement, github.com/mikepeiman/agentic-operations-improvement)
 derived from: original
 supersedes: nothing
 ---
@@ -25,6 +25,19 @@ marks the claims that needed propping up.
 - No reversal, irony, or verdict. Not "the state it exists to prevent", not "one
   command from gone", not "a rule with no collector".
 - Describe the state. Do not narrate it.
+
+## Do not narrate your own manner
+
+Strike: plainly, frankly, candidly, bluntly, directly, to be clear, let me be
+direct, simply put, in short.
+
+Announcing how you are about to speak is not speaking. Say the sentence. The
+reader can see how it was said.
+
+## No em-dashes
+
+Use a colon for a definition or an expansion, a comma for an aside, parentheses
+for an interjection, or two sentences. Not the em-dash, and not the en-dash.
 
 ## Normal states are normal
 

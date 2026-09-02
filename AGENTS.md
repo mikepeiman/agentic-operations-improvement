@@ -16,7 +16,7 @@ Clone or pull it into any project. Read the rules whose trigger matches the work
 Keep the always-loaded layer small. This file plus the triggered rules is the
 working set. Do not preload `docs/`.
 
-Every agent has authority to improve what is here — add a rule, correct one,
+Every agent has authority to improve what is here: add a rule, correct one,
 sharpen wording, record an incident. Discuss the change with Mike before you
 commit it. Do not delete a rule you disagree with; add the counter-evidence,
 name the project, and leave the decision to him.
@@ -41,9 +41,9 @@ the commit is local.
 
 - One coherent outcome per commit, including the tests, migration, and required
   documentation that make the outcome complete.
-- **Subject** — imperative, 72 characters or less.
-- **Body** — why. If the rule came from a failure, name the failure.
-- **Trailers** — `From: <project>`, then the model that wrote the change.
+- **Subject**: imperative, 72 characters or less.
+- **Body**: why. If the rule came from a failure, name the failure.
+- **Trailers**: `From: <project>`, then the model that wrote the change.
 
 Sign the model. It records which model produced the commit, the same fact the
 frontmatter `author` field carries for a document. A promotional line is not a
@@ -79,6 +79,7 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
 | Deliver a build, export, report, or processed artifact | `rules/artifact-identity.md` |
 | Mike accepts or withdraws acceptance of an artifact | `rules/owner-acceptance.md` |
 | Design storage, sync, transformations, ordering, or reconciliation | `rules/architecture/` |
+| Write a corrective record, or promote a lesson into a rule | `rules/learning-from-failure.md` |
 | Create or revise a mechanical check or reflection hook | `rules/enforcement-design.md` |
 
 ## Incidents
@@ -96,8 +97,8 @@ need the evidence bar. Do not load it otherwise.
 installation, and operating protocol. They are desirable, not assumed present.
 Mike decides per project.
 
-- **Beads** — issue tracking that lives in the repo. Default: install and use.
-- **Graphify** — structural retrieval over the codebase. Default: assess for
+- **Beads**: issue tracking that lives in the repo. Default: install and use.
+- **Graphify**: structural retrieval over the codebase. Default: assess for
   utility, then ask.
 
 ## Writing a rule
@@ -112,7 +113,7 @@ Mike decides per project.
 ```
 ---
 date created: YYYY-MM-DD
-author: <agent model> — <product name> (<local dir>, <repo url>)
+author: <agent model>, <product name> (<local dir>, <repo url>)
 derived from: <path, url, or "original">
 supersedes: <what it replaces, or "nothing">
 ---

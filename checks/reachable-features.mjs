@@ -108,7 +108,7 @@ if (orphans.length) {
     'Capabilities with no route a user can reach\n' +
     '(rules/architecture/reachable-capability.md):\n\n' +
     orphans.map((o) => '  - ' + o).join('\n') +
-    '\n\nShip the path that invokes it in this change, or state plainly that the\n' +
+    '\n\nShip the path that invokes it in this change, or report that the\n' +
     'feature is incomplete. Add a genuinely internal name to "allow" in ' + CONFIG + '.'
   );
   process.exit(2);
