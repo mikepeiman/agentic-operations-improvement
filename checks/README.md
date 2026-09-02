@@ -19,7 +19,10 @@ more than its observable proves (`rules/enforcement-design.md`).
 ## `concise-commit-message.mjs` — PreToolUse
 
 **Observes:** the `git commit` command string. Subject 72 chars or less, blank
-line 2, body 8 prose lines and 600 chars or less, no agent-attribution trailer.
+line 2, body 8 prose lines and 600 chars or less, no promotional line.
+
+A model signature (`Co-Authored-By: <model>`) passes — it records which model
+produced the commit. A product tagline, URL, or emoji badge does not.
 
 **Blocks** with exit 2 and the format to use.
 

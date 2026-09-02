@@ -12,8 +12,13 @@ import { readFileSync } from 'node:fs';
 const MAX_SUBJECT = 72;
 const MAX_BODY_LINES = 8;
 const MAX_BODY_CHARS = 600;
-const ATTRIBUTION =
-  /^(co-authored-by|generated-with|assisted-by|signed-off-by:\s*(claude|gpt|codex|copilot))/i;
+// A model signature is wanted: it records which model produced the commit.
+// A promotional line is not a signature. Reject product marketing and URLs.
+const PROMOTIONAL = [
+  /generated\s+with/i,
+  /\bhttps?:\/\//i,
+  /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u, // emoji badge
+];
 
 function readStdin() {
   try {
@@ -57,11 +62,13 @@ function check(msg) {
     else if (line.trim() !== '') prose.push(line);
   }
 
-  for (const t of trailers) {
-    if (ATTRIBUTION.test(t)) {
+  // Promotional lines are often not trailer-shaped, so scan the whole body.
+  for (const line of lines.slice(2)) {
+    if (line.trim() === '') continue;
+    if (PROMOTIONAL.some((re) => re.test(line))) {
       errs.push(
-        'Remove the attribution trailer "' + t.trim() +
-        '". These are the owner’s commits in the owner’s history.'
+        'Remove the promotional line "' + line.trim() +
+        '". Sign the model (Co-Authored-By: <model>); do not advertise a product.'
       );
     }
   }

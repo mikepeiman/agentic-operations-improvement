@@ -13,6 +13,9 @@ faults and to improve human-agent cooperation and productivity.
 
 Clone or pull it into any project. Read the rules whose trigger matches the work.
 
+Keep the always-loaded layer small. This file plus the triggered rules is the
+working set. Do not preload `docs/`.
+
 Every agent has authority to improve what is here — add a rule, correct one,
 sharpen wording, record an incident. Discuss the change with Mike before you
 commit it. Do not delete a rule you disagree with; add the counter-evidence,
@@ -30,7 +33,7 @@ Committing and pushing are one act, in every repo, on every turn that changes
 files.
 
 ```bash
-git commit -m "..." && git push
+git commit -m "..." && git push -u origin HEAD
 ```
 
 If the push is rejected, rebase and push again. Do not report work as done while
@@ -40,7 +43,11 @@ the commit is local.
   documentation that make the outcome complete.
 - **Subject** — imperative, 72 characters or less.
 - **Body** — why. If the rule came from a failure, name the failure.
-- **Trailer** — `From: <project>`.
+- **Trailers** — `From: <project>`, then the model that wrote the change.
+
+Sign the model. It records which model produced the commit, the same fact the
+frontmatter `author` field carries for a document. A promotional line is not a
+signature: no product name, tagline, or URL.
 
 ```
 commit-messages: cap the subject at 72 characters
@@ -49,6 +56,7 @@ An agent wrote a 400-character subject. `git log --oneline` became
 unreadable, and a pushed message cannot be edited.
 
 From: metabrain-mvp
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
 ```
 
 ## Which rule to read
@@ -96,7 +104,8 @@ Mike decides per project.
 
 - Follow `rules/communication.md`. It governs rule text as well as messages.
 - State the condition, then the action.
-- Put the failure that produced the rule in `docs/incidents.md`, not in the rule.
+- When a failure produced the rule, put it in `docs/incidents.md`, not in the
+  rule. A rule does not need a written incident to be worth keeping.
 - Amend rules in place. Do not rewrite their history.
 - Every normative file under `rules/` and `docs/` carries frontmatter:
 
