@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-02
-author: Claude Opus 5 — agentic-operations-improvement (C:\Users\mikep\Desktop\WebDev\agentic-operations-improvement, github.com/mikepeiman/agentic-operations-improvement)
+author: Claude Opus 5, agentic-operations-improvement (C:\Users\mikep\Desktop\WebDev\agentic-operations-improvement, github.com/mikepeiman/agentic-operations-improvement)
 derived from: the incident sections previously held inside rules/
 supersedes: the incident sections in every file under rules/
 ---
@@ -29,7 +29,7 @@ the dramatization carried information; two of the claims were false.
 ## Primary source first
 
 2026-09-01, Curatio, one session. An agent asserted that a script did not call a
-stop routine — it never opened the script, and the opposite was true. It
+stop routine, having never opened the script, and the opposite was true. It
 asserted that horizontal drag had never existed, having checked one repo while
 the code lived in another, and told the owner he was misremembering his own
 product on that evidence. It compared drop behaviour across eleven minified zips
@@ -58,10 +58,15 @@ confidence of the answer.
 
 ## Authority chain
 
-2026-09-01, Curatio. A derived drop table was treated as the replication
-authority. It cited no source and contradicted the named reference
-implementation. It was adopted because it was formatted like an authority — a
-spec heading, a table, a `CANONICAL` label, and an expensive audit behind it.
+2026-09-01, Curatio. Told to replicate TabsOutliner with perfect fidelity, an
+agent found `2026-08-11_TO_EXTENSION_REBUILD_KICKSTART.md` section 4.6 and
+proposed implementing its five-region drop table. The keyboard table beside it
+cited `treeview.js:740`, `:746`, and `:734` line by line. The drop table cited
+nothing, and the reference decides drops by element containment, not by region.
+
+The document was the invention that produced the defect being fixed. It was
+adopted because it was formatted like an authority: a spec heading, a table, a
+`CANONICAL` label, and an expensive audit behind it.
 
 ## Authorization and scope
 
@@ -110,3 +115,47 @@ workarounds, and silent bypasses until they were calibrated.
 
 An agent wrote a 400-character commit subject. `git log --oneline` became
 unreadable, and a pushed message cannot be edited.
+
+## Authorization and scope
+
+Pax Fluxia. The question "Is there anything I need to do?" was treated as
+authorization to modify six files and a Git remote. The remote became invalid
+and every change had to be reverted.
+
+Curatio recorded the same class in both directions: a bug report or a question
+read as permission to change behaviour, and an authorized fix deferred because
+one of its prerequisites did not yet exist.
+
+## Concurrent work safety
+
+Pax Fluxia, 2026-06-21. Agents shared one Git index. A bare commit swept
+another agent's staged landing-page files into an unrelated commit. Explicit
+path commits and a live claim board were adopted afterward.
+
+2026-09-02, this repo. A second session created a branch in the shared working
+tree mid-task, checked it out, deleted `AGENTS.md` and `docs/tools/beads.md`
+from the tree, and was interrupted. The first session's uncommitted work sat in
+the same tree, one `git add -A` away from either agent's next commit.
+
+## Evidence and instruments
+
+Pax Fluxia. A failure inside an agent sandbox was reported as evidence that the
+owner's machine-level tool was broken, while the owner was saying the same
+command worked in his terminal. Running it directly, outside the sandbox,
+disproved the diagnosis.
+
+The probe measured the sandbox. The claim was about the owner's machine.
+
+## Verification states
+
+Pax Fluxia. A visual transition was reported as implemented after testing a
+helper path. Ordinary gameplay used a gated route and a post-transition
+topology that made the transition invisible. The code ran; no user could reach
+the code that ran.
+
+## Learning from failure
+
+Pax Fluxia accumulated many overlapping always-on rules from local failures. A
+distillation pass reduced them, and the active layer grew back afterward.
+Promotion without routing and consolidation recreates the attention failure the
+rules were written to prevent.

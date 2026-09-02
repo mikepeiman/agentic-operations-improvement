@@ -1,7 +1,7 @@
 ---
 date created: 2026-09-01
-author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
-derived from: "Curatio AGENTS.md and agent.md at https://github.com/mikepeiman/curatio/tree/8c9deb3"
+author: Codex, curatio (dir unrecorded, github.com/mikepeiman/curatio)
+derived from: "Curatio AGENTS.md and agent.md at https://github.com/mikepeiman/curatio/tree/8c9deb3; Pax Fluxia false-completion post-mortem"
 supersedes: nothing
 ---
 
@@ -10,6 +10,12 @@ supersedes: nothing
 ## Trigger
 
 While executing an authorized task and before ending a work turn.
+
+## Before you start
+
+State the requested outcome and the evidence that would show it is complete.
+Deciding what would count as done after the work is done is how a helper path
+gets mistaken for the real one.
 
 ## Required action
 
@@ -24,9 +30,17 @@ While executing an authorized task and before ending a work turn.
    external authority, or missing evidence after repeated failed attempts.
 5. Continue every unblocked part before asking a narrow question that states the
    concrete case, options, costs, and recommendation.
-6. End the handoff with completed work, verification state, outstanding work,
-   and blockers. Use past tense for completed work and no unconditional promise
-   about work not performed.
+6. Review the final diff before delivery.
+
+## The handoff names
+
+- completed work, in past tense;
+- checks run and their results;
+- boundaries not exercised;
+- outstanding work and genuine blockers;
+- the commit, build, run, or output location when one exists.
+
+Make no unconditional promise about work not performed.
 
 Completion criterion: everything touched is completed, explicitly outstanding,
 or tied to one genuine blocker; nothing depends on the user remembering an

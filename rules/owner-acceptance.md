@@ -1,7 +1,7 @@
 ---
 date created: 2026-09-01
-author: unrecorded agent — metabrain-mvp (dir unrecorded, repo url unrecorded)
-derived from: "Curatio acceptance-record failure, recorded from metabrain-mvp"
+author: Codex, metabrain-mvp (dir unrecorded, repo url unrecorded)
+derived from: "Curatio acceptance-record failure, recorded from metabrain-mvp; Pax Fluxia acceptance-history rule"
 supersedes: nothing
 ---
 
@@ -20,6 +20,15 @@ Record it in the project's issue tracker when it has one, otherwise in
 
 Record a withdrawal the same way when he later says it is broken. The pair is
 the evidence: what worked, at which build, and when it stopped.
+
+## Do not manufacture an acceptance
+
+Praise, preference, relief, and partial progress are not acceptance of an
+identified artifact. Record what he accepted, not that he sounded pleased.
+
+If the current request does not authorize writing to the repository or the
+tracker, report the acceptance record that remains to be captured instead of
+writing it silently.
 
 Completion criterion: the acceptance or withdrawal can be tied to one exact,
 recoverable artifact without reconstructing the conversation.
