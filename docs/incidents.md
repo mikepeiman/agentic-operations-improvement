@@ -159,3 +159,21 @@ Pax Fluxia accumulated many overlapping always-on rules from local failures. A
 distillation pass reduced them, and the active layer grew back afterward.
 Promotion without routing and consolidation recreates the attention failure the
 rules were written to prevent.
+
+## Untested limits
+
+2026-09-02, personal notes processing, one session. Asked whether a model
+switch mid-conversation could explain a change in tool-call behaviour, an
+agent stated: "I don't have reliable introspective access to confirm what
+generated each of the earlier failing calls in this same session." Pressed on
+the contradiction between that sentence and its own file-read access, the
+agent then stated it separately: "I said I have no introspective access to
+confirm which model generated which specific past turn in this transcript."
+
+The session log recording that exact fact, `source.provider` and
+`source.model` on every assistant message, sat on disk the entire time. Two
+tool calls (decompress the log, parse the JSON) produced the answer: seven
+provider/model pairs across 1,024 messages in that one session, and 65 of 65
+tool calls carrying the disputed payload fields traced to one of them. The
+agent had full read access to the file that contradicted its own denial and
+asserted the denial twice before checking.

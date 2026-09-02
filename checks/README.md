@@ -71,3 +71,20 @@ nothing is a guard switched off.
 
 **Cannot see:** whether the control is good, or reachable in practice. Only
 whether a reference exists. "Exists" was the whole failure it was built for.
+
+## `untested-limits.mjs`: post-hoc / CI, over a decompressed session log
+
+**Observes:** every `assistant/message` in a `.jsonl` session log matching a
+knowledge-denial pattern ("I can't determine...", "I don't have access to...",
+"that's not visible to me...", "I have no way to know...", "not something I
+can independently confirm"), and whether a `tool/call` occurred earlier in the
+same turn.
+
+**No live pre-send gate exists for this**: no checked DSH extension point
+(`agent/pre-step`, `agent/request`, `agent/request-error`) runs after text
+generation and before the message commits to the log. This runs against the
+log after the fact, or in CI over an exported transcript.
+
+**Cannot see:** denials phrased outside the listed patterns, or whether a
+same-turn tool call's result actually grounds the denial rather than merely
+preceding it. Observes attempt, not adequacy.

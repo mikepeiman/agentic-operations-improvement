@@ -72,6 +72,7 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
 | Fix a status, metric, retry, warning, exception, timeout, or success signal | `rules/root-cause-not-green-indicators.md` |
 | Face a failing test, type error, lint error, or other red check | `rules/test-and-checker-integrity.md` |
 | Respond to disagreement, new evidence, or an agent mistake | `rules/correction-under-challenge.md` |
+| State that something cannot be known, seen, accessed, or verified | `rules/untested-limits.md` |
 | Import, transform, migrate, repair, delete, or replace user data | `rules/input-preservation-and-reproducibility.md` |
 | Delete, overwrite, force-push, reset, or touch credentials | `rules/destructive-actions.md` |
 | Work in a repo where another agent or process may be active | `rules/concurrent-work-safety.md` |
