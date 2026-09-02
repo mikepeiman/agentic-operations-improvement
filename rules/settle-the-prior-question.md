@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: agent, at Mike's direction
+author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
 derived from: "Curatio AGENTS.md and agent.md at https://github.com/mikepeiman/curatio/tree/8c9deb3"
 supersedes: nothing
 ---
@@ -25,14 +25,5 @@ Completion criterion: the answer names the entity, scope, source, version, and
 definition on which it depends, or explicitly identifies the one that remains
 unsettled.
 
-Worked examples from 2026-09-01:
-
-| Question asked | Prior question | What happened |
-|---|---|---|
-| Did you go to the source? | What is the source? | Answered correctly only after the owner pointed at the prior question. |
-| Has the drag logic changed? | Which file defines it, in which repo? | Answered from one repo; the code was developed in another. Conclusion was wrong and was told to the owner as a correction of his memory. |
-| Why is the extension stale? | What builds the extension? | Nothing did. Unasked for thirteen days. |
-| Which implementation is canonical? | Is it already decided and recorded? | It was. The owner was asked to relitigate a decision he had already made. |
-
-An answer built on an unsettled premise inherits its error and carries the
-confidence of the answer.
+Incident: [four answers past an unsettled premise](../docs/incidents.md#settle-the-prior-question).
+Read it when the answer feels obvious.

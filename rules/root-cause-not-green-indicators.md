@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: agent, at Mike's direction
+author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
 derived from: "Curatio fabrication-and-symptom-fix post-mortem at https://github.com/mikepeiman/curatio/tree/8c9deb3/docs/post-mortems"
 supersedes: nothing
 ---
@@ -26,3 +26,6 @@ or presentation of success.
 
 Completion criterion: the real behavior or data invariant passes its observable
 gate, and every displayed success signal follows that gate.
+
+Incident: [symptom fixes that left the condition false](../docs/incidents.md#root-cause-not-green-indicators).
+Read it when a fix would change what is displayed.

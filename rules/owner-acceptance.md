@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: agent, at Mike's direction
+author: unrecorded agent — metabrain-mvp (dir unrecorded, repo url unrecorded)
 derived from: "Curatio acceptance-record failure, recorded from metabrain-mvp"
 supersedes: nothing
 ---
@@ -24,7 +24,5 @@ the evidence: what worked, at which build, and when it stopped.
 Completion criterion: the acceptance or withdrawal can be tied to one exact,
 recoverable artifact without reconstructing the conversation.
 
-Incident: on 2026-09-01 Mike said Curatio-NEXT had worked and asked for the
-commit where he declared it good. No such record existed anywhere — not in a
-commit message, a tracker note, or a doc. Reconstructing it cost an hour and
-failed. An acceptance nobody wrote down cannot be used to bisect a regression.
+Incident: [an acceptance nobody recorded](../docs/incidents.md#owner-acceptance).
+Read it before deciding the acceptance can be reconstructed later.

@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: agent, at Mike's direction
+author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
 derived from: the 2026-09-01 Curatio drag session
 supersedes: nothing
 status: exploration, not a rule
@@ -42,7 +42,7 @@ Every document containing normative language — `must`, `shall`, `required`,
 
 ```
 date created:
-author:
+author:            <agent model> - <product> (<dir>, <repo url>)
 derived from:      <path, url, or "original">
 supersedes:
 ```
@@ -90,7 +90,7 @@ agent starts. Cannot check compliance. Can guarantee the rule is present at
 the moment it applies, which is the difference between a rule that exists and
 a rule that fires.
 
-## Honest summary
+## What this buys
 
 Hooks cannot make an agent think. They can:
 

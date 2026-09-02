@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: agent, at Mike's direction
+author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
 derived from: "Curatio AGENTS.md and agent.md at https://github.com/mikepeiman/curatio/tree/8c9deb3"
 supersedes: the original single authority chain in this file
 ---
@@ -51,8 +51,5 @@ and an explicit decision do.
 Completion criterion: every load-bearing decision names the chain it used, and
 no lower authority silently overrides a higher one.
 
-## Incident evidence
-
-On 2026-09-01, a derived Curatio drop table was treated as the replication
-authority even though it cited no source and contradicted the named reference
-implementation.
+Incident: [a derived table adopted as the authority](../docs/incidents.md#authority-chain).
+Read it when a document looks authoritative because of its formatting.

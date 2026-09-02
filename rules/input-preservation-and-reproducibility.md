@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: agent, at Mike's direction
+author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
 derived from: "Curatio execution playbook and import requirements at https://github.com/mikepeiman/curatio/tree/8c9deb3/docs"
 supersedes: nothing
 ---

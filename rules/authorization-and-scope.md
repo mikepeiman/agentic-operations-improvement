@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: agent, at Mike's direction
+author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
 derived from: "Curatio agent.md and AGENTS.md at https://github.com/mikepeiman/curatio/tree/8c9deb3"
 supersedes: nothing
 ---
@@ -29,8 +29,5 @@ published state.
 Completion criterion: every mutation is covered by a user instruction or by a
 necessary, reversible implementation step inside that instruction.
 
-## Incident evidence
-
-Curatio recorded repeated cases where a bug report or question was treated as
-permission to change behavior, and the opposite failure where an authorized fix
-was deferred because its prerequisite did not yet exist.
+Incident: [reports read as permission, fixes deferred for missing prerequisites](../docs/incidents.md#authorization-and-scope).
+Read it when unsure whether a bug report is also a request to change behaviour.
