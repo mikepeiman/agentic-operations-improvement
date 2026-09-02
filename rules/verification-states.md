@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: agent, at Mike's direction
+author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
 derived from: "Curatio execution playbook at https://github.com/mikepeiman/curatio/tree/8c9deb3/docs"
 supersedes: nothing
 ---
@@ -30,3 +30,23 @@ the check that remains. A lower state never implies a higher one.
 
 Completion criterion: the status names the highest verified state and every
 remaining acceptance gate without collapsing them into `done`.
+
+## Match the check to the claim
+
+The state names how far you got. This names which check earns it.
+
+- interface behaviour — exercise the real interface
+- transformation or import — run a representative input, inspect the output
+- persistence — write, restart or reopen, read back
+- migration — migrate an older fixture forward
+- integration — exercise request, acknowledgement or failure, and reconciliation
+- rename or identity change — confirm references survive it
+- deletion or recovery — exercise delete, restore, and retention as promised
+- generated artifacts — regenerate, confirm no unexplained residue
+
+Use the smallest direct check that can falsify the claim. A changed file, a
+green type check, a mocked test, a successful build, and a pushed commit each
+prove only what they directly exercised.
+
+When a boundary cannot be exercised, name it unverified. Do not substitute an
+indirect check and report the boundary complete.

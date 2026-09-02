@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: agent, at Mike's direction
+author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
 derived from: "Curatio .claude/hooks and scripts at https://github.com/mikepeiman/curatio/tree/8c9deb3"
 supersedes: nothing
 ---
@@ -51,8 +51,5 @@ Completion criterion: the instrument catches its recorded failure, permits
 representative compliant cases, tells the agent how to recover, and claims no
 more than its observable proves.
 
-## Incident evidence
-
-Curatio's effective checks were narrow omission guards backed by tests. Broad
-prose matchers and unrealistic thresholds created false positives, workarounds,
-or silent bypasses until they were calibrated.
+Incident: [broad matchers that produced bypasses](../docs/incidents.md#enforcement-design).
+Read it before writing a check that matches prose.

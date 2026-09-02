@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: agent, at Mike's direction
+author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
 derived from: "Curatio ENGINEERING_RULES.md and CODEMAP_MUTATIONS.md at https://github.com/mikepeiman/curatio/tree/8c9deb3/docs"
 supersedes: nothing
 ---

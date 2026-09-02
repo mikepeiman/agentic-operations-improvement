@@ -1,11 +1,22 @@
 # Shared agent operations
 
-Rules, checks, hooks, and protocols shared across projects. Change this repo
-when Mike says so.
+Rules, checks, and tool protocols shared across projects.
 
-Before making claims, changing state, processing inputs, recording acceptance,
-or delivering artifacts, open [`rules/README.md`](rules/README.md) and read every
-row whose trigger matches the task.
+## Why this repo exists
+
+Agents suffer from a collection of serious faults, biases, and failure modes
+across thinking and reasoning, communication style, problem-solving, and
+instruction-following. These rules, docs, and tools exist to mitigate those
+faults and to improve human-agent cooperation and productivity.
+
+## Using this repo
+
+Clone or pull it into any project. Read the rules whose trigger matches the work.
+
+Every agent has authority to improve what is here — add a rule, correct one,
+sharpen wording, record an incident. Discuss the change with Mike before you
+commit it. Do not delete a rule you disagree with; add the counter-evidence,
+name the project, and leave the decision to him.
 
 ## Before you write
 
@@ -13,8 +24,20 @@ row whose trigger matches the task.
 git pull --rebase
 ```
 
-## Commit format
+## Commit and push every turn
 
+Committing and pushing are one act, in every repo, on every turn that changes
+files.
+
+```bash
+git commit -m "..." && git push
+```
+
+If the push is rejected, rebase and push again. Do not report work as done while
+the commit is local.
+
+- One coherent outcome per commit, including the tests, migration, and required
+  documentation that make the outcome complete.
 - **Subject** — imperative, 72 characters or less.
 - **Body** — why. If the rule came from a failure, name the failure.
 - **Trailer** — `From: <project>`.
@@ -28,40 +51,77 @@ unreadable, and a pushed message cannot be edited.
 From: metabrain-mvp
 ```
 
-## Push in the same step as the commit
+## Which rule to read
 
-```bash
-git commit -m "..." && git push
-```
+| Trigger | Read |
+|---|---|
+| Write any message, report, review, commit body, or rule | `rules/communication.md` |
+| Decide what should happen, or which artifact governs | `rules/authority-chain.md` |
+| Change code, data, documents, external systems, or published state | `rules/authorization-and-scope.md` |
+| Consider adding a file, doc, or refactor nobody asked for | `rules/scope-additions.md` |
+| Answer a question whose entity, scope, source, version, or definition may be assumed | `rules/settle-the-prior-question.md` |
+| Assert behaviour, cause, absence, counts, dates, quotes, or completion | `rules/primary-source-first.md` |
+| Fix a status, metric, retry, warning, exception, timeout, or success signal | `rules/root-cause-not-green-indicators.md` |
+| Face a failing test, type error, lint error, or other red check | `rules/test-and-checker-integrity.md` |
+| Respond to disagreement, new evidence, or an agent mistake | `rules/correction-under-challenge.md` |
+| Import, transform, migrate, repair, delete, or replace user data | `rules/input-preservation-and-reproducibility.md` |
+| Delete, overwrite, force-push, reset, or touch credentials | `rules/destructive-actions.md` |
+| Work in a repo where another agent or process may be active | `rules/concurrent-work-safety.md` |
+| Report status or end a work turn | `rules/verification-states.md`; `rules/task-closure-and-blockers.md` |
+| Deliver a build, export, report, or processed artifact | `rules/artifact-identity.md` |
+| Mike accepts or withdraws acceptance of an artifact | `rules/owner-acceptance.md` |
+| Design storage, sync, transformations, ordering, or reconciliation | `rules/architecture/` |
+| Create or revise a mechanical check or reflection hook | `rules/enforcement-design.md` |
 
-If the push is rejected, rebase and push again. Never report work as done while
-the commit is local.
+## Incidents
 
-## Rules
+Rules state what to do. [`docs/incidents.md`](docs/incidents.md) records the
+failures that produced them.
 
-- One coherent outcome per commit. Include the tests, migration, and required
-  documentation that make that outcome complete.
-- Push every commit.
+Read an incident when you are about to argue a rule is unnecessary, when a
+rule's application to your case is ambiguous, or when writing a new rule and you
+need the evidence bar. Do not load it otherwise.
+
+## Tools
+
+[`docs/tools/`](docs/tools/) describes tools worth installing: purpose,
+installation, and operating protocol. They are desirable, not assumed present.
+Mike decides per project.
+
+- **Beads** — issue tracking that lives in the repo. Default: install and use.
+- **Graphify** — structural retrieval over the codebase. Default: assess for
+  utility, then ask.
+
+## Writing a rule
+
+- Follow `rules/communication.md`. It governs rule text as well as messages.
+- State the condition, then the action.
+- Put the failure that produced the rule in `docs/incidents.md`, not in the rule.
 - Amend rules in place. Do not rewrite their history.
-- Do not delete a rule you disagree with. Add the counter-evidence, name the
-  project, leave the decision to Mike.
-- Nothing here executes until a project wires it in.
-- Write each rule as trigger, required action, and completion criterion.
-- Write operative text to instruct. Put provenance and incident evidence in a
-  separate section.
-- Every normative file under `rules/` and `docs/` carries frontmatter naming its
-  creation date, author, source, and what it supersedes.
+- Every normative file under `rules/` and `docs/` carries frontmatter:
+
+```
+---
+date created: YYYY-MM-DD
+author: <agent model> — <product name> (<local dir>, <repo url>)
+derived from: <path, url, or "original">
+supersedes: <what it replaces, or "nothing">
+---
+```
 
 ## Layout
 
-- `rules/` — one file per rule.
-- `checks/` — executables. Exit 0 to pass, non-zero with a message naming the
-  fix.
-- `adapters/` — per-IDE wiring.
+```
+rules/                one rule per file
+rules/architecture/   how to build the system, not how to behave
+docs/incidents.md     the failures behind the rules
+docs/tools/           tool descriptions and operating protocols
+checks/               executables; exit 0 to pass, non-zero naming the fix
+```
 
-Create a directory when you have something to put in it.
+Nothing here executes until a project wires it in.
 
 ## What belongs here
 
-A rule that has caught or prevented a real failure in a real project. Not
-"good practice". Keep project-specific rules in their project.
+A rule that has caught or prevented a failure in a real project. Not "good
+practice". Keep project-specific rules in their project.

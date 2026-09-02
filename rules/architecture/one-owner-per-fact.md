@@ -1,6 +1,6 @@
 ---
 date created: 2026-09-01
-author: agent, at Mike's direction
+author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
 derived from: "Curatio fact-flow and post-mortems at https://github.com/mikepeiman/curatio/tree/8c9deb3/docs"
 supersedes: nothing
 ---
@@ -29,7 +29,5 @@ transformations, reconciliation, imports, or deletion.
 Completion criterion: for any disagreement, the system has one deterministic
 answer to which representation wins and how the others converge.
 
-## Incident evidence
-
-Curatio's highest-impact failures repeatedly came from two components deciding
-the same hierarchy, order, connection, or completion fact independently.
+Incident: [two components deciding the same fact](../../docs/incidents.md#one-owner-per-fact).
+Read it when two components both compute the same value.

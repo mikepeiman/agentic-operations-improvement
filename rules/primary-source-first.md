@@ -1,8 +1,8 @@
 ---
 date created: 2026-09-01
-author: agent, at Mike's direction
-derived from: "Curatio AGENTS.md and agent.md at https://github.com/mikepeiman/curatio/tree/8c9deb3"
-supersedes: nothing
+author: unrecorded agent — curatio (dir unrecorded, github.com/mikepeiman/curatio)
+derived from: "Curatio AGENTS.md, agent.md, and .claude/hooks at https://github.com/mikepeiman/curatio/tree/8c9deb3"
+supersedes: rules/claims-evidence-and-uncertainty.md
 ---
 
 # Primary source first
@@ -16,7 +16,7 @@ summary docs, or your own judgement about what the design should be.
 When the thing is a duplicate of a reference implementation, the reference is
 the source. Read it before designing a replacement.
 
-State the evidence grade with every finding:
+## Grade every finding
 
 - **observed** — measured on the exact runtime, data, or artifact in question
 - **source** — read the defining code
@@ -27,15 +27,22 @@ State the evidence grade with every finding:
 An assertion carrying no grade is read as source. Attach a grade or perform the
 check that earns one.
 
-Completion criterion: every material finding is traceable to the exact primary
-artifact or is visibly marked as inference or unverified.
+## Before asserting
 
-Incident: on 2026-09-01, across one session, an agent asserted that a script
-did not call a stop routine (never opened it, the opposite was true), that
-horizontal drag had never existed (checked one repo, the code lived in
-another), that the owner was misremembering his own product (same evidence),
-compared drop behaviour across eleven minified zips while git held the source,
-cited a summary bullet as the governing spec, and shipped a redesign of a drag
-interaction without opening the reference implementation it was built to
-duplicate. That reference decided the question in one line, and it contradicted
-the shipped design.
+Separate what was observed, what was read, what the user supplied, and what was
+inferred. Verify each load-bearing premise with the cheapest decisive check.
+
+An absolute claim — `nothing`, `never`, `every`, `removed`, `fixed` — requires
+searching the full relevant scope, and naming the symbol or artifact that would
+falsify it.
+
+A proposed cause must be necessary and sufficient for the symptom, not merely
+consistent with it.
+
+Name every material verification you did not perform.
+
+Completion criterion: a reader can distinguish evidence from inference, and can
+repeat the check behind each load-bearing claim.
+
+Incident: [six false assertions in one session](../docs/incidents.md#primary-source-first).
+Read it before deciding a source is too expensive to open.
