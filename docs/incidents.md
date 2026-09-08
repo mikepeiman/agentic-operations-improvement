@@ -227,3 +227,14 @@ drag module, the real row markup, and the shipped stylesheet took about fifteen
 minutes, ran a real drag on the first attempt, and settled the question. It
 also became the harness that verified the two builds after it.
 
+
+---
+
+## Simulated DnD verification bypassed the browser's protected drag phases (2026-09-07, metabrain-mvp)
+
+The Curatio-ZLM HTML5 drag-and-drop e2e dispatched synthetic DragEvents on a
+constructed DataTransfer whose getData() works during dragenter/dragover; a
+real browser hides dragged data until drop. The ported MIME dispatch checked
+types with getData instead of items, so every real drag was refused while the
+suite stayed green. Found only by user testing (IN-20260907T1540-01).
+Rule: simulated-verification-must-reproduce-platform-constraints.md.
