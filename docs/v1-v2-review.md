@@ -251,6 +251,15 @@ claim, remote push/pull and retrieval were exercised on the real `ops-e70` recor
 the first remote push hit Windows path length limits, and a cache-local
 `core.longpaths` setting resolved that error.
 
+Implementation was pushed to `master` in
+[e917a81](https://github.com/mikepeiman/agentic-operations-improvement/commit/e917a818ada696825e35f5402a4a5c095c78240d),
+with current GitHub Actions versions in
+[523d065](https://github.com/mikepeiman/agentic-operations-improvement/commit/523d06520735d373d842eccacf0330deed08a2b5).
+[Windows and Linux CI passed](https://github.com/mikepeiman/agentic-operations-improvement/actions/runs/34792301316)
+on that implementation. The workflow checks package integrity; the local
+staged-diff check is not repeated against an unchanged CI checkout.
+The final report and Bead closure are delivered as a separate evidence commit.
+
 Cross-project agent reliability, task completion speed, token savings in live
 sessions, and owner acceptance cannot be established by a documentation rewrite
 or a package test. The next useful evidence is ordinary feature/bug work using
