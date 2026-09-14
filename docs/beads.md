@@ -32,6 +32,7 @@ remote synchronization works.
 ```sh
 bd ready --json
 bd list --json
+bd search "restore" --status all --json
 bd show app-123 --json
 bd create "Restore a saved session" --type feature --body-file feature.md --json
 bd update app-123 --claim
@@ -42,6 +43,31 @@ bd close app-123 --reason "Acceptance examples pass; evidence recorded."
 `app-123` is illustrative; use the returned ID. `feature.md` is an existing or
 temporary input file, not another maintained specification. Inline description
 and acceptance flags are also available. Use installed command help for variants.
+
+For capture, follow the policy in AGENTS. Search related terms, aliases, and
+closed work before creating a record. In this version, `bd search` searches
+titles/IDs and requires a query; broaden independently with
+`bd list --all --limit 0 --desc-contains "term" --json` and
+`bd list --all --limit 0 --notes-contains "term" --json`.
+Inspect candidate Beads with `bd show`; a shared keyword alone is not a match.
+Search results are limited by default: adjust `--limit` or narrow the search when
+the result reaches that limit. Deferred work must be included too.
+
+When a user revisits a match, append a note such as:
+
+```sh
+bd update app-123 --append-notes '2026-09-14 recurrence of interest; user: "Restore should retain my groups."'
+```
+
+Use the actual mention date and exact relevant quotation; add a conversation
+reference when available. Then update description, acceptance, or design fields
+with new details so a reader need not reconstruct current intent from notes.
+Keep earlier provenance. For agent-discovered information, identify the agent
+and evidence instead of inventing a user quotation. A repeated mention of closed
+work is recorded without automatically reopening it; reopen when accepted new
+work requires it, and ask if that changes or conflicts with accepted intent.
+For conflicts, record both statements and the pending owner question, leaving
+the disputed decision unresolved. Work authorized independently can continue.
 
 Use `feature` for a user capability, `bug` for expected versus observed behavior,
 and `task` for independently useful enabling work or an investigation. A deferred
@@ -62,7 +88,8 @@ A sufficient feature description might be:
 For a bug, add reproduction steps, environment/build, expected and actual results,
 and decisive evidence. Keep later implementation notes and next action on that
 same Bead. A small fix needs a few sentences, not a mandatory form. Leave unmet
-acceptance open; record technical completion separately from owner acceptance.
+acceptance open; use the core's closure rule to distinguish technical completion
+from required owner testing or approval.
 
 ## Deliver work state
 

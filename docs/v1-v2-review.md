@@ -1,8 +1,10 @@
 # Agent operations: v1 versus v2
 
 Review date: 2026-09-13 (America/New_York).
-Work record: `ops-e70`. This report describes the implemented package; it is not
-another instruction layer.
+Work record: `ops-e70`. This report describes the initial v2 delivery on that date;
+it is not another instruction layer. Subsequent adoption, capture, setup, and
+review changes are tracked from `ops-6if`; current usage is in the
+[README](../README.md). Counts and validation results below are historical.
 
 ## Purpose and baselines
 

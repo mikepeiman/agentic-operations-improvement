@@ -12,34 +12,44 @@ publication beyond the configured Git delivery workflow.
 
 ## Track with Beads
 
-Use Beads (`bd`) by default. Before implementation, find or create one Bead for
-the feature, bug, or independently actionable task, then claim it. Reuse that
-Bead across turns. Capture ideas and discovered issues without silently adding
-them to the current scope. Ordinary questions need no ticket.
+Use Beads (`bd`) by default. Preserve existing trackers and resolve ownership
+with the owner before introducing a competing backlog. Claim the matching Bead
+before implementation and reuse it across turns.
 
-Start with the user's use case: who needs what, how they reach it, and the
-observable result. Record acceptance examples, relevant failure/recovery cases,
-constraints, and dependencies before choosing components. Use an epic only when
-several independently deliverable features need grouping; use child tasks only
-when useful for separate execution. Internal work names the capability it enables.
+In every exchange, capture each distinct project feature, idea, concept,
+architectural consideration, design direction, communication preference, rule,
+issue, defect, or improvement. Search existing Beads, including closed work, for
+matches before creating one. Update matches with new information; for recurring
+user interest, append a dated note with the user's quotation.
+Preserve qualifications and alternatives. If intent or details conflict, record
+both and ask the user before resolving or acting on the conflict. Create a Bead
+only when no match exists. Distinguish proposals, accepted decisions, rejected ideas, and
+authorized work; capture alone authorizes no implementation. Exclude secrets
+and sensitive incidental information. Questions with nothing to capture need
+no Bead.
 
-Keep intent, decisions, progress, evidence, and the next action in the Bead so
-another agent can resume without the chat. Put durable product meaning in its
-existing contract and link it; avoid parallel intake logs, plans, and handoffs.
-Close when acceptance is met; otherwise record what remains and any blocker.
-Record explicit owner acceptance or withdrawal with their words and artifact
-identity; passing tests alone is not owner acceptance.
+Start with who needs what, how they reach it, and the observable result. Record
+acceptance examples, relevant failure/recovery cases, constraints, and dependencies
+before choosing components. Use epics to group independently deliverable features
+and child tasks for useful separate execution. Internal work names its capability.
 
-When Beads needs setup or a command is unclear, consult `bd --help` and the
-project's setup instructions. If unavailable, preserve the work in one temporary
-note, report the problem, continue safe work, and reconcile into Beads on recovery.
+Keep intent, decisions, progress, evidence, and next action in the Bead for
+resumption without chat. Put durable accepted guidance in its governing document
+and link it. Close when recorded acceptance criteria are met; if they require
+owner testing or approval, wait for it. Otherwise technical completion permits
+closure. Record owner acceptance or withdrawal with their words and artifact
+identity; technical completion is not owner acceptance.
+
+For commands, consult installed help. If Beads is unavailable, preserve capture
+and progress in one temporary note, report it, continue safe work, and reconcile
+into Beads on recovery.
 
 ## Read and build selectively
 
-Start with the request, active Bead, and relevant project instructions. Search
-before reading large documents. Load additional material for a specific unanswered
-question; use history for provenance. Reuse verified context until changes or
-uncertainty justify refreshing it. Get commands from live project configuration.
+Start with the request, active Bead, and relevant instructions. Search before
+reading large documents. Load more for a specific unanswered question; use history
+for provenance. Refresh verified context when changed or uncertain. Get commands
+from live project configuration.
 
 Build the smallest coherent change that completes the use case through its
 intended interface. Reuse the operation's existing implementation across callers.

@@ -22,6 +22,35 @@ function fixture(t) {
 test('the documented two-file copy is self-contained', t => {
   assert.deepEqual(audit(fixture(t), { coreOnly: true }).errors, []);
 });
+test('a one-file installation needs no Claude pointer in either copy mode', t => {
+  const dir = fixture(t);
+  rmSync(path.join(dir, 'CLAUDE.md'));
+  assert.deepEqual(audit(dir, { coreOnly: true }).errors, []);
+  assert.deepEqual(audit(dir, { adopted: true }).errors, []);
+});
+test('adopted projects allow governing links and additions beyond the shared ceiling', t => {
+  const dir = fixture(t);
+  mkdirSync(path.join(dir, 'docs'));
+  writeFileSync(path.join(dir, 'docs/product.md'), 'Product contract');
+  writeFileSync(path.join(dir, 'AGENTS.md'), 'Project details.\n'.repeat(400) + '[contract](docs/product.md)');
+  assert.deepEqual(audit(dir, { adopted: true }).errors, []);
+  const strictErrors = audit(dir, { coreOnly: true }).errors;
+  assert.ok(strictErrors.some(error => error.includes('exceeds 6000')));
+  assert.ok(strictErrors.some(error => error.includes('self-contained')));
+});
+test('adoption still rejects broken, malformed and escaping entry-file links', t => {
+  const dir = fixture(t);
+  writeFileSync(path.join(dir, 'AGENTS.md'), '[missing](missing.md) [bad](%ZZ.md) [outside](../outside.md)');
+  const errors = audit(dir, { adopted: true }).errors;
+  assert.ok(errors.some(error => error.includes('missing link target')));
+  assert.ok(errors.some(error => error.includes('malformed link')));
+  assert.ok(errors.some(error => error.includes('escapes package')));
+});
+test('an optional Claude pointer is validated when present in an adopted project', t => {
+  const dir = fixture(t);
+  writeFileSync(path.join(dir, 'CLAUDE.md'), '');
+  assert.ok(audit(dir, { adopted: true }).errors.some(error => error.includes('small pointer')));
+});
 test('a missing bootstrap is an error', t => {
   const dir = fixture(t);
   rmSync(path.join(dir, 'AGENTS.md'));

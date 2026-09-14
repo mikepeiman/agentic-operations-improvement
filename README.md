@@ -7,6 +7,11 @@ communication.
 
 ## Use in a project
 
+For initialization or adoption, run the on-demand
+[new-project-setup procedure](docs/new-project-setup.md). It covers installation,
+existing trackers, project commands, delivery, recovery, and fresh-session
+verification. The distribution steps are:
+
 1. Read the target's existing instructions, Git state, and build/test configuration.
    Copy [AGENTS.md](AGENTS.md) into a new project. In an existing project, merge
    it with the current instructions and remove overlapping rules while preserving
@@ -16,8 +21,6 @@ communication.
    rule tree, reports, tools, or directory layout.
 3. Set up Beads using [docs/beads.md](docs/beads.md). Keep that guide in the
    target's existing documentation location if ongoing setup reference is useful.
-   Preserve an existing tracker and its records; reconcile tracker ownership with
-   the owner before creating a competing backlog.
 4. Add only the project facts agents cannot cheaply discover: product purpose,
    pointers to governing contracts, unusual environment requirements, and branch
    or release policy. Reuse existing docs. A short project section in `AGENTS.md`
@@ -32,6 +35,10 @@ document frontmatter, or generated index. Add a glossary only when domain terms
 need disambiguation; add a document index only when navigation needs it.
 
 ## Optional tools
+
+Use the [weekly review](docs/weekly-review.md) to examine project coherence and
+maintain existing Beads and governing documents. Configure its day/time with the
+owner using the project's scheduler; copying the protocol installs no automation.
 
 Use existing test, lint, type, and build commands. Add a check when it catches a
 specific failure with useful diagnostics and representative pass/fail examples.
@@ -63,3 +70,11 @@ remove superseded wording; Git preserves previous versions.
 [V1 versus v2 review](docs/v1-v2-review.md) records the comparison with Metabrain,
 the disposition of the old files, tradeoffs, and validation evidence. It is a
 review artifact, not required task context.
+
+Current follow-through is tracked in Beads: `ops-6if` covers adoption and capture,
+`ops-24y` covers weekly review and scheduling, and `ops-1cz` covers field validation.
+The field trial uses one real feature and one bug fix across two owner-selected
+projects, including a fresh-session handoff. Record capture fidelity, scope,
+behavioral verification, and Git/Beads recovery on the actual task Beads and link
+them to the trial. Package tests do not establish these outcomes; check the live
+Beads for progress and next actions.

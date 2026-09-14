@@ -13,16 +13,31 @@ The ceiling leaves a little editing room above v2's initial core while making
 growth an explicit consolidation decision. It is not a model-token measurement
 or a rule for the size of project-specific contracts.
 
-[protocol.test.mjs](protocol.test.mjs) exercises the two-file copy, missing
-bootstrap, missing dependency, oversized core, duplicate bootstrap, valid links,
-malformed links, and links that escape the package. Temporary fixtures stay
+[protocol.test.mjs](protocol.test.mjs) exercises one- and two-file copies, adopted
+project additions and governing links, missing bootstrap, missing dependency,
+oversized distributed core, invalid optional pointers, valid links, malformed
+links, and links that escape the package. Temporary fixtures stay
 inside this repo's ignored `.tmp/` and are removed after each test.
 
-To check just a copied core:
+To check an unmodified distributed core (Claude is optional):
 
 ```sh
 node checks/protocol.mjs path/to/copied-project --core-only
 ```
+
+To check an adopted project with its own additions and governing documents:
+
+```sh
+node checks/protocol.mjs path/to/adopted-project --adopted
+```
+
+Adopted mode requires a nonempty `AGENTS.md`, validates the Claude pointer when
+present, and checks direct local inline links in those entry files. It permits
+project-document links and imposes no size ceiling on project additions. It does
+not recursively audit linked documents or prove that merged instructions retain
+the protocol. Both copy modes reject broken or outside-project links; use one
+mode at a time. The default distribution check retains the shared-core size and
+self-containment gates and requires the package's setup and review procedures.
 
 This checks package shape, not compliance with its meaning. It does not parse
 reference-style Markdown links, validate anchors, paths in code spans, external
