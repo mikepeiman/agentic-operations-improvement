@@ -1,148 +1,96 @@
-# Shared agent operations
+# Agent operations
 
-Rules, checks, and tool protocols shared across projects.
+## Work from the outcome
 
-## Why this repo exists
+Follow the user's current intent and accepted product decisions. Code and runtime
+show what exists; they do not decide what should exist. Resolve consequential
+product ambiguity with the owner; make routine engineering choices yourself.
+Complete authorized work and its prerequisites without repeated permission.
+Keep unrelated work intact. A Git branch does not authorize another checkout.
+Obtain missing authority before destructive operations, deployment, or external
+publication beyond the configured Git delivery workflow.
 
-Agents suffer from a collection of serious faults, biases, and failure modes
-across thinking and reasoning, communication style, problem-solving, and
-instruction-following. These rules, docs, and tools exist to mitigate those
-faults and to improve human-agent cooperation and productivity.
+## Track with Beads
 
-## Using this repo
+Use Beads (`bd`) by default. Before implementation, find or create one Bead for
+the feature, bug, or independently actionable task, then claim it. Reuse that
+Bead across turns. Capture ideas and discovered issues without silently adding
+them to the current scope. Ordinary questions need no ticket.
 
-Clone or pull it into any project. Read the rules whose trigger matches the work.
+Start with the user's use case: who needs what, how they reach it, and the
+observable result. Record acceptance examples, relevant failure/recovery cases,
+constraints, and dependencies before choosing components. Use an epic only when
+several independently deliverable features need grouping; use child tasks only
+when useful for separate execution. Internal work names the capability it enables.
 
-Keep the always-loaded layer small. This file plus the triggered rules is the
-working set. Do not preload `docs/`.
+Keep intent, decisions, progress, evidence, and the next action in the Bead so
+another agent can resume without the chat. Put durable product meaning in its
+existing contract and link it; avoid parallel intake logs, plans, and handoffs.
+Close when acceptance is met; otherwise record what remains and any blocker.
+Record explicit owner acceptance or withdrawal with their words and artifact
+identity; passing tests alone is not owner acceptance.
 
-Every agent has authority to improve what is here: add a rule, correct one,
-sharpen wording, record an incident. Discuss the change with Mike before you
-commit it. Do not delete a rule you disagree with; add the counter-evidence,
-name the project, and leave the decision to him.
+When Beads needs setup or a command is unclear, consult `bd --help` and the
+project's setup instructions. If unavailable, preserve the work in one temporary
+note, report the problem, continue safe work, and reconcile into Beads on recovery.
 
-## Before you write
+## Read and build selectively
 
-```bash
-git pull --rebase
-```
+Start with the request, active Bead, and relevant project instructions. Search
+before reading large documents. Load additional material for a specific unanswered
+question; use history for provenance. Reuse verified context until changes or
+uncertainty justify refreshing it. Get commands from live project configuration.
 
-## Commit and push every turn
+Build the smallest coherent change that completes the use case through its
+intended interface. Reuse the operation's existing implementation across callers.
+When matching a named reference, inspect its relevant behavior and platform
+constraints; obtain owner agreement for meaningful deviations.
 
-Committing and pushing are one act, in every repo, on every turn that changes
-files.
+For data changes, identify authoritative inputs, preserve recoverability, and
+verify ordering, retries, partial failure, and reconciliation where relevant.
+Surface rejected input and conflicts that change meaning. Keep secrets out of
+tracked files and diagnostics.
 
-```bash
-git commit -m "..." && git push -u origin HEAD
-```
+## Verify the promised behavior
 
-If the push is rejected, rebase and push again. Do not report work as done while
-the commit is local.
+Choose checks from acceptance examples. Run focused checks while iterating and
+the relevant project gates before delivery. Exercise the boundary being claimed:
+the actual interface, persistence after reopen, or migration from older data.
+Mocks prove their modeled behavior; validate platform restrictions they bypass.
 
-- One coherent outcome per commit, including the tests, migration, and required
-  documentation that make the outcome complete.
-- **Subject**: imperative, 72 characters or less.
-- **Body**: why. If the rule came from a failure, name the failure.
-- **Trailers**: `From: <project>`, then the model that wrote the change.
+For bugs, obtain decisive evidence, fix the cause, and add a regression check
+when practical. If a check is wrong, correct it with the reason; preserve coverage
+of the required behavior. Repeated failed fixes call for a new observation.
+For asynchronous or owner-tested behavior, provide enough diagnostics to identify
+the build, action, decision, and result. State material unverified boundaries.
 
-Sign the model. It records which model produced the commit, the same fact the
-frontmatter `author` field carries for a document.
+## Commit and deliver every changing turn
 
-**No email address.** The signature names a model, not a mailbox. The harness
-appends a vendor's `noreply` address by default; it is not the agent's address,
-it is not Mike's, and it does not belong in his history. Strike the address and
-keep the name.
+Inspect Git status, branch, upstream, and staged changes before editing and before
+committing. Coordinate overlapping work; stage only the task's changes and inspect
+the staged diff. Commit each coherent task, issue, or feature outcome and each
+turn that changes repository or tracked work state. Checkpoint unfinished work
+with its remaining state in the Bead. Read-only turns need no empty commit.
 
-A promotional line is not a signature either: no product name, tagline, or URL.
+Use a short imperative subject with the Bead ID; explain why when useful. Push
+to the configured upstream before reporting delivery. Follow the project's branch
+policy; absent one, use its existing working branch and upstream. Inspect upstream
+changes before integrating; preserve others' work and history. A rejected push
+requires reconciliation, not force. Report failed or unavailable delivery explicitly.
+Persist and sync Beads through its configured storage workflow as well as Git.
 
-```
-commit-messages: cap the subject at 72 characters
+## Communicate clearly
 
-An agent wrote a 400-character subject. `git log --oneline` became
-unreadable, and a pushed message cannot be edited.
+Answer directly in plain language. Say each point once; omit rhetorical padding,
+repeated context, and empty queues. Scale detail to the request. Give brief progress
+updates with findings and next steps. Distinguish observed fact, inference, and
+unverified boundaries; give evidence for material claims. End with what changed,
+why, checks and remaining limits, and the commit or usable artifact location.
 
-From: metabrain-mvp
-Co-Authored-By: Claude Opus 5
-```
+## Keep the protocol small
 
-## Which rule to read
-
-| Trigger | Read |
-|---|---|
-| Write any message, report, review, commit body, or rule | `rules/communication.md` |
-| Decide what should happen, or which artifact governs | `rules/authority-chain.md` |
-| Change code, data, documents, external systems, or published state | `rules/authorization-and-scope.md` |
-| Consider adding a file, doc, or refactor nobody asked for | `rules/scope-additions.md` |
-| Answer a question whose entity, scope, source, version, or definition may be assumed | `rules/settle-the-prior-question.md` |
-| Assert behaviour, cause, absence, counts, dates, quotes, or completion | `rules/primary-source-first.md` |
-| Name a symbol, file, line, setting, or version in any text | `rules/citation-integrity.md` |
-| Replicate, copy, match, or port a named existing artifact | `rules/replicate-what-was-named.md` |
-| Diagnose a defect on a surface you cannot run | `rules/instrument-before-hypothesising.md` |
-| Build a feature or fix the owner will exercise before you can | `rules/observable-by-default.md` |
-| Fix a status, metric, retry, warning, exception, timeout, or success signal | `rules/root-cause-not-green-indicators.md` |
-| Face a failing test, type error, lint error, or other red check | `rules/test-and-checker-integrity.md` |
-| Respond to disagreement, new evidence, or an agent mistake | `rules/correction-under-challenge.md` |
-| State that something cannot be known, seen, accessed, or verified | `rules/untested-limits.md` |
-| Import, transform, migrate, repair, delete, or replace user data | `rules/input-preservation-and-reproducibility.md` |
-| Delete, overwrite, force-push, reset, or touch credentials | `rules/destructive-actions.md` |
-| Work in a repo where another agent or process may be active | `rules/concurrent-work-safety.md` |
-| Report status or end a work turn | `rules/verification-states.md`; `rules/task-closure-and-blockers.md` |
-| Deliver a build, export, report, or processed artifact | `rules/artifact-identity.md` |
-| Mike accepts or withdraws acceptance of an artifact | `rules/owner-acceptance.md` |
-| Design storage, sync, transformations, ordering, or reconciliation | `rules/architecture/` |
-| Write a corrective record, or promote a lesson into a rule | `rules/learning-from-failure.md` |
-| Create or revise a mechanical check or reflection hook | `rules/enforcement-design.md` |
-
-## Incidents
-
-Rules state what to do. [`docs/incidents.md`](docs/incidents.md) records the
-failures that produced them.
-
-Read an incident when you are about to argue a rule is unnecessary, when a
-rule's application to your case is ambiguous, or when writing a new rule and you
-need the evidence bar. Do not load it otherwise.
-
-## Tools
-
-[`docs/tools/`](docs/tools/) describes tools worth installing: purpose,
-installation, and operating protocol. They are desirable, not assumed present.
-Mike decides per project.
-
-- **Beads**: issue tracking that lives in the repo. Default: install and use.
-- **Graphify**: structural retrieval over the codebase. Default: assess for
-  utility, then ask.
-
-## Writing a rule
-
-- Follow `rules/communication.md`. It governs rule text as well as messages.
-- State the condition, then the action.
-- When a failure produced the rule, put it in `docs/incidents.md`, not in the
-  rule. A rule does not need a written incident to be worth keeping.
-- Amend rules in place. Do not rewrite their history.
-- Every normative file under `rules/` and `docs/` carries frontmatter:
-
-```
----
-date created: YYYY-MM-DD
-author: <agent model>, <product name> (<local dir>, <repo url>)
-derived from: <path, url, or "original">
-supersedes: <what it replaces, or "nothing">
----
-```
-
-## Layout
-
-```
-rules/                one rule per file
-rules/architecture/   how to build the system, not how to behave
-docs/incidents.md     the failures behind the rules
-docs/tools/           tool descriptions and operating protocols
-checks/               executables; exit 0 to pass, non-zero naming the fix
-```
-
-Nothing here executes until a project wires it in.
-
-## What belongs here
-
-A rule that has caught or prevented a failure in a real project. Not "good
-practice". Keep project-specific rules in their project.
+Correct affected documentation in the change that makes it untrue. Keep one owner
+per meaning. Record incidents in the relevant Bead; prefer a regression test or
+tool fix to a new rule. Add instructions only for a recurring failure they can
+prevent, replacing overlap. Keep project-specific facts and optional tool setup
+outside this shared protocol; load them when the task needs them.

@@ -1,6 +1,8 @@
-
-# Beads / Dolt files (added by bd init)
+# Beads / Dolt files
 .dolt/
 *.db
 .beads-credential-key
 .beads/proxieddb/
+
+# Disposable package-check fixtures
+.tmp/

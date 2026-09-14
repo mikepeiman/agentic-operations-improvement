@@ -1,3 +1,1 @@
-# Claude / agent bootstrap
-
-Read and obey [`AGENTS.md`](AGENTS.md). It is the shared operating protocol.
+Read [AGENTS.md](AGENTS.md) for this project's operating instructions.
