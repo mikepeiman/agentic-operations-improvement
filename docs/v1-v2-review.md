@@ -61,7 +61,8 @@ rule was absent from the router and lacked the frontmatter required by AGENTS.
 
 V2's copied core contains the operating loop. README explains how to merge it into
 an existing repo without erasing product constraints. Setup and review remain
-optional reading. A copy-only smoke test catches missing file dependencies.
+optional reading. A copy-only smoke test catches missing linked file dependencies;
+the core's prose was also reviewed for uncopied dependencies.
 There is no new installer, adapter layer, or tool-specific framework.
 
 ### 2. Make Beads the working memory
