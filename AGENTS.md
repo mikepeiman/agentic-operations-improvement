@@ -16,22 +16,20 @@ Use Beads (`bd`) by default. Preserve existing trackers and resolve ownership
 with the owner before introducing a competing backlog. Claim the matching Bead
 before implementation and reuse it across turns.
 
-In every exchange, capture each distinct project feature, idea, concept,
-architectural consideration, design direction, communication preference, rule,
-issue, defect, or improvement. Search existing Beads, including closed work, for
-matches before creating one. Update matches with new information; for recurring
-user interest, append a dated note with the user's quotation.
-Preserve qualifications and alternatives. If intent or details conflict, record
-both and ask the user before resolving or acting on the conflict. Create a Bead
-only when no match exists. Distinguish proposals, accepted decisions, rejected ideas, and
-authorized work; capture alone authorizes no implementation. Exclude secrets
-and sensitive incidental information. Questions with nothing to capture need
-no Bead.
+In every exchange, capture each distinct project feature, idea, concept, design
+direction, preference, rule, issue, defect, or improvement. Search existing Beads,
+including closed work, for matches before creating one. Update matches with new
+information; for recurring user interest, append a dated note with the user's
+quotation. Preserve qualifications and alternatives. If intent or details conflict,
+record both and ask the user before resolving or acting. Create a Bead only when
+no match exists. Distinguish proposals, accepted decisions, rejected ideas, and
+authorized work; capture alone authorizes no implementation. Exclude secrets and
+sensitive incidental information.
 
 Start with who needs what, how they reach it, and the observable result. Record
-acceptance examples, relevant failure/recovery cases, constraints, and dependencies
-before choosing components. Use epics to group independently deliverable features
-and child tasks for useful separate execution. Internal work names its capability.
+acceptance examples, failure/recovery cases, constraints, and dependencies before
+choosing components. Use epics to group independently deliverable features and
+child tasks for useful separate execution.
 
 Keep intent, decisions, progress, evidence, and next action in the Bead for
 resumption without chat. Put durable accepted guidance in its governing document
@@ -54,12 +52,10 @@ from live project configuration.
 Build the smallest coherent change that completes the use case through its
 intended interface. Reuse the operation's existing implementation across callers.
 When matching a named reference, inspect its relevant behavior and platform
-constraints; obtain owner agreement for meaningful deviations.
-
-For data changes, identify authoritative inputs, preserve recoverability, and
-verify ordering, retries, partial failure, and reconciliation where relevant.
-Surface rejected input and conflicts that change meaning. Keep secrets out of
-tracked files and diagnostics.
+constraints; obtain owner agreement for meaningful deviations. For data changes,
+identify authoritative inputs and preserve recoverability. Surface rejected input
+and conflicts that change meaning. Keep secrets out of tracked files and
+diagnostics.
 
 ## Verify the promised behavior
 
@@ -69,10 +65,16 @@ the actual interface, persistence after reopen, or migration from older data.
 Mocks prove their modeled behavior; validate platform restrictions they bypass.
 
 For bugs, obtain decisive evidence, fix the cause, and add a regression check
-when practical. If a check is wrong, correct it with the reason; preserve coverage
-of the required behavior. Repeated failed fixes call for a new observation.
-For asynchronous or owner-tested behavior, provide enough diagnostics to identify
-the build, action, decision, and result. State material unverified boundaries.
+when practical. If a check is wrong, correct it with the reason. Repeated failed
+fixes call for a new observation. For asynchronous or owner-tested behavior,
+provide enough diagnostics to identify the build, action, decision, and result.
+State material unverified boundaries.
+
+Drive browsers headless. Prefer the project's test runner to a raw browser binary:
+it pins the version and controls the page, where a system browser updates outside
+the lockfile and makes results machine-dependent. Where a check depends on GPU
+rendering, use the runner's full browser, not its headless-only build, which may
+fall back to software.
 
 ## Commit and deliver every changing turn
 
@@ -82,12 +84,12 @@ the staged diff. Commit each coherent task, issue, or feature outcome and each
 turn that changes repository or tracked work state. Checkpoint unfinished work
 with its remaining state in the Bead. Read-only turns need no empty commit.
 
-Use a short imperative subject with the Bead ID; explain why when useful. Push
-to the configured upstream before reporting delivery. Follow the project's branch
-policy; absent one, use its existing working branch and upstream. Inspect upstream
-changes before integrating; preserve others' work and history. A rejected push
-requires reconciliation, not force. Report failed or unavailable delivery explicitly.
-Persist and sync Beads through its configured storage workflow as well as Git.
+Use a short imperative subject with the Bead ID; explain why when useful. Push to
+the configured upstream before reporting delivery, following the project's branch
+policy or, absent one, its existing working branch. Inspect upstream changes before
+integrating; preserve others' work and history. A rejected push requires
+reconciliation, not force. Report failed delivery explicitly. Persist and sync
+Beads through its configured storage workflow as well as Git.
 
 ## Communicate clearly
 
@@ -95,7 +97,7 @@ Answer directly in plain language. Say each point once; omit rhetorical padding,
 repeated context, and empty queues. Scale detail to the request. Give brief progress
 updates with findings and next steps. Distinguish observed fact, inference, and
 unverified boundaries; give evidence for material claims. End with what changed,
-why, checks and remaining limits, and the commit or usable artifact location.
+why, checks and remaining limits, and the commit or artifact location.
 
 ## Keep the protocol small
 
@@ -103,4 +105,4 @@ Correct affected documentation in the change that makes it untrue. Keep one owne
 per meaning. Record incidents in the relevant Bead; prefer a regression test or
 tool fix to a new rule. Add instructions only for a recurring failure they can
 prevent, replacing overlap. Keep project-specific facts and optional tool setup
-outside this shared protocol; load them when the task needs them.
+outside this shared protocol; load them when needed.
