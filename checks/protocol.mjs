@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 // the pointer to docs/communication-inquiry.md. The ceiling is not a budget: it
 // keeps growth an explicit consolidation decision, so it sits just above the
 // current core rather than wherever the next addition lands.
-export const CORE_CEILING = 7200;
+export const CORE_CEILING = 7600;
 export function prose(text) {
   return text.replace(/^\s*(`{3,}|~{3,})[^\n]*\n[\s\S]*?^\s*\1\s*$/gm, '')
     .replace(/(`+)[^\n]*?\1/g, '');

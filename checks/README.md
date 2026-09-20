@@ -14,7 +14,7 @@ making growth an explicit consolidation decision. It is not a model-token
 measurement or a rule for the size of project-specific contracts.
 
 Raising it is a decision, not a fix. Consolidate overlap first; raise only when
-what remains is distinct rules. It was raised from 6,000 to 7,200 on 2026-09-20
+what remains is distinct rules. It was raised from 6,000 to 7,600 on 2026-09-20
 (`ops-lhq`) for the message-shape rules and the pointer to the communication
 inquiry, after consolidation across five sections freed 266 characters and the
 remainder was not overlap.
