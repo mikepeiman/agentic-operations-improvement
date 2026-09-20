@@ -3,6 +3,12 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 // Package integrity only. This is deliberately not a prose/behavior linter.
+
+// Raised from 6000 on 2026-09-20 (ops-lhq) to admit the message-shape rules and
+// the pointer to docs/communication-inquiry.md. The ceiling is not a budget: it
+// keeps growth an explicit consolidation decision, so it sits just above the
+// current core rather than wherever the next addition lands.
+export const CORE_CEILING = 7200;
 export function prose(text) {
   return text.replace(/^\s*(`{3,}|~{3,})[^\n]*\n[\s\S]*?^\s*\1\s*$/gm, '')
     .replace(/(`+)[^\n]*?\1/g, '');
@@ -38,7 +44,7 @@ export function audit(root, { coreOnly = false, adopted = false } = {}) {
   const agents = read('AGENTS.md');
   const claude = read('CLAUDE.md');
   if (!agents.trim()) errors.push('AGENTS.md is empty');
-  if (!adopted && agents.length > 6000) errors.push(`AGENTS.md: ${agents.length} characters exceeds 6000; consolidate or disclose task-specific detail`);
+  if (!adopted && agents.length > CORE_CEILING) errors.push(`AGENTS.md: ${agents.length} characters exceeds ${CORE_CEILING}; consolidate or disclose task-specific detail`);
   if (existsSync(path.join(root, 'CLAUDE.md')) && (claude.length > 160 || localLinks(claude).join(',') !== 'AGENTS.md')) {
     errors.push('CLAUDE.md must remain a small pointer to AGENTS.md');
   }

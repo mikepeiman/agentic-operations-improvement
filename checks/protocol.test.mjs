@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { audit, localLinks } from './protocol.mjs';
+import { audit, localLinks, CORE_CEILING } from './protocol.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const temporaryRoot = path.join(root, '.tmp');
@@ -32,10 +32,11 @@ test('adopted projects allow governing links and additions beyond the shared cei
   const dir = fixture(t);
   mkdirSync(path.join(dir, 'docs'));
   writeFileSync(path.join(dir, 'docs/product.md'), 'Product contract');
-  writeFileSync(path.join(dir, 'AGENTS.md'), 'Project details.\n'.repeat(400) + '[contract](docs/product.md)');
+  const line = 'Project details.\n', oversized = line.repeat(Math.ceil(CORE_CEILING / line.length) + 20);
+  writeFileSync(path.join(dir, 'AGENTS.md'), oversized + '[contract](docs/product.md)');
   assert.deepEqual(audit(dir, { adopted: true }).errors, []);
   const strictErrors = audit(dir, { coreOnly: true }).errors;
-  assert.ok(strictErrors.some(error => error.includes('exceeds 6000')));
+  assert.ok(strictErrors.some(error => error.includes(`exceeds ${CORE_CEILING}`)));
   assert.ok(strictErrors.some(error => error.includes('self-contained')));
 });
 test('adoption still rejects broken, malformed and escaping entry-file links', t => {
@@ -65,8 +66,8 @@ test('a routed rule tree fails even if present in the source package', t => {
 });
 test('core growth is caught without linting vocabulary', t => {
   const dir = fixture(t);
-  writeFileSync(path.join(dir, 'AGENTS.md'), 'a'.repeat(6001));
-  assert.ok(audit(dir, { coreOnly: true }).errors.some(error => error.includes('exceeds 6000')));
+  writeFileSync(path.join(dir, 'AGENTS.md'), 'a'.repeat(CORE_CEILING + 1));
+  assert.ok(audit(dir, { coreOnly: true }).errors.some(error => error.includes(`exceeds ${CORE_CEILING}`)));
 });
 test('claude remains a pointer rather than a duplicate protocol', t => {
   const dir = fixture(t);

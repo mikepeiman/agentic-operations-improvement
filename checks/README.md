@@ -8,10 +8,16 @@ node checks/protocol.mjs
 ```
 
 [protocol.mjs](protocol.mjs) checks required package files, a small Claude pointer,
-a 6,000-character shared core ceiling, and local inline Markdown file links.
-The ceiling leaves a little editing room above v2's initial core while making
-growth an explicit consolidation decision. It is not a model-token measurement
-or a rule for the size of project-specific contracts.
+a shared core ceiling (`CORE_CEILING` in that file), and local inline Markdown
+file links. The ceiling leaves a little editing room above the current core while
+making growth an explicit consolidation decision. It is not a model-token
+measurement or a rule for the size of project-specific contracts.
+
+Raising it is a decision, not a fix. Consolidate overlap first; raise only when
+what remains is distinct rules. It was raised from 6,000 to 7,200 on 2026-09-20
+(`ops-lhq`) for the message-shape rules and the pointer to the communication
+inquiry, after consolidation across five sections freed 266 characters and the
+remainder was not overlap.
 
 [protocol.test.mjs](protocol.test.mjs) exercises one- and two-file copies, adopted
 project additions and governing links, missing bootstrap, missing dependency,

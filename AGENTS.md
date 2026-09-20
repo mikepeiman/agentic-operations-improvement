@@ -16,29 +16,26 @@ Use Beads (`bd`) by default. Preserve existing trackers and resolve ownership
 with the owner before introducing a competing backlog. Claim the matching Bead
 before implementation and reuse it across turns.
 
-In every exchange, capture each distinct project feature, idea, concept,
-architectural consideration, design direction, communication preference, rule,
-issue, defect, or improvement. Search existing Beads, including closed work, for
-matches before creating one. Update matches with new information; for recurring
-user interest, append a dated note with the user's quotation.
-Preserve qualifications and alternatives. If intent or details conflict, record
-both and ask the user before resolving or acting on the conflict. Create a Bead
-only when no match exists. Distinguish proposals, accepted decisions, rejected ideas, and
-authorized work; capture alone authorizes no implementation. Exclude secrets
-and sensitive incidental information. Questions with nothing to capture need
-no Bead.
+In every exchange, capture each distinct feature, idea, design direction,
+preference, rule, defect or improvement. Search existing Beads, including closed
+work, before creating one; create one only when no match exists. Update matches,
+appending a dated note quoting the user for recurring interest. Preserve
+qualifications and alternatives; record conflicting intent both ways and ask
+before resolving it. Distinguish proposals, accepted decisions, rejected ideas
+and authorized work; capture authorizes no implementation. Exclude secrets. A
+question with nothing to capture needs no Bead.
 
 Start with who needs what, how they reach it, and the observable result. Record
 acceptance examples, relevant failure/recovery cases, constraints, and dependencies
-before choosing components. Use epics to group independently deliverable features
-and child tasks for useful separate execution. Internal work names its capability.
+before choosing components. Group independently deliverable features under epics, with
+child tasks where separate execution helps. Internal work names its capability.
 
-Keep intent, decisions, progress, evidence, and next action in the Bead for
-resumption without chat. Put durable accepted guidance in its governing document
-and link it. Close when recorded acceptance criteria are met; if they require
-owner testing or approval, wait for it. Otherwise technical completion permits
-closure. Record owner acceptance or withdrawal with their words and artifact
-identity; technical completion is not owner acceptance.
+Keep intent, decisions, progress, evidence and next action in the Bead so work
+resumes without chat. Put durable accepted guidance in its governing document and
+link it. Close when recorded acceptance criteria are met, waiting for owner
+testing or approval where they require it. Record acceptance or withdrawal in the
+owner's words with the artifact identity; technical completion is not owner
+acceptance.
 
 For commands, consult installed help. If Beads is unavailable, preserve capture
 and progress in one temporary note, report it, continue safe work, and reconcile
@@ -46,10 +43,10 @@ into Beads on recovery.
 
 ## Read and build selectively
 
-Start with the request, active Bead, and relevant instructions. Search before
-reading large documents. Load more for a specific unanswered question; use history
-for provenance. Refresh verified context when changed or uncertain. Get commands
-from live project configuration.
+Start with the request, active Bead and relevant instructions. Search before
+reading large documents; load more for a specific unanswered question and use
+history for provenance. Refresh verified context when changed or uncertain. Get
+commands from live project configuration.
 
 Build the smallest coherent change that completes the use case through its
 intended interface. Reuse the operation's existing implementation across callers.
@@ -63,8 +60,8 @@ tracked files and diagnostics.
 
 ## Verify the promised behavior
 
-Choose checks from acceptance examples. Run focused checks while iterating and
-the relevant project gates before delivery. Exercise the boundary being claimed:
+Choose checks from acceptance examples. Run focused checks while iterating, and
+the project gates before delivery. Exercise the boundary being claimed:
 the actual interface, persistence after reopen, or migration from older data.
 Mocks prove their modeled behavior; validate platform restrictions they bypass.
 
@@ -76,10 +73,10 @@ the build, action, decision, and result. State material unverified boundaries.
 
 ## Commit and deliver every changing turn
 
-Inspect Git status, branch, upstream, and staged changes before editing and before
+Inspect Git status, branch, upstream and staged changes before editing and before
 committing. Coordinate overlapping work; stage only the task's changes and inspect
-the staged diff. Commit each coherent task, issue, or feature outcome and each
-turn that changes repository or tracked work state. Checkpoint unfinished work
+the staged diff. Commit each coherent outcome and each turn that changes
+repository or tracked work state. Checkpoint unfinished work
 with its remaining state in the Bead. Read-only turns need no empty commit.
 
 Use a short imperative subject with the Bead ID; explain why when useful. Push
@@ -92,12 +89,32 @@ Persist and sync Beads through its configured storage workflow as well as Git.
 ## Communicate clearly
 
 Answer directly in plain language. Say each point once; omit rhetorical padding,
-repeated context, and empty queues. Scale detail to the request. Give brief progress
-updates with findings and next steps. Distinguish observed fact, inference, and
-unverified boundaries; give evidence for material claims. End with what changed,
-why, checks and remaining limits, and the commit or usable artifact location.
+repeated context, and empty queues. Scale detail to the request. Distinguish
+observed fact, inference, and unverified boundaries.
+
+Every message is a result or a request. A result gives what changed, the evidence,
+checks, remaining limits, and where the commit or artifact is; a request gives the
+decision needed and numbered options with their costs. When work is blocked, the
+block is the first line. Name the file, function or number behind a material claim.
+Do not label your own statements true, restate the user's authority to instruct
+you, or promise compliance. Where a mechanic, a defect or a measurement is the
+subject, write it rather than an image of it. Correct an error; do not narrate or
+justify it. Say plainly when something is unknown or unknowable to you; do not
+supply a cause you could have controlled for a fact you could not observe.
+
+When the user questions how you are working rather than what you built, that is
+the entire reply: no work report, and no task list or rules document, which read
+as responsive and cost another round to find out they are not. Name the pattern,
+say what you considered and rejected, and propose a mechanism.
 
 ## Keep the protocol small
+
+This protocol is maintained at https://github.com/mikepeiman/agentic-operations-improvement.
+A general improvement to agent communication or operations belongs there, as a Bead
+and a change to the shared core, so every project using it benefits; a local edit
+is a fork and does not. That repository also holds an open inquiry into why these
+failures recur, in `docs/communication-inquiry.md`: read it before proposing a
+communication rule, and record the instance you observed there.
 
 Correct affected documentation in the change that makes it untrue. Keep one owner
 per meaning. Record incidents in the relevant Bead; prefer a regression test or
