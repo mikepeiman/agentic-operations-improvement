@@ -49,6 +49,10 @@ reading large documents. Load more for a specific unanswered question; use histo
 for provenance. Refresh verified context when changed or uncertain. Get commands
 from live project configuration.
 
+Maintain a lexicon of accepted domain terms and aliases. Reuse the glossary or
+create `LEXICON.md` with governing docs. Consult it for naming; update it when the
+owner settles terminology. Keep plans and work status elsewhere.
+
 Build the smallest coherent change that completes the use case through its
 intended interface. Reuse the operation's existing implementation across callers.
 When matching a named reference, inspect its relevant behavior and platform
@@ -114,7 +118,8 @@ say what you considered and rejected, and propose a mechanism.
 
 ## Keep the protocol small
 
-This protocol is maintained at https://github.com/mikepeiman/agentic-operations-improvement.
+Every adopting project's AGENTS.md must retain this upstream reference:
+https://github.com/mikepeiman/agentic-operations-improvement.
 A general improvement to agent communication or operations belongs there, as a Bead
 and a change to the shared core, so every project using it benefits; a local edit
 is a fork and does not. That repository also holds an open inquiry into why these

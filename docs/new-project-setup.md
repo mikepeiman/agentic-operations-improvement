@@ -48,9 +48,14 @@ Claude-specific instructions rather than overwriting them blindly. Add project
 purpose, governing-document pointers, unusual environment needs, and delivery
 policy where agents already look for them.
 
+Preserve the upstream repository URL and ongoing-improvement instructions in the
+adopting AGENTS.md. Locate the project's glossary or create `LEXICON.md` in its
+governing-docs location; seed accepted domain terms and aliases, and add a concise
+pointer from AGENTS.md.
+
 Use the project's package/runtime configuration to discover setup and verification
 commands. Install required project dependencies through its established workflow;
-add no generic hook, indexer, glossary, or framework without a demonstrated need.
+add no generic hook, indexer, or framework without a demonstrated need.
 Keep this procedure and the Beads guide together in the project's existing docs
 location if ongoing setup reference is useful; adjust links to that project's core.
 

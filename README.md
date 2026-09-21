@@ -29,10 +29,11 @@ verification. The distribution steps are:
    verify acceptance, sync work state, commit, and push. On a second session,
    confirm the Bead and delivered revision can be retrieved.
 
-The default installation is one protocol file, an optional agent pointer, and
-Beads. There is no required lexicon, intake log, rule directory, hook framework,
-document frontmatter, or generated index. Add a glossary only when domain terms
-need disambiguation; add a document index only when navigation needs it.
+The default installation is one protocol file, an optional agent pointer, Beads,
+and a maintained project lexicon (reuse an existing glossary). Preserve the
+upstream reference and ongoing-improvement instructions in each adopting
+AGENTS.md. Intake logs, rule directories, hook frameworks, document frontmatter,
+and generated indexes remain optional.
 
 ## Optional tools
 
