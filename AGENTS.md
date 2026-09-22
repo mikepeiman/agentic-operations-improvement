@@ -120,11 +120,11 @@ say what you considered and rejected, and propose a mechanism.
 
 Every adopting project's AGENTS.md must retain this upstream reference:
 https://github.com/mikepeiman/agentic-operations-improvement.
-A general improvement to agent communication or operations belongs there, as a Bead
-and a change to the shared core, so every project using it benefits; a local edit
-is a fork and does not. That repository also holds an open inquiry into why these
-failures recur, in `docs/communication-inquiry.md`: read it before proposing a
-communication rule, and record the instance you observed there.
+Contribute reusable operations, communication, and design improvements there as
+Beads and updates to the shared core or routed practice document. Then refresh
+the originating project's adoption, recording the upstream revision and local
+adaptations. A local-only edit is incomplete. Read `docs/communication-inquiry.md`
+there before proposing a communication rule, and record the observed instance.
 
 Correct affected documentation in the change that makes it untrue. Keep one owner
 per meaning. Record incidents in the relevant Bead; prefer a regression test or

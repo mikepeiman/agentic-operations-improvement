@@ -10,8 +10,9 @@ interface construction, the two are different jobs with different evidence.
 
 ## Exemptions
 
-The guidance applies to application UI in this project. Time-box the reference
-step; a small fix does not need five galleries.
+These exemptions concern the reference-research workflow. Time-box that step;
+a small fix does not need five galleries. The semantic-color rule below applies
+throughout application UI/HUD unless the owner explicitly exempts a case.
 
 - **Prototypes and throwaway artifacts.**
 - **Constrained environments**: CLI/TUI, emails, terminal output, and embedded
@@ -109,6 +110,28 @@ introduces one of these libraries as a dependency needs its own authorization.
 - When unsure how a component should look or behave, **research examples instead
   of guessing**.
 
+### Color carries meaning
+
+**Color is a required information-bearing, ontology-bearing dimension of meaning
+in design. Use color deliberately across the application UI/HUD.**
+
+Use a palette rich enough to distinguish the domain meanings present: types,
+categories, entities, relationships, priority, state, and action roles where
+relevant. Name what each color treatment communicates. A single brand accent
+plus success/warning/error colors is insufficient when the interface also needs
+to distinguish domain concepts.
+
+Define reusable semantic color roles in the design system and apply them
+consistently across views and components. Express them through appropriate
+foregrounds, icons, markers, borders, or surface tints, with emphasis proportional
+to their importance. Preserve user-assigned domain colors and their meaning.
+Themes may change palette and styling while keeping semantic roles coherent;
+switching a theme must not change the underlying classification or identity.
+
+Review color as information: a person should be able to scan meaningful groups,
+distinctions, and priorities before reading every label. Keep contextual labels
+compact and use tooltips for supporting detail when needed.
+
 ### Applying it to existing UI
 
 "Preserve existing patterns" governs new work. It is not a reason to leave a
@@ -134,6 +157,10 @@ Outcomes an agent can inspect and report on its own work:
   where the control type requires them.
 - The new surface matches the application's spacing, density, type scale, and
   control sizing.
+- Color treatments have named domain or interaction meanings, remain consistent
+  across related components, and preserve those meanings when themes change.
+- The rendered UI uses color to distinguish relevant groups, priorities, and
+  states; semantic color is not confined to one accent or status indicators.
 - Labels name the actual action rather than a generic verb.
 - Relevant empty, loading, and error states are present, or their absence is
   stated as a known limit.
