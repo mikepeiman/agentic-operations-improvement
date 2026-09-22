@@ -17,7 +17,12 @@ Raising it is a decision, not a fix. Consolidate overlap first; raise only when
 what remains is distinct rules. It was raised from 6,000 to 7,600 on 2026-09-20
 (`ops-lhq`) for the message-shape rules and the pointer to the communication
 inquiry, after consolidation across five sections freed 266 characters and the
-remainder was not overlap.
+remainder was not overlap. It was raised from 7,600 to 7,700 on 2026-09-22
+(`ops-cth`) for the core's reference to
+[the UI design guidance](../docs/ui-design-guidance.md). The core cannot carry
+that as a Markdown link without breaking self-containment for copy-only installs,
+so it names the path in prose and costs 88 characters; no consolidation was
+available, and the cost is disclosed rather than offset elsewhere.
 
 [protocol.test.mjs](protocol.test.mjs) exercises one- and two-file copies, adopted
 project additions and governing links, missing bootstrap, missing dependency,

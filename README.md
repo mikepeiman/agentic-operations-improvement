@@ -47,11 +47,11 @@ This repository's [package checks](checks/README.md) validate its own packaging;
 they are not a general development framework to install everywhere.
 
 Use the [UI design guidance](docs/ui-design-guidance.md) when a project does
-interface work. It is an on-demand SKILLS-type document: reference production UI
-and component precedents before inventing, with the component sources, layout
-and density rules, and observable checks. Copy it into projects that build UI;
-projects without a user interface do not need it, and the protocol does not
-depend on it.
+interface work. The core names its path so an agent reads it before interface
+work; the document itself is copied only into projects that build UI, and the
+protocol does not otherwise depend on it. It is an on-demand SKILLS-type
+document: reference production UI and component precedents before inventing, with
+the component sources, layout and density rules, and observable checks.
 
 Graphify can help when structural retrieval saves time on unfamiliar code.
 Use direct search for known targets. Treat graphs as derived leads, verify them

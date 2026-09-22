@@ -131,3 +131,6 @@ per meaning. Record incidents in the relevant Bead; prefer a regression test or
 tool fix to a new rule. Add instructions only for a recurring failure they can
 prevent, replacing overlap. Keep project-specific facts and optional tool setup
 outside this shared protocol; load them when needed.
+
+Read `docs/ui-design-guidance.md` before designing or changing a view, component,
+or interaction.

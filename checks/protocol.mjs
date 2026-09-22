@@ -5,10 +5,14 @@ import { fileURLToPath } from 'node:url';
 // Package integrity only. This is deliberately not a prose/behavior linter.
 
 // Raised from 6000 on 2026-09-20 (ops-lhq) to admit the message-shape rules and
-// the pointer to docs/communication-inquiry.md. The ceiling is not a budget: it
-// keeps growth an explicit consolidation decision, so it sits just above the
-// current core rather than wherever the next addition lands.
-export const CORE_CEILING = 7600;
+// the pointer to docs/communication-inquiry.md. Raised from 7600 to 7700 on
+// 2026-09-22 (ops-cth) for the AGENTS reference to docs/ui-design-guidance.md,
+// which the ceiling cannot carry as a link: the core must stay self-contained for
+// copy-only installs. No consolidation was available; what the addition cost is
+// disclosed here rather than hidden in a trim elsewhere. The ceiling is not a
+// budget: it keeps growth an explicit consolidation decision, so it sits just
+// above the current core rather than wherever the next addition lands.
+export const CORE_CEILING = 7700;
 export function prose(text) {
   return text.replace(/^\s*(`{3,}|~{3,})[^\n]*\n[\s\S]*?^\s*\1\s*$/gm, '')
     .replace(/(`+)[^\n]*?\1/g, '');
