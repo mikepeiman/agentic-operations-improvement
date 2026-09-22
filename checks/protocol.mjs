@@ -38,7 +38,8 @@ export function audit(root, { coreOnly = false, adopted = false } = {}) {
   const errors = [];
   const required = ['AGENTS.md'];
   if (!coreOnly && !adopted) required.push('CLAUDE.md', 'README.md', 'docs/beads.md',
-    'docs/new-project-setup.md', 'docs/weekly-review.md', 'docs/v1-v2-review.md', 'checks/README.md');
+    'docs/new-project-setup.md', 'docs/weekly-review.md', 'docs/ui-design-guidance.md',
+    'docs/v1-v2-review.md', 'checks/README.md');
   for (const file of required) if (!existsSync(path.join(root, file))) errors.push(`Missing ${file}`);
   const read = file => existsSync(path.join(root, file)) ? readFileSync(path.join(root, file), 'utf8').replace(/\r\n/g, '\n') : '';
   const agents = read('AGENTS.md');

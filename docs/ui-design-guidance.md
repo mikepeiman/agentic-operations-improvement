@@ -1,0 +1,143 @@
+# UI design guidance
+
+Practice guidance for designing or changing a view, component, or interaction.
+It is a SKILLS-type document: a procedure an agent loads when the task is
+interface work. The operating rules stay in [AGENTS.md](../AGENTS.md); nothing
+here repeats them.
+
+Read it before designing, not after. When a task is product design rather than
+interface construction, the two are different jobs with different evidence.
+
+## Exemptions
+
+The guidance applies to application UI in this project. Time-box the reference
+step; a small fix does not need five galleries.
+
+- **Prototypes and throwaway artifacts.**
+- **Constrained environments**: CLI/TUI, emails, terminal output, and embedded
+  surfaces where the conventions below do not apply.
+- **A fix that restores agreed appearance or behavior**: restore what was
+  agreed and do not redesign it.
+- **A surface the design system already answers**: when the system specifies a
+  component, its states, and its density, follow the system.
+- **An explicit owner instruction** for a particular case.
+
+One concrete exception: the owner's literal hex colors and exact copy text are
+input, not suggestions. Do not adjust them to satisfy a guidance bullet.
+
+## Reference before inventing
+
+Before designing or substantially changing a view, component, or interaction,
+look at strong existing examples. Prefer **real production application UI** over
+speculative concept art.
+
+### UI inspiration galleries
+
+Use these primarily for layout, hierarchy, density, composition, flows, and
+visual treatment:
+
+- **[Mobbin](https://mobbin.com/)** — production UI screens, UI elements, and
+  complete flows.
+- **[Nicelydone](https://nicelydone.club/)** — polished desktop, web, and SaaS
+  application UI.
+- **[Refero](https://refero.design/)** — curated real-product UI and flows.
+- **[Page Flows](https://pageflows.com/)** — how complete interactions and flows
+  behave, beyond the static screen.
+- **[SaaSFrame](https://www.saasframe.io/)** — dashboards, editors, settings,
+  onboarding, tables, and productivity software.
+
+When useful, inspect **2–4 relevant examples** before designing. Synthesize the
+common good ideas; do not blindly copy one screen.
+
+Access differs by source. Some galleries gate content behind an account, and a
+required login is an owner decision, not a step to work around. If a source is
+unavailable, say so, name what you could not consult, and proceed. Never invent
+a citation for a screen you did not open.
+
+### What to carry back from a reference
+
+Record the observation and the reason, not just the extraction: the action lives
+in a toolbar because it applies to the current selection; the empty state offers
+the first action instead of describing the feature. The reason is what lets a
+later reviewer judge whether the adaptation still holds. Where a reference
+conflicts with this application's established patterns, follow the application.
+
+## Component references
+
+Use these to understand established component structure, behavior, visual
+treatment, and states. Our preferred implementation foundation is **Bits UI**.
+
+- **[Bits UI](https://bits-ui.com/)** — primary component primitive library for
+  this project. Accessible, headless Svelte components.
+- **[shadcn-svelte](https://www.shadcn-svelte.com/)** — Svelte component
+  compositions and visual examples, built on Bits UI.
+- **[Skeleton](https://www.skeleton.dev/)** — Svelte component and design-system
+  reference with many application-oriented patterns.
+- **[Flowbite Svelte](https://flowbite-svelte.com/)** — broad collection of
+  production-ready Svelte components and common application patterns.
+- **[daisyUI](https://daisyui.com/components/)** — large catalog of standard UI
+  component patterns and visual treatments; framework-agnostic.
+
+Bits UI primitives are headless and unstyled: they supply behavior and
+accessibility, not appearance. Visual treatment comes from this application's
+system, so adopting a component means adopting its behavior and states, then
+styling it to match what is already here. shadcn-svelte components are copies
+rather than dependencies; adapt one into this project's conventions instead of
+adding a second pattern beside an existing one.
+
+These are references to understand, not components to install. A task that
+introduces one of these libraries as a dependency needs its own authorization.
+
+## Design guidance
+
+- Prefer familiar, established interaction patterns over inventing new controls.
+- Novel product functionality usually does **not** require novel control
+  semantics.
+- Check existing project components before creating another implementation.
+- Compose complex interfaces from recognizable primitives: buttons, menus, tabs,
+  toolbars, popovers, dialogs, trees, tables, split panes, and so on.
+- Standard controls should behave like users expect: keyboard navigation, focus,
+  hover, selected, disabled, loading, empty, and error states where relevant.
+- Use semantic controls: actions should look and behave like actions, navigation
+  like navigation, editable fields like editable fields.
+- Maintain the application's established spacing, density, typography, control
+  sizing, iconography, borders, and hierarchy.
+- Favor **compact productivity-app UI** over oversized cards, excessive padding,
+  giant headings, unnecessary whitespace, or turning every value into a badge.
+- Labels and icons should communicate the actual action clearly. Do not sacrifice
+  meaning merely for symmetry or visual neatness.
+- When unsure how a component should look or behave, **research examples instead
+  of guessing**.
+
+### Applying it to existing UI
+
+"Preserve existing patterns" governs new work. It is not a reason to leave a
+surface broken: fix a pattern that fails the bullets above, and say what was
+already there and why it changed. When the existing UI and this guidance
+genuinely conflict on something consequential, surface the conflict to the owner
+rather than silently picking a side.
+
+### Practical principle
+
+**Find a good precedent, understand why it works, then adapt it to this
+application.**
+
+## Observable checks
+
+Outcomes an agent can inspect and report on its own work:
+
+- A cited precedent exists, is a real application, and its reason for working is
+  stated.
+- Reused components are named; new ones are justified against what already
+  existed.
+- Keyboard navigation, focus-visible, and disabled/hover/selected states exist
+  where the control type requires them.
+- The new surface matches the application's spacing, density, type scale, and
+  control sizing.
+- Labels name the actual action rather than a generic verb.
+- Relevant empty, loading, and error states are present, or their absence is
+  stated as a known limit.
+
+Where rendering matters, check it through the project's test runner as
+[AGENTS.md](../AGENTS.md) requires, exercising the boundary being claimed rather
+than a screenshot proxy for it.

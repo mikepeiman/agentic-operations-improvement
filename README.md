@@ -46,6 +46,13 @@ specific failure with useful diagnostics and representative pass/fail examples.
 This repository's [package checks](checks/README.md) validate its own packaging;
 they are not a general development framework to install everywhere.
 
+Use the [UI design guidance](docs/ui-design-guidance.md) when a project does
+interface work. It is an on-demand SKILLS-type document: reference production UI
+and component precedents before inventing, with the component sources, layout
+and density rules, and observable checks. Copy it into projects that build UI;
+projects without a user interface do not need it, and the protocol does not
+depend on it.
+
 Graphify can help when structural retrieval saves time on unfamiliar code.
 Use direct search for known targets. Treat graphs as derived leads, verify them
 in source, and choose scope, exclusions, refresh cadence, and storage per project.

@@ -90,3 +90,14 @@ test('missing, malformed and outside-package links fail', t => {
 test('the complete repository package validates', () => {
   assert.deepEqual(audit(root).errors, []);
 });
+test('a distributed package missing a required document fails', t => {
+  const dir = mkdtempSync(path.join(temporaryRoot, 'protocol-'));
+  t.after(() => {
+    const relative = path.relative(temporaryRoot, path.resolve(dir));
+    assert.ok(relative && !relative.startsWith('..') && !path.isAbsolute(relative));
+    rmSync(dir, { recursive: true, force: true });
+  });
+  const errors = audit(dir).errors;
+  assert.ok(errors.some(error => error.includes('Missing AGENTS.md')));
+  assert.ok(errors.some(error => error.includes('Missing docs/ui-design-guidance.md')));
+});
