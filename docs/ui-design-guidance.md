@@ -91,6 +91,39 @@ introduces one of these libraries as a dependency needs its own authorization.
 
 ## Design guidance
 
+### Recurring design review
+
+At planning, implementation, and rendered review, ask of each control: what does
+the person want here; what action does this afford; why is this the clearest
+place and representation; and is a simpler established interaction better?
+Remove controls that expose implementation machinery without a user decision.
+Judge the completed interaction, not just the component's presence.
+
+- Creation leads directly to input: reveal the first editable item immediately,
+  focus newly added fields, and preserve the agreed Enter/Tab continuation.
+- Use the accepted domain lexicon in labels and examples. A list contains items;
+  placeholders guide entry rather than repeating a generic type name.
+- Keep the primary work visually dominant. Put optional configuration behind
+  explicit settings; avoid redundant sublabels that enlarge every row.
+- Search large vocabularies on demand; initially show current selections and
+  deliberate shortcuts, not an exhaustive grid. Reuse the shared search control.
+- Anchor a popup to its trigger within the active modal's interaction boundary;
+  bound it to the viewport. Provide visible dismissal. Escape closes the
+  innermost surface, returns focus, and leaves no hidden child state on reopen.
+- Use conventional icons: plus adds or increments. Use a recognizable icon for
+  choosing an icon. Disclosure controls use clean icons and substantial targets
+  (at least 36px in compact desktop interfaces), not tiny text arrows.
+- Treat related action buttons as one sized group with its label above; keep
+  the group on one row at its intended working width. Animate insertion briefly
+  without delaying focus or revealing an obstructive autofocus tooltip.
+- Style scrollbars through shared application tokens on every scrollable surface,
+  including popups. Search borders, focus rings, and radii also belong to shared
+  controls, not one-off dialog styling.
+
+Exercise these with real mouse and keyboard paths, viewport-edge popups,
+close/reopen, and persisted readback. A renamed view is not delivery of its
+specified editor or workflow.
+
 - Prefer familiar, established interaction patterns over inventing new controls.
 - Novel product functionality usually does **not** require novel control
   semantics.
