@@ -142,3 +142,12 @@ mechanism. Also open: whether any of this is detectable by the agent at the time
 of writing. If a well-formed sentence and a true one feel the same from inside, a
 self-check at generation time may be structurally unavailable, and the useful
 controls are external — the shape constraints in the core, and the reader.
+
+
+## 2026-09-23 — Metabrain Workbench follow-through
+
+Owner report: "You are not responding to my chats" and "You have to process my message dialogically/conversationally, not just pragmatically/operationally. RULE."
+
+Observed instance: the preceding UX delivery changed Quick Actions from tiles to rows, retained duplicate folder-opening actions, and made All actions navigate to Environments. The owner rejected those choices and again raised the prominent Activate environment button. The prior handoff reported implementation and verification without adequately discussing those choices or the owner's earlier concern. Removing activation from Settings had not addressed its prominence on Environments.
+
+The owner explicitly requires conversational engagement as a standing rule. The shared clauses "Every message is a result or a request" and process criticism being "the entire reply" do not cover mixed product feedback and process criticism appropriately. They are revised to require an actual response to concerns alongside authorized work. Their contribution to this incident is unproven; no causal finding is asserted. Future evaluation must inspect responses, including handoffs, rather than treat a recorded rule as proof of improvement.
