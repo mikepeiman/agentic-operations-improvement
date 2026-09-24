@@ -46,12 +46,13 @@ specific failure with useful diagnostics and representative pass/fail examples.
 This repository's [package checks](checks/README.md) validate its own packaging;
 they are not a general development framework to install everywhere.
 
-Use the [UI design guidance](docs/ui-design-guidance.md) when a project does
-interface work. The core names its path so an agent reads it before interface
-work; the document itself is copied only into projects that build UI, and the
-protocol does not otherwise depend on it. It is an on-demand SKILLS-type
-document: reference production UI and component precedents before inventing, with
-the component sources, layout and density rules, and observable checks.
+Use the [design reference router](docs/design/README.md) when a project does design
+work; it routes product UI to the [UI design guidance](docs/ui-design-guidance.md) and
+game UI, marketing web, brand identity, and graphic design to their own guides.
+The core names the router path so an agent reads it before design work; the guides
+are copied only into projects that do that kind of design, and the protocol does
+not otherwise depend on them. Each is an on-demand SKILLS-type document:
+reference strong real-world precedents before inventing.
 
 Graphify can help when structural retrieval saves time on unfamiliar code.
 Use direct search for known targets. Treat graphs as derived leads, verify them

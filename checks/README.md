@@ -61,9 +61,10 @@ Projects adopting the protocol keep their own checks; they need not copy these.
 
 The required files are the entry files, the setup and review procedures, the
 Beads guide, the [UI design guidance](../docs/ui-design-guidance.md), the
+[design reference router](../docs/design/README.md), the
 comparison report, and this file. That list is package shape, not a required
-adoption set: the UI guidance is a SKILLS-type practice document that a project
-keeps only when it does interface work.
+adoption set: the design guides are SKILLS-type practice documents that a project
+keeps only for the kinds of design it does.
 
 The four old agent-hook scripts were retired. Their source and individual
 limitations are recorded in the [comparison report](../docs/v1-v2-review.md).

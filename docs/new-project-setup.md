@@ -59,8 +59,10 @@ add no generic hook, indexer, or framework without a demonstrated need.
 Keep this procedure and the Beads guide together in the project's existing docs
 location if ongoing setup reference is useful; adjust links to that project's core.
 
-When the project builds a user interface, copy the
-[UI design guidance](ui-design-guidance.md) beside those procedures and note the
+When the project does design work, copy the
+[design reference router](design/README.md) and the guides it routes to for that
+project's kinds of design (for interface work, the
+[UI design guidance](ui-design-guidance.md)) beside those procedures, and note the
 project's component library in its instructions. It is SKILLS-type input for
 interface tasks, not a rule agents carry every turn; skip it for a project with no
 user interface.

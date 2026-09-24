@@ -132,5 +132,4 @@ tool fix to a new rule. Add instructions only for a recurring failure they can
 prevent, replacing overlap. Keep project-specific facts and optional tool setup
 outside this shared protocol; load them when needed.
 
-Read `docs/ui-design-guidance.md` before designing or changing a view, component,
-or interaction.
+Read `docs/design/README.md` before design work; it routes to the guide for the task.

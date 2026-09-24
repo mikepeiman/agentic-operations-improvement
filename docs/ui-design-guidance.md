@@ -5,7 +5,9 @@ It is a SKILLS-type document: a procedure an agent loads when the task is
 interface work. The operating rules stay in [AGENTS.md](../AGENTS.md); nothing
 here repeats them.
 
-Read it before designing, not after. When a task is product design rather than
+Read it before designing, not after. It is the product and application UI guide
+in the [design reference router](design/README.md), which routes game, marketing,
+brand, and graphic design work to their own guides. When a task is product design rather than
 interface construction, the two are different jobs with different evidence.
 
 ## Exemptions
@@ -128,6 +130,8 @@ specified editor or workflow.
 - Novel product functionality usually does **not** require novel control
   semantics.
 - Check existing project components before creating another implementation.
+- A new feature should normally look as though it always belonged to the
+  application.
 - Compose complex interfaces from recognizable primitives: buttons, menus, tabs,
   toolbars, popovers, dialogs, trees, tables, split panes, and so on.
 - Standard controls should behave like users expect: keyboard navigation, focus,
