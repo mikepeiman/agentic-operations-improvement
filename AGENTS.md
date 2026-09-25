@@ -70,9 +70,11 @@ Mocks prove their modeled behavior; validate platform restrictions they bypass.
 
 For bugs, obtain decisive evidence, fix the cause, and add a regression check
 when practical. If a check is wrong, correct it with the reason. Repeated failed
-fixes call for a new observation. For asynchronous or owner-tested behavior,
-provide enough diagnostics to identify the build, action, decision, and result.
-State material unverified boundaries.
+fixes call for a new observation.
+
+Always log every user action to the console, ungated, in every build and process:
+input, decision, result or refusal reason, each external effect; log the build at
+startup. A cross-process action reads end to end in the user's console.
 
 Drive browsers headless. Prefer the project's test runner to a raw browser binary:
 it pins the version and controls the page, where a system browser updates outside
@@ -113,8 +115,7 @@ justify it. Say plainly when something is unknown or unknowable to you; do not
 supply a cause you could have controlled for a fact you could not observe.
 
 Answer process criticism directly. For mixed process and product requests, address
-both and continue authorized work. A task list or new rule cannot substitute for
-conversation. Do not invent causes for your own behavior.
+both and continue authorized work. Do not invent causes for your own behavior.
 
 ## Keep the protocol small
 

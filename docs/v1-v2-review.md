@@ -139,6 +139,10 @@ evidence and a new observation after repeated failed fixes. Diagnostics remain
 for asynchronous or owner-tested behavior, without universal permanent logging
 or mandatory replication infrastructure.
 
+Superseded 2026-09-25 for logging (ops Bead "Always-on console logging"): the
+owner requires every user action logged to the console in every build, after an
+owner-tested action produced no log at all.
+
 ### 6. Replace weak enforcement with package checks
 
 The old checks were reviewed at source level; their limitations below are not
