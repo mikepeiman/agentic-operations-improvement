@@ -151,3 +151,36 @@ Owner report: "You are not responding to my chats" and "You have to process my m
 Observed instance: the preceding UX delivery changed Quick Actions from tiles to rows, retained duplicate folder-opening actions, and made All actions navigate to Environments. The owner rejected those choices and again raised the prominent Activate environment button. The prior handoff reported implementation and verification without adequately discussing those choices or the owner's earlier concern. Removing activation from Settings had not addressed its prominence on Environments.
 
 The owner explicitly requires conversational engagement as a standing rule. The shared clauses "Every message is a result or a request" and process criticism being "the entire reply" do not cover mixed product feedback and process criticism appropriately. They are revised to require an actual response to concerns alongside authorized work. Their contribution to this incident is unproven; no causal finding is asserted. Future evaluation must inspect responses, including handoffs, rather than treat a recorded rule as proof of improvement.
+
+## 2026-09-28 — Metabrain interface text
+
+Provenance: metabrain-mvp, observed by the owner in the running app; recorded by
+Claude Opus 5.5 in a design session. The text was written by an earlier agent
+session, not identified here.
+
+Owner report: "#AI-LLM-slop-patterns Here are a few examples from Metabrain
+currently; these can be analyzed grammatically to extract clear rules of grammar to
+outlaw and to enforce. Something about how sentences are started." The examples,
+three settings rows in a metatag definition editor (label, then explanation):
+
+- "happens at a time" / "The pill carries when it happened, and you can correct
+  it. Off for a fact with no clock, like an ingredient."
+- "runs as a session (start, then stop)" / "Quick Log opens it, and a second tap
+  closes it. The span between is what gets recorded."
+- "is a thing, not an event" / "A person, a film, a place. Its fields can then
+  describe the thing itself or one encounter with it."
+
+Observed: eight of the nine labels and sentences depend on context the screen does
+not give. The three labels are predicates whose subject ("this metatag") exists
+only in the writer's framing. "Off for a fact…" and "A person, a film, a place."
+have no verb. "The pill" and "The span between" use "the" for things the reader has
+not met; "it" in "Quick Log opens it" has no antecedent; "Its fields" points back
+to the missing subject. Each unit reads as the continuation of a sentence the
+writer had in mind. The same text uses metaphor for data ("carries", "no clock",
+"span") and appends reassurance ("and you can correct it").
+
+Relation to the inquiry: consistent with "What an agent can and cannot observe" —
+the writer treats its own context as shared with a reader who has only the screen.
+One instance, one screen, one agent's text. The grammatical pattern is observed;
+its cause is not established. The rules drawn from it are interface-text guidance
+in `docs/ui-design-guidance.md`, not a core communication rule.
