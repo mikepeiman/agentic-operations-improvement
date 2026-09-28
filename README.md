@@ -5,6 +5,14 @@ without consistent procedures. The defaults are feature and use-case driven work
 Beads for durable work state, a commit and push every changing turn, and concise
 communication.
 
+## Agentic Communications Style
+
+A top-level project in this repository (owner, 2026-09-28): how agents write for
+people, in chat reports, interface text and documents. Its rules and real examples
+are in [Agentic Communications Style](docs/agentic-communications-style.md); dated
+evidence is in [the communication inquiry](docs/communication-inquiry.md); its work
+is the Beads epic `ops-chv`.
+
 ## Use in a project
 
 For initialization or adoption, run the on-demand

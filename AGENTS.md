@@ -123,8 +123,9 @@ https://github.com/mikepeiman/agentic-operations-improvement.
 Contribute reusable operations, communication, and design improvements there as
 Beads and updates to the shared core or routed practice document. Then refresh
 the originating project's adoption, recording the upstream revision and local
-adaptations. A local-only edit is incomplete. Read `docs/communication-inquiry.md`
-there before proposing a communication rule, and record the observed instance.
+adaptations. A local-only edit is incomplete. Read
+`docs/agentic-communications-style.md` there before proposing a communication rule;
+record the instance in its inquiry.
 
 Correct affected documentation in the change that makes it untrue. Keep one owner
 per meaning. Record incidents in the relevant Bead; prefer a regression test or

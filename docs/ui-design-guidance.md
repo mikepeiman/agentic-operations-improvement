@@ -130,27 +130,11 @@ introduces one of these libraries as a dependency needs its own authorization.
 
 ### Interface text
 
-Write each sentence so it stands alone: the reader has seen only the screen.
-
-- Start every sentence with its subject, named in full at first mention. Text that
-  starts with a verb, a state word, a pronoun, or "the" before a thing never
-  introduced continues a sentence the reader never saw.
-- Give every sentence a subject and a finite verb. Labels are nouns or commands.
-  Examples go inside a sentence after "such as", not as a bare list.
-- Make the subject the person, the application, or a named record or control, and
-  the verb the literal operation: records, shows, starts, stops, opens, saves. Data
-  does not carry, hold, live or know.
-- Say directly what happens, in the active voice, not as a cleft ("X is what gets
-  recorded") or an agentless passive.
-- Define a choice by what it is. Name the alternative as its own choice rather
-  than as "X, not Y".
-- Let the control show what can be edited or undone; drop appended reassurance
-  ("and you can correct it") and filler (then, itself, just, simply).
-
-Flagged by an owner as AI slop: "Quick Log opens it, and a second tap closes it.
-The span between is what gets recorded." Rewritten: "The first Quick Log tap starts
-a session and the second tap stops it. The app records the start, the stop and the
-duration."
+Write interface text by rules 1–6 of
+[Agentic Communications Style](agentic-communications-style.md): each sentence
+starts with its subject named in full, has a finite verb, uses literal verbs,
+says who does what, defines a thing by what it is, and lets the control carry any
+reassurance. Review the text in the rendered screen.
 
 ### Recurring design review
 

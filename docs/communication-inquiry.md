@@ -184,3 +184,29 @@ the writer treats its own context as shared with a reader who has only the scree
 One instance, one screen, one agent's text. The grammatical pattern is observed;
 its cause is not established. The rules drawn from it are interface-text guidance
 in `docs/ui-design-guidance.md`, not a core communication rule.
+
+## 2026-09-28 — Metabrain chat reports
+
+Provenance: metabrain-mvp, one design session, Claude Opus 5.5 reporting to the
+owner; the YouTube instance also covers a Codex session of 2026-09-24. Observed by
+the owner. Analysis and rules: `docs/agentic-communications-style.md`, rules 7–10.
+
+- Unnamed referents in a question: "Property rows. Your July 23 note puts the
+  property type first. Your July 22 note and the composer design put the name first.
+  Name-first applies until you choose." Owner: "I had to think too hard to
+  understand the unnamed referents in your statement".
+- Specifics withheld: "I've left both alone: ... five smaller use cases." Owner:
+  "you identify an example of the same defect pattern, and do not even raise the
+  specifics for me to evaluate?"
+- Tracker state reported as product news: "Four are new: one-tap doses". Owner:
+  ""one-tap doses is new" is insane, it's been universally and constantly a core
+  feature."
+- Substitute-tested delivery reported as done, then relayed unchecked: "The Basic
+  YouTube overlay is implemented" (fixture page only); relayed four days later as
+  "built and delivered". Owner: "I have *never& seen it running".
+
+Relation to the inquiry: the first three occurred in one session where the agent
+wrote precisely about files and records in the same messages, consistent with the
+standing hypothesis that precision does not transfer to reports about work. One
+session; not established.
+
