@@ -182,14 +182,16 @@ writer had in mind. The same text uses metaphor for data ("carries", "no clock",
 Relation to the inquiry: consistent with "What an agent can and cannot observe" —
 the writer treats its own context as shared with a reader who has only the screen.
 One instance, one screen, one agent's text. The grammatical pattern is observed;
-its cause is not established. The rules drawn from it are interface-text guidance
-in `docs/ui-design-guidance.md`, not a core communication rule.
+its cause is not established. The rules drawn from it are in
+`docs/agentic-communications-style.md`, not in the core.
 
 ## 2026-09-28 — Metabrain chat reports
 
 Provenance: metabrain-mvp, one design session, Claude Opus 5.5 reporting to the
 owner; the YouTube instance also covers a Codex session of 2026-09-24. Observed by
-the owner. Analysis and rules: `docs/agentic-communications-style.md`, rules 7–10.
+the owner. The first instance is a grammar failure (unnamed referents; rule 2 of
+`docs/agentic-communications-style.md`). The others concern development-process
+reporting and produced no new rule.
 
 - Unnamed referents in a question: "Property rows. Your July 23 note puts the
   property type first. Your July 22 note and the composer design put the name first.
@@ -212,4 +214,5 @@ session; not established.
 - Undefined verb in an approval request (same session, later turn): "I recommend
   clearing all 23; ... Clear all 23?" Owner: "What is the verb "clear" doing here?
   ... Do you mean remove these from our roadmap or features list? This is an
-  implication; and absolutely not." Rule 11.
+  implication; and absolutely not." Asking for authority already belongs to the
+  core; no new rule.

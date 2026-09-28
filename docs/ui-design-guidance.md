@@ -130,11 +130,9 @@ introduces one of these libraries as a dependency needs its own authorization.
 
 ### Interface text
 
-Write interface text by rules 1–6 of
-[Agentic Communications Style](agentic-communications-style.md): each sentence
-starts with its subject named in full, has a finite verb, uses literal verbs,
-says who does what, defines a thing by what it is, and lets the control carry any
-reassurance. Review the text in the rendered screen.
+Write interface text by [Agentic Communications Style](agentic-communications-style.md):
+complete sentences, each thing named before it is pointed to, literal words, and
+direct statements. Review the text in the rendered screen.
 
 ### Recurring design review
 
