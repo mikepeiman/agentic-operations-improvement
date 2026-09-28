@@ -28,6 +28,41 @@ throughout application UI/HUD unless the owner explicitly exempts a case.
 One concrete exception: the owner's literal hex colors and exact copy text are
 input, not suggestions. Do not adjust them to satisfy a guidance bullet.
 
+## Use cases and flows
+
+Write each flow of a use case, and answer it, before drawing its screen. A use case is
+a lasting purpose the product serves (an epic Bead); a flow is one concrete path
+through it, from trigger to done (a child Bead). Keep data, views and actions
+distinct: a view shows; only actions the person issues change data, and each change
+is recorded and undoable.
+
+### Write the flow
+
+1. Intent, in the person's words: "When ___, I want to ___, so that ___."
+2. Situation: screen or window, device, what is in hand, time, attention and energy.
+3. Done: what is true afterwards, and how the person sees it.
+4. Objects: the records, views, actions and windows involved.
+5. Frequency and stakes: how often, what a mistake costs, whether it can be undone.
+
+### Answer the questions
+
+1. **Need.** Is this the need, or a step toward one?
+2. **Zero steps.** Can it happen with no input: inferred, defaulted, or already on screen?
+3. **Fewest steps.** Count keystrokes, clicks and decisions; default, remember or defer the rest.
+4. **Place.** Do it where the person's attention already is.
+5. **Recognition.** Offer recent, usual and suggested values instead of asking for recall.
+6. **Before and after.** Show what an action will do, then what it did; record it and make it undoable.
+7. **Comprehension.** Give each color, shape and word one meaning; make data, views and actions distinguishable at a glance.
+8. **All and only.** Tie every control to a decision in this flow; add the missing undo, error and empty states.
+9. **Low energy.** One decision at a time, large targets, safe defaults, nothing lost when the person stops halfway.
+10. **Failure.** Show what failed, where, and why.
+11. **Consistency.** Use the same command, key and component wherever the flow appears.
+
+Record the written flow and its answers in the flow's Bead, then draw screens from the
+answers. Every feature idea an answer produces (a new feature, a variation, an
+improvement or a possibility) becomes a Bead pending owner review, related to its flow.
+When a use case's flows are all answered, bring its pending ideas to the owner.
+
 ## Reference before inventing
 
 Before designing or substantially changing a view, component, or interaction,

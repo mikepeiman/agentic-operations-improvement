@@ -48,6 +48,13 @@ Claude-specific instructions rather than overwriting them blindly. Add project
 purpose, governing-document pointers, unusual environment needs, and delivery
 policy where agents already look for them.
 
+Keep every core rule in the adopting project's always-loaded instructions. Move only
+project-specific detail into separate documents, and word each pointer with the
+situation that should send an agent to it. A core rule moved behind a pointer is
+read only when that pointer fires: in one adoption, the rule to capture every owner
+idea each exchange sat in a practice document reached only for Beads, verification
+and delivery work.
+
 Preserve the upstream repository URL and ongoing-improvement instructions in the
 adopting AGENTS.md. Locate the project's glossary or create `LEXICON.md` in its
 governing-docs location; seed accepted domain terms and aliases, and add a concise
