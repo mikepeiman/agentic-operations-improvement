@@ -136,10 +136,25 @@ YouTube with a fixture page carrying fake playlists. Four days later a Claude
 session relayed "built and delivered" from the tracker without checking. The owner:
 "YouTube widget: invisible to me. Where is it? I have *never& seen it running".
 
+## 11. Name the operation and what it leaves alone
+
+A request for approval names the operation on the records, and states what stays
+as it is. A verb such as "clear", "clean up" or "resolve" names no operation, and
+one reading of it may destroy what the owner wants kept.
+
+Instance (chat, Metabrain, 2026-09-28). Written: "I recommend clearing all 23; the
+top-level groupings don't need a deferred status to work. Clear all 23?" The owner:
+"What is the verb "clear" doing here? Do you mean clear a flag of "deferred"? Okay
+do that. Do you mean remove these from our roadmap or features list? This is an
+implication; and absolutely not."
+
+Rewrite: "Remove the deferred status from all 23, so they return to open work.
+Nothing is removed from the roadmap or the feature lists. Go ahead?"
+
 ## Applying this
 
 - Interface text: rules 1–6, reviewed in the rendered screen. Project UI guidance
   points here.
-- Chat reports and handoffs: rules 7–10, with the core's `## Communicate clearly`.
+- Chat reports and handoffs: rules 7–11, with the core's `## Communicate clearly`.
 - A new pattern: record the instance in the inquiry first, then add or amend a
   rule here with the instance as its example.

@@ -209,4 +209,7 @@ Relation to the inquiry: the first three occurred in one session where the agent
 wrote precisely about files and records in the same messages, consistent with the
 standing hypothesis that precision does not transfer to reports about work. One
 session; not established.
-
+- Undefined verb in an approval request (same session, later turn): "I recommend
+  clearing all 23; ... Clear all 23?" Owner: "What is the verb "clear" doing here?
+  ... Do you mean remove these from our roadmap or features list? This is an
+  implication; and absolutely not." Rule 11.
