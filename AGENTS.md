@@ -41,6 +41,10 @@ their words with the artifact identity; technical completion is not owner accept
 If Beads is unavailable, preserve capture and progress in one temporary note,
 report it, continue safe work, and reconcile into Beads on recovery.
 
+When work is missing from the tracker or activity claims need enforcement, apply
+[filing coverage and truthful activity](docs/work-filing.md). Preserve existing
+hooks and verify their invocation in the actual agent host.
+
 ## Read and build selectively
 
 Search before reading large documents. Load more for a specific unanswered
