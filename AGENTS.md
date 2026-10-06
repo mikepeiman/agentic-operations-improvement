@@ -96,6 +96,16 @@ integrating; preserve others' work and history. A rejected push requires
 reconciliation, not force; report failed delivery explicitly. Persist and sync
 Beads through its configured storage workflow as well as Git.
 
+Batch disruptive deliveries separately from source checkpoints. Keep the running app
+available while committing validated changes, then perform one combined installation
+and restart for the authorized scope. Inspect active installers and installed artifact
+identity first; reuse a delivery containing your changes and verify its running app and
+required services. Serialize concurrent installation requests through their final
+restart, with attributed ownership and visible waiting/recovery. An extra restart needs
+a concrete runtime blocker or a separate user-requested delivery, recorded in the
+tracker. Measure reductions from distinct installation receipts, separately from app
+launches and build stages; batching intent alone does not prove reduced disruption.
+
 ## Communicate clearly
 
 Answer directly in plain language. Say each point once; omit rhetorical padding,
