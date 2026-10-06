@@ -128,6 +128,17 @@ introduces one of these libraries as a dependency needs its own authorization.
 
 ## Design guidance
 
+### Shortcut badges
+
+Use one project-defined control-relative anchor and a shared component for floating
+shortcut badges across existing and future screens. Anchor the actual input or button;
+shortcut text length must not change its attachment point. Render reveal outside normal
+layout, preserving control rectangles, focus and scroll; follow control movement and keep
+modal badges inside their modal. Handle viewport overflow without silently changing the
+chosen anchor. Test every visible badge against its owning control with short and long
+bindings, narrow layouts, scrolling and modal buttons. Inline key labels and explanatory
+tooltips remain distinct from floating shortcut badges.
+
 ### Interface text
 
 Write interface text by [Agentic Communications Style](agentic-communications-style.md):
