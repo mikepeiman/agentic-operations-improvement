@@ -60,6 +60,10 @@ mark test writes to the owner's real data for exact removal. Surface rejected in
 and conflicts that change meaning. Keep secrets out of tracked files
 and diagnostics.
 
+Before persistence or resource work, read the
+[data resource review](docs/data-resource-review.md) for amplification budgets
+and fixtures that challenge the proposed sharing mechanism.
+
 ## Verify the promised behavior
 
 Choose checks from acceptance examples. Run focused checks while iterating and
