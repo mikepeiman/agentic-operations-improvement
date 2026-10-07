@@ -216,3 +216,23 @@ session; not established.
   ... Do you mean remove these from our roadmap or features list? This is an
   implication; and absolutely not." Asking for authority already belongs to the
   core; no new rule.
+
+## 2026-10-07 — Metabrain chat: a sentence with no named nouns
+
+Provenance: metabrain-mvp, one workouts session, Claude Opus 5.5 explaining a design
+proposal to the owner. Observed by the owner.
+
+Written: "My intent was to keep what's true of a named item, typed once, apart from
+what changes each time it happens." Owner: "Honestly how is your grammar so very bad?"
+Owner rewrites: "My intent for metatags was to keep the details that do not change
+distinct from the details that do." / "My intent was to ensure an item could have both
+durable defined values, and per-occurrence variable values."
+
+Observed: the two contrasted things are "what" clauses with no head noun; the clauses
+are not parallel; the sentence states no scope (metatags); "typed once" interrupts the
+clause and attaches to nothing clearly; "it" has two candidate antecedents; everyday
+paraphrase ("keep apart", "what's true of") stands where precise terms ("distinct",
+"durable", "per-occurrence") serve. The owner asked for the grammatical prompt that
+would change the agent's style to the owner's, then approved adding four rules to
+`docs/agentic-communications-style.md` (rules 5 to 8). One instance in one session;
+the rules rest on the owner's explicit approval, not on several entries.

@@ -161,8 +161,9 @@ tooltips remain distinct from floating shortcut badges.
 ### Interface text
 
 Write interface text by [Agentic Communications Style](agentic-communications-style.md):
-complete sentences, each thing named before it is pointed to, literal words, and
-direct statements. Review the text in the rendered screen.
+complete sentences, each thing named before it is pointed to, named head nouns, stated
+scope, literal words, direct statements, parallel contrasts and precise terms. Review the
+text in the rendered screen.
 
 ### Recurring design review
 

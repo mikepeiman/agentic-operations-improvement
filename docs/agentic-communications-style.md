@@ -61,6 +61,23 @@ too hard to understand the unnamed referents in your statement". Rewrite: "When 
 add a property to a metatag in the definition editor, what do you enter first: its
 name or its type?"
 
+### 5. Give every noun phrase a named head noun
+
+Name the thing a phrase refers to: "the details that do not change", never "what's
+true of it" or "what changes". A "what" clause never stands as a subject or an object.
+
+### 6. State the scope inside the sentence
+
+Say what each claim applies to, in the sentence that makes it: "My intent for metatags
+was …". A claim whose scope lives only in the writer's framing reads as universal.
+
+Instance for rules 5 to 8 (Metabrain chat, 2026-10-07, owner: "Honestly how is your
+grammar so very bad?"): "My intent was to keep what's true of a named item, typed once,
+apart from what changes each time it happens." Owner rewrites: "My intent for metatags
+was to keep the details that do not change distinct from the details that do." and "My
+intent was to ensure an item could have both durable defined values, and
+per-occurrence variable values."
+
 ## Style
 
 ### 3. Use literal words
@@ -77,3 +94,16 @@ an alternative as its own choice. Let a control show what can be edited or
 undone. Flagged: the cleft "The span between is what gets recorded"; the negation
 "is a thing, not an event"; the appended ", and you can correct it"; the filler
 "then", "itself", "just", "simply".
+
+### 7. Give contrasted things parallel form
+
+Two things set against each other share one head noun and one grammatical form:
+"durable defined values and per-occurrence variable values"; "the details that do not
+change" and "the details that do". Flagged: "what's true of a named item … apart from
+what changes each time it happens".
+
+### 8. Prefer the precise term
+
+Choose the exact term over an everyday paraphrase: "distinct", "durable",
+"per-occurrence", not "keep apart", "what's true of", "each time it happens". A precise
+term is still a literal word (rule 3).
