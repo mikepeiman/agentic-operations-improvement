@@ -10,6 +10,25 @@ in the [design reference router](design/README.md), which routes game, marketing
 brand, and graphic design work to their own guides. When a task is product design rather than
 interface construction, the two are different jobs with different evidence.
 
+## Notification layout stability
+
+Notifications must never shift surrounding content or controls. Appearance,
+updates, wrapping, stacking, progress, success, warning, failure, dismissal and
+natural expiry preserve surrounding geometry, viewport and nested scroll offsets,
+and focus. Animation does not excuse movement.
+
+Use a shared layer outside document flow, scoped to its view, modal or shadow
+root, or a permanently reserved region whose outer dimensions never change.
+Bound long and stacked notices with scrolling while keeping recovery actions
+available. Notification overflow must not add scrollbars to the underlying view.
+Do not expire a notice while the person is using its controls.
+
+Measure actual control/content rectangles, scroll offsets and focus before,
+during and after transitions, including natural expiry and narrow layouts.
+The browser's recent-input exemption in cumulative layout shift scores does not
+permit notification movement. Never wait out a notice's shift before measuring
+stability. Passing one surface is not a project-wide audit.
+
 ## Exemptions
 
 These exemptions concern the reference-research workflow. Time-box that step;
