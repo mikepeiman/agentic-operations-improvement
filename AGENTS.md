@@ -145,8 +145,10 @@ adaptations. A local-only edit is incomplete. Read `docs/communication-inquiry.m
 there before proposing a communication rule, and record the observed instance.
 
 Correct affected documentation in the change that makes it untrue. Keep one owner
-per meaning. Record incidents in the relevant Bead; prefer a regression test or
-tool fix to a new rule. Add instructions only for a recurring failure they can
+per meaning. Write a post-mortem when the owner names a failure or waste, an
+instruction is broken, a defect recurs or work is lost: incident, timeline, causes,
+failure class and fixes now in force, preferring a test or tool fix to a new rule.
+Add instructions only for a recurring failure they can
 prevent, replacing overlap. Keep project-specific facts and optional tool setup
 outside this protocol, behind pointers; adopters keep these core rules always loaded.
 

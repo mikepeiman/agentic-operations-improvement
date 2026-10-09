@@ -45,6 +45,8 @@ and generated indexes remain optional.
 
 ## Optional tools
 
+Use the [post-mortem practice](docs/post-mortems.md) for the record a failure requires.
+
 Use the [weekly review](docs/weekly-review.md) to examine project coherence and
 maintain existing Beads and governing documents. Configure its day/time with the
 owner using the project's scheduler; copying the protocol installs no automation.
