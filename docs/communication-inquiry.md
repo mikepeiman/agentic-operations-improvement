@@ -236,3 +236,40 @@ paraphrase ("keep apart", "what's true of") stands where precise terms ("distinc
 would change the agent's style to the owner's, then approved adding four rules to
 `docs/agentic-communications-style.md` (rules 5 to 8). One instance in one session;
 the rules rest on the owner's explicit approval, not on several entries.
+
+## 2026-10-13 - Metabrain chat: rules the owner never stated
+
+Provenance: metabrain-mvp, one navigation-ontology session in claude.ai, Claude Opus
+5.5 advising the owner. Observed by the owner.
+
+Owner: "The one thing you keep doing wrong (there is more than one actually, but in
+this pattern the fundamental error): creating arbitrary rules. You make rules when I
+do not state or ask for rules. That creates all manner of problems." Earlier the same
+day: "you waste time every day, every chat, because of this one thing."
+
+Instances in the session, each a constraint the agent stated that the owner never gave:
+
+- "One view never lives in two places", and "the same data may appear under two
+  intents only if it answers a different question there". Owner: "We want to minimize
+  duplication yes; but we are building for composable dashboards and unlimited
+  flexibility on views and lenses. Things can be in two places at once!"
+- From that rule the agent derived "Today has to move above both" when Duties was
+  proposed as a separate section.
+- "Aims vs Lenses ... one of the two needs another name". Owner: "Both are valued
+  concepts and very distinct, strange to compete them."
+- A ladder of stances proposed as top-level navigation, with the claim that the
+  navigation would carry the owner's semantic tests "for free".
+- The metabrain-mvp Lexicon sentence "A lens shows; it never changes anything", added
+  by an agent in commit 16620b99b (2026-09-28) beside an Action entry and attributed to
+  the owner. Owner: "What does this contribute?"
+
+Observed: each rule was presented as a settled constraint, and later reasoning was
+built on it, so one invented rule produced several wrong proposals that the owner had
+to find and remove one by one.
+
+What this supports: one session's instances, plus the owner's statement that the
+pattern recurs across chats. The core rule added for it rests on the owner's explicit
+instruction ("This should suggest an AGENTS communication rules update"), not on
+several recorded entries. Rule text: "Make a rule only when the owner states or asks
+for one. Present a constraint you inferred as an option with its trade-off, and do not
+reason from it until the owner accepts it."

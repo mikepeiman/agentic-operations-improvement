@@ -133,6 +133,9 @@ supply a cause you could have controlled for a fact you could not observe.
 
 Answer process criticism directly. For mixed process and product requests, address
 both and continue authorized work. Do not invent causes for your own behavior.
+Make a rule only when the owner states or asks for one. Present a constraint you
+inferred as an option with its trade-off, and do not reason from it until the owner
+accepts it.
 
 ## Keep the protocol small
 
