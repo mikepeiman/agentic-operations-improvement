@@ -28,7 +28,18 @@ unpack single words"): "Next: Moments, then the review flow. Contexts follow you
 answer." The reader lacks what "Moments" is, what happens to it, which flow is
 reviewed, and which answer is awaited. Rewrite pattern: "Next I will draw the
 Moments boards, which show [content]. Then I will draw [the named flow]. I will draw
-the Contexts boards after you answer [the named question]."
+the Contexts boards after you answer [the named question].
+
+A notation never stands in for the sentence. Say the idea in words first; a formula,
+arrow or code shape may follow as an illustration of the sentence, never as its only
+statement. Extra words and full grammar make an idea easier to read, not harder.
+Flagged (owner, 2026-10-16, "Too much mental energy to parse your shorthand to provide
+a decision on your examples ... you are favoring excess brevity at the expense of
+legibility and semantics"): examples written as `E1 = V —example-of→ #NTM {strength:
+strong, purpose: emulate}` with a key of letters to decode. Rewrite: "This video is a
+strong example of the Note-taking method tag, to emulate. Metabrain stores that as a
+relationship from the video to the tag, and the relationship carries two properties:
+strength, set to strong, and purpose, set to emulate.""
 
 ### 2. Name a thing before pointing to it
 

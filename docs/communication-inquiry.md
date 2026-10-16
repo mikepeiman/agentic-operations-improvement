@@ -331,3 +331,18 @@ Analysis by the recording agent: the heading attributes the waiting to a body of
 ("it", the contexts work) instead of to the agent, which is the one that needs the
 answer and will act on it. Same class as the actorless passive "its reminder is
 retained" under rule 4. Added to rule 4 as its first-person case.
+
+## 2026-10-16: notation in place of sentences
+
+Provenance: the owner, in a metabrain-mvp session (Claude Opus 5.5), on ten examples
+meant to test a data shape, each written as a letter key and arrow notation.
+
+The instance, verbatim: "Too much mental energy to parse your shorthand to provide a
+decision on your examples. Rewrite. This is another typical failure pattern: you are
+favoring excess brevity at the expense of legibility and semantics. Good grammar and
+extra words can make an idea *easier* for a human to read, not harder."
+
+Analysis by the recording agent: the examples made the reader decode a private key
+(V, #NTM, E1) and an arrow syntax before reaching the meaning, so the owner could not
+decide. Same class as contrived brevity under rule 1, recorded earlier the same day;
+two instances in one day. Added to rule 1: a notation never stands in for the sentence.
