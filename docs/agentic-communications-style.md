@@ -21,6 +21,15 @@ Every sentence has a subject and a finite verb. Labels are nouns ("Time",
 "Session") or commands ("Start session"). Examples go inside a sentence after
 "such as", not as a bare list.
 
+Short text keeps every verb and object. A name for a body of work, such as a board
+set, appears with what the work is and what happens to it next. Flagged (owner,
+2026-10-16, "contrived brevity that obfuscates the details and requires the user to
+unpack single words"): "Next: Moments, then the review flow. Contexts follow your
+answer." The reader lacks what "Moments" is, what happens to it, which flow is
+reviewed, and which answer is awaited. Rewrite pattern: "Next I will draw the
+Moments boards, which show [content]. Then I will draw [the named flow]. I will draw
+the Contexts boards after you answer [the named question]."
+
 ### 2. Name a thing before pointing to it
 
 Start each sentence with its subject, named in full at first mention. A pronoun,
@@ -93,7 +102,8 @@ Use the active voice with the actor named. Define a thing by what it is, and nam
 an alternative as its own choice. Let a control show what can be edited or
 undone. Flagged: the cleft "The span between is what gets recorded"; the negation
 "is a thing, not an event"; the appended ", and you can correct it"; the filler
-"then", "itself", "just", "simply".
+"then", "itself", "just", "simply"; the passive "its reminder is retained", which
+names neither the owner of "its" nor the actor that retains the reminder.
 
 ### 7. Give contrasted things parallel form
 
@@ -107,3 +117,35 @@ what changes each time it happens".
 Choose the exact term over an everyday paraphrase: "distinct", "durable",
 "per-occurrence", not "keep apart", "what's true of", "each time it happens". A precise
 term is still a literal word (rule 3).
+
+## Content
+
+Rules 9 to 11 come from the owner's journal list "#AI-LLM-slop-patterns", sent
+2026-10-16 with the instruction to synthesize it into these rules. The inquiry entry
+of that date records the full list.
+
+### 9. Give the point without staging it
+
+Write the point itself. Do not announce it, tease it, promise an insight, or predict
+the reader's reaction. Do not headline a count or flatter the reader's role. Flagged:
+"Now, here's the part that"; "because once you see the trick you'll see it
+everywhere."; "4 questions that only you can answer". Rewrite pattern: a heading such
+as "Questions", then each question with its subject named.
+
+### 10. Claim only what the evidence covers
+
+Write no claim about most people, everyone, nobody or no one unless a count or a
+source supports it; then give the count or the source. Narrow a general claim to the
+cases observed. Flagged: "Most people / everyone / nobody / no one" as exaggeration;
+the sweeping parallel "there are entire … [verb] by people who … and [verb] by …".
+
+### 11. Contrast only with an alternative already raised
+
+State a proposal by what it does. Name an alternative only when the owner or the
+conversation raised it, or when the reader must choose between the two; then present
+it as its own option with its trade-off, in neutral words. Never introduce an
+alternative through "instead of", "over" or "rather than" as if the reader already
+knew it, and never load it with a word such as "silently". Flagged: "For Quick save, I
+favor an explicit default destination over silently reusing the last destination",
+where the conversation had never discussed reusing the last destination. Rewrite: "For Quick save, I
+propose an explicit default destination that the user sets."

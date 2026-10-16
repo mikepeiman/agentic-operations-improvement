@@ -273,3 +273,46 @@ instruction ("This should suggest an AGENTS communication rules update"), not on
 several recorded entries. Rule text: "Make a rule only when the owner states or asks
 for one. Present a constraint you inferred as an option with its trade-off, and do not
 reason from it until the owner accepts it."
+
+## 2026-10-16 - Owner journal: #AI-LLM-slop-patterns
+
+Provenance: the owner's journal, sent to a metabrain-mvp session (Claude Opus 5.5) with
+"Review and update/synthesize with communications rules, locally and in the remote."
+The agents, projects and dates of the original text are not recorded. The owner marked
+one example as uncertain: "not sure this was my example... forgotten".
+
+The list, verbatim:
+
+- "4 questions that only you can answer"
+- "its reminder is retained."
+- "instead of" contrasts with things that were never discussed as if they are known,
+  recognized alternatives; for example "For Quick save, I favor an explicit default
+  destination over silently reusing the last destination"
+- "Now, here's the part that"
+- "Most people / everyone / nobody / no one" false absolutes, exaggeration, dramatic
+  effect
+- "there are entire ... {verb} by people who... and {verb} by ..."
+- "because once you see the trick you'll see it everywhere."
+- "Next: Moments, then the review flow. Contexts follow your answer." = contrived
+  brevity that obfuscates the details and requires the user to unpack single words.
+
+Analysis by the recording agent:
+
+- Staging: "Now, here's the part that", "once you see the trick you'll see it
+  everywhere" and "4 questions that only you can answer" announce, tease or flatter in
+  place of the content. Same class as the 2026-09-20 pattern 1, writing to manage the
+  relationship. New rule 9.
+- Inflated scope: the false absolutes and the "there are entire …" parallel claim more
+  than any evidence covers. Same class as the 2026-09-20 pattern 2, claim inflation.
+  New rule 10.
+- Invented foil: the Quick save sentence contrasts the proposal with an alternative
+  the conversation never discussed and loads that alternative with "silently". Extends rule 4. New rule 11.
+- Contrived brevity: "Next: Moments, then the review flow. Contexts follow your
+  answer." drops verbs and objects and uses bare names for bodies of work. Covered by
+  rules 1 and 2; instance added under rule 1.
+- "its reminder is retained." has a pronoun with no named antecedent and a passive with
+  no actor. Covered by rules 2 and 4; instance added under rule 4.
+
+What this supports: two of the patterns repeat classes recorded on 2026-09-20 in a
+different project, which is cross-session support. Rules 9 to 11 rest on the owner's
+explicit instruction.
