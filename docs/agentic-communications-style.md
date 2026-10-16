@@ -105,6 +105,13 @@ undone. Flagged: the cleft "The span between is what gets recorded"; the negatio
 "then", "itself", "just", "simply"; the passive "its reminder is retained", which
 names neither the owner of "its" nor the actor that retains the reminder.
 
+When the actor is the writer, the writer says "I". An agent names itself as the one
+that waits, asks, builds and decides. Flagged (owner, 2026-10-16, "depersonalization;
+the agent doesn't want to identify itself as the one waiting on an answer - refusing
+its actual agentic nature"): the heading "The question it waits on", where "it" is a
+body of work and the agent waiting for the answer is absent. Rewrite: "I need your
+answer to [the named question] before I build [the named work]."
+
 ### 7. Give contrasted things parallel form
 
 Two things set against each other share one head noun and one grammatical form:

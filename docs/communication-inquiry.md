@@ -316,3 +316,18 @@ Analysis by the recording agent:
 What this supports: two of the patterns repeat classes recorded on 2026-09-20 in a
 different project, which is cross-session support. Rules 9 to 11 rest on the owner's
 explicit instruction.
+
+## 2026-10-16: the agent absent from its own waiting
+
+Provenance: the owner, in a metabrain-mvp session (Claude Opus 5.5), on a reply that
+listed what each next piece of work depends on, with "communications, update local
+docs and remote".
+
+The instance, verbatim: "\"The question it waits on\" = depersonalization; the agent
+doesn't want to identify itself as the one waiting on an answer - refusing its actual
+agentic nature."
+
+Analysis by the recording agent: the heading attributes the waiting to a body of work
+("it", the contexts work) instead of to the agent, which is the one that needs the
+answer and will act on it. Same class as the actorless passive "its reminder is
+retained" under rule 4. Added to rule 4 as its first-person case.
