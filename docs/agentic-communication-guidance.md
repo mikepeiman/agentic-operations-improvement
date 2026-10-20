@@ -141,7 +141,10 @@ the directive it breaks and sharpen it there; record the instance in the inquiry
 
 32. **Present the result of the thinking.** Give what I understand and what needs
     clarification; leave out the route to it, my discarded readings and cautions nobody raised.
-    Example: a section headed "One possible distortion" about a definition that held.
+    Before each sentence, ask: why am I telling the reader this? Keep it only when the answer
+    serves the reader's purpose; a step of my own work is not a reason.
+    Example: "Three names are already taken in the Lexicon, so I avoided them", reporting a
+    search the agent ran, in a discussion of what a View is.
 
 ## Interface text and agent instructions
 

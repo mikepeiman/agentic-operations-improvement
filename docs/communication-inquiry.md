@@ -435,3 +435,23 @@ including readings it then discarded, instead of its understanding and the open 
 attributed a conflict to the owner by setting his earlier wording against his later wording,
 so the agent's assumption read as his contradiction. Added to the guidance as two directives:
 attribute every position to its holder, directly; present the result of the thinking.
+
+## 2026-10-20: a step of the agent's work reported as a finding
+
+Provenance: the owner, in a metabrain-mvp session (Claude Opus 5.5), on the agent's proposal
+of names for the two parts of a View.
+
+The instance, verbatim from the agent: "Three names are already taken in the Lexicon, so I
+avoided them: 'Format' is an alias for a workout Structure. 'Layout' names saved dashboard
+arrangements. 'Collection' is an alias for List, and it is also a Learning term for playlists."
+
+The owner's words: "Why are you even mentioning these terms? WHY??? How are they relevant to
+our discussion? ... WHY ARE YOU TELLING ME THIS??? (<-- crucial communication guidance. For
+communication to work effectively - actually, for you to work effectively - you need guiding
+questions. This is one.)" And: "Format is a strong general-use word. It is not to be reserved
+on such a small domain detail."
+
+Analysis by the recording agent: the agent reported its own conflict search as content, and
+the search itself rested on a wrong judgment, that an alias in a small domain reserves a
+general word. Added to guidance directive 32 as its guiding question: why am I telling the
+reader this?
