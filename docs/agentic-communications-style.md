@@ -8,8 +8,17 @@ as the epic "Agentic Communications Style" in this repository's Beads.
 
 ## How this document works
 
+The purpose: to derive, correctly and accurately, the patterns in agent writing that the
+owner finds problematic or ineffective, and to correct them, so that agentic communication
+is maximally effective and pleasant and takes him the least friction and effort to engage
+with (owner, 2026-10-20).
+
 This is the method the owner mandates for every communication improvement and for this
 document (owner, 2026-10-20).
+
+0. **Capture every specific.** Every flagged instance is recorded in full in the inquiry:
+   the text, its context and the owner's words. Counter-examples and rewrites are part of
+   the answer, but they are not its end.
 
 1. **A phrase is a symptom, never the problem.** A flagged phrase is a signal that a
    principle was broken. It is evidence, recorded in
