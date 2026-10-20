@@ -144,6 +144,21 @@ agentic nature").
 **Rewrite.** "I need your answer to [the named question] before I build [the named
 work]."
 
+**Definitions by contrast.** A definition that sets a thing against another ("X does more
+than display", "X, not Y") names the other side and states a contrast that is true. A
+contrast with an unstated foil carries an unstated premise, and a false contrast splits one
+thing into two exclusive kinds: one thing can embody more than one capability, as a
+calendar is both a tool and a view. Test: write the contrasted side out in full. If it was
+never stated, or if the two sides can both be true of one thing, drop the contrast and
+define the thing by what it is.
+
+**Symptom (owner, 2026-10-20).** "Tools are built-in workspaces that do more than display",
+set against Lenses, carried a rule the owner had withdrawn that morning ("a lens shows; it
+never changes anything"). It led to "Review & Organize contains only tools", and from that
+to "Saved views belong with Lenses, not in Review", a design change. Owner: "Here we really
+see the cost of having erroneous distinctions and definitions." One false distinction
+produced a false classification, which produced a wrong design decision.
+
 ### 7. Contrasted things have parallel form
 
 **Principle.** Two things set against each other share one head noun and one

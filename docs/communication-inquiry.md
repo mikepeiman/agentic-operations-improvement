@@ -388,3 +388,26 @@ reader had a label for each choice but no picture of its result. The same root a
 1 and 2, context the reader does not have, applied to the decisions the reader is asked
 to make. Derived as rule 12: explain the idea, with a scenario, before the concise
 question.
+
+## 2026-10-20: a definition by contrast carried a withdrawn rule
+
+Provenance: the owner, in a metabrain-mvp session (Claude Opus 5.5), working out the main
+navigation's ontology.
+
+The instances, verbatim from the agent: "Tools are built-in workspaces that do more than
+display"; then "Review & Organize contains only tools"; then "Saved views belong with Lenses,
+not in Review." Earlier the same day: "Calendar stays a place of its own, because it
+schedules" and "scheduling is more than a view".
+
+The owner's words: "any definitions that rely on either false equivalency or false distinction
+are highly suspect ... this continues to carry forward the emphatically-erroneous idea of 'a
+lens shows; it never changes anything'. If not this, then against what did you set up that
+definition of Tools?" And: "A calendar is a tool. It is also a view. There is simply no
+contradiction. Things can embody more than one capability." And: "Here we really see the cost
+of having erroneous distinctions and definitions."
+
+Analysis by the recording agent: the owner had withdrawn the rule that morning and the agent
+deleted its sentence, but the premise (a view only displays) stayed and returned as the foil
+of each contrast. Each contrast named one side only, so the premise was never stated where it
+could be denied. Added to rule 4 as its definitions-by-contrast case. The project post-mortem
+is metabrain-mvp docs/active/postmortem-2026-10-20-withdrawn-rule-spread.md.
