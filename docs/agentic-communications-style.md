@@ -216,3 +216,29 @@ destination", where nobody had discussed reusing the last destination.
 
 **Rewrite.** "For Quick save, I propose an explicit default destination that the user
 sets."
+
+### 12. A question explains the idea it asks about
+
+**Principle.** A question that asks the reader to choose or judge first explains, in
+complete sentences, each idea it asks about: what the thing is, what it covers, and what
+each option would change for the reader in practice. A coined phrase or a term the
+conversation has not defined is explained before it is asked about. A question list is
+concise only after that explanation, never instead of it.
+
+**Test.** Give the question to a reader who has only this message. Can that reader say,
+for each option, what the screen or the work would look like if they chose it? If an
+option names an idea the writer holds but the message never explains, write the
+explanation first, with a concrete scenario.
+
+**Symptoms.** "Review, Timeline and Calendar: A: all three become Lenses; B: Calendar
+stays a place of its own, because it schedules" and "A My Life domain page: A: a Lens
+over everything tagged to that domain; B: a page designed for each domain" (owner,
+2026-10-20: "What does it mean to 'become a view'?" and "How can you assume I know what
+you mean from these tiny ~6 word sentences? This is a major, common communication
+defect").
+
+**Rewrite.** "A place is a fixed rail item with its own screens, such as Projects. A
+Lens is a saved view that you pin, rename, reorder and remove. Timeline shows entries in
+time order; Calendar shows days and weeks and will schedule. A: both become Lenses,
+pinned by default, which you can unpin or move. B: Calendar stays a place, because
+scheduling is more than a view, and Timeline becomes a Lens."

@@ -365,3 +365,26 @@ relational framing: the heading characterizes the reader's standing instead of n
 its subject, and its exclusive word implies the complement about the writer, an
 unsupported claim under rule 10. Added to rule 9 as a stated principle with a deletion
 test, not as a banned phrase.
+
+## 2026-10-20: questions about ideas never explained
+
+Provenance: the owner, in a metabrain-mvp session (Claude Opus 5.5), answering seven
+navigation questions, each a heading with two options of about six words.
+
+The instances, verbatim from the agent: "Review, Timeline and Calendar: A: all three
+become Lenses; B: Calendar stays a place of its own, because it schedules, and the other
+two become Lenses." And: "A My Life domain page: A: a Lens over everything tagged to
+that domain; B: a page designed for each domain."
+
+The owner's words: "2: unclear question. What does it mean to 'become a view'?" and "3:
+unclear! wow. How can you assume I know what you mean from these tiny ~6 word sentences?
+This is a major, common communication defect - assuming the user understands ideas and
+visions for things that you never explained or expanded. Yes I want concise lists of
+questions to respond to; it should have explained prior."
+
+Analysis by the recording agent: each option named an idea that existed only in the
+agent's reasoning (a place turning into a Lens; a page assembled from tags), so the
+reader had a label for each choice but no picture of its result. The same root as rules
+1 and 2, context the reader does not have, applied to the decisions the reader is asked
+to make. Derived as rule 12: explain the idea, with a scenario, before the concise
+question.
