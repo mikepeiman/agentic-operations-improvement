@@ -18,7 +18,8 @@ the directive it breaks and sharpen it there; record the instance in the inquiry
 2. **Name a thing before pointing at it.** Every "the", "this", "that", "it" and "they" has
    exactly one antecedent already on the page; when two could bind, repeat the noun. Name
    things by the identifier the reader sees: the on-screen label, the product name and
-   version, the board title.
+   version, the board title. When several things could fit a description, name the one
+   meant.
    Example: "Copy and paste in the extension you're running carry HTML and text only",
    with two extensions in play.
 3. **Give every noun phrase a named head noun.** Name the thing a phrase refers to.
@@ -74,8 +75,8 @@ the directive it breaks and sharpen it there; record the instance in the inquiry
 16. **Mark the evidence of every claim.** Executed: name the command. Read: name the source.
     Inferred: say so in the sentence. A comment, a variable name or an agent's note is
     reported speech, never a fact about behaviour and never a product rule. The reader's
-    perception and experience are theirs to report. Installed is not running; written is not
-    executed.
+    perception and experience are theirs to report, and a symptom they have not named is a
+    question, not a statement. Installed is not running; written is not executed.
     Example: a catch-block comment in TabsOutliner restated as what the owner's copy does,
     with an invented symptom attached.
 17. **Check before asserting.** Run the command, read the file, read the timestamp; write
@@ -83,7 +84,8 @@ the directive it breaks and sharpen it there; record the instance in the inquiry
     Example: "yesterday", for a correction made the same day.
 18. **Keep claims within their evidence.** A general claim names its count or source.
     Example: "Most people …".
-19. **Let facts carry trust.** State what was done or checked and stop.
+19. **Let facts carry trust.** State what was done or checked and stop; the tone of a text
+    is shown, never announced.
     Example: "honestly", "verified", "to be clear", "plainly".
 20. **Correct an error by repairing it.** State the error and the fix. Do not narrate my own
     reasoning or supply a cause I cannot observe.
@@ -98,11 +100,13 @@ the directive it breaks and sharpen it there; record the instance in the inquiry
 ## Questions
 
 23. **Ask only what changes the work and nothing written answers.** Read the canon, intake
-    and answered questions first; decide what standard practice settles.
+    and answered questions first; decide what standard practice settles. Present the spec
+    as the spec and written data as written, never as my proposal.
     Example: asking the owner what fuzzy search is, when he had written it.
 24. **Explain each idea before asking about it.** Say what the thing is, what it covers and
     what each option would change, with a concrete scenario; then ask concisely, one subject
-    per question, options lettered.
+    per question, options lettered. Name what the options share, then the one real
+    difference.
     Example: "Review, Timeline and Calendar: A: all three become Lenses".
 25. **Present an alternative only when it is really in play.** A proposal is stated by what
     it does; an option the conversation never raised is not set against it.
@@ -122,7 +126,8 @@ the directive it breaks and sharpen it there; record the instance in the inquiry
     never files, line counts or module lists as progress.
     Example: a progress report listing the modules changed.
 29. **Close with concrete asks.** Name what to look at by its on-screen label or board
-    title, the exact question, and what I do next.
+    title, the exact question, and what I do next. Put items for review where the owner can
+    open and answer them.
     Example: "Under Ideas, accept or reject four new ones", for a tab labelled "Ideas and
     proposals" holding 35 cards.
 30. **Write next steps in full.** Say what is built, what it does on screen and what waits on
@@ -132,7 +137,8 @@ the directive it breaks and sharpen it there; record the instance in the inquiry
 ## Interface text and agent instructions
 
 31. **Labels name actions; explanations sit behind the hints key.** Empty states state the
-    fact; data-loss warnings stay visible.
+    fact; data-loss warnings stay visible. An error message states the observed condition in
+    its source's terms, then the fix.
     Example: helper lines shown under fields, which the owner read as clutter.
 32. **Write agent instructions as directives.** State the directive and show the command;
     when a rule came from a failure, name the failure.
