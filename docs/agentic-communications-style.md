@@ -1,180 +1,209 @@
 # Agentic Communications Style
 
-A top-level project (owner, 2026-09-28): the essential rules of grammar, style and
-content for everything agents write for people, in interface text, documents and
-chat. Development-process reporting (approvals, delivery reports, work status) is
-part of the operations protocol, `## Communicate clearly` in the core, not of this
-project. Evidence lives in [the communication inquiry](communication-inquiry.md);
-a rule is added only as the inquiry describes, when several instances support the
-same pattern. Tracked as the epic "Agentic Communications Style" in this
-repository's Beads.
+A top-level project (owner, 2026-09-28): the principles of grammar, style and content
+for everything agents write for people, in interface text, documents and chat.
+Development-process reporting (approvals, delivery reports, work status) is part of the
+operations protocol, `## Communicate clearly` in the core, not of this project. Tracked
+as the epic "Agentic Communications Style" in this repository's Beads.
 
-The failure these rules close: the text depends on context the reader does not
-have. The writer has a subject, a referent or a meaning in mind and leaves it out;
-the reader has only the page or the screen.
+## How this document works
+
+This is the method the owner mandates for every communication improvement and for this
+document (owner, 2026-10-20).
+
+1. **A phrase is a symptom, never the problem.** A flagged phrase is a signal that a
+   principle was broken. It is evidence, recorded in
+   [the communication inquiry](communication-inquiry.md) with its provenance. A phrase
+   never becomes a rule, and banning a phrase fixes nothing: the same failure returns
+   in other words.
+2. **Derive the pattern.** From the instances, name the grammatical or prose pattern
+   they share: what the writer did to the sentence, and what the reader lacks or is
+   made to believe as a result.
+3. **State the principle objectively.** Write the principle as a property of correct
+   text, in terms any careful reader can check, with a test that decides a given
+   sentence. A principle that only its author can apply is not yet stated.
+4. **Enforce the principle.** A rule here is a principle with its test. Its examples
+   illustrate the principle; they are not its scope. When a new instance arrives, first
+   ask which principle it breaks. Sharpen that principle or its test, or derive a new
+   one. Never append the phrase.
+
+The failure the principles close: the text depends on context the reader does not have,
+or carries a claim or stance the writer never stated. The writer has a subject, a
+referent, a meaning or a position in mind and leaves it implicit; the reader has only
+the page or the screen.
+
+Each principle below gives its statement, its test, and the symptoms that revealed it.
+The numbers are stable references, not an order of importance.
 
 ## Grammar
 
-### 1. Write complete sentences
+### 1. Every unit of text is a complete statement
 
-Every sentence has a subject and a finite verb. Labels are nouns ("Time",
-"Session") or commands ("Start session"). Examples go inside a sentence after
-"such as", not as a bare list.
+**Principle.** A sentence has a subject and a finite verb. A label is a noun ("Time",
+"Session") or a command ("Start session"). Short text keeps every verb and object it
+needs, and a notation never replaces the sentence it illustrates.
 
-Short text keeps every verb and object. A name for a body of work, such as a board
-set, appears with what the work is and what happens to it next. Flagged (owner,
-2026-10-16, "contrived brevity that obfuscates the details and requires the user to
-unpack single words"): "Next: Moments, then the review flow. Contexts follow your
-answer." The reader lacks what "Moments" is, what happens to it, which flow is
-reviewed, and which answer is awaited. Rewrite pattern: "Next I will draw the
-Moments boards, which show [content]. Then I will draw [the named flow]. I will draw
-the Contexts boards after you answer [the named question].
+**Test.** Read the unit alone. Can a reader say who does what to what? If a verb, an
+object or the meaning of a coined name or symbol has to be supplied from elsewhere, the
+unit is incomplete. Write the sentence first; a formula, arrow or code shape may follow
+it as an illustration.
 
-A notation never stands in for the sentence. Say the idea in words first; a formula,
-arrow or code shape may follow as an illustration of the sentence, never as its only
-statement. Extra words and full grammar make an idea easier to read, not harder.
-Flagged (owner, 2026-10-16, "Too much mental energy to parse your shorthand to provide
-a decision on your examples ... you are favoring excess brevity at the expense of
-legibility and semantics"): examples written as `E1 = V —example-of→ #NTM {strength:
-strong, purpose: emulate}` with a key of letters to decode. Rewrite: "This video is a
-strong example of the Note-taking method tag, to emulate. Metabrain stores that as a
-relationship from the video to the tag, and the relationship carries two properties:
-strength, set to strong, and purpose, set to emulate.""
+**Symptoms.** Contrived brevity: "Next: Moments, then the review flow. Contexts follow
+your answer." Private notation: examples written as `E1 = V —example-of→ #NTM {...}`
+with a key of letters to decode (owner, 2026-10-16: "you are favoring excess brevity at
+the expense of legibility and semantics").
 
-### 2. Name a thing before pointing to it
+**Rewrites.** "Next I will draw the Moments boards, which show [content]. Then I will
+draw [the named flow]. I will draw the Contexts boards after you answer [the named
+question]." And: "This video is a strong example of the Note-taking method tag, to
+emulate. Metabrain stores that as a relationship from the video to the tag, with two
+properties: strength, set to strong, and purpose, set to emulate."
 
-Start each sentence with its subject, named in full at first mention. A pronoun,
-"the" or "this" refers only to something already named. A sentence that starts
-with a verb, a state word, a pronoun, or "the" before a thing never introduced
-continues a sentence the reader never saw.
+### 2. A thing is named before anything points to it
 
-Instance (Metabrain, metatag definition editor, owner flagged as AI slop,
-2026-09-28, "Something about how sentences are started"):
+**Principle.** A pronoun, "the" or "this" refers only to something already named in
+full. A sentence starts with its subject.
 
-| Label / explanation as written | What the reader lacks |
-| --- | --- |
-| "happens at a time" | a subject: what happens? |
-| "The pill carries when it happened, and you can correct it." | which pill; what "it" is |
-| "Off for a fact with no clock, like an ingredient." | a subject and a verb |
-| "runs as a session (start, then stop)" | a subject |
-| "Quick Log opens it, and a second tap closes it." | what "it" is; a second tap of what |
-| "The span between is what gets recorded." | between what; recorded by whom |
-| "is a thing, not an event" | a subject |
-| "A person, a film, a place." | a verb |
-| "Its fields can then describe the thing itself or one encounter with it." | whose fields |
+**Test.** For every pronoun and definite description, find its antecedent on the page.
+If the antecedent exists only in the writer's head, name the thing.
 
-Eight of the nine units depend on context the screen does not give. Rewrites
-(label, then the hint shown on demand):
+**Symptoms.** Interface hints that start mid-thought: "happens at a time", "The pill
+carries when it happened, and you can correct it", "Quick Log opens it, and a second
+tap closes it" (owner, 2026-09-28: "Something about how sentences are started"). In
+chat: "Name-first applies until you choose" (owner: "I had to think too hard to
+understand the unnamed referents").
 
-- **Time.** "Each entry records the time of the event. Turn off Time for metatags
-  without a time, such as ingredients."
-- **Session.** "The first Quick Log tap starts a session and the second tap stops
-  it. Metabrain records the start, the stop and the duration."
-- **Thing.** "Each instance is a lasting thing, such as a person, film or place. A
-  field can describe the thing, or one encounter with it, such as one viewing of a
-  film."
+**Rewrites.** "Time. Each entry records the time of the event. Turn off Time for
+metatags without a time, such as ingredients." "Session. The first Quick Log tap starts
+a session and the second tap stops it. Metabrain records the start, the stop and the
+duration." In chat: "When you add a property to a metatag in the definition editor,
+what do you enter first: its name or its type?"
 
-The same failure in chat (Metabrain, 2026-09-28): "**Property rows.** Your July 23
-note puts the property type first. Your July 22 note and the composer design put
-the name first. Name-first applies until you choose." The owner: "I had to think
-too hard to understand the unnamed referents in your statement". Rewrite: "When you
-add a property to a metatag in the definition editor, what do you enter first: its
-name or its type?"
+### 5. Every noun phrase has a named head noun
 
-### 5. Give every noun phrase a named head noun
+**Principle.** A phrase names the thing it refers to.
 
-Name the thing a phrase refers to: "the details that do not change", never "what's
-true of it" or "what changes". A "what" clause never stands as a subject or an object.
+**Test.** Find the head noun of each subject and object. A "what" clause in that
+position ("what's true of it", "what changes") has no head noun; replace it with the
+named thing ("the details that do not change").
 
-### 6. State the scope inside the sentence
+**Symptoms.** "My intent was to keep what's true of a named item, typed once, apart
+from what changes each time it happens" (owner, 2026-10-07: "how is your grammar so
+very bad?").
 
-Say what each claim applies to, in the sentence that makes it: "My intent for metatags
-was …". A claim whose scope lives only in the writer's framing reads as universal.
+**Rewrites (the owner's).** "My intent for metatags was to keep the details that do not
+change distinct from the details that do." "My intent was to ensure an item could have
+both durable defined values, and per-occurrence variable values."
 
-Instance for rules 5 to 8 (Metabrain chat, 2026-10-07, owner: "Honestly how is your
-grammar so very bad?"): "My intent was to keep what's true of a named item, typed once,
-apart from what changes each time it happens." Owner rewrites: "My intent for metatags
-was to keep the details that do not change distinct from the details that do." and "My
-intent was to ensure an item could have both durable defined values, and
-per-occurrence variable values."
+### 6. Scope is stated inside the sentence
+
+**Principle.** A claim says what it applies to, in the sentence that makes it.
+
+**Test.** Lift the sentence out of its paragraph. Does it still say what it is about?
+If it now reads as universal, its scope lived only in the framing.
+
+**Symptoms.** "My intent was …" where the intent concerned metatags only.
 
 ## Style
 
-### 3. Use literal words
+### 3. Words are literal
 
-The subject is the person, the application, or a named record or control. The verb
-is the operation: records, shows, starts, stops, opens, saves. Data does not carry,
-hold, live or know, and has no clock or span. Flagged: "The pill carries when it
-happened"; "a fact with no clock"; "The span between".
+**Principle.** The subject is a person, the application or a named record or control;
+the verb is the operation it performs (records, shows, starts, stops, opens, saves).
 
-### 4. Say it directly
+**Test.** Could the subject actually perform the verb? Data does not carry, hold, live
+or know, and has no clock or span. If the verb is a metaphor, name the operation.
 
-Use the active voice with the actor named. Define a thing by what it is, and name
-an alternative as its own choice. Let a control show what can be edited or
-undone. Flagged: the cleft "The span between is what gets recorded"; the negation
-"is a thing, not an event"; the appended ", and you can correct it"; the filler
-"then", "itself", "just", "simply"; the passive "its reminder is retained", which
-names neither the owner of "its" nor the actor that retains the reminder.
+**Symptoms.** "The pill carries when it happened"; "a fact with no clock"; "The span
+between".
 
-When the actor is the writer, the writer says "I". An agent names itself as the one
-that waits, asks, builds and decides. Flagged (owner, 2026-10-16, "depersonalization;
-the agent doesn't want to identify itself as the one waiting on an answer - refusing
-its actual agentic nature"): the heading "The question it waits on", where "it" is a
-body of work and the agent waiting for the answer is absent. Rewrite: "I need your
-answer to [the named question] before I build [the named work]."
+### 4. Statements are direct, and the actor is named
 
-### 7. Give contrasted things parallel form
+**Principle.** The actor of each action is named in the active voice. When the actor is
+the writer, the writer says "I": an agent names itself as the one that waits, asks,
+builds and decides. A thing is defined by what it is.
 
-Two things set against each other share one head noun and one grammatical form:
-"durable defined values and per-occurrence variable values"; "the details that do not
-change" and "the details that do". Flagged: "what's true of a named item … apart from
-what changes each time it happens".
+**Test.** For each action, who performs it? If the sentence hides the actor (a passive,
+a cleft, an abstraction acting in the agent's place) or defines a thing only by what it
+is not, rewrite it with the actor and the positive definition.
 
-### 8. Prefer the precise term
+**Symptoms.** The cleft "The span between is what gets recorded"; the negation "is a
+thing, not an event"; the actorless passive "its reminder is retained"; the heading "The
+question it waits on" (owner, 2026-10-16: "depersonalization ... refusing its actual
+agentic nature").
 
-Choose the exact term over an everyday paraphrase: "distinct", "durable",
-"per-occurrence", not "keep apart", "what's true of", "each time it happens". A precise
-term is still a literal word (rule 3).
+**Rewrite.** "I need your answer to [the named question] before I build [the named
+work]."
+
+### 7. Contrasted things have parallel form
+
+**Principle.** Two things set against each other share one head noun and one
+grammatical form.
+
+**Test.** Write the two sides one under the other. If their forms differ, align them:
+"durable defined values and per-occurrence variable values".
+
+**Symptoms.** "what's true of a named item … apart from what changes each time it
+happens".
+
+### 8. The precise term is preferred
+
+**Principle.** The exact term replaces an everyday paraphrase, and stays a literal word
+(principle 3).
+
+**Test.** Is there a standard term for the idea? Use it: "distinct", "durable",
+"per-occurrence".
+
+**Symptoms.** "keep apart", "what's true of", "each time it happens".
 
 ## Content
 
-Rules 9 to 11 come from the owner's journal list "#AI-LLM-slop-patterns", sent
-2026-10-16 with the instruction to synthesize it into these rules. The inquiry entry
-of that date records the full list.
+### 9. The text carries information, not stance
 
-### 9. Give the point without staging it
+**Principle.** Text states its point and names its subject. It does not stage the
+point, and it does not characterize anyone's standing: who is uniquely able, who is
+important, who ranks above whom, how the reader will react. Staging and standing are
+social moves. They spend the reader's attention without moving a fact, and an
+exclusive word about one person (only, alone, just you) asserts its complement about the
+other, an unsupported claim under principle 10.
 
-Write the point itself. Do not announce it, tease it, promise an insight, or predict
-the reader's reaction. Do not headline a count or flatter the reader's role. Flagged:
-"Now, here's the part that"; "because once you see the trick you'll see it
-everywhere."; "4 questions that only you can answer". Rewrite pattern: a heading such
-as "Questions", then each question with its subject named.
+**Test.** Delete every word that announces, teases, praises, ranks or predicts, and
+every word that refers to the reader's or the writer's standing. If what remains still
+says the point and names its subject, the deleted words were framing; leave them out.
+If nothing remains, write the point. Plain address ("for you") is neutral.
 
-**A heading names its subject, never anyone's standing.** A heading or lead-in says
-what follows. It does not characterize the reader or the writer: who is uniquely
-able, who is important, who ranks above whom, who will benefit. Such words turn
-information into flattery or ranking, and they carry a hidden claim. An exclusive
-word about one person (only, alone, just you) asserts its complement about the
-other: "only you can answer" also says the writer can answer everything else, which
-rule 10 forbids without evidence. Test: delete every word that refers to the reader
-or the writer. If the heading still names what follows, the deleted words were
-framing; leave them out. If nothing is left, write the subject. Address alone is
-neutral ("Questions for you"); rank, exclusivity and praise are not.
+**Symptoms.** Staging: "Now, here's the part that"; "once you see the trick you'll see
+it everywhere". Standing: "4 questions that only you can answer" (owner's journal list,
+2026-10-16) and "Questions only you can answer" (owner, 2026-10-20: "Grammatically the
+correction is tiny ... but in tone and underlying bias, it's a huge issue"), the same
+failure four days apart.
 
-### 10. Claim only what the evidence covers
+**Rewrite.** A heading such as "Questions" or "Questions for you", then each question
+with its subject named.
 
-Write no claim about most people, everyone, nobody or no one unless a count or a
-source supports it; then give the count or the source. Narrow a general claim to the
-cases observed. Flagged: "Most people / everyone / nobody / no one" as exaggeration;
-the sweeping parallel "there are entire … [verb] by people who … and [verb] by …".
+### 10. Claims stay within their evidence
 
-### 11. Contrast only with an alternative already raised
+**Principle.** A claim covers only the cases its evidence covers, and says what that
+evidence is.
 
-State a proposal by what it does. Name an alternative only when the owner or the
-conversation raised it, or when the reader must choose between the two; then present
-it as its own option with its trade-off, in neutral words. Never introduce an
-alternative through "instead of", "over" or "rather than" as if the reader already
-knew it, and never load it with a word such as "silently". Flagged: "For Quick save, I
-favor an explicit default destination over silently reusing the last destination",
-where the conversation had never discussed reusing the last destination. Rewrite: "For Quick save, I
-propose an explicit default destination that the user sets."
+**Test.** For each claim of generality (most, every, no one, always), name the count or
+source. If there is none, narrow the claim to the cases observed.
+
+**Symptoms.** "Most people / everyone / nobody / no one" as exaggeration; the sweeping
+parallel "there are entire … [verb] by people who … and [verb] by …".
+
+### 11. An alternative appears only when it is really in play
+
+**Principle.** A proposal is stated by what it does. An alternative is named only when
+the owner or the conversation raised it, or when the reader must choose; then it is its
+own option with its trade-off, in neutral words.
+
+**Test.** For each "instead of", "over" or "rather than", was the other side raised
+before? If not, delete the contrast and state the proposal alone. Check the words for a
+loaded verdict on the alternative.
+
+**Symptoms.** "I favor an explicit default destination over silently reusing the last
+destination", where nobody had discussed reusing the last destination.
+
+**Rewrite.** "For Quick save, I propose an explicit default destination that the user
+sets."
