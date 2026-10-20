@@ -455,3 +455,21 @@ Analysis by the recording agent: the agent reported its own conflict search as c
 the search itself rested on a wrong judgment, that an alias in a small domain reserves a
 general word. Added to guidance directive 32 as its guiding question: why am I telling the
 reader this?
+
+## 2026-10-20: a coined label in place of the files' names
+
+Provenance: the owner, in a metabrain-mvp session (Claude Opus 5.5), on a status line about a
+git pre-commit check.
+
+The instance, verbatim from the agent: "The pre-commit check now blocks commits to Metabrain's
+copy when GitHub is unreachable." Earlier the same day: "Metabrain's copy", "the mirror" and
+"a copy it cannot verify".
+
+The owner's words: "WHAT FUCKING THING IS A 'METABRAIN'S COPY'??? ... WHY ARE YOU INTRODUCING
+NOVEL TERMS IN PLACE OF WELL-KNOWN TERMS????"
+
+Analysis by the recording agent: the phrase stood for two named files in the metabrain-mvp
+repository, docs/active/agentic-communication-guidance.md and
+docs/active/agentic-communications-style.md. The agent coined labels for its own mechanism
+("copy", "mirror") and used them as if the reader shared them. Guidance directive 2 covers it:
+name things by the identifier the reader knows. The mechanism itself was withdrawn the same day.

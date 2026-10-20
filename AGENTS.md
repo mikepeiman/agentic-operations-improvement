@@ -142,11 +142,11 @@ accepts it.
 
 Every adopting project's AGENTS.md must retain this upstream reference:
 https://github.com/mikepeiman/agentic-operations-improvement.
-Contribute reusable operations, communication, and design improvements there as
-Beads and updates to the shared core or routed practice document. Then refresh
-the originating project's adoption, recording the upstream revision and local
-adaptations. A local-only edit is incomplete. Read `docs/communication-inquiry.md`
-there before proposing a communication rule, and record the observed instance.
+When the owner asks for an improvement, update the project's own rules and commit
+them there. Then read this repository for updates and judge which to integrate,
+and judge whether the project's change belongs here; if it does, change it here
+and commit it here. Each step is a judgment. Read `docs/communication-inquiry.md`
+here before proposing a communication rule, and record the observed instance.
 
 Correct affected documentation in the change that makes it untrue. Keep one owner
 per meaning. Write a post-mortem when the owner names a failure or waste, an
