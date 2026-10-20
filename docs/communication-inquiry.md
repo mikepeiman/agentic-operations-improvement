@@ -346,3 +346,22 @@ Analysis by the recording agent: the examples made the reader decode a private k
 (V, #NTM, E1) and an arrow syntax before reaching the meaning, so the owner could not
 decide. Same class as contrived brevity under rule 1, recorded earlier the same day;
 two instances in one day. Added to rule 1: a notation never stands in for the sentence.
+
+## 2026-10-20: a heading that ranks the reader
+
+Provenance: the owner, in a metabrain-mvp session (Claude Opus 5.5), on a chat heading
+over seven navigation questions, "Questions only you can answer".
+
+The instance, verbatim: "Grammatically the correction is tiny \"Questions for you\" but
+in tone and underlying bias, it's a huge issue." Then, on how to record it: "Ineffectively
+would be making specific rules out of specific phrases ... Effective means deriving
+grammatical and prosaic style patterns, articulating them in an objectively correct way,
+and making rules that enforce principles of communication and writing style."
+
+Analysis by the recording agent: rule 9 already flagged the same heading with a count
+("4 questions that only you can answer") as staging, and the agent wrote it again,
+because the rule named the phrase and the habit, not the principle. The pattern is
+relational framing: the heading characterizes the reader's standing instead of naming
+its subject, and its exclusive word implies the complement about the writer, an
+unsupported claim under rule 10. Added to rule 9 as a stated principle with a deletion
+test, not as a banned phrase.

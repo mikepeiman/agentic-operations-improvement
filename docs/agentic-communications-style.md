@@ -150,6 +150,17 @@ the reader's reaction. Do not headline a count or flatter the reader's role. Fla
 everywhere."; "4 questions that only you can answer". Rewrite pattern: a heading such
 as "Questions", then each question with its subject named.
 
+**A heading names its subject, never anyone's standing.** A heading or lead-in says
+what follows. It does not characterize the reader or the writer: who is uniquely
+able, who is important, who ranks above whom, who will benefit. Such words turn
+information into flattery or ranking, and they carry a hidden claim. An exclusive
+word about one person (only, alone, just you) asserts its complement about the
+other: "only you can answer" also says the writer can answer everything else, which
+rule 10 forbids without evidence. Test: delete every word that refers to the reader
+or the writer. If the heading still names what follows, the deleted words were
+framing; leave them out. If nothing is left, write the subject. Address alone is
+neutral ("Questions for you"); rank, exclusivity and praise are not.
+
 ### 10. Claim only what the evidence covers
 
 Write no claim about most people, everyone, nobody or no one unless a count or a
