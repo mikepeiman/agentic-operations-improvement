@@ -411,3 +411,27 @@ deleted its sentence, but the premise (a view only displays) stayed and returned
 of each contrast. Each contrast named one side only, so the premise was never stated where it
 could be denied. Added to rule 4 as its definitions-by-contrast case. The project post-mortem
 is metabrain-mvp docs/active/postmortem-2026-10-20-withdrawn-rule-spread.md.
+
+## 2026-10-20: assumptions presented as the owner's contradiction
+
+Provenance: the owner, in a metabrain-mvp session (Claude Opus 5.5), on the agent's review of
+his definitions of data, view, Lens and dashboard.
+
+The instances, verbatim from the agent: a section headed "One possible distortion: 'a dashboard
+contains … affordances for action'", and "Your earlier distinction was one of purpose: a
+dashboard coordinates across scopes".
+
+The owner's words: "Everything you said about dashboards and lenses is irrelevant. You invented
+exclusions and cautions that do not exist ... you've focused entirely on your misunderstandings,
+but presented all as important thinking you want me to process ... you should present what you
+understand and be precise about what needs clarification." And: "you make statements by
+implication - terrible. You change the terms and prior understandings indirectly by implication
+- terrible. 'Your earlier distinction was one of purpose' this directly suggests I've contradicted
+myself in a subsequent definition. That literally never happened. That's your assumptions
+packaged as if they were my confusion or contradiction."
+
+Analysis by the recording agent: two patterns. The review reported the agent's reasoning,
+including readings it then discarded, instead of its understanding and the open points. And it
+attributed a conflict to the owner by setting his earlier wording against his later wording,
+so the agent's assumption read as his contradiction. Added to the guidance as two directives:
+attribute every position to its holder, directly; present the result of the thinking.
