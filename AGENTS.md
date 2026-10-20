@@ -116,6 +116,7 @@ launches and build stages; batching intent alone does not prove reduced disrupti
 
 ## Communicate clearly
 
+Follow `docs/agentic-communication-guidance.md` in all text written for a person.
 Answer directly in plain language. Say each point once; omit rhetorical padding,
 repeated context, and empty queues. Scale detail to the request. Distinguish
 observed fact, inference, and unverified boundaries.

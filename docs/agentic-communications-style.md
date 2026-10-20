@@ -6,6 +6,10 @@ Development-process reporting (approvals, delivery reports, work status) is part
 operations protocol, `## Communicate clearly` in the core, not of this project. Tracked
 as the epic "Agentic Communications Style" in this repository's Beads.
 
+The directives to follow, each stated positively with one example of the failure, are in
+[Agentic Communication Guidance](agentic-communication-guidance.md). This document holds the
+method, the principles and their tests.
+
 ## How this document works
 
 The purpose: to derive, correctly and accurately, the patterns in agent writing that the

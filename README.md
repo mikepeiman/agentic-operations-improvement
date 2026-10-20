@@ -8,8 +8,9 @@ communication.
 ## Agentic Communications Style
 
 A top-level project in this repository (owner, 2026-09-28): the essential rules of
-grammar, style and content for everything agents write for people. Its rules and
-real examples are in [Agentic Communications Style](docs/agentic-communications-style.md); dated
+grammar, style and content for everything agents write for people. The directives to
+follow are in [Agentic Communication Guidance](docs/agentic-communication-guidance.md); their
+principles, tests and real examples are in [Agentic Communications Style](docs/agentic-communications-style.md); dated
 evidence is in [the communication inquiry](docs/communication-inquiry.md); its work
 is the Beads epic `ops-chv`.
 
