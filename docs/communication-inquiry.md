@@ -434,7 +434,8 @@ Analysis by the recording agent: two patterns. The review reported the agent's r
 including readings it then discarded, instead of its understanding and the open points. And it
 attributed a conflict to the owner by setting his earlier wording against his later wording,
 so the agent's assumption read as his contradiction. Added to the guidance as two directives:
-attribute every position to its holder, directly; present the result of the thinking.
+attribute every position to its holder, directly; present the result of the thinking. Since
+2026-10-21 they are directives 29 and 10 of agentic-communications-style.md.
 
 ## 2026-10-20: a step of the agent's work reported as a finding
 
@@ -453,8 +454,8 @@ on such a small domain detail."
 
 Analysis by the recording agent: the agent reported its own conflict search as content, and
 the search itself rested on a wrong judgment, that an alias in a small domain reserves a
-general word. Added to guidance directive 32 as its guiding question: why am I telling the
-reader this?
+general word. Added to the guidance as its guiding question: why am I telling the reader
+this? Since 2026-10-21 it is directive 8 of agentic-communications-style.md.
 
 ## 2026-10-20: a coined label in place of the files' names
 
@@ -471,5 +472,17 @@ NOVEL TERMS IN PLACE OF WELL-KNOWN TERMS????"
 Analysis by the recording agent: the phrase stood for two named files in the metabrain-mvp
 repository, docs/active/agentic-communication-guidance.md and
 docs/active/agentic-communications-style.md. The agent coined labels for its own mechanism
-("copy", "mirror") and used them as if the reader shared them. Guidance directive 2 covers it:
-name things by the identifier the reader knows. The mechanism itself was withdrawn the same day.
+("copy", "mirror") and used them as if the reader shared them. The guidance directive on naming covers it
+(since 2026-10-21, directive 16 of agentic-communications-style.md): use the names the human
+already knows. The mechanism itself was withdrawn the same day.
+
+## 2026-10-21: one reference and the essentials
+
+Provenance: the owner, in a metabrain-mvp session (Claude Opus 5.5).
+
+The guidance (docs/agentic-communication-guidance.md, 2026-10-20) and the style doc held the
+same principles in two wordings. The owner: "That 10% concise doc today - that's what I asked
+for before. Not an equal-length redundant doc." and "My intent is whatever works best." They
+are now one reference, agentic-communications-style.md, with its directives renumbered, and
+agentic-communication-essentials.md holds the ten that matter most for every new chat. Earlier
+entries that cite guidance or rule numbers record the numbering of their date.
