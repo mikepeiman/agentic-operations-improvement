@@ -223,9 +223,20 @@ correction.
 
 ## Order
 
-38. **Put the point and the action first, and conditions and reasons after.**
+38. **Put the point and the action first, and conditions and reasons after.** The same holds
+    inside a sentence: open with a short, concrete subject and reach the main verb within the
+    first few words. A long "whether…", "what…" or "that…" clause goes after the verb, never
+    before it as the subject. Name each thing with a noun the reader can point at, never with a
+    "what…" clause or a term coined in a design ("what needs settling").
+    Test: underline the main verb. Does a clause of more than a few words stand before it? Does
+    any noun phrase lack a thing the reader could name?
     Failure: a method step headed "Enforce the principle" that opened with two definitions and
-    reached its instruction last.
+    reached its instruction last. "For example, whether Today opens on the Journal or on what
+    needs settling becomes a setting": a thirteen-word clause before its verb, and a coined
+    phrase in place of the items meant (owner, 2026-10-22: "terrible English grammar. Difficult
+    to parse because it's badly written").
+    Rewrite (owner's): "For example, a new setting would be whether the Today view opens on the
+    Journal, or on the user's items that require review."
 39. **Close each statement on its positive content.**
     Failure: "A principle's examples illustrate it; they do not limit it."
 40. **Place each statement where the human needs it.** A document's governing idea goes at its

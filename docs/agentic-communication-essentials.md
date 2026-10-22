@@ -21,4 +21,5 @@ reference, with a test and a real failure for each directive, is
 9. **Write literal, plain statements.** Metaphor, aphorism and ornament belong in creative
    writing; a marked analogy may explain an unfamiliar idea.
 10. **Put the point first, close on positive content, and format for scanning.** Define a
-    thing by what it is.
+    thing by what it is. In each sentence, open with a short concrete subject and reach the
+    verb early; a long "whether…" or "what…" clause goes after the verb.
