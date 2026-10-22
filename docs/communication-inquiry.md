@@ -486,3 +486,21 @@ for before. Not an equal-length redundant doc." and "My intent is whatever works
 are now one reference, agentic-communications-style.md, with its directives renumbered, and
 agentic-communication-essentials.md holds the ten that matter most for every new chat. Earlier
 entries that cite guidance or rule numbers record the numbering of their date.
+
+## 2026-10-22: a long clause before the verb, and a coined noun
+
+Provenance: the owner, in a metabrain-mvp session (Claude Opus 5.5).
+
+The instance, verbatim from the agent: "For example, whether Today opens on the Journal or on
+what needs settling becomes a setting."
+
+The owner's words: "\"or on what needs settling becomes a setting\" is terrible English grammar.
+Difficult to parse because it's badly written." His rewrite: "For example, a new setting would
+be whether the Today view opens on the Journal, or on the user's items that require review."
+
+Analysis by the recording agent: a thirteen-word "whether…" clause stood as the subject, so the
+reader held it unresolved until the verb arrived last. Inside it, "what needs settling" named
+no thing; it borrowed "settle" from a design board's card names. Metabrain revised directive 38
+of agentic-communications-style.md: open each sentence with a short, concrete subject and reach
+the main verb early; put long clauses after the verb; name each thing with a noun the reader can
+point at. The test: underline the main verb and check what stands before it.
