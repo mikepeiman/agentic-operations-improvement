@@ -10,6 +10,10 @@ in the [design reference router](design/README.md), which routes game, marketing
 brand, and graphic design work to their own guides. When a task is product design rather than
 interface construction, the two are different jobs with different evidence.
 
+For projects adding an enforcement hook, use the short
+[proportionate review protocol](design/review-protocol.md): distinct design and
+integration reviews, with evidence-driven loops rather than repeated review quotas.
+
 ## Notification layout stability
 
 Notifications must never shift surrounding content or controls. Appearance,
