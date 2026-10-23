@@ -12,6 +12,9 @@ design guidance; reading a document had not established that its principles were
    decisions, which familiar pattern and shared component fit, and which existing
    commands, data and host interactions must survive. Record the precedent,
    resources and decision before editing.
+   Follow universal UI patterns by default. Deviate for explicit owner direction
+   or a uniquely excellent design whose benefit over the standard is demonstrated.
+   Use the project's shared primitive-based controls and design system.
 3. **Review the actual result.** Examine the changed surface in its host. Ask about
    hierarchy, density, labels, color meaning, focus, keyboard, dismissal,
    close/reopen, rapid input and relevant loading/failure states. Record what was
@@ -22,6 +25,11 @@ design guidance; reading a document had not established that its principles were
    A small restoration can have two brief reviews; a substantial redesign needs
    more evidence. Repeat a render when its visual decision changes, rather than
    repeating the same full-fidelity inspection to inflate a count.
+   Bound the loop before starting: Metabrain uses two required reviews plus at
+   most two focused corrective rounds per delivery, each at most five minutes.
+   Send a finding/next-step update to the user between rounds. At the bound,
+   report unresolved findings and the narrower next action or budget needed;
+   do not declare unfinished work complete.
 
 A hook checks the record, not the agent's mind. Keep its mechanism small:
 
@@ -29,6 +37,8 @@ A hook checks the record, not the agent's mind. Keep its mechanism small:
   and evidence. Repeated assurances are not new reviews.
 - Require the initial design review and the final integration review; carry
   unresolved findings forward until resolved.
+- Enforce the delivery's round limit and require the actual between-round update
+  in each later entry. Checking the record alone does not prove the message was sent.
 - Bind final evidence to the delivered files and current governing resources.
   Preserve committed review history and append new reviews when files change.
 - Gate the proposed commit, including UI produced through shell tools. Scope
