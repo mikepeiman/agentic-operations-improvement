@@ -504,3 +504,21 @@ no thing; it borrowed "settle" from a design board's card names. Metabrain revis
 of agentic-communications-style.md: open each sentence with a short, concrete subject and reach
 the main verb early; put long clauses after the verb; name each thing with a noun the reader can
 point at. The test: underline the main verb and check what stands before it.
+
+## 2026-10-21: questions the agent could have answered itself
+
+Provenance: the owner, in a metabrain-mvp session (Claude Opus 5.5); recorded 2026-10-25.
+
+The instances, verbatim from the agent, about the Lists view the owner asked for in the browser outline: "does only
+the Outline/Grid choice leave Tabs, or the whole Display widget?" and "B is which lists appear in the rail".
+
+The owner's words: "Your prior question B is so stupid. If you simply asked yourself you could not fail to get the
+right answer. Tell me now." The agent answered from purpose alone, "the rail shows every list", including the
+desktop app's lists. The owner: "You missed the most important thing: context. Where does the feature this question
+relates to, live?" The Lists view lives in Web, in the browser, so its rail shows web lists.
+
+Analysis by the recording agent: both questions were answerable from the feature's purpose, where it lives and the
+owner's written request. The agent asked instead of answering, then answered with one of those three missing.
+Metabrain added a test to directive 21 of agentic-working-with-the-human.md: before asking, answer the question
+yourself from the feature's purpose, where it lives, and the owner's written requests; ask only when those leave it
+open. The owner accepted the test on 2026-10-25 ("Accepted").
