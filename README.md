@@ -47,6 +47,10 @@ and generated indexes remain optional.
 
 ## Optional tools
 
+Use the [named-pattern catalog](docs/agentic-failure-patterns.md) when identifying
+operational biases, defects and communication slop patterns. The first entry,
+**The Mere Existence bias**, records the owner's sequences and corrective self-question.
+
 Use the [post-mortem practice](docs/post-mortems.md) for the record a failure requires.
 
 Use the [weekly review](docs/weekly-review.md) to examine project coherence and

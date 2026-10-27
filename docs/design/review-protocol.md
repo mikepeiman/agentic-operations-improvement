@@ -22,7 +22,10 @@ design guidance; reading a document had not established that its principles were
    For recurring behavior, identify reusable components and modules, relevant
    callers and redundant implementations before choosing the patch. Assess
    existing composition, state and lifecycle against requirements; their
-   existence is no reason to retain them. Record what to retain, refactor,
+   existence is no reason to retain them. When existence seems to confer
+   legitimacy, recognize [The Mere Existence bias](../agentic-failure-patterns.md#the-mere-existence-bias)
+   and ask "Should this exist?" Record the answer against requirements and evidence.
+   Record what to retain, refactor,
    replace or remove and the requirement or demonstrated constraint supporting
    each decision. Check that callers reuse the appropriate components and modules;
    reusing buttons alone does not establish consistent composition or behavior.

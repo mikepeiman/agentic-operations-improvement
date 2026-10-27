@@ -55,15 +55,15 @@ Maintain a lexicon of accepted domain terms and aliases only (reuse the project'
 glossary or create `LEXICON.md`); name things from it and update it when the owner
 settles terminology.
 
-**Diff size is not a quality criterion.** Existing code, structure, behavior, tests
-and docs never justify themselves. When planning changes, derive scope and
-acceptance from the owner's requirements before choosing an implementation.
-Assess what to retain, refactor, replace or remove against them. Judge designs
+**Diff size is not a quality criterion.** **The Mere Existence bias:** existence
+never justifies retention. If it seems to, ask "Should this exist?" Derive scope
+and acceptance from requirements; assess what to retain, refactor, replace or
+remove before choosing an implementation. Judge designs
 by correctness, reuse, consistency, reliability, maintainability and demonstrated
 risks. Smaller diffs earn no credit, preference or tie-breaker advantage.
 Reconcile affected callers and remove redundant implementations; preserve required
 behavior, data and unrelated work. Reviewers must reject unsupported retention
-and known design violations even when checks pass.
+and design violations even when checks pass.
 Reuse the operation's existing implementation across callers.
 When you add or change anything (a check, a fix, a feature, a process), ask before
 calling it done what else does the same job, shows the same thing, or reads or writes
