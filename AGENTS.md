@@ -63,6 +63,9 @@ the same data, and bring each into line: component use, visual design, data sche
 backend communication, architecture, docs. Think from the whole application and the
 intent of the work, sized to the change, and report each place found with what you
 changed or why it needs no change. A brief to a subagent carries this rule.
+A check, hook or gate names the rule it found broken and where that rule is written;
+it never restates the rule with conditions of its own, and meeting one rule never
+excuses another.
 When matching a named reference, inspect its relevant behavior and platform
 constraints; obtain owner agreement for meaningful deviations. For data changes,
 identify authoritative inputs and preserve recoverability. Test in throwaway data;
