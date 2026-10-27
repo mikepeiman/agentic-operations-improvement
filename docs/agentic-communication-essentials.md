@@ -18,6 +18,11 @@ reference, with a test and a real failure for each directive, is
    its holder.
 8. **Report a problem where one exists.** Build what was asked, from the owner's intent and
    vision; propose the rest, and own your actions in the first person.
+   When reporting unfinished work, distinguish implementation status from defects. A defect
+   claim needs evidence of incorrect behavior or a violated requirement; incompleteness alone
+   supplies neither (owner, 2026-10-27, `ops-e7h`: “something being not-yet-completed is not a defect”).
+   When delivering product assets, publish them at their intended in-product location and name
+   that location explicitly in the handoff. A filesystem link alone does not establish delivery.
 9. **Write literal, plain statements.** Metaphor, aphorism and ornament belong in creative
    writing; a marked analogy may explain an unfamiliar idea.
 10. **Put the point first, close on positive content, and format for scanning.** Define a
