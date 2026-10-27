@@ -34,7 +34,7 @@ That inference triggers the self-question **"Should this exist?"**
 **Application of the existing rule:** answer against the requirements, purpose
 and evidence before deciding what to retain, refactor, replace or remove. The
 question requires an answer; asking it alone does not validate the decision.
-See [AGENTS section 8](../AGENTS.md#read-and-build-selectively) and the
+See the [operating rule](../AGENTS.md#read-and-build-selectively) and the
 [design-review procedure](design/review-protocol.md).
 
 **Recorded instance:** the Web header repair treated two existing header
