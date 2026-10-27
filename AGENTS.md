@@ -55,15 +55,15 @@ Maintain a lexicon of accepted domain terms and aliases only (reuse the project'
 glossary or create `LEXICON.md`); name things from it and update it when the owner
 settles terminology.
 
-**Design correctness before diff size.** When planning or reviewing a change, derive its necessary
-scope and acceptance criteria from the owner's requirements before selecting a
-patch. Correct behavior, sound design and shared ownership take priority over diff
-size or retaining existing code. When the existing structure prevents compliance,
-refactor or replace it, update every affected caller and remove competing
-implementations. Preserve required behavior, user data and unrelated work.
-Minimize changes among solutions that fully satisfy the requirements; a smaller
-diff never justifies a known design violation. Reviewers must reject such a patch
-even when its checks pass.
+**Design correctness before diff size.** Existing code, structure, behavior, tests
+and docs never justify themselves. When planning or reviewing a change, derive
+scope and acceptance from the owner's requirements before choosing an implementation.
+Assess what to retain, refactor, replace or remove against them. Correctness,
+reusable components and consistency outrank code retention and diff size.
+Reconcile affected callers and remove redundant implementations; preserve required
+behavior, data and unrelated work. Minimize diffs only among compliant designs.
+Reviewers must reject unsupported retention and known design violations even when
+checks pass.
 Reuse the operation's existing implementation across callers.
 When you add or change anything (a check, a fix, a feature, a process), ask before
 calling it done what else does the same job, shows the same thing, or reads or writes

@@ -17,18 +17,20 @@ design guidance; reading a document had not established that its principles were
    Follow universal UI patterns by default. Deviate for explicit owner direction
    or a uniquely excellent design whose benefit over the standard is demonstrated.
    Use the project's shared primitive-based controls and design system.
-   For recurring behavior, resolve ownership before choosing the patch. Name
-   its owner, relevant callers and competing implementations, including layout,
-   state and lifecycle. Reusing a button does not establish shared ownership of
-   the surrounding behavior. Record which callers delegate to the owner, which
-   copies are removed and why any retained implementation performs a distinct
-   job. A duplication exception cites the owner's explicit decision.
+   For recurring behavior, identify reusable components and modules, relevant
+   callers and redundant implementations before choosing the patch. Assess
+   existing composition, state and lifecycle against requirements; their
+   existence is no reason to retain them. Record what to retain, refactor,
+   replace or remove and the requirement or demonstrated constraint supporting
+   each decision. Check that callers reuse the appropriate components and modules;
+   reusing buttons alone does not establish consistent composition or behavior.
+   A duplication exception cites the owner's explicit decision.
 3. **Review the actual result.** Examine the changed surface in its host. Ask about
    hierarchy, density, labels, color meaning, focus, keyboard, dismissal,
    close/reopen, rapid input and relevant loading/failure states. Record what was
    observed, the findings and their disposition. Label source-only conclusions
    and verification limits. A design-only delivery names its production limits.
-   Reconcile the ownership inventory against the actual result. Matching pixels
+   Reconcile the component/caller inventory against the actual result. Matching pixels
    between copies does not establish consistency. Do not approve a local patch
    that preserves a known violation of the requirement being repaired.
 4. **Loop on findings.** Resolve the finding and review its affected boundary again.
@@ -72,3 +74,7 @@ two header owners; its own recorded review approved matching coordinates.
 Design correctness before diff size: `ops-mm3`, from Metabrain
 `metabrain-mvp-ru5s`, owner request 2026-10-27. The authoritative priority is in
 AGENTS; a smaller patch had preserved the structure causing the defect.
+Existing implementation is not justification: `ops-097`, from Metabrain
+`metabrain-mvp-c9vs`, 2026-10-27. The outcome rule already distinguished current
+code/runtime from desired design; the change rule and review now require an
+explicit requirements-based retention/refactor/replace/remove decision.
