@@ -12,7 +12,7 @@ design guidance; reading a document had not established that its principles were
    decisions, which familiar pattern and shared component fit, and which existing
    commands, data and host interactions must survive. Record the precedent,
    resources and decision before editing.
-   Apply [design correctness before diff size](../../AGENTS.md#read-and-build-selectively)
+   Apply [design quality without a diff-size preference](../../AGENTS.md#read-and-build-selectively)
    when choosing the change's scope and reviewing its result.
    Follow universal UI patterns by default. Deviate for explicit owner direction
    or a uniquely excellent design whose benefit over the standard is demonstrated.
@@ -78,3 +78,7 @@ Existing implementation is not justification: `ops-097`, from Metabrain
 `metabrain-mvp-c9vs`, 2026-10-27. The outcome rule already distinguished current
 code/runtime from desired design; the change rule and review now require an
 explicit requirements-based retention/refactor/replace/remove decision.
+Owner correction, 2026-10-27, `ops-mm3`: the earlier clauses subordinating diff
+size and preferring smaller compliant diffs are withdrawn. The current rule gives
+smaller diffs no quality credit, preference or tie-breaker advantage. Earlier
+revisions remain history, not current guidance.
