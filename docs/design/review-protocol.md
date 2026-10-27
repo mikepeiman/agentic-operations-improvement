@@ -27,10 +27,14 @@ design guidance; reading a document had not established that its principles were
    and ask "Should this exist?" Record the answer against requirements and evidence.
    Record what to retain, refactor,
    replace or remove and the requirement or demonstrated constraint supporting
-   each decision. Check that callers reuse the appropriate components and modules;
-   reusing buttons alone does not establish consistent composition or behavior.
+   each decision. Reusing buttons alone does not establish consistent composition
+   or behavior.
    A duplication exception cites the owner's explicit decision.
-3. **Review the actual result.** Examine the changed surface in its host. Ask about
+3. **Review the actual result.** Design reviews must verify that each feature uses
+   the appropriate reusable components and modules, remove redundant implementations
+   and contradictory overrides, and check that the resulting design and behavior
+   remain consistent across every relevant context and state.
+   Examine the changed surface in its host. Ask about
    hierarchy, density, labels, color meaning, focus, keyboard, dismissal,
    close/reopen, rapid input and relevant loading/failure states. Record what was
    observed, the findings and their disposition. Label source-only conclusions
