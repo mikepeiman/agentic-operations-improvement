@@ -57,6 +57,12 @@ settles terminology.
 
 Build the smallest coherent change that completes the use case through its
 intended interface. Reuse the operation's existing implementation across callers.
+When you add or change anything (a check, a fix, a feature, a process), ask before
+calling it done what else does the same job, shows the same thing, or reads or writes
+the same data, and bring each into line: component use, visual design, data schema,
+backend communication, architecture, docs. Think from the whole application and the
+intent of the work, sized to the change, and report each place found with what you
+changed or why it needs no change. A brief to a subagent carries this rule.
 When matching a named reference, inspect its relevant behavior and platform
 constraints; obtain owner agreement for meaningful deviations. For data changes,
 identify authoritative inputs and preserve recoverability. Test in throwaway data;
