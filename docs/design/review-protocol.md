@@ -14,6 +14,8 @@ design guidance; reading a document had not established that its principles were
    resources and decision before editing.
    Apply [design quality without a diff-size preference](../../AGENTS.md#read-and-build-selectively)
    when choosing the change's scope and reviewing its result.
+   Diff size is not evidence of safety, simplicity or maintainability; assess the
+   implementation's actual structure and effects.
    Follow universal UI patterns by default. Deviate for explicit owner direction
    or a uniquely excellent design whose benefit over the standard is demonstrated.
    Use the project's shared primitive-based controls and design system.
