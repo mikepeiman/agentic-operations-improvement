@@ -12,6 +12,8 @@ design guidance; reading a document had not established that its principles were
    decisions, which familiar pattern and shared component fit, and which existing
    commands, data and host interactions must survive. Record the precedent,
    resources and decision before editing.
+   Apply [design correctness before diff size](../../AGENTS.md#read-and-build-selectively)
+   when choosing the change's scope and reviewing its result.
    Follow universal UI patterns by default. Deviate for explicit owner direction
    or a uniquely excellent design whose benefit over the standard is demonstrated.
    Use the project's shared primitive-based controls and design system.
@@ -67,3 +69,6 @@ checker remains project-specific; adopting this guidance does not install a hook
 Ownership evidence: `ops-26s`, from Metabrain `metabrain-mvp-kdwp`, 2026-10-27.
 The motivating patch reused navigation buttons and matched padding while leaving
 two header owners; its own recorded review approved matching coordinates.
+Design correctness before diff size: `ops-mm3`, from Metabrain
+`metabrain-mvp-ru5s`, owner request 2026-10-27. The authoritative priority is in
+AGENTS; a smaller patch had preserved the structure causing the defect.
