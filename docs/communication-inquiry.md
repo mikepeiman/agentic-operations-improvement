@@ -522,3 +522,52 @@ owner's written request. The agent asked instead of answering, then answered wit
 Metabrain added a test to directive 21 of agentic-working-with-the-human.md: before asking, answer the question
 yourself from the feature's purpose, where it lives, and the owner's written requests; ask only when those leave it
 open. The owner accepted the test on 2026-10-25 ("Accepted").
+
+## 2026-10-28: an unreadable report of a documentation sweep
+
+Provenance: the owner, in a metabrain-mvp session (Claude Opus 5.5), chat "Lists Browser UI
+design"; Metabrain Beads `metabrain-mvp-28hy` (rules) and `metabrain-mvp-yosb` (post-mortem).
+
+The instances, verbatim from the agent's report:
+- "The spec now says Space works this way for any Metatag, including one with fields or a
+  composition like #workout."
+- "What changed" (a heading over a list of document names).
+- "The Ontology: tagging is not `isa`, and the tagging relationship is marked settled."
+- "Web feature lists and specification: each reach names the Metatag being tagged, and the old
+  per-kind storage is marked to be replaced. The Web requirements separate web page from website."
+- "The agents' reading map now sends tagging questions to the guidance."
+- "27 open Beads got a comment saying how the model applies"
+- "The plan comes to you before any building."
+- "The note the hook flagged was my own comment on the documentation item, so it asked for no
+  action; I've marked it seen."
+- "Your 29 Sep design has four reaches" and "Should section 7.1 of the Ontology stay, containing
+  only your two sentences?"
+
+The owner's words, in order: "Your tense is confusing, and obviously not stated to disambiguate.
+"Disambiguate" should be a command enshrined in a communication rule. There should also be
+instructions to be careful with tense grammar, as you often use strange tense focused on
+present-is, making it difficult to understand what was or what is-not-yet or could-be or
+planned." "Your heading "What changed" is super confusing. Changed when, why and how? Your list
+answers only "what"." "You just defined in passing "web features are a reach" and "specification
+is a reach", what the HELL does that mean???" "Who is "the guidance" and why are you sending
+questions to him?" "What comment did you add 27 times? You should be quoting this. Why are you
+hiding it?" "the pattern that you depersonalize and speak in present tense, instead of speaking
+first-person about what you did, are doing or will do. This is a major defect pattern to fix."
+His rewrite: "I'll ensure I share a plan for this with you before I build anything." "Add
+another word to the bias/pattern: "enigmatic". You make obscure and enigmatic statements. That
+counter-guidance can go alongside the guidance on aphorisms; related pattern." "A
+positive-negative active statement; "it DID POSITIVELY ask for NONE NEGATIVE action." I hate
+this pattern." On "four reaches": "Violating multiple rules, including coined jargon in-situ;
+missing definition; using physical metaphor instead of technical clarity; using the wrong word
+instead of the right word, straight up." On "section 7.1": "Bad comms, reference without
+explanation".
+
+Analysis by the recording agent: the report was written from the agent's context and checked
+against a list of banned forms, not read as a person with only the message would read it. Each
+instance has one or more readings that the agent never saw, because it knew what it meant.
+Metabrain added essentials rules 16 (disambiguate: one reading, its time, its actor) and 17
+(quote what you wrote; what, when, why and how); style directives 51 (disambiguate), 52 (time
+and status), 53 (first person), 54 (quote what you wrote), 55 (what, when, why, how) and 56
+(negation on the verb); and revised 15, 16, 34 and 35 (enigmatic statements beside aphorisms).
+The named patterns are in Metabrain's agentic-failure-patterns.md. The directives have not been
+copied into this repository's guides, which already differ from Metabrain's by about 300 lines.
