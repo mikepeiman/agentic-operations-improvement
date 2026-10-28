@@ -571,3 +571,79 @@ and status), 53 (first person), 54 (quote what you wrote), 55 (what, when, why, 
 (negation on the verb); and revised 15, 16, 34 and 35 (enigmatic statements beside aphorisms).
 The named patterns are in Metabrain's agentic-failure-patterns.md. The directives have not been
 copied into this repository's guides, which already differ from Metabrain's by about 300 lines.
+
+## 2026-10-28 — Journal repair discussion: active assumption discovery and communication failures
+
+Source: the owner and the agent in "Fix markdown styling on load", session
+`01a1792a-c8c0-7b12-9856-00f1dda4e97a`. Work: Metabrain `metabrain-mvp-6xfk`,
+portable inquiry `ops-dpt`. The owner requested proposals and documentation;
+application work remained paused for discussion.
+
+### Recorded statements and owner feedback
+
+- Agent: "canonical Journal renderer". Owner: "'Canonical' should be on the
+  flagged-words / avoid-word list." "We should also have a banned-words list."
+  The agent had used the term for the existing production implementation, then
+  treated the label as evidence of correct presentation from its first visible frame.
+- Agent: "However, the current source does not show separate full Journal renderers
+  for startup and ordinary navigation." Owner: "You decided a constrained scope
+  and ruled on it." "It does not even touch my stated concern." The reported
+  difference in visible behavior remained unexplained.
+- Agent proposed: "When an implementation choice or completion claim depends on an
+  unverified premise, the agent must identify that premise..." Owner: "Because it
+  presumes the starting condition is that you already know you used assumptions."
+  "You MUST use direct questions - the Socratic method - on yourself, to get
+  yourself to think and look and act differently." The owner applied this guidance
+  to any kind of agent instruction.
+- Agent: "That is a scoped finding, not a claim about every possible host
+  configuration." Owner: "'host configuration' is a weird term to use here" and
+  "It certainly does not describe anything I recognize in context."
+- Agent: "The word is a useful review trigger. It is not the whole failure."
+  Owner: "positive-is declaration. negative-not declaration." "The concept is
+  immensely valuable; not the word itself as a trigger." The agent's first claim
+  was unsupported; the ending also implied the word was part of the failure.
+  The owner described the agreement as a lie to placate them.
+- Agent: "I cannot honestly promise that a wording hook alone would have produced
+  a correct repair." Owner: "you directly imply that what I asked for was 'a
+  promise', and that I asked for 'a wording hook alone'". The owner said this
+  suggested their expectation was stupid and wasted their attention.
+- Agent: "An agent hook cannot prevent the running app from painting raw content."
+  The owner asked for a direct response and expected the agent to understand the
+  implications of guidance improving its investigation and repair work.
+- Agent: "The app needs an explicit condition governing when structured
+  presentation may become visible." Owner: "Just stop rendering unstyled
+  content" and "STOP OVERCOMPLICATING THINGS."
+- Agent heading: "Was the statement about intentional source editing filler?"
+  Owner: "You put in quoted references without the quotes". The owner required
+  analysis of the heading's grammar and possible interpretations. It left unclear
+  who was asking, whether it quoted or paraphrased the owner, which statement it
+  referenced, and whether "filler" concerned the sentence or the feature.
+- Agent: "Simply opening Journal is not an instruction to expose storage syntax.
+  Existing actions that explicitly reveal syntax must be identified separately
+  when assessing the correction; they do not justify premature exposure during
+  loading." Owner: "You confuse 'precise' with 'convoluted and obscure'."
+
+### Proposed guidance and project changes
+
+Before deciding or explaining, ask: "What am I taking for granted? What did the
+person actually observe or ask for? What evidence would contradict my explanation?"
+Check the answers and change the investigation or conclusion. When interpreting,
+writing or reviewing any instruction, ask: "What question would expose a mistake
+before I recognize it? What should I do after answering?"
+
+Before adding a caveat or technical distinction, ask: "What question does this
+sentence answer? What will it help the person decide or do?" Before agreeing, ask:
+"What exact proposition am I agreeing with? What reason supports my answer?"
+Before referring to a sentence, ask: "Whose words are these? Have I quoted the exact
+text or labelled my paraphrase?" Close with the useful point and check what the
+earlier clause made the reader believe.
+
+Plain replacement: "Journal should show a placeholder while it prepares the
+content, then display the formatted text, Metatags, and saved items."
+
+Metabrain added the word lists and active self-questioning, revised the existing
+communication directives, and catalogued the examples in
+`docs/active/agentic-failure-patterns.md` under the Journal repair discussion.
+The proposed names and wording are the agent's; the owner's directions and the
+agent's claims are attributed above. This inquiry entry records the portable
+findings for review alongside that repository's existing guidance.
