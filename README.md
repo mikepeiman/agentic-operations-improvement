@@ -15,6 +15,12 @@ directive, with its test and a real failure, is in
 evidence is in [the communication inquiry](docs/communication-inquiry.md); its work
 is the Beads epic `ops-chv`.
 
+The owner's purpose for the broader Communications & Operations work, and the
+proposed versioned review of agents' understanding and plans, are recorded in
+[Operational review: purpose and proposal](docs/operational-review-proposal.md).
+The owner determines this project's completion. Agents maintain its records and
+present improvements and evidence in support of effective product development.
+
 ## Use in a project
 
 For initialization or adoption, run the on-demand
