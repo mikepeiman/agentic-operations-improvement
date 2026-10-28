@@ -1,5 +1,9 @@
 # Communication failure: an open inquiry
 
+**Purpose:** Preserve attributed communication failures, hypotheses and the reasoning behind improvements.
+
+**Constraints:** Entries are dated historical evidence; preserve source words and qualifications. Current operating and style guides own instructions.
+
 A standing question, the hypotheses proposed against it, and dated entries of
 observed instances. The core's `## Communicate clearly` rules are prohibitions;
 this is where the reasoning behind them lives, so the work accumulates instead of
@@ -708,3 +712,26 @@ whole conversation and making the proposals concrete. The resulting
 [operational review proposal](operational-review-proposal.md) records their
 purpose and two-version mechanism and specifies artifacts, questions,
 consequences, hook boundaries and implementation checks. It activates no hook.
+
+## 2026-10-28 — Purpose, subject synthesis and deletion before rewriting
+
+Source: the owner and agent in "Fix markdown styling on load", session
+`01a1792a-c8c0-7b12-9856-00f1dda4e97a`; Metabrain documentation work
+`metabrain-mvp-6xfk`, portable contribution `ops-dpt`.
+
+The owner found dates, navigation decisions and Bead IDs before the glossary's
+definitions and directed: "ALL DOCUMENTS MUST STATE WHAT THEIR PURPOSE AND
+CONSTRAINTS ARE BEFORE ANYTHING ELSE." The owner then specified extraction into
+one sidecar per subject, finding or disambiguating each master, full review and
+synthesis that improves it, followed by checking coherence across all touched
+documents. Metabrain preserved both terminology sources before curation.
+
+The owner also rejected a rewritten return to an earlier rendering discussion:
+"It was completely out of context." "No. You shouldn't have mentioned this at
+all." The writing error was retaining irrelevant content. The appropriate
+consequence is deletion before grammatical revision. The self-questions are:
+"Does this belong to the current topic? What new value does it add?"
+
+The shared style guide and essentials now specify purpose/constraints first, the
+extraction/synthesis method and relevance before rewording. Their own openings,
+the README, inquiry and operational-review proposal were brought into line.

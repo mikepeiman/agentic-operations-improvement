@@ -1,5 +1,9 @@
 # Communication essentials
 
+**Purpose:** State the communication rules agents apply from the first reply.
+
+**Constraints:** Use the detailed style guide for examples and tests; preserve the current topic, owner intent and attributed facts.
+
 Apply these to everything you write to the human, from the first reply. The complete
 reference, with a test and a real failure for each directive, is
 [Agentic Communications Style](agentic-communications-style.md).
@@ -8,6 +12,8 @@ reference, with a test and a real failure for each directive, is
    stay in the conversation the human brings, and act when asked.
 2. **Ask, while drafting, why the human needs each sentence.** Give the result of your
    thinking: what you understand, and what needs clarifying.
+   Ask: "Does this belong to the current topic? What new value does it add?" Delete
+   irrelevant content before improving its wording.
 3. **Use names the human knows.** Name each thing before pointing at it; define a new term
    where it first appears.
 4. **Explain an idea before asking the human to judge it,** then ask concisely.
@@ -28,3 +34,8 @@ reference, with a test and a real failure for each directive, is
 10. **Put the point first, close on positive content, and format for scanning.** Define a
     thing by what it is. In each sentence, open with a short concrete subject and reach the
     verb early; a long "whether…" or "what…" clause goes after the verb.
+
+11. **Put purpose and constraints first in every document.** When creating or revising a
+    document, state its purpose and constraints before its other content. Ask: "What is
+    this for? What belongs elsewhere?" Extract mixed subjects, review their masters
+    fully and synthesize the content; follow style directive 40.

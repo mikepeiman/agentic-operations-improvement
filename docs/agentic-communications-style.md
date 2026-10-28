@@ -1,22 +1,8 @@
 # Agentic Communications Style
 
-The complete reference for what the agent writes to the human: chat, reports, questions,
-documents, boards, cards and interface text. Every new chat reads
-[Communication essentials](agentic-communication-essentials.md), the ten directives that
-matter most; this document holds all of them, with their tests, examples and rewrites, and
-the method for improving them. Dated instances are in
-[the communication inquiry](communication-inquiry.md).
+**Purpose:** Guide the relevance, grammar, organization and wording of agents' writing so the person can understand and act with minimal friction.
 
-A top-level project (owner, 2026-09-28). Development-process reporting (approvals, delivery
-reports, work status) belongs to the operations protocol, `## Communicate clearly` in the core.
-The work is tracked as the epic "Agentic Communications Style" in this repository's Beads.
-
-## Purpose
-
-To derive, correctly and accurately, the patterns in agent writing that the owner finds
-problematic or ineffective, and to correct them, so that agentic communication is maximally
-effective and pleasant and takes him the least friction and effort to engage with (owner,
-2026-10-20).
+**Constraints:** Answer the person's current concern, preserve attributed positions and keep claims within evidence. AGENTS.md governs operations; this guide governs writing. Use [Communication essentials](agentic-communication-essentials.md) from the first reply and preserve dated evidence in [the inquiry](communication-inquiry.md).
 
 ## The six failure families
 
@@ -74,6 +60,8 @@ correction.
 8. **Test each sentence while drafting: why does the human need this?** Keep the sentences that
    serve the human's purpose. The test is part of drafting and revising, done before the reply
    is sent.
+   Ask: "Does this belong to the current topic? What new value does it add?" Delete
+   irrelevant or redundant content before repairing its wording.
    Failure: "Three names are already taken in the Lexicon, so I avoided them", in a discussion
    of what a View is.
 9. **Write for the human's role.** The human is the owner and the decision-maker, with limited
@@ -239,8 +227,15 @@ correction.
     Journal, or on the user's items that require review."
 39. **Close each statement on its positive content.**
     Failure: "A principle's examples illustrate it; they do not limit it."
-40. **Place each statement where the human needs it.** A document's governing idea goes at its
-    top.
+40. **State every document's purpose and constraints first.** When creating or revising any
+    document, the agent must state what it is for and what limits its contents before its
+    other content. Ask: "What is the reader here to find? What belongs elsewhere?"
+    Organize and review the complete document against those answers.
+    Owner: "ALL DOCUMENTS MUST STATE WHAT THEIR PURPOSE AND CONSTRAINTS ARE BEFORE ANYTHING ELSE."
+    When content mixes subjects, first preserve it in one sidecar per subject. Find,
+    create or disambiguate each subject's master; read it fully and synthesize the
+    material so that master is improved. Review every changed document for coherent
+    organization, consistency, correctness and its role in the project.
     Failure: the diagnosis of agent failures placed between the method and the principles.
 41. **Format for scanning.** Headings, a bold lead on each point, lists for lists, short
     paragraphs, the answer before the reasoning.
@@ -311,8 +306,7 @@ document (owner, 2026-10-20).
    none does, add a directive to its family. Apply a directive wherever its statement fits; its
    examples show typical cases.
 6. **Keep the essentials current.** When a directive changes, check whether
-   [Communication essentials](agentic-communication-essentials.md) still holds the ten that
-   matter most.
+   [Communication essentials](agentic-communication-essentials.md) contains a concise summary of current guidance.
 7. **Improve by the owner's protocol.** Change the project's own copy of this document and
    commit it there; then read this repository for updates worth bringing in, and judge whether
    the change belongs here (core AGENTS.md, "Keep the protocol small").

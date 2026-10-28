@@ -1,5 +1,9 @@
 # Operational review: purpose and concrete proposal
 
+**Purpose:** Record the owner’s purpose and specify the proposed versioned review of agents’ understanding and plans.
+
+**Constraints:** This is a proposal and installs no hook. Owner intent governs; decisions about the Communications & Operations project’s completion belong to the owner.
+
 Status: proposed procedure, 2026-10-28. This document specifies records and checks;
 it installs no hook. Source: the owner and agent in "Fix markdown styling on
 load", session `01a1792a-c8c0-7b12-9856-00f1dda4e97a`. Existing documentation

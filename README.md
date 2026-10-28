@@ -1,5 +1,9 @@
 # Agent operations, v2
 
+**Purpose:** Provide shared operating and communication guidance for project agents.
+
+**Constraints:** Project and owner decisions govern adoption; optional tooling is installed deliberately and copying guidance does not activate it. The owner determines this improvement project’s completion.
+
 A small starting point for agents working in new projects or existing projects
 without consistent procedures. The defaults are feature and use-case driven work,
 Beads for durable work state, a commit and push every changing turn, and concise
@@ -8,7 +12,7 @@ communication.
 ## Agentic Communications Style
 
 A top-level project in this repository (owner, 2026-09-28): the essential rules of
-grammar, style and content for everything agents write for people. The ten that matter most
+grammar, style and content for everything agents write for people. The essential rules
 are in [Communication essentials](docs/agentic-communication-essentials.md), and every
 directive, with its test and a real failure, is in
 [Agentic Communications Style](docs/agentic-communications-style.md); dated
