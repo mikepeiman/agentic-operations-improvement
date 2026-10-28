@@ -647,3 +647,30 @@ communication directives, and catalogued the examples in
 The proposed names and wording are the agent's; the owner's directions and the
 agent's claims are attributed above. This inquiry entry records the portable
 findings for review alongside that repository's existing guidance.
+
+### Owner correction: grammar, falsifiability and wrong terminology
+
+The owner clarified the grammar of "Was the statement about intentional source
+editing filler?" The agent intended "filler" as the predicate describing the
+statement. The owner read "intentional source editing filler" as a single topic
+after "about", leaving the question apparently unfinished. Quotation marks would
+have separated the referenced words from the agent's evaluation. The agent's
+earlier analysis missed that attachment ambiguity.
+
+The owner named the contradictory-evidence inquiry "Falsifiability" and proposed
+stating aims, premises, plans and their factual basis, challenging assumptions and
+claims through Socratic inquiry, then establishing facts, their context and the
+course of action. Metabrain's guidance now uses the name and asks what observation
+would contradict a claim, followed by an actual search for that evidence.
+
+The owner also rejected the catalogue's explanation of "four reaches". "Reach"
+was the wrong word for the picker labelled "Applies to". The agent had mentioned
+the glossary without linking or quoting it and had framed the failure as the
+owner's unfamiliarity. That framing weakened the complaint. Metabrain corrected
+the glossary, quoted and linked its earlier wording, and made its catalogue
+prescriptive: agents must look for each pattern in their current reasoning and
+writing and apply its correction beyond the original example.
+
+These are follow-up corrections to the existing inquiry. The owner's separate
+proposed protocol for maintaining Metabrain Projects remains in discussion before
+any Bead is created for it.
