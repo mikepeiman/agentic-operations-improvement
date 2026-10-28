@@ -674,3 +674,37 @@ writing and apply its correction beyond the original example.
 These are follow-up corrections to the existing inquiry. The owner's separate
 proposed protocol for maintaining Metabrain Projects remains in discussion before
 any Bead is created for it.
+
+## 2026-10-28: console-only access presented as an available feature
+
+In the Metabrain chat "Fix Journal and search issues", Codex delivered optional
+search timing logs through an internal browser preference and told the owner to
+enter a developer-console command to enable them. The owner had asked for optional
+development logging; the app exposed no control or readable timing screen.
+
+The owner rejected that handoff: "NEVER ask the user to enter console commands to
+access a feature. ALWAYS instantiate in appropriate UI first and then direct the
+user to its exact location and operation."
+
+The error was treating internal technical access as delivered user access. The
+repair adds an appropriate in-app control and readable output, verifies the
+navigation and operation, and replaces the former console instructions with that
+location and operation. The owner's exact rule is now in AGENTS.md under Verify
+the promised behavior (`ops-d9u`); Metabrain records its implementation and
+acceptance boundaries on `metabrain-mvp-sowa`.
+
+### Owner correction: context was turned into completion authority
+
+The owner supplied the purpose of the Communications & Operations project so
+agents would understand and record it. The agent proposed "ten representative
+product tasks", a correction allowance, an overhead percentage and stopping
+routine expansion. The owner rejected that addition: "You are NOT in any way
+responsible for determining completion or thresholds in this area."
+
+Before turning context into a decision, ask: "What authority did the person
+actually give me? Which conclusion have I added?" Record purpose as purpose and
+keep an agent's proposals attributed. The owner then requested reviewing the
+whole conversation and making the proposals concrete. The resulting
+[operational review proposal](operational-review-proposal.md) records their
+purpose and two-version mechanism and specifies artifacts, questions,
+consequences, hook boundaries and implementation checks. It activates no hook.

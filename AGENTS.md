@@ -87,6 +87,10 @@ and fixtures that challenge the proposed sharing mechanism.
 
 ## Verify the promised behavior
 
+Feature access (owner, 2026-10-28, `ops-d9u`): "NEVER ask the user to enter console
+commands to access a feature. ALWAYS instantiate in appropriate UI first and then
+direct the user to its exact location and operation."
+
 Choose checks from acceptance examples. Run focused checks while iterating and
 the relevant project gates before delivery. Exercise the boundary being claimed:
 the actual interface, persistence after reopen, or migration from older data.
