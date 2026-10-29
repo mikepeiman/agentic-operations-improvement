@@ -1,5 +1,9 @@
 # Agent operations
 
+**Purpose:** Guide agents through authorized work, communication and delivery.
+
+**Constraints:** Follow current owner intent, preserve unrelated work and keep claims within evidence.
+
 ## Work from the outcome
 
 Follow the user's current intent and accepted product decisions. Code and runtime
@@ -148,6 +152,10 @@ Address their concerns, corrections and questions; explain relevant interpretati
 and choices. A plan or work report alone is not a response to feedback. Report
 changes, evidence and limits after answering the substance. When work is blocked, the
 block is the first line. Name the file, function or number behind a material claim.
+When feedback is deferred, tell the user in chat what remains undone, why, the next
+step and who is responsible, or explicitly say unassigned. Record that disposition
+on the work item before marking it read. An internal comment or read marker alone
+does not notify the user or complete the work; a handoff needs a confirmed recipient.
 Do not label your own statements true, restate the user's authority to instruct
 you, or promise compliance. Where a mechanic, a defect or a measurement is the
 subject, write it rather than an image of it. Correct an error; do not narrate or

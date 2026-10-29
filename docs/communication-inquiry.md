@@ -735,3 +735,34 @@ consequence is deletion before grammatical revision. The self-questions are:
 The shared style guide and essentials now specify purpose/constraints first, the
 extraction/synthesis method and relevance before rewording. Their own openings,
 the README, inquiry and operational-review proposal were brought into line.
+
+## 2026-10-29: feedback deferred without telling the owner
+
+Source: Metabrain, Codex chat now titled "View filters", session
+`01a18343-169d-7923-91ef-8e324192d276`; local correction
+`metabrain-mvp-rsmg`, portable contribution `ops-cb1`.
+
+The owner asked whether in-app feedback had been processed. Codex read the
+authoritative feedback records, published image dates and source. Five requests
+on this work remained open and unassigned. Other sessions had added "Not acted on"
+comments explaining their unrelated scope. There was no confirmed recipient for
+the pending work, and the relevant images were still the preceding day's versions.
+
+The owner reported: "NOt acted on... but they also did not tell me. That is a process
+error you can correct now before proceeding into the updated designs."
+
+Metabrain's owner-mail procedure and hook text explicitly allowed an agent to
+record why it would not act on a Bead and then mark the note seen. That procedure
+made an internal record sufficient to clear intake. The feedback comments prove
+recorded deferral; they do not prove the agents told the owner in their chats.
+The owner's report identifies that missing communication. The chat had to perform
+a fresh check to establish the pending state. No elapsed cost was measured.
+
+The correction requires a direct chat disposition and the same durable record:
+what remains undone, why, the next step and the responsible party, or an explicit
+unassigned state. A read acknowledgment remains separate from completion, and a
+handoff needs a confirmed recipient. The generic instruction is in AGENTS.md;
+Metabrain's procedure and intake messages implement it locally. The five product
+requests remain unfinished while the process correction is delivered first.
+This entry records one incident and the owner's requested correction; it does not
+establish that a rule or hook guarantees future communication across hosts.
