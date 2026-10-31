@@ -766,3 +766,40 @@ Metabrain's procedure and intake messages implement it locally. The five product
 requests remain unfinished while the process correction is delivered first.
 This entry records one incident and the owner's requested correction; it does not
 establish that a rule or hook guarantees future communication across hosts.
+
+## 2026-10-30 — generated wording reported as a received answer
+
+Source: Metabrain, Codex chat "Design crashed-window recovery flow", session
+`01a18e05-6559-7222-9e51-e3a8a8ef835d`; local record `metabrain-mvp-whgmd`,
+portable revision `ops-lhq.1`. Observed by the owner.
+
+The owner asked: "What is \"recovery\" in this framing?" The agent later claimed
+"I had answered: 'Recovery means the process of restoring the saved windows and
+tabs after the crash.'" The owner supplied the complete relevant reply he had
+received. It discussed saved content and UI presentation but contained no such
+definition. The wording existed in the agent's working context; that did not
+establish its delivery in the received answer.
+
+The agent also asserted "I treated your clarification as evidence that answering
+the definition request had been wrong, then repeated that false conclusion."
+The owner challenged this as another unsupported account. The text establishes
+contradictory reports and an omitted answer; it does not establish that internal
+causal sequence. A post-mortem had repeated those assertions as evidence.
+
+Owner: "NONE of your thinking can be assumed to reach me; it is NOT the correct
+workflow for the human user to read your entire working process." He requested
+an effort to improve the protocols, "not monkey-patch, not simply add".
+He then clarified that his criticism was composed before reading the preceding
+reply, and later endorsed its apology after reading it. Those statements resolve
+that timing; arrival order alone would not. The endorsement was specific, not
+acceptance of the preceding unsupported claims.
+
+Relation to the inquiry: generated content, final answer, delivery and reading
+are separate evidence states. This incident repeats the existing observation
+boundary and unsupported-self-criticism cases; it does not establish their private
+model cause. Existing conduct, context, attribution and repair directives are
+revised as one response sequence, with a self-contained final-answer test and
+received-text evidence for retrospective claims. Five case comparisons evaluate
+whether the revised instructions reject these recorded errors; they are document
+reviews, not proof of future agent behavior. No communication hook or renderer
+change is claimed.
