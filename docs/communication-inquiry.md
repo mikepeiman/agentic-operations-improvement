@@ -878,3 +878,45 @@ notification's cause, or repaired product behavior.
 The existing UI guide now owns the benefit-versus-cost review, and communication
 essentials and the detailed style guide point to it. This extends current guidance
 under the owner's instruction; it is not a new unrequested core rule.
+
+### 2026-11-05 — cost ontology and accumulated guidance reconciled
+
+Source: the same Metabrain chat, "Explain persistent update notice", session
+`01a1ad68-cabf-7883-90de-68f0ac39626d`. Owner-authorized reconciliation:
+`ops-bi2`, Metabrain `metabrain-mvp-w4k6m`.
+
+After the first documentation pass, the owner said: "I want you to improve the
+ontology and terms of my list instead of just noting them verbatim." The agent
+proposed five dimensions: attention demand, interruption and resumption,
+interpretation effort, emotional burden, and response effort. The owner answered
+"Ok, clear enough" and requested systematic updates and integration of accumulated
+communication and agentic-pattern guidance into this remote process repository.
+
+The accepted synthesis distinguishes dimensions from causes and consequences.
+Ambiguity can increase interpretation effort, leave confusion, create worry and
+prompt response work. The dimensions interact; they are neither mutually
+exclusive nor exhaustive. Original owner quotations remain historical evidence,
+and the [UI guidance](ui-design-guidance.md#weigh-costs-to-the-user) owns current terms.
+
+The reconciliation compares the numbered communication directives and named
+pattern catalog in both repositories. The generic process directives now reside
+in [Working with the human](agentic-working-with-the-human.md), with writing
+directives in [Agentic Communications Style](agentic-communications-style.md).
+Their numbers are preserved, and the repository README routes to the current
+process, writing, pattern and word-list guides. The former shared directive 40's document-purpose
+and synthesis material is retained in directive 58; directive 40 now concerns
+placement. Essentials are reconciled to these current references.
+
+The [pattern catalog](agentic-failure-patterns.md) preserves the accumulated
+instances, attribution, questions and correction pointers. This includes user
+costs, accountability, established solutions, ambiguous status and references,
+premature diagnosis/completion, unsupported caveats, context mistaken for
+authority, irrelevant rewrites and overcorrection. Its examples establish observed
+failures, not their frequency or unobservable model causes. The owner's word
+restrictions are separately recorded in [Communication word lists](agentic-word-lists.md).
+
+Metabrain-specific publication locations and mandatory host paths are adapted
+rather than imposed on other projects. Source examples link to their versioned
+project evidence; imported guidance does not install or certify draft hooks.
+The pre-existing distribution-check findings on the unchanged core remain tracked
+by `ops-02j`; this reconciliation changes guidance, not that distribution contract.

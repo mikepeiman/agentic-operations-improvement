@@ -18,34 +18,62 @@ For projects adding an enforcement hook, use the short
 [proportionate review protocol](design/review-protocol.md): distinct design and
 integration reviews, with evidence-driven loops rather than repeated review quotas.
 
+## Fundamental review question
+
+Owner, 2026-10-28 (Metabrain `metabrain-mvp-yv7i`): **"Does it help the user?"**
+
+When designing, writing or reviewing UI or copy, agents must name what the person
+is trying to understand or do and how each label, message, control or detail helps.
+Apply that question before design and against the actual result. Remove content
+that adds no useful information or action, and weigh possible benefit against
+[costs to the user](#weigh-costs-to-the-user). Technical truth does not establish
+user benefit.
+
 ## Weigh costs to the user
 
-Owner, 2026-11-05 (`ops-g44`, from Metabrain `metabrain-mvp-el9l2`):
-**"You are not weighing the costs."** The owner named costs of "attention",
-"distraction", "ambiguity, confusion", and "worry, concern, or followup".
-He described user experience as the best overarching category available at that
-moment, explicitly "not limited to this". These costs are examples, not an
-exhaustive list or a rule confined to notifications.
+Owner, 2026-11-05 (`metabrain-mvp-el9l2`): **"You are not weighing the costs."**
+The owner originally named "attention", "distraction", "ambiguity, confusion",
+and "worry, concern, or followup". He then requested improved terms and ontology,
+and accepted the following agent synthesis with "Ok, clear enough."
+(`metabrain-mvp-w4k6m`). Portable record: ops-bi2. The original wording remains evidence; the following
+dimensions are the working vocabulary for design and communication review.
 
-When designing, implementing or reviewing user-facing behavior, or writing to
+| Cost dimension | What the user spends or experiences | Relation to the original list |
+| --- | --- | --- |
+| **Attention demand** | Noticing, reading and monitoring something. | Attention. |
+| **Interruption and resumption** | Losing focus, switching context and recovering their place in the original task. | Distraction, including the cost of returning to work. |
+| **Interpretation effort** | Figuring out meaning, relevance and consequences. | Effort caused by ambiguity; confusion can indicate unresolved interpretation. |
+| **Emotional burden** | Worry, concern, frustration or reduced confidence. | Worry and concern. |
+| **Response effort** | Dismissing, investigating, clarifying, deciding or taking corrective action. | Follow-up work, distinguished from the feelings that may prompt it. |
+
+**Relationships:** ambiguity is a possible cause, not a sixth cost dimension.
+It can increase interpretation effort, leave the person confused, create worry
+and prompt follow-up work. These costs can interact and accumulate; the dimensions
+are not mutually exclusive. Repetition, duration, prominence and timing can increase
+the burden even when each individual message is accurate or relevant.
+
+The owner described user experience as the best overarching category available at
+that moment, explicitly "not limited to this". Neither the five dimensions nor
+notifications exhaust the costs or situations that agents must consider.
+
+When designing, implementing or reviewing a user-facing behavior, or writing to
 the user, agents must weigh its concrete benefit against its costs to the person
-before deciding whether it should exist and how it should appear. Count reading
-and interpretation, interruption and return to the task, uncertainty, concern,
-and work to investigate, dismiss or ask for clarification. Repetition and duration
-can increase those costs. A possible benefit does not establish that the benefit
-outweighs them.
+before deciding whether it should exist and how it should appear. Apply all five
+dimensions in the person's actual situation. A possible benefit does not establish
+that the benefit outweighs the total burden.
 
-The owner described the failure as **"Treating an internal system event as
-something the user cares about or wants to know about."** Technical significance,
+The owner's description of the failure was **"Treating an internal system event
+as something the user cares about or wants to know about."** Technical significance,
 accuracy, or even an effect on work does not establish that communicating the event
-is worth the user's attention. Compare quiet automatic handling or communication
-at a more useful time and place, preserving needed information and user control.
+is worth the user's attention. Compare the proposed behavior with quiet automatic
+handling or communication at a more useful time and place, while preserving the
+person's needed information and control.
 
 Before delivery, the agent must be able to name the user benefit, the costs imposed,
-and why the chosen behavior is worth those costs. This is an internal review
-judgment; do not make the user perform the accounting for the agent.
-The [observed exchange](communication-inquiry.md#2026-11-05--user-experience-costs-left-out-of-the-decision)
-records the evidence and limits.
+and why the chosen behavior is worth those costs. This is an internal design and
+review judgment; do not make the user perform the accounting for the agent.
+The [recorded exchange](https://github.com/mikepeiman/metabrain-mvp/blob/d2315e771691af0bf9920036f1a5a6b7490673f8/docs/active/postmortem-2026-11-05-user-experience-costs-ignored.md)
+shows how judging relevance alone missed the cost question.
 
 ## Notification layout stability
 

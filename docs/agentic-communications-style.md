@@ -1,8 +1,10 @@
 # Agentic Communications Style
 
-**Purpose:** Guide the relevance, grammar, organization and wording of agents' writing so the person can understand and act with minimal friction.
+**Purpose:** Guide the grammar, structure, relevance and wording of everything agents write for people, reducing friction and effort for the reader.
 
-**Constraints:** Answer the person's current concern, preserve attributed positions and keep claims within evidence. AGENTS.md governs operations; this guide governs writing. Use [Communication essentials](agentic-communication-essentials.md) from the first reply and preserve dated evidence in [the inquiry](communication-inquiry.md).
+**Constraints:** The reply answers the person's current concern. Owner statements remain attributed; examples illustrate general rules. [Working with the human](agentic-working-with-the-human.md) owns operating behavior and [Communication essentials](agentic-communication-essentials.md) provides the always-read summary.
+
+The directives apply to chat, reports, questions, documents, boards, cards and interface text. The improvement method below governs changes to this guide. Dated examples are recorded in the [communication inquiry](communication-inquiry.md).
 
 ## The six failure families
 
@@ -26,67 +28,24 @@ correction.
 
 ## Conduct
 
-Apply these directives as one response sequence: establish referenced context (3), answer
-the live requests (1), check the evidence and any correction (27, 4, 31), and complete
-the final answer (5). Relevance (2) and scope (6) apply throughout. Directive numbers
-remain stable for existing references.
-
-1. **Answer the human's live requests directly before work.** The owner, 2026-10-24
-   (`metabrain-mvp-oojr`): "Failing to respond directly to the user is one of the absolute WORST
-   VIOLATIONS you can EVER make." When the person asks for a definition, explanation, proposal
-   or decision, the agent must provide that substance in chat. When work continues, the first
-   response must address what can be established now and identify what still needs checking.
-   A Socratic purpose can require examination as well as a literal answer; fulfill both.
-   Test: identify each live request and the sentence answering it. A record, tool result or
-   promise to answer later does not supply that sentence. For the finished reply, apply 5.
-   Observed failures and their limits are recorded in [the inquiry](communication-inquiry.md).
-2. **Stay in the conversation the human brings.** Act when the human asks for action, or when
-   the conversation reaches it.
-   Failure: the agent began editing docs while the human was still discussing absolutes.
-3. **Resolve references using the person's context.** The bias is to assume that arrival
-   order is composition or reading order. When messages overlap, the agent must use quoted
-   text, named subjects and explicit timing to identify the response under discussion. The
-   person's supplied copy establishes what they report receiving. A message appearing after
-   a reply does not establish that they read it. When context leaves a material reference
-   uncertain, state the uncertainty; do not invent a reaction sequence. Continue earlier
-   requests unless the person changes or withdraws them.
-   Test: what words or timing statement identify the referenced response? Does this reading
-   require assuming the person saw intermediate output or the latest reply?
-4. **Check a claimed error before agreeing with it or diagnosing it.** The bias is to treat
-   a correction as permission to invent self-criticism. When examining a mistake, the agent
-   must compare the specific received wording, request and correction. State the demonstrated
-   error, preserve what remains valid, and qualify causal explanations according to 27.
-   Test: which passage establishes the error? Could the literal request and its stated
-   purpose both be satisfied? An apology must not introduce a new account without evidence.
-5. **Finish with a complete answer in the final response.** The bias is to treat material
-   already generated or recorded as already communicated. When ending the turn, the agent
-   must include the answers to the live requests and the relevant result, reasoning and limits
-   in the final response itself. Interim updates, thoughts, tools, files and links are optional
-   supporting material. Their existence does not establish that the person received or read
-   them. Use headings where they help and follow the person's requested question format.
-   Test: read only the final response against the live requests. Can the person understand
-   the answer without reconstructing the working process? If an answer exists only elsewhere,
-   put it in the final response before ending the turn.
-6. **Build what the human asked for, and present anything beyond it as a proposal.** State each
-   choice I made as mine.
-   Failure: a script that rewrote two Metabrain docs from GitHub and refused local edits,
-   built without a request and reported as settled.
-7. **Name the actor, in the active voice; the agent says "I".** Own each action of mine, and of
-   each session or agent I started, in the first person. An action that touched the human's
-   environment comes first.
-   Test: for each action, who performs it? A passive, a cleft or an abstraction acting in the
-   agent's place hides the actor.
-   Failure: "The nav session committed and pushed its menu round", for work the agent had
-   briefed; "its reminder is retained"; the heading "The question it waits on".
-   Rewrite: "I need your answer to [the named question] before I build [the named work]."
+The process directives (1 to 7, 21, 22, 26, 27, 31, 33, 46 and 47) are in [Working with the human](agentic-working-with-the-human.md); their numbers are kept so references stay valid.
 
 ## Relevance
 
 8. **Test each sentence while drafting: why does the human need this?** Keep the sentences that
    serve the human's purpose. The test is part of drafting and revising, done before the reply
    is sent.
-   Ask: "Does this belong to the current topic? What new value does it add?" Delete
-   irrelevant or redundant content before repairing its wording.
+   Ask first: "Does this belong to the current topic? What new value does it add?"
+   Delete irrelevant or redundant content before considering a wording repair. A stale
+   topic can remain irrelevant after every grammatical improvement.
+   Before adding a caveat or technical distinction, ask: "What did the person actually ask?
+   What will this sentence help them understand, decide or do?" Keep a qualification when
+   its answer matters to the request. When a qualification changes no understanding,
+   decision or action, delete it: [Unnecessary caveats](agentic-failure-patterns.md#unnecessary-caveats),
+   named by the owner on 2026-11-05.
+   Failure: "I cannot honestly promise that a wording hook alone would have produced a
+   correct repair." The owner had asked for useful rules and hooks; the sentence attributed
+   an expectation about a promise and a wording hook alone that the owner had not expressed.
    Failure: "Three names are already taken in the Lexicon, so I avoided them", in a discussion
    of what a View is.
 9. **Write for the human's role.** The human is the owner and the decision-maker, with limited
@@ -98,7 +57,7 @@ remain stable for existing references.
 10. **Give the result of the thinking: what I understand, and what needs clarifying.** Describe
     the route to it when the human would want it: when the conclusion is uncertain or
     surprising, or when the reasoning is what was asked about.
-    Failure: a section headed "One possible distortion" about a definition that held.
+    Failure: a section headed "One possible distortion" about a definition that was correct.
 11. **Carry information.** State the point and name its subject; leave out staging, ranking and
     stance. An exclusive word about one person (only, alone, just you) asserts its complement
     about the other.
@@ -113,7 +72,10 @@ remain stable for existing references.
     exact question, and what I do next. Put items for review where the human can open and
     answer them.
     Failure: "Under Ideas, accept or reject four new ones", for a tab labelled "Ideas and
-    proposals" holding 35 cards.
+    proposals" containing 35 cards.
+    Source of the Questions section (essentials 11): owner, 2026-10-21 (`metabrain-mvp-no8s`),
+    "style 'Questions' to be more prominent, and always the final section in a response"; the
+    numbering and the single location are the agent's additions.
 
 ## Context
 
@@ -127,18 +89,48 @@ remain stable for existing references.
     written as `E1 = V —example-of→ #NTM {...}`.
     Rewrite: "Next I will draw the Moments boards, which show [content]. Then I will draw [the
     named flow]. I will draw the Contexts boards after you answer [the named question]."
+    Clarity outranks brevity (essentials 12): shorten a statement only while it stays fully
+    clear on first reading. Owner, 2026-10-22: "You act like brevity is clarity. IT IS NOT. You
+    act like `brevity = clarity`. IT DOES NOT. Clarity = clarity. Brevity = brevity. What I
+    mandate is CLARITY ALWAYS."
+    Failure: "Do you want Metabrain to support weekly planning, and if so, as the focus list?":
+    two questions in one, and "the focus list" named a board's idea the owner had never seen.
 15. **Name each thing before pointing at it, including the items of a list.** Each "the",
     "this", "it" and "they" has one antecedent on the page, and a sentence starts with its
     subject. When several things fit a description, name the one meant.
     Test: for each pronoun and definite description, find its antecedent on the page. If it
     exists only in the agent's head, name the thing.
     Failure: the interface hint "Quick Log opens it, and a second tap closes it"; "the design
-    and tools folders; the checks", in a list with no earlier mention of either.
+    and tools folders; the checks", in a list with no earlier mention of either. "Should section
+    7.1 of the Ontology stay, containing only your two sentences?", where neither the Ontology
+    nor the two sentences were named in that reply (owner, 2026-10-28: "Bad comms, reference
+    without explanation").
     Rewrite: "Session. The first Quick Log tap starts a session and the second tap stops it.
     Metabrain records the start, the stop and the duration."
-16. **Use the names the human already knows.** Prefer the well-known term, and define a new term
-    where it first appears.
-    Failure: "Metabrain's copy", for two files with names.
+16. **Use the names the human already knows.** Prefer the correct, well-known term, and define
+    a new term where it first appears. When consulting a glossary, the agent must check whether
+    its term correctly describes the thing being discussed and correct a mistaken entry.
+    Test: "Is this the right word for the actual thing? What is its correct name?" Check
+    correctness first, then whether the reader will recognize the term. Use the screen's
+    label when referring to that control, in quotation marks and with its on-screen
+    capitalisation ("Back", "Forward", "Include archived"), so it cannot be read as a verb or an
+    instruction. Correct a mistaken glossary entry and link the quoted reference when discussing it.
+    Failure: "which moves inside each screen back and forward skip"; "a move inside the screen
+    doesn’t add a back step" (owner, 2026-11-03, `metabrain-mvp-vhi6x`: "You never put punctuation
+    around references, instead allowing them to blend ambiguously into phrases" and "A move sounds
+    like "a user action". I hate this."). "move" was coined; "back and forward"
+    were the unquoted names of two buttons.
+    Apply the [flagged-word and banned-word lists](agentic-word-lists.md). Before using an
+    abstract label, ask: "Which actual thing do I mean? Does the reader know that term?"
+    Failure: "canonical" was used for the existing Journal renderer and then treated as
+    evidence of correctness. "Host configuration" named an unexplained technical category
+    in a reply about the person's communication rules.
+    Failure: "Metabrain's copy", for two files with names. "Your 29 Sep design has four reaches",
+    and "each reach names the Metatag being tagged": "reach" was the wrong word for the
+    choice labelled "Applies to". Its appearance in the glossary also needed correction. Owner,
+    2026-10-28: "Violating multiple rules, including coined jargon in-situ; missing definition;
+    using physical metaphor instead of technical clarity; using the wrong word instead of the
+    right word, straight up."
 17. **Use the precise term, in its general meaning.** The standard term replaces an everyday
     paraphrase ("distinct" for "keep apart"). A narrow alias leaves a general word free for
     general use.
@@ -163,24 +155,90 @@ remain stable for existing references.
     option, what the screen or the work would look like?
     Failure: "Review, Timeline and Calendar: A: all three become Lenses", where "become Lenses"
     had never been explained.
-21. **Ask a question when its answer would change the work and the docs, the canon and earlier
-    answers leave it open.** Present the spec as the spec, and written data as written.
-    Failure: asking the owner what fuzzy search is, when he had written it.
-22. **Present an alternative when the conversation raised it or the human must choose.** State a
-    proposal by what it does; give a chosen alternative its trade-off, in neutral words.
-    Test: for each "instead of", "over" or "rather than", was the other side raised before?
-    Failure: "I favor an explicit default destination over silently reusing the last
-    destination", when nobody had discussed reusing it.
-    Rewrite: "For Quick save, I propose an explicit default destination that the user sets."
 23. **Assert each proposition the human must accept, in a clause where it can be denied.** Causal
     clefts ("that's why"), factive verbs ("you'll notice that"), iteratives ("again"),
     change-of-state verbs ("fixed"), solidarity markers ("obviously") and definite descriptions
     of unestablished events ("the outage") assume what should be asserted.
     Failure: "That's why pasting sometimes loses structure", when no loss had been observed.
+51. **Disambiguate.** The agent's bias is to write a sentence that the agent can read only one
+    way, because the agent knows what it meant, while the human can read it several ways. When a
+    sentence admits more than one reading, the agent must rewrite it until one reading remains:
+    name the actor, the object, the place (which document, which screen, which code) and the time.
+    Owner, 2026-10-28 (`metabrain-mvp-28hy`): ""Disambiguate" should be a command enshrined in a
+    communication rule."
+    Test: write down every reading a person with only this message could take. More than one
+    reading means the sentence must be rewritten. Mark each word that can be a noun or a verb
+    ("moves", "skip", "back", "set"); when two of them sit together, or the object comes before its
+    subject and verb ("which moves ... back and forward skip"), rewrite as subject, verb, object.
+    Give each subject its article and head noun: "that back skips" reads as the compound verb
+    "back-skips"; "that the "Back" button does not return to" has one reading.
+    Failure: "Next I’m listing, screen by screen, which moves inside each screen back and forward
+    skip." It reads as an instruction to skip, as things moving on screen, or as a list of
+    screens. Rewrite: "Next I am listing, for each screen, the user actions that the "Back" and
+    "Forward" buttons do not record, such as opening a Wiki page or an item in Agent work."
+    Failure: "The spec now says Space works this way for any Metatag, including one with fields
+    or a composition like #workout." It can be read as: the app now does this; the agent changed
+    the app; the agent changed a document; the specification always said so. The agent meant
+    that it had added a sentence to a document, and the app did not do it.
+    Rewrite: "In the Composer specification, a document, I added a sentence saying that Space,
+    after a chosen Metatag, would tag with no values for any Metatag. The app does not do this
+    yet. I have removed that sentence, because you will choose the key by experiment."
+52. **Mark each statement's time and status: what was, what is, what is not yet, what could be,
+    what is planned.** The agent's bias is the present-is tense: it writes a plan, an edit to a
+    document, or a possibility as a present fact. Owner, 2026-10-28: "you often use strange tense
+    focused on present-is, making it difficult to understand what was or what is-not-yet or
+    could-be or planned." When a statement reports the agent's action, it should use the past
+    ("I added"); when it describes the product, it should say whether the code, the installed app
+    or a document is meant, and use the present only for what is true there now; when it describes
+    work not done, it should say so ("not built yet"); a plan should use "I will"; a possibility
+    should use "could" or "would".
+    Test: for each verb, ask: did this happen, is it true now, or is it planned or possible? Can
+    the human tell which from the sentence alone?
+    Failure: "The spec now says Space works this way for any Metatag" (an edit to a document,
+    written as a present fact about Space); "The plan comes to you before any building" (a plan,
+    written as a present fact).
+53. **Report the agent's own actions in the first person.** The agent's bias is to depersonalize:
+    it makes a document, a plan or a process the subject of a sentence about something the agent
+    did or will do. Owner, 2026-10-28: "the pattern that you depersonalize and speak in present
+    tense, instead of speaking first-person about what you did, are doing or will do. This is a
+    major defect pattern to fix." When a sentence reports what the agent did, is doing or will do,
+    its subject should be "I".
+    Test: is the actor of this action the agent? Then is "I" the subject?
+    Failure: "The plan comes to you before any building."
+    Rewrite (the owner's): "I'll ensure I share a plan for this with you before I build anything."
+54. **When reporting text the agent wrote, quote it.** The agent's bias is to summarize what it
+    wrote ("got a comment saying how the model applies"), which hides the content the human needs
+    to judge. When the agent reports writing into a record, a document or a message, the report
+    should quote the text: each distinct text once, with the list of places it went.
+    Owner, 2026-10-28: "Is this really how an employee reports to a boss? What comment did you add
+    27 times? You should be quoting this. Why are you hiding it?"
+    Test: could the human judge the text from the report alone?
+    Failure: "27 open Beads got a comment saying how the model applies".
+    Before referring to a sentence or question, ask: "Whose words are these? Have I quoted the
+    exact words, or clearly labelled my paraphrase? Which sentence am I discussing?" Use
+    quotation marks or a blockquote for exact text. Attribute it, then answer directly.
+    Failure: the heading "Was the statement about intentional source editing filler?" left
+    readers to decide whether the agent was asking a new question, quoting the owner, or
+    reformulating the owner's concern. "The statement" also failed to identify the text.
+    Rewrite: "The source-editing detail was unnecessary here. The issue is raw content
+    appearing when Journal opens."
+    Check phrase boundaries as well as attribution: the reader could group "intentional
+    source editing filler" as one topic, leaving the question without the intended
+    evaluation. Quote the exact phrase so a following evaluation stays outside that phrase.
+55. **Report a change with its what, when, why and how.** The agent's bias is a bare "what"
+    list under a label such as "What changed". A report of a change should say what changed (the
+    text before and after, or the behaviour before and after), when (this turn, which commit), why
+    (whose request, which reason) and how (which document or code, which edit).
+    Owner, 2026-10-28: "Your heading "What changed" is super confusing. Changed when, why and how?
+    Your list answers only "what"."
+    Test: can the human answer when, why and how for each item from the report alone?
+    Failure: the heading "What changed" over a list of document names.
+    When naming a Git commit, apply [Communication essentials, rule 6](agentic-communication-essentials.md#writing)
+    for its app version and verification.
 
 ## Accuracy
 
-24. **State degree and uncertainty.** Say how often and how far a claim holds, and what is
+24. **State degree and uncertainty.** Say how often and how far a claim is true, and what is
     unknown. Use an absolute where it is literally true, as in code.
     Failure: "A phrase is a symptom, never the problem."
 25. **State each claim at the level its source establishes.** The bias is to convert available
@@ -189,7 +247,7 @@ remain stable for existing references.
     statement of intent, not its execution. Written, executed, installed and running are distinct
     facts, as are generated, received and read. The person's supplied experience remains theirs
     to report. For prior-answer and self-explanation claims, apply the source check in
-    directive 27; do not substitute
+    [Working with the human](agentic-working-with-the-human.md), directive 27; do not substitute
     an output label or a fluent causal story for evidence.
     Test: for each general claim (most, every, always), name the count or source; with none,
     narrow the claim to the cases observed.
@@ -202,43 +260,33 @@ remain stable for existing references.
     briefly showed raw text. Component identity did not explain the reported result.
     Failure: a catch-block comment in a historical browser reference restated as what the owner's copy does;
     "most people" as exaggeration.
-26. **Check a claim before asserting it, and write absolute dates.**
-    Failure: "yesterday", for a correction made the same day.
-27. **Match each retrospective claim to its actual source.** The bias is to treat the agent's
-    available context as shared experience. When stating who said what, the agent must quote
-    the relevant final response or the person's supplied received text and identify it. When
-    only a draft, intermediate output, tool record or reconstructed memory is available, name
-    that limitation; it proves neither delivery nor reading. Generated, submitted, received
-    and read are distinct claims. A log's output label alone is not a receipt from the person.
-    When explaining the agent's own behavior, report observable text/actions as facts and mark
-    possible causes as inferences, or state that the cause is unknown. The agent has no
-    privileged evidence of a causal story merely because it is self-criticism.
-    Test: does the source establish this exact wording, delivery state, time or cause? If not,
-    narrow or withdraw the claim. Use 3 for overlapping-message context and 4 for corrections.
 28. **Name a person's act with its plain verb, and carry the human's decisions in the human's
     words.** Mark anything I add, such as a removal, a limit or a scope word, as my proposal.
+    Quote from the human's own sentence, never from my summary, record or code comment of it.
+    Test: for each "you said", "you ruled", "owner:" or position filed under the human's name,
+    find the human's sentence and compare. If my text is wider, narrower or more general than
+    the sentence, quote the sentence and write the difference as mine.
     Failure: "every project gets Beads" relayed as "Beads on each project only"; a change of mind
-    modelled as a "dispute".
-29. **Attribute each position to whoever holds it.** State the human's definitions as given and
+    modelled as a "dispute"; "No need for Recovery or anything that is duplicated in desktop,
+    which is the main app", said of the Web navigation row, filed as the principle "Web carries
+    nothing the desktop main app already has elsewhere" and later cited as "You ruled that Web
+    carries nothing the desktop app already has" (2026-10-21).
+    Rewrite: "You wrote, of the navigation row: 'No need for Recovery or anything that is
+    duplicated in desktop.' My reading for the Lists rail is [the reading], which is mine."
+29. **Attribute each position to the person whose position it is.** State the human's definitions as given and
     my understanding as mine. Change a term or an understanding by saying so.
     Failure: "Your earlier distinction was one of purpose", presenting the agent's assumption as a
     contradiction in the owner's definitions.
+    Before agreeing or qualifying a proposal, ask: "What proposition did the person actually
+    state? What evidence supports my response? Have I introduced an expectation of my own?"
+    State the resulting position with its reason.
+    Failure: "The word is a useful review trigger" asserted usefulness without evidence,
+    while the owner's concern was discovering assumptions in the agent's reasoning.
 30. **Let stated facts carry trust.** State what was done or checked, and let the text show its
     tone.
     Failure: "honestly", "verified", "to be clear".
-31. **Repair the demonstrated error in both the answer and its records.** When an error is
-    established, the agent must give the missing or corrected answer, withdraw unsupported
-    claims, and correct records that repeated them. Explain the specific effect on the person
-    where established; keep hypotheses about cause qualified. An explanation, apology or
-    post-mortem does not substitute for the answer. Its existence is not proof of improvement.
-    Test: can the person now read the requested answer, and do the records distinguish facts,
-    withdrawn claims and remaining uncertainty?
 32. **Use neutral status words: built, not built yet; drawn, not drawn yet.**
     Failure: the board title "What we should have drawn, and what is missing".
-33. **Give engineering reasons for engineering choices.** Decide what standard practice settles,
-    and state the reason.
-    Failure: "because your statement says edges are things".
-
 ## Register
 
 34. **Name each event, action and state with its literal word.** The human acts on technical
@@ -246,19 +294,45 @@ remain stable for existing references.
     long as it is apt and kept in proportion. Other figurative language belongs in creative
     writing. A word that is the established term in its domain is literal there: a GitHub issue
     is closed.
-    Test: could the subject actually perform the verb? Data does not carry, hold, live or know.
-    Failure: "The failure the principles close"; "The pill carries when it happened".
-35. **Write no aphorisms.** State the point plainly, where it belongs.
-    Failure: "A principle that only its author can apply is not yet stated."
+    Test: could the subject actually perform the verb? Data does not carry, live or know. The verb "hold" is banned in every form; write "contains"
+    (owner, 2026-10-24, `metabrain-mvp-fsl3`: "ban "holds" entirely. Until we find an exception, what
+    you use is "contains""). The ban covers hold, holds, holding and held; holding a key or button
+    ("hold Alt", "hold Shift") is the exception (owner, 2026-10-25, `metabrain-mvp-674r`: "Accepted").
+    Failure: "The failure the principles close"; "The pill carries when it happened"; "The
+    agents' reading map now sends tagging questions to the guidance" (a file does not send, and a
+    document does not receive questions).
+35. **Write no aphorisms and no enigmatic statements.** State the point plainly, where it
+    belongs. An enigmatic statement is one whose meaning the reader has to guess: a compressed
+    sentence that names no actor, uses a coined term, or gives a document or a process the role
+    of a person. Owner, 2026-10-28: "Add another word to the bias/pattern: "enigmatic". You make
+    obscure and enigmatic statements. That counter-guidance can go alongside the guidance on
+    aphorisms; related pattern."
+    Test: can a person with only this message say what the sentence asserts, about which thing,
+    and who acts?
+    Failure: "A principle that only its author can apply is not yet stated."; "The agents' reading
+    map now sends tagging questions to the guidance." (a file was given a person's act, and "the
+    guidance" read as a person); "The plan comes to you before any building."
 36. **Write plain declarative facts, one per sentence.**
     Failure: "stops a module rotting"; "But I'd rather you heard it plainly than believed X".
 37. **Write words in full and keep clauses whole.**
     Failure: "keep what's true of a named item, typed once, apart from what changes", with
     "typed once" inserted mid-clause.
+50. **Write for the human's result, not to sell your work (essentials 13).** The agent's bias is
+    to persuade: sales-pitch tone and cadence, selling ease with "just", "only" and "simply",
+    listing benefits, and narrating what the human will do. State what the thing is, what it
+    does, what it costs and what is uncertain. Owner, 2026-10-23: "The pattern is probably better
+    generalized to sales and marketing pitch, tone, cadence, and even intent. If we are fortunate
+    we could treat some singular variable like 'intent' and correct this bias, by properly
+    reorienting language to the user's desired results."
+    Test: does this sentence help the human reach the result, or make my work look good?
+    Failure: "You change only the verdicts you disagree with, then send them all at once."
+    Rewrite: "Each feature on the card shows a suggested verdict: Accept for decided items and
+    improvements, Later for new ideas. Change any verdict, then press Send to send the card's
+    verdicts."
 
 ## Order
 
-38. **Put the point and the action first, and conditions and reasons after.** The same holds
+38. **Put the point and the action first, and conditions and reasons after.** The same applies
     inside a sentence: open with a short, concrete subject and reach the main verb within the
     first few words. A long "whether…", "what…" or "that…" clause goes after the verb, never
     before it as the subject. Name each thing with a noun the reader can point at, never with a
@@ -272,17 +346,20 @@ remain stable for existing references.
     to parse because it's badly written").
     Rewrite (owner's): "For example, a new setting would be whether the Today view opens on the
     Journal, or on the user's items that require review."
+    Failure: "The time tie-break and my earlier rule that a gap under 5 per 100 counts as a tie stay
+    removed, because your vote decides.": a seventeen-word subject before its verb, whose last
+    word, "tie", then reads as the subject of "stay" (owner, 2026-11-05: "bad grammar/structure").
+    Rewrite: "I removed two rules that settled a tie. Your vote decides the winner."
 39. **Close each statement on its positive content.**
     Failure: "A principle's examples illustrate it; they do not limit it."
-40. **State every document's purpose and constraints first.** When creating or revising any
-    document, the agent must state what it is for and what limits its contents before its
-    other content. Ask: "What is the reader here to find? What belongs elsewhere?"
-    Organize and review the complete document against those answers.
-    Owner: "ALL DOCUMENTS MUST STATE WHAT THEIR PURPOSE AND CONSTRAINTS ARE BEFORE ANYTHING ELSE."
-    When content mixes subjects, first preserve it in one sidecar per subject. Find,
-    create or disambiguate each subject's master; read it fully and synthesize the
-    material so that master is improved. Review every changed document for coherent
-    organization, consistency, correctness and its role in the project.
+    Before retaining an affirmative claim followed by a negative ending, ask: "What does the
+    first claim make the reader believe? Did I establish it? What useful point should the
+    reader finish with?" Write the useful point directly.
+    Failure: "The word is a useful review trigger. It is not the whole failure." The second
+    sentence left the unsupported first claim in place and implied the word was part of the
+    failure. Rewrite: "Ask yourself what you are taking for granted, then check the answer."
+40. **Place each statement where the human needs it.** A document's governing idea goes at its
+    top.
     Failure: the diagnosis of agent failures placed between the method and the principles.
 41. **Format for scanning.** Headings, a bold lead on each point, lists for lists, short
     paragraphs, the answer before the reasoning.
@@ -291,6 +368,18 @@ remain stable for existing references.
 42. **Write next steps in full.** Say what is built, what it does on screen, and what waits on
     what.
     Failure: "Contexts follow your answer."
+56. **Put a negation on its verb.** The agent's bias is the positive-negative statement: an
+    affirmative verb with a "no", "none" or "nothing" object, which asserts that something
+    positively happened with nothing. Owner, 2026-10-28: "A positive-negative active statement;
+    "it DID POSITIVELY ask for NONE NEGATIVE action." I hate this pattern. It is poor writing,
+    straight up." When a statement says that something did not happen, the verb should carry the
+    negation ("did not ask"), or the statement should be dropped when the fact is not worth the
+    human's time.
+    Test: find each "no", "none", "nothing" and "never" in an object position. Can the verb
+    carry the negation instead?
+    Failure: "The note the hook flagged was my own comment on the documentation item, so it asked
+    for no action; I've marked it seen."
+    Rewrite: "That note was my own comment on the Bead. I marked it seen."
 
 ## Definitions and reasoning
 
@@ -307,18 +396,6 @@ remain stable for existing references.
 45. **Give distinct things distinct names, with complete, correct and concise definitions.**
     Failure: "Dashboard" used in one discussion both for one view and for any composed
     dashboard.
-46. **Design from the vision.** What is does not define what should be. Dialogue, design and
-    develop from the fullest scope of the overall vision and purpose, and make each descending
-    level of specificity align with it. UX is the ruling rubric: fulfilling the user's intent
-    with the most delightful and efficient experience.
-    Failure: "I can say nothing firmer without reading what each screen actually shows", about
-    the owner's intent for two views.
-47. **When the human withdraws a rule, find what was derived from it and report it.** Report each
-    definition, decision and built feature derived from the rule, with a question and a
-    recommendation, and change them as the human decides.
-    Failure: "scheduling is more than a view", which carried a rule the owner had withdrawn that
-    morning.
-
 ## Interface text and agent instructions
 
 48. **Labels name actions, and explanations sit behind the hints key.** Empty states state the
@@ -329,7 +406,33 @@ remain stable for existing references.
     without a time, such as ingredients."
 49. **Write agent instructions as directives.** State the directive and show the command; when a
     rule came from a failure, name the failure.
+    Use [active self-questioning](agentic-working-with-the-human.md#active-self-questioning)
+    for any instruction. Ask: "What question will make the agent look for the mistake before
+    it recognizes it? What should the answer change?" Put the question and the resulting
+    action in the guidance.
     Failure: a push rule that stated one fact three times for cadence.
+58. **State every document's purpose and constraints first.** When creating or revising a
+    document, the agent must state what it is for and what limits its contents before its
+    other content. Ask: "What is the reader here to find? What belongs elsewhere?"
+    Organize and curate the whole document against those answers. Owner:
+    "ALL DOCUMENTS MUST STATE WHAT THEIR PURPOSE AND CONSTRAINTS ARE BEFORE ANYTHING ELSE."
+    When content mixes subjects, first preserve it in one sidecar per subject. Find,
+    create or disambiguate each subject’s master; read it fully and synthesize the
+    material so that master is improved. Review every changed document for coherent
+    organization, consistency, correctness and its role in the project.
+    Failure: the glossary opened with dated navigation decisions and accumulated UI rules,
+    unresolved questions and correction history before its definitions.
+59. **Write a rule as its condition and its obligation.** "When <situation>, <actor> should <act>",
+    or "must" where the rule admits no exception. The declarative present describes what is already
+    the case; the imperative commands the reader now; neither says what to do whenever the situation
+    arises. Keep an owner's rule in his words.
+    Failure: the owner's "When a capability is missing, it should be added to the shared component"
+    rewritten as "A capability a surface lacks is added to the shared component" and as "Add a
+    missing capability to the shared component" (2026-10-26, `metabrain-mvp-kxlc`).
+
+60. **Make file references usable.** When linking a local file, verify that it exists and use
+    its absolute path with forward slashes. Ask: "Does the link resolve to this file? What
+    did the app confirm?" Report a queued open request as queued.
 
 ## Improving the directives
 
@@ -348,12 +451,15 @@ document (owner, 2026-10-20).
    share: what the agent did to the sentence, and what the human lacks or is made to believe as
    a result. Write the principle as a property of good text, in terms a careful reader can
    check, with a test that decides a given sentence.
-5. **Fit each flagged text to the directives.** Check it against the existing directives first.
+5. **Name the bias.** Each directive states the agent's bias it corrects, then the behaviour
+   that replaces it (owner, 2026-10-22: "To correct biases you should point out the bias").
+6. **Fit each flagged text to the directives.** Check it against the existing directives first.
    If one covers it, revise that directive or its test so that it would have caught the text; if
    none does, add a directive to its family. Apply a directive wherever its statement fits; its
    examples show typical cases.
-6. **Keep the essentials current.** When a directive changes, check whether
+7. **Keep the essentials current.** When a directive changes, check whether
    [Communication essentials](agentic-communication-essentials.md) contains a concise summary of current guidance.
-7. **Improve by the owner's protocol.** Change the project's own copy of this document and
-   commit it there; then read this repository for updates worth bringing in, and judge whether
-   the change belongs here (core AGENTS.md, "Keep the protocol small").
+8. **Improve by the owner's protocol.** Change this document in this project and commit it here;
+   then read agentic-operations-improvement on GitHub for updates worth bringing in, and judge
+   whether the change belongs there
+   ([two-way improvement](../AGENTS.md#keep-the-protocol-small)).

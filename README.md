@@ -13,9 +13,12 @@ communication.
 
 A top-level project in this repository (owner, 2026-09-28): the essential rules of
 grammar, style and content for everything agents write for people. The essential rules
-are in [Communication essentials](docs/agentic-communication-essentials.md), and every
-directive, with its test and a real failure, is in
-[Agentic Communications Style](docs/agentic-communications-style.md); dated
+are in [Communication essentials](docs/agentic-communication-essentials.md). Process
+directives are in [Working with the human](docs/agentic-working-with-the-human.md);
+writing directives, with their tests and real failures, are in
+[Agentic Communications Style](docs/agentic-communications-style.md). The
+[pattern catalog](docs/agentic-failure-patterns.md) and
+[word lists](docs/agentic-word-lists.md) support review; dated
 evidence is in [the communication inquiry](docs/communication-inquiry.md); its work
 is the Beads epic `ops-chv`.
 
