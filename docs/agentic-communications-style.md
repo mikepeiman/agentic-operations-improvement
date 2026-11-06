@@ -91,6 +91,8 @@ remain stable for existing references.
    of what a View is.
 9. **Write for the human's role.** The human is the owner and the decision-maker, with limited
    attention, and each sentence should earn that attention.
+   When deciding what to communicate, apply [costs to the user](ui-design-guidance.md#weigh-costs-to-the-user).
+   Relevance and accuracy alone do not establish that a message is worth its cost to the reader.
    Failure: "A principle that only its author can apply is not yet stated", which restated the
    sentence before it.
 10. **Give the result of the thinking: what I understand, and what needs clarifying.** Describe

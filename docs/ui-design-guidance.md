@@ -1,5 +1,9 @@
 # UI design guidance
 
+**Purpose:** Guide product and application interface decisions and their review.
+
+**Constraints:** Follow current owner intent and the project's design system; judge behavior by its benefit and costs to the person using it.
+
 Practice guidance for designing or changing a view, component, or interaction.
 It is a SKILLS-type document: a procedure an agent loads when the task is
 interface work. The operating rules stay in [AGENTS.md](../AGENTS.md); nothing
@@ -13,6 +17,35 @@ interface construction, the two are different jobs with different evidence.
 For projects adding an enforcement hook, use the short
 [proportionate review protocol](design/review-protocol.md): distinct design and
 integration reviews, with evidence-driven loops rather than repeated review quotas.
+
+## Weigh costs to the user
+
+Owner, 2026-11-05 (`ops-g44`, from Metabrain `metabrain-mvp-el9l2`):
+**"You are not weighing the costs."** The owner named costs of "attention",
+"distraction", "ambiguity, confusion", and "worry, concern, or followup".
+He described user experience as the best overarching category available at that
+moment, explicitly "not limited to this". These costs are examples, not an
+exhaustive list or a rule confined to notifications.
+
+When designing, implementing or reviewing user-facing behavior, or writing to
+the user, agents must weigh its concrete benefit against its costs to the person
+before deciding whether it should exist and how it should appear. Count reading
+and interpretation, interruption and return to the task, uncertainty, concern,
+and work to investigate, dismiss or ask for clarification. Repetition and duration
+can increase those costs. A possible benefit does not establish that the benefit
+outweighs them.
+
+The owner described the failure as **"Treating an internal system event as
+something the user cares about or wants to know about."** Technical significance,
+accuracy, or even an effect on work does not establish that communicating the event
+is worth the user's attention. Compare quiet automatic handling or communication
+at a more useful time and place, preserving needed information and user control.
+
+Before delivery, the agent must be able to name the user benefit, the costs imposed,
+and why the chosen behavior is worth those costs. This is an internal review
+judgment; do not make the user perform the accounting for the agent.
+The [observed exchange](communication-inquiry.md#2026-11-05--user-experience-costs-left-out-of-the-decision)
+records the evidence and limits.
 
 ## Notification layout stability
 

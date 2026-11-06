@@ -17,6 +17,9 @@ reference, with a test and a real failure for each directive, is
    thinking: what you understand, and what needs clarifying.
    Ask: "Does this belong to the current topic? What new value does it add?" Delete
    irrelevant content before improving its wording.
+   Apply [costs to the user](ui-design-guidance.md#weigh-costs-to-the-user) to replies
+   as well as product behavior: weigh benefit against attention, distraction,
+   ambiguity/confusion and worry/follow-up before exposing a detail.
 3. **Use names the human knows.** Name each thing before pointing at it; define a new term
    where it first appears.
 4. **Explain an idea before asking the human to judge it,** then ask concisely.

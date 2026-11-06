@@ -848,3 +848,33 @@ Metabrain's existing repair directive now includes a causal-relevance test and
 its pattern catalog links the received exchange and editorial case comparisons.
 This is one session's evidence and a local correction. It is not promoted to a
 new core rule or a claim of prevalence or demonstrated future compliance.
+
+### 2026-11-05 — user experience costs left out of the decision
+
+Project: Metabrain. Agent: Codex, chat "Explain persistent update notice", session
+`01a1ad68-cabf-7883-90de-68f0ac39626d`. Observed and corrected by the owner.
+Beads: `ops-g44`, Metabrain `metabrain-mvp-el9l2`.
+
+The owner reported a persistent Outliner notification: "Metabrain is installing
+an update. Its data connection will resume when installation finishes."
+He asked why a user should see it. The agent initially justified showing it when
+an update interrupted a connection, then narrowed justification to effects on
+the user's work. The owner supplied the broader failure description:
+"Treating an internal system event as something the user cares about or wants
+to know about."
+
+The owner then said: "You are not weighing the costs." He identified user
+experience as the best overarching category available at that moment, explicitly
+"not limited to this", and named "attention", "distraction", "ambiguity,
+confusion", and "worry, concern, or followup" as costs the agent had not counted.
+He explicitly asked to process and document this correction.
+
+The exchange shows relevance being considered without explicit cost accounting.
+Even an effect on work does not establish that communicating an internal event
+is worth the user's attention. This is one observed exchange and an explicit
+owner correction; it does not establish a private cause, prevalence, the current
+notification's cause, or repaired product behavior.
+
+The existing UI guide now owns the benefit-versus-cost review, and communication
+essentials and the detailed style guide point to it. This extends current guidance
+under the owner's instruction; it is not a new unrequested core rule.
