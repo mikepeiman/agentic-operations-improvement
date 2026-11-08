@@ -920,3 +920,23 @@ rather than imposed on other projects. Source examples link to their versioned
 project evidence; imported guidance does not install or certify draft hooks.
 The pre-existing distribution-check findings on the unchanged core remain tracked
 by `ops-02j`; this reconciliation changes guidance, not that distribution contract.
+
+
+### 2026-11-08 — Successful checks within an assumed structure
+
+Provenance: Metabrain owner report in Codex chat "Require reasoning before checks",
+session 01a1bc9f-3343-7843-8bdd-75c1de252626; local Bead metabrain-mvp-ahsm4,
+shared Bead ops-y4c. The owner identified the active "fix cannabis tracking flow"
+chat and quoted: "then used successful checks within that structure to justify
+completion". The owner said: "Using tests/checks to rationalize completion and
+success. This MUST stop."
+
+Owner's new rule: "Instead of tests and checks, the agent must reason with the user.
+Agent must propose the thinking questions they must ask themselves, and they must
+tell the user what they will test or check, and how."
+
+The source chat was not inspected. This entry records the owner's reported
+recurrence and explicit rule; it establishes neither the chat's current behavior
+nor the internal cause. Confirmation bias and premature closure describe the
+reported mechanism. The operational correction is owned by
+[Reason with the user before verification](agentic-working-with-the-human.md#reason-with-the-user-before-verification).

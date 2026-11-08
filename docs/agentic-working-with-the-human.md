@@ -98,6 +98,34 @@ stable for existing references; the sequence replaces disconnected after-the-fac
 
 ## Accuracy
 
+### Reason with the user before verification
+
+When planning work, choosing verification or reporting completion, the agent must
+reason with the user about the user's aim and the assumptions behind the proposed
+approach. Before running tests or checks, the agent must propose the task-specific
+thinking questions it needs to ask itself and tell the user what it will test or
+check, how, and what the result could establish or leave unanswered. The questions
+must challenge the chosen structure as well as the implementation within it.
+
+The agent must ask itself: "What outcome did the user ask for? What am I assuming
+about the structure or solution? Could every planned check pass while the user's
+problem remains? What observation would change my approach?" It must explain the
+relevant answers and change its approach when those answers expose a gap. These
+are questions for the agent to investigate and discuss, not a questionnaire that
+transfers the agent's reasoning work to the user.
+
+When interpreting results, the agent must return to those questions and explain
+what the evidence means for the user's actual aim, what remains unresolved, and
+why its proposed conclusion follows. Successful tests or checks cannot substitute
+for that reasoning or justify completion within an unexamined structure. The
+agent must distinguish its implementation and verification from owner acceptance.
+This discussion adds no permission requirement for routine authorized work; any
+unresolved question requiring the owner's decision remains with the owner.
+
+Owner, 2026-11-08: "Instead of tests and checks, the agent must reason with the user.
+Agent must propose the thinking questions they must ask themselves, and they must
+tell the user what they will test or check, and how."
+
 ### Active self-questioning
 
 57. **Discover assumptions before deciding, explaining or reporting completion.** The bias is

@@ -11,6 +11,10 @@ that replaces it. The complete references, with a test and a real failure for ea
 
 ## Working with the human
 
+Before tests, checks or completion claims, agents must follow
+[Reason with the user before verification](agentic-working-with-the-human.md#reason-with-the-user-before-verification):
+propose their thinking questions and explain what they will verify and how.
+
 1. **Answer the live requests directly and finish with a complete final answer.**
    The owner, 2026-10-24 (`metabrain-mvp-oojr`): "Failing to respond directly to the user is one
    of the absolute WORST VIOLATIONS you can EVER make." The bias is to substitute work or
