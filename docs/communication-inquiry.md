@@ -984,3 +984,38 @@ now explicitly distinguishes a wording complaint from authority to change the
 product. Style directive 51 preserves the grammatical and referential examples.
 These source records support the specific scope mistake and the observed wording
 faults; they establish neither prevalence nor a model-internal cause.
+
+### 2026-11-08 — Project-tag expectations reported as UI facts
+
+Provenance: Metabrain saved conversation `dd4496b0-0151-5df1-89d4-6365db2b435a`,
+read with its retained feedback and replies on November 8; local work
+`metabrain-mvp-31nsb`, shared work `ops-e9c`. The owner explicitly requested that
+this incident be reviewed with the local conversation behind the same day's
+pattern-recognition skill and operations reconciliation (`ops-0vd`). That native
+conversation, `01a1bc17-095b-78a3-b00f-f2630b2bab62`, was read for this entry.
+
+The earlier assistant supplied a typing sequence for finding a Projects collection
+and its members without executing it. The owner contradicted the sequence. The
+reply's subsequent acknowledgement did not settle the investigation: it described
+temporary project-list objects as if they satisfied the stored Metatag model and
+again asked whether to implement correct behavior instead of creating disconnected
+tags. The owner said: “Stop wasting my time presenting DELIBERATE DEFECTS as an
+option to choose from.” The owner also challenged the unexplained phrase that code
+had “sent” projects to an editor and required an honest application-wide audit.
+
+Read-only store inspection and a disposable check against actual composer logic
+subsequently confirmed that projects could be collection-list choices while being
+absent from ordinary tag suggestions. They were separate response objects derived
+from project records, not stored Metatag members. The earlier creation dates were
+also contradicted by the saved timestamp. The reported pill's editability remains
+unverified; no live desktop or browser access occurred. Full project evidence is
+in [the investigation and post-mortem](https://github.com/mikepeiman/metabrain-mvp/blob/master/docs/active/postmortem-2026-11-08-project-tags-invented-flow.md).
+
+This instance connects expectation mistaken for observation, an existing design
+mistaken for justification, and a routine correctness obligation presented as an
+owner decision. The October 27 Metatag dialogue in that project already records
+the same false choice between a shared editor and a known defective alternative.
+The current pattern-recognition skill owns the recurrence and shared-owner review;
+accuracy guidance owns the evidence boundary. Another written rule is not evidence
+of repair. This entry records the recurrence and investigation, not a completed
+product fix, intentional deception or a model-internal causal diagnosis.
