@@ -940,3 +940,47 @@ recurrence and explicit rule; it establishes neither the chat's current behavior
 nor the internal cause. Confirmation bias and premature closure describe the
 reported mechanism. The operational correction is owned by
 [Reason with the user before verification](agentic-working-with-the-human.md#reason-with-the-user-before-verification).
+
+### 2026-11-08 — Stale delivery claims and disproportionate Computer Use
+
+Provenance: direct owner corrections in Metabrain Codex chat "Trace update and install
+protocol", session 01a1bc17-095b-78a3-b00f-f2630b2bab62; project Bead
+`metabrain-mvp-9o2fp`, shared Bead `ops-0vd`.
+
+I reported an old installed version and treated an earlier installation refusal as
+unfinished current work without refreshing the records. The owner reported 0.2.1963
+installed and running and said: "You reported a lie because you didn't do a simple
+lookup." Fresh desktop identity, installed executable hashes and a ready matching
+service then confirmed 0.2.1963 and the presence of the repairs. This establishes a
+stale, misleading status report; it does not establish an intentional deception or
+an unobservable internal cause. Accuracy directive 26 now makes the freshness test
+explicit within the existing rule.
+
+Earlier I proposed live UI access to discover simple visible save conditions. The
+owner refused, said those facts could and must be asked of him, and instructed:
+"Stop looking to take over my computer, unless it is truly a high-value and unique
+reason." The [Computer Use guide](computer-use.md) owns the value judgment and
+permission boundary. No Computer Use occurred. The ordinary installation permission
+was already independent of it; project-specific installation policy stays local.
+
+The same investigation lacked evidence identifying a failed restart participant.
+The owner identified that absence as defective data collection, rather than an
+acceptable stopping point. The general correction is in the
+[pattern-recognition skill](../.codex/skills/pattern-recognition/SKILL.md): identify
+and repair the missing discriminator at its owner, then trace related failures and
+actual delivery. The original 43-prompt collection remains in Metabrain for owner
+assessment; it is not imported here as a universal instruction set.
+
+### 2026-11-08 — Wording criticism redirected into code work
+
+Provenance: Metabrain's November 7 recorded corrections in `metabrain-mvp-6cnml`
+and `metabrain-mvp-f2iw5`. Source documentation is present in app 0.2.1956, revision
+512a6348f. The complete source chat was not re-read for this reconciliation.
+
+The owner described two passages as "Terrible grammar" and "so badly written as
+to be obscure". The recorded agent response searched program and Chat code and
+filed a product bug, although the quoted text was the subject. Working directive 2
+now explicitly distinguishes a wording complaint from authority to change the
+product. Style directive 51 preserves the grammatical and referential examples.
+These source records support the specific scope mistake and the observed wording
+faults; they establish neither prevalence nor a model-internal cause.

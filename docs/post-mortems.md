@@ -1,5 +1,9 @@
 # Post-mortems
 
+**Purpose:** Record demonstrated failures and the corrections that address their causes.
+
+**Constraints:** Preserve evidence and uncertainty; a document or passing check does not itself establish that a cause was repaired.
+
 A post-mortem is the written record of an agent failure: what happened, why, and what now prevents it. The owner restored post-mortems as a required practice on 2026-10-09, after the v2 simplification of 2026-09-13 had folded them into Bead notes and three weeks of failures went unrecorded.
 
 ## When to write one
@@ -9,10 +13,15 @@ Write a post-mortem when any of these happens:
 - the owner names a failure or a waste of time, tokens or machine resources;
 - an explicit instruction or standing rule is broken;
 - the same defect recurs;
+- a regression reaches the owner;
 - work, data or an owner's edits are lost or destroyed;
 - completion was claimed and the promised boundary failed.
 
 Write it in the turn the trigger is known, or the next turn. Do not wait to be asked.
+When a regression occurs, agents must identify the concrete correction and its owning
+mechanism, including a protocol correction when possible. Repeating an instruction or
+another successful compilation alone does not establish that the cause was corrected
+(owner, November 8, 2026, Metabrain `metabrain-mvp-31l3p`).
 
 ## What it contains
 

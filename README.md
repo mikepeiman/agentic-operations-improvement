@@ -60,6 +60,14 @@ and generated indexes remain optional.
 
 ## Optional tools
 
+Use [Pattern recognition](.codex/skills/pattern-recognition/SKILL.md) during mechanism
+design, audits, investigations and debugging to identify problem classes, recurring
+failures, missing evidence and related responsibilities. Its examples are portable;
+adopting projects keep their own evidence and permissions. Copy the skill only when
+useful; its presence here does not install a host workflow in another project.
+
+Before proposing live computer access, apply [Computer Use: value and consent](docs/computer-use.md).
+
 Use the [named-pattern catalog](docs/agentic-failure-patterns.md) when identifying
 operational biases, defects and communication slop patterns. The first entry,
 **The Mere Existence bias**, records the owner's sequences and corrective self-question.

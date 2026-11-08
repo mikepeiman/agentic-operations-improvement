@@ -25,6 +25,9 @@ propose their thinking questions and explain what they will verify and how.
    files or earlier working-process messages. Follow the response sequence in
    [Working with the human](agentic-working-with-the-human.md#conduct), directives 1–5.
 2. **Check the evidence for the exact claim, including claims about your own replies.**
+   When reporting a changeable state as current, refresh its owning record; otherwise
+   state when it was last observed. Earlier failures are not current blockers without
+   fresh evidence. Accuracy directive 26 in the working-with-the-human guide owns this rule.
    The bias is to treat available context as shared experience. When reporting what the person
    received, the agent must check the relevant final response or their supplied copy. Drafts,
    generated wording, intermediate output and records do not establish delivery or reading.
@@ -164,5 +167,8 @@ propose their thinking questions and explain what they will verify and how.
 19. **Draft and check before sending.** When preparing a reply, the agent must draft the complete
     final text, apply the communication guides and correct findings before sending it. When the
     host has a configured draft/editor workflow, use it and print the checked draft unchanged.
+    When applying the owner's editorial workflow, use one advisory editor pass; the agent
+    judges findings and corrects the accepted ones. An optional editorial model must not
+    create an open-ended rewrite or veto loop. Required project checks remain distinct.
     Host-specific files and hooks require their own verified integration; Metabrain’s
     [draft workflow](https://github.com/mikepeiman/metabrain-mvp/blob/d2315e771691af0bf9920036f1a5a6b7490673f8/docs/active/agentic-communication-essentials.md) is source evidence, not a bundled tool in this repository.

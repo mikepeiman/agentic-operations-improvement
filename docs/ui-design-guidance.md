@@ -230,6 +230,30 @@ complete sentences, each thing named before it is pointed to, named head nouns, 
 scope, literal words, direct statements, parallel contrasts and precise terms. Review the
 text in the rendered screen.
 
+### Data kept on this device is saved
+
+When input has a saved copy in a local draft, outbox, recovery store or file, the
+interface must describe that confirmed state as **Saved on this device**. A later
+sync, remote write or acknowledgement failure must name that unfinished step;
+it must not mislabel the locally saved input as unsaved. For example: "Saved on
+this device · waiting to sync". Keep Review, Export or Retry available as appropriate
+beside that status. Only input with no saved copy may be described as remaining
+only on screen, with a concrete action that preserves it. Review every relevant
+save, sync and data-error state against this distinction, including mockups.
+
+Owner direction, November 7, 2026, Metabrain `metabrain-mvp-sunsa`; the product-specific
+Journal destinations and recovery implementation remain in that project.
+
+### Design titles and review context
+
+When delivering a design image, the agent must give it a semantic title naming what
+is drawn and a small adjacent caption stating its purpose and context. Commentary,
+feedback and pointer annotations must be visually distinct from the proposed product
+UI. A reviewer must be able to distinguish what would ship from what explains the
+proposal. Project publication IDs and storage mechanisms remain project-specific.
+
+Owner direction, November 6, 2026, Metabrain `metabrain-mvp-szspa`.
+
 ### Recurring design review
 
 At planning, implementation, and rendered review, ask of each control: what does

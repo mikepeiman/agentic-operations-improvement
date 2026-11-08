@@ -183,6 +183,16 @@ The process directives (1 to 7, 21, 22, 26, 27, 31, 33, 46 and 47) are in [Worki
     Rewrite: "In the Composer specification, a document, I added a sentence saying that Space,
     after a chosen Metatag, would tag with no values for any Metatag. The app does not do this
     yet. I have removed that sentence, because you will choose the key by experiment."
+    Failure, November 7, 2026: "Should a reader model count your messages in a sub-chat that name a communication failure?"
+    The relative clause follows "a sub-chat" but disagrees with it; "model" and "count"
+    can each be a noun or verb, and the yes-or-no form hides the alternatives. The owner's
+    assessment was "Terrible grammar". Name the action and choices: "How should the app find
+    the message where you report a communication failure? A model reads the messages, or
+    you select the message yourself."
+    Another passage said a sub-chat contained the whole conversation but also "starts from"
+    the selected message. The owner judged it "so badly written as to be obscure". State
+    what the person selects and what the new chat actually reads. The
+    [communication inquiry](communication-inquiry.md) records the source and scope.
 52. **Mark each statement's time and status: what was, what is, what is not yet, what could be,
     what is planned.** The agent's bias is the present-is tense: it writes a plan, an edit to a
     document, or a possibility as a present fact. Owner, 2026-10-28: "you often use strange tense

@@ -32,6 +32,11 @@ stable for existing references; the sequence replaces disconnected after-the-fac
    this answer? What value does it add now?" Delete stale-topic commentary rather than
    repairing its wording.
    Failure: the agent began editing docs while the human was still discussing absolutes.
+   When the human quotes the agent's text and judges its writing, the agent should treat
+   that text as the task. Before opening code, a program or data, ask: "Which sentence of
+   the human's asks for this action?" A wording complaint does not authorize changing the
+   product being described. The November 7 Metabrain instance is recorded in the
+   [communication inquiry](communication-inquiry.md).
 3. **Resolve references using the person's context.** The bias is to assume that arrival
    order is composition or reading order. When messages overlap, the agent must use quoted
    text, named subjects and explicit timing to identify the response under discussion. The
@@ -170,6 +175,10 @@ tell the user what they will test or check, and how."
     the Metabrain-specific procedure and whole-conversation disposition.
 
 26. **Check a claim before asserting it, and write absolute dates.**
+    When reporting a changeable state such as an installed version, an active process,
+    delivery or a blocker, agents must refresh the owning record before calling it current.
+    When a fresh lookup is unavailable, give the last observation's date and scope; do not
+    use it to assert a present blocker. A new owner observation requires re-examination.
     Failure: "yesterday", for a correction made the same day.
 27. **Match each retrospective claim to its actual source.** The bias is to treat the agent's
     available context as shared experience. When stating who said what, the agent must quote

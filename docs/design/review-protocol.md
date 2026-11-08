@@ -1,5 +1,9 @@
 # Proportionate design review
 
+**Purpose:** Review proposed and completed product interactions against their purpose and contracts.
+
+**Constraints:** Preserve owner intent, data and permissions. A review record is evidence of the work examined, not owner acceptance.
+
 A short protocol for projects adopting evidence-backed UI review. Adapt the
 resource pointers and hook to the project. Metabrain's owner requested this after
 a shared feedback feature replaced existing right-click commands despite available
@@ -34,6 +38,10 @@ design guidance; reading a document had not established that its principles were
    the appropriate reusable components and modules, remove redundant implementations
    and contradictory overrides, and check that the resulting design and behavior
    remain consistent across every relevant context and state.
+   Apply the [saved-on-device distinction](../ui-design-guidance.md#data-kept-on-this-device-is-saved)
+   to every save, sync and data-error state. Check that design-image titles and adjacent
+   context distinguish the proposal from commentary under
+   [design titles and review context](../ui-design-guidance.md#design-titles-and-review-context).
    Examine the changed surface in its host. Ask about
    hierarchy, density, labels, color meaning, focus, keyboard, dismissal,
    close/reopen, rapid input and relevant loading/failure states. Record what was

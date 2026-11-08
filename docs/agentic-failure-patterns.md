@@ -134,15 +134,10 @@ that was reported.
 
 **Correction:**
 
-1. Name the problem class in the field's own terms (client–server sync of a record
-   collection, undo history, list sort and filter).
-2. Read how two or three established systems solve it, from their own documentation; record
-   the sources in the plan or design review.
-3. Adopt their solution, and justify each difference from it.
-4. Apply the fix to every place the cause exists or has already acted: sibling code, sibling
-   records, data the old code already stored, documents and briefs. Verify each place.
-5. A brief to another agent states the problem, the evidence and the owner's words. A brief
-   that prescribes a fix passes the wrong frame on.
+Apply the [pattern-recognition skill](../.codex/skills/pattern-recognition/SKILL.md)
+to classify the problem, compare established systems, examine related occurrences and
+follow the correction through actual delivery. The skill owns the reusable procedure;
+this catalog preserves the owner's diagnosis, signals and historical instances.
 
 **Recorded instances:** the capture snapshot was made smaller four times over five weeks
 instead of being replaced by sync from a checkpoint

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pattern recognition"
+  short_description: "Recognize classes, recurrence and missing evidence"
+  default_prompt: "Use $pattern-recognition to identify the problem class, related defects and evidence needed to complete this work."
