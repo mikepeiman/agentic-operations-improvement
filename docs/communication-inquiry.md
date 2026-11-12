@@ -1019,3 +1019,41 @@ The current pattern-recognition skill owns the recurrence and shared-owner revie
 accuracy guidance owns the evidence boundary. Another written rule is not evidence
 of repair. This entry records the recurrence and investigation, not a completed
 product fix, intentional deception or a model-internal causal diagnosis.
+
+### 2026-11-12 — Requested icon replacement rewritten as an abstract action and internal guidance emphasized
+
+Provenance: Metabrain, GPT-6 in Codex chat "Add master coordinator chat", session
+`01a1d08f-085c-7df1-b7d9-14b41948db38`; observed and corrected by the owner in that
+conversation. Local incident `metabrain-mvp-zoq0o`; shared inquiry `ops-lhq`.
+
+The owner asked for a Chat icon replacing the Quick Log icon. The agent proposed
+that the icon open a permanent coordinator conversation. The owner corrected it:
+"I asked for a link to the Chat interface." The agent also wrote: "Your request
+replaces the shell entry; Quick Log functionality elsewhere can remain available."
+The owner replied: "My request does not replace the shell entry." and "There is no
+shell entry, bad reference." He explicitly requested a post-mortem and another
+example in the communication rules.
+
+Observed: the sentence assigned the requested implementation action to the request
+instead of the agent, and substituted "shell entry" for the concrete Quick Log
+icon. The corrected sentence is: "I should replace the Quick Log icon with a Chat
+icon that opens the Chat interface." It describes intended work, not a completed
+product change. The destination correction also demonstrates that a fluent
+recommendation can change the requested behavior while appearing to explain it.
+
+The agent separately emphasized this sentence in bold: "Verification should prove
+discovery, not merely that the chat answers." The owner answered: "In bold font.
+Why are you declaring this emphatically to me? That's your own implementation
+guidance. I don't give a fuck." Its usefulness to the implementing agent did not
+justify demanding the owner's attention. The correction is to retain that
+obligation in the work record and omit the paragraph from the product explanation.
+
+Metabrain's existing style directives 8, 16 and 53 now contain the exact examples,
+their audience and context, and the checks for relevance, concrete control names
+and semantic agency. The essentials already route those meanings. This entry
+extends observed examples of existing principles; it does not establish an
+internal motive or prove that recurrence has been prevented. The local
+[post-mortem](https://github.com/mikepeiman/metabrain-mvp/blob/master/docs/active/postmortem-2026-11-12-chat-search-and-request-substitutions.md)
+also preserves the preceding full-content Chat search failure and the owner's
+description of its effect as betrayal and sabotage, explicitly without alleging
+motive. The retrieval defect remains open independently of the communication edits.
