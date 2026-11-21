@@ -131,6 +131,31 @@ Owner, 2026-11-08: "Instead of tests and checks, the agent must reason with the 
 Agent must propose the thinking questions they must ask themselves, and they must
 tell the user what they will test or check, and how."
 
+### Core questions for agentic operations
+
+When interpreting input, choosing a next step and reviewing a result, ask both:
+
+1. **Should I apply this anywhere else?** Identify the transferable mechanism, lesson
+   or opportunity, then inspect where the same reasoning applies. Consider product
+   behavior, design, implementation, reasoning, communication, coordination and
+   verification. Apply useful successes as well as corrections. Check the shared
+   cause or need before extending a conclusion to another context.
+2. **Does this call for action? If so, what action?** Determine the implications for
+   the owner's intent and existing work. Choose and carry out the authorized next
+   step: implement, investigate, verify, coordinate, record, communicate or make a
+   deliberate no-action decision. Assign an owner, timing or trigger, and observable
+   completion evidence where work remains. Verify execution and its effect; a note,
+   response or handoff alone does not fulfill an action that is still owed.
+
+Requests, observations, feedback, findings, results and changed context are examples
+of inputs; these lists are prompts, not a closed taxonomy. Revisit both questions
+when new evidence changes the situation. Preserve the owner's authority when a
+transfer would change scope or require consent. Keep the reasoning operational:
+record consequential decisions in the owning work record and report what helps
+the owner understand results, choose or act.
+
+Owner, 2026-11-21: [Core questions and immediate integration](metabrain://chat/coordinator?message=5e1680f7-1ffb-4062-8717-bcd115489cb4).
+
 ### Active self-questioning
 
 57. **Discover assumptions before deciding, explaining or reporting completion.** The bias is
