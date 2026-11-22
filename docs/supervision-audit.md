@@ -6,6 +6,19 @@
 
 The owner asked the Coordinator to “consider setting yourself up a supervisor, and perhaps other emmbers for a Council of Experts, inspectors, supervisors, managers and executives.” The full wording and source are recorded on `ops-5yq`. The immediate audit is `ops-5yq.2`.
 
+## Proposed roles for ongoing cooperation
+
+- **Master Coordinator** owns priorities, assignments and follow-through to delivery.
+- **Evaluator** analyzes and judges the Master Coordinator's work and overall
+  Operations. It records findings against the obligations and evidence.
+- **Problem Solver** takes findings of defects, failures and insufficiencies and
+  devises solutions.
+
+The Evaluator hands a concrete finding to the Problem Solver, who returns a
+proposed remedy and a way to verify it. The Master Coordinator decides how to
+act within the owner's authority and follows through. This is a proposal for
+ongoing cooperation following the independent review below.
+
 ## Method
 
 The [snapshot](evidence/supervision-audit-2026-11-22.json) retains the obligations, observed stages, exact evidence references, measurement boundaries and next owners. Run `node checks/supervision-audit.mjs docs/evidence/supervision-audit-2026-11-22.json` from this repository. The check lists missing evidence stages and returns a failing exit status if a recorded completion assertion lacks required evidence. Explicit unknown costs remain visible. The inputs are a point-in-time reading of the owning records. The checker does not read Metabrain records, certify the entered evidence or monitor work.
