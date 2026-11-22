@@ -525,3 +525,66 @@ Evidence: the exact installed legacy runtime43a48636 feedback-agent.mjs467-468 d
 Pattern: a technically true state label concealed the missing causal investigation and effective action. Root's continuing dispatches could prolong the reported condition. Category: Operations; the inadequate blocker explanation is recorded separately in the Communication inquiry.
 
 Correction required: identify participant/work phase, inspect the actual wait condition, avoid adding unnecessary work that defeats shutdown, and provide a coordinated admission/drain boundary preserving active and queued work. Verify a successor lease and matching control endpoint, then separately verify user-initiated sign-in. No worker termination or OAuth attempt is authorized by filing this incident. Root must follow the effect rather than repeat "waiting".
+
+
+## Instruction acknowledged without execution
+
+Category: Operations. Record: ops-g47. Corrected under owner source `f6bad7a7-73ef-4e44-806b-b80523fe019a`: the defect is an action not performed or a delivery not achieved. The previous Communications classification is withdrawn. Original evidence follows; historical wording about classification is retained as evidence of Root's error, not as current taxonomy.
+
+### 2026-11-22 — instructions acknowledged without execution
+
+Project: Metabrain. Agent: Codex Master Coordinator. Record: ops-g47.
+Owner sources: `7b9da233-7a84-493b-a540-2c8dfe9d9c39`, `e9ab824c-bcbf-413a-94bf-4318eee035ec`.
+
+**Category:** Operational Communications. **Severity:** critical.
+
+**Instance:** the owner repeatedly instructed the Coordinator to instrument app and system performance, including Chrome extensions. On Nov 22 the Coordinator reported that it had not established the extensions' contribution and only then assigned a dedicated instrumentation lane. The owner named this as a failure to act, and explicitly classified the communication pattern as operational rather than stylistic.
+
+**Pattern:** an acknowledged imperative is not converted into an assigned, executing and verified obligation. Conversation creates an appearance of handling the request while the requested action remains absent. This incident concerns that failed instruction-to-action exchange; the missing extension instrumentation has its separate engineering record.
+
+**Correction in progress:** named runtime, reporting and extension owners now have concrete capture/report deliverables. Completion requires actual capture and useful attribution. A classifier may help identify instructions, corrections and repeated unmet obligations; deterministic obligation/execution/outcome checks must enforce the handoff. This is an evaluation hypothesis, not a claim that a classifier has been adopted or solved the failure.
+
+
+## Question delivery assumed from tool acknowledgment
+
+Category: Operations. Record: ops-gkh. Corrected under owner source `f6bad7a7-73ef-4e44-806b-b80523fe019a`: the defect is an action not performed or a delivery not achieved. The previous Communications classification is withdrawn. Original evidence follows; historical wording about classification is retained as evidence of Root's error, not as current taxonomy.
+
+### 2026-11-22 — question sent through unavailable interface
+
+Project: Metabrain. Agent: Codex Master Coordinator. Record: ops-gkh.
+Owner sources: `2a9f6f1a-b971-4489-92da-e4cf5a56ae63`.
+
+**Category:** Operational Communications.
+
+**Instance:** the Coordinator used request_user_input_async, which returned an accepted tool acknowledgment, but Metabrain did not show the owner a usable Questions interface. The owner reported both the absent interface and the obscure description of the action. The Coordinator then asked plainly in Chat.
+
+**Pattern:** transport acknowledgment substituted for successful communication. Tool availability and an accepted request do not establish that the recipient received a visible, understandable question or can answer it.
+
+**Correction in progress:** Metabrain work item s2r8n owns visible question rendering and answer routing through the existing message/provenance system. Until verified, use plain Chat questions. Preserve exact origin and distinguish question delivery, answer delivery and granted authority; a UI acknowledgment is not user consent.
+
+
+## Requested report not delivered
+
+Category: Operations. Record: ops-nzh. Corrected under owner source `f6bad7a7-73ef-4e44-806b-b80523fe019a`: the defect is an action not performed or a delivery not achieved. The previous Communications classification is withdrawn. Original evidence follows; historical wording about classification is retained as evidence of Root's error, not as current taxonomy.
+
+### 2026-11-22 — report created without delivery
+
+Project: Metabrain. Agent: Codex Master Coordinator. Record: ops-nzh.
+Owner sources: `08cf741a-9f4a-4e72-af49-eeacf97f05d7`, `a6170dbd-ba77-4475-ac08-457dc87076b2`.
+
+The owner requested an external-research summary of tools, processes, Mermaid flow, strengths, weaknesses and known defects. Root wrote the report in a repository-local file and repeatedly carried the unsent answer as outstanding work. The owner had to ask where the response was.
+
+Pattern: artifact completion substituted for communication delivery. A file and an internal reminder do not establish that the person received the requested answer. Category: Operational Communications.
+
+Required correction: join the source request, authored response and actual saved delivery receipt. An undelivered artifact must remain an actionable obligation. Measure delivery coverage against requested reports and review the saved answer, not a draft. This incident stays open until the substantive report is delivered; the mechanism's own implementation and verification have separate acceptance.
+
+
+## Repeated report non-delivery after correction
+
+Category: Operations. Record: ops-nzh. Corrected under owner source `f6bad7a7-73ef-4e44-806b-b80523fe019a`: the defect is an action not performed or a delivery not achieved. The previous Communications classification is withdrawn. Original evidence follows; historical wording about classification is retained as evidence of Root's error, not as current taxonomy.
+
+### 2026-11-22 — promised report repeatedly not delivered
+
+Category: Operational Communications. Source: `d7a8aee1-df98-4ffa-b2d4-8fdad77de093`, directly replying to Coordinator statement `5db098bf-bdf5-5685-a7bc-513aa19b4b84`. The owner classified THIS exchange: the agent described a report and promised to present it, but repeatedly did not deliver its content or location. The person had to repeat the request. This extends the report-delivery incident ops-nzh.
+
+Correction must provide the requested report and verify actual saved response delivery. An artifact, a promise, an apology or a post-mortem does not satisfy the communication. Verification of the prevention mechanism remains a separate open obligation.

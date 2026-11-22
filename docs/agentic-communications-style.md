@@ -6,6 +6,14 @@
 
 The directives apply to chat, reports, questions, documents, boards, cards and interface text. The improvement method below governs changes to this guide. Dated examples are recorded in the [communication inquiry](communication-inquiry.md).
 
+## Communications and Operations
+
+Owner, 2026-11-22, source `f6bad7a7-73ef-4e44-806b-b80523fe019a`:
+
+> Communications is what you write. Operations is what you do. How you respond to me bridges those.
+
+Classify the actual failure. A promised report that was not delivered is an operational failure. Defective wording in a response is a communications failure. When one exchange contains both, keep separate linked findings: what was written and what was done. The fact that an operational failure was discussed in chat does not make it a communications failure.
+
 ## The six failure families
 
 The agent's failures fall into six families (owner, 2026-10-21). Each section of directives
