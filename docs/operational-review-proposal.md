@@ -76,6 +76,29 @@ text. It writes V1 once and refuses attempts to replace it. A new material owner
 instruction creates a linked revision with a new V1. Routine continuation reuses
 the current review. Parallel sessions have distinct directories and receipts.
 
+## Purpose-first check for a brief or review
+
+Before inspecting the implementation, state the owner's intended outcome and describe
+when the proposed operation is necessary. Say what should happen under the contrary
+condition. Name required behavior to preserve and the boundary where it can be
+observed. Refer to the exact owner source and the supporting evidence. Put this in
+the existing V1 brief or review, then record any change in V2 and the comparison.
+
+A reviewer starts with the same outcome and evidence. Challenge the problem
+selection before checking implementation details. Specifically, ask what would
+break if the operation were removed, and what evidence would distinguish a justified
+retention from an inherited assumption. One explicit conditional statement can be
+enough. Judge whether it changes the work.
+
+The programme can check an evidence-backed review record with
+`node checks/purpose-review.mjs <case-packet.json> <review.json>`. The check
+validates case/source references, an explicit necessity condition, a preservation
+list and positive and contrary checks at the selected boundary. It compares any
+declared delivery claim with the evidence level entered in the record. The supplied
+source type and boundary remain reviewer judgments. An app message link is checked
+for shape by the command. The [first replay and comparison plan](evidence/purpose-first-ops-gjo/assessment.md)
+records the applied brief and how these checks are used.
+
 ## Questions and required consequences
 
 | Direct question | Consequence to record |

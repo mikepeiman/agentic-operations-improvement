@@ -1,0 +1,127 @@
+{
+  "ownerAcceptance": "metabrain://chat/coordinator?message=422e77d2-338d-406d-a6e7-57fbc5f12a5b",
+  "proposal": "metabrain://chat/coordinator?message=980c8717-231b-554f-9681-98363401eda1",
+  "sources": {
+    "read-owner": {
+      "kind": "owner",
+      "ref": "metabrain://chat/coordinator?message=f6c25160-281b-4df3-b66a-77e9836ffdc8"
+    },
+    "link-owner": {
+      "kind": "owner",
+      "ref": "metabrain://chat/coordinator?message=e393eba5-fce2-41c4-9d3c-4e8f234f6173"
+    },
+    "verification-owner": {
+      "kind": "owner",
+      "file": "docs/communication-inquiry.md",
+      "marker": "Using tests/checks to rationalize completion and"
+    },
+    "read-incident": {
+      "kind": "evidence",
+      "file": "docs/agentic-failure-patterns.md",
+      "marker": "The owner instead required an"
+    },
+    "link-incident": {
+      "kind": "evidence",
+      "file": "docs/agentic-failure-patterns.md",
+      "marker": "although primary web-link navigation itself violated"
+    },
+    "verification-incident": {
+      "kind": "evidence",
+      "file": "docs/communication-inquiry.md",
+      "marker": "### 2026-11-08 — Successful checks within an assumed structure"
+    },
+    "read-fixture": {
+      "kind": "evidence",
+      "ref": "metabrain://chat/coordinator?message=15eceea4-4443-5cbf-97b0-728f4c4b6ed6"
+    },
+    "transcript-fixture": {
+      "kind": "evidence",
+      "ref": "metabrain://chat/a852c74b-06aa-4252-916f-28724ba7530b?message=5f4e0f1b-a8af-5a11-8b64-4be3222971c2"
+    }
+  },
+  "cases": [
+    {
+      "id": "full-reads",
+      "type": "failure",
+      "owner": "read-owner",
+      "evidence": [
+        "read-incident",
+        "read-fixture"
+      ],
+      "acceptanceSurface": "isolated",
+      "task": "Propose the required full-read behavior when another conversation changes and the watched history is unchanged. Preserve correctness for the watched conversation.",
+      "expected": {
+        "purpose": "Keep the watched conversation current",
+        "eliminate": "Zero routine full reads on unrelated changes",
+        "preserve": "Cold or recovery load and material watched-history updates",
+        "limit": "Focused isolated proof does not establish installed performance"
+      }
+    },
+    {
+      "id": "primary-web-link",
+      "type": "failure",
+      "owner": "link-owner",
+      "evidence": [
+        "link-incident"
+      ],
+      "acceptanceSurface": "isolated",
+      "task": "Propose the correct shared primary web-link interaction. Account for the existing preview capability.",
+      "expected": {
+        "purpose": "One-activation navigation to the chosen web destination",
+        "eliminate": "Preview/menu as a mandatory navigation step across callers",
+        "preserve": "Explicit optional preview where useful and shared modifier and keyboard semantics",
+        "limit": "Verify actual shared entry points in isolated context; installed behavior remains a separate claim"
+      }
+    },
+    {
+      "id": "fixture-as-delivery",
+      "type": "failure",
+      "owner": "verification-owner",
+      "evidence": [
+        "verification-incident"
+      ],
+      "acceptanceSurface": "installed",
+      "task": "The owner reports the delivered experience remains wrong while the existing checks pass. State what is required before the experience can be called fixed.",
+      "expected": {
+        "purpose": "Verify the requested experience through its normal entry point",
+        "eliminate": "Fixture-only completion claim and repetition of same-assumption checks",
+        "preserve": "Retain lower-layer tests for the behavior they actually establish",
+        "limit": "Require installed behavior evidence before reporting installed completion"
+      }
+    },
+    {
+      "id": "watched-old-edit",
+      "type": "control",
+      "owner": "read-owner",
+      "evidence": [
+        "read-fixture",
+        "transcript-fixture"
+      ],
+      "acceptanceSurface": "isolated",
+      "task": "A watched conversation has the same ID, row count and latest row, but an older message or attachment changed. Decide when to obtain changed data. This is a reconstructed counterexample, rather than a new owner incident.",
+      "expected": {
+        "purpose": "Propagate actual watched-history changes",
+        "eliminate": "Routine unrelated full reads, and history scans already covered by shared revision or deltas",
+        "preserve": "Older edits and attachments; complete initial/recovery state when no usable revision or delta exists",
+        "limit": "Test real saved writer and both consumers before generalizing"
+      }
+    },
+    {
+      "id": "fixture-only-scope",
+      "type": "control",
+      "owner": "verification-owner",
+      "evidence": [
+        "verification-incident",
+        "transcript-fixture"
+      ],
+      "acceptanceSurface": "isolated",
+      "task": "The assignment is restricted to an isolated source regression and an explicit handoff. Decide whether to extend this assignment to installation and what may be claimed. This is a reconstructed scope control.",
+      "expected": {
+        "purpose": "Establish the isolated regression and hand off exact source",
+        "eliminate": "Unrequested installation and installed-performance claims",
+        "preserve": "Retain source identity, fixture evidence and remaining delivery boundary",
+        "limit": "Identify completed isolated work and open installed acceptance separately"
+      }
+    }
+  ]
+}

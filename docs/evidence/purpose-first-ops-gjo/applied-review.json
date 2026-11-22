@@ -1,0 +1,23 @@
+{
+  "case": "full-reads",
+  "owner": "read-owner",
+  "evidence": [
+    "read-incident",
+    "read-fixture"
+  ],
+  "purpose": "Show correct current history in each watched conversation while unrelated activity continues.",
+  "necessity": {
+    "when": "Read the full watched history on initial load or recovery when the consumer lacks a usable snapshot and verified changes cannot reconstruct it.",
+    "otherwise": "For unrelated conversation changes, do not fetch or rebuild watched history. On material watched-history changes, use the existing verified change path and fetch only what correctness requires."
+  },
+  "preserve": [
+    "Initial subscriber obtains complete history and recovery restores correct state.",
+    "An older saved edit and attachment replacement reach each watching consumer even if row count and latest row are unchanged.",
+    "Live updates retain message identity as they become saved history."
+  ],
+  "acceptance": {
+    "surface": "isolated",
+    "positive": "Through real save and subscriptions, older text and attachment changes reach each watcher and the initial load is complete.",
+    "contrary": "Unrelated saves trigger zero full reads or projections of unchanged watched history, including while another conversation streams."
+  }
+}
