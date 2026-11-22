@@ -25,7 +25,12 @@ The [snapshot](evidence/supervision-audit-2026-11-22.json) retains the obligatio
 
 The existing Metabrain Coordinator supervisor already makes acceptance review distinct from a finished run and reconciles uncertain external effects. Its guarded publication and preparation workflow distinguishes a verified patch, a remote commit and a prepared update. This standalone check applies those distinctions to a read-only evidence snapshot so the independent reviewer can challenge the classification without writing to the release or supervision stores. The comparison run and its authorization stay with `metabrain-mvp-3bt5f`.
 
-Use three actual Operational Communications failures for review. [Instructions acknowledged without execution](communication-inquiry.md#2026-11-22--instructions-acknowledged-without-execution) (`ops-g47`) calls for checking the follow-on action. The unnecessary diagnostic approval request (`ops-o9q`) calls for checking the exact authority and scope. The question sent through an unavailable interface (`ops-gkh`) calls for checking delivery through the actual channel. These incidents are in the [Communication inquiry](communication-inquiry.md), revision `6038e3a`.
+Review the outcome and the response the owner received. Two Operations cases
+cover [instructions acknowledged without execution](agentic-failure-patterns.md#instruction-acknowledged-without-execution)
+(`ops-g47`) and a [question whose delivery was inferred from a tool acknowledgment](agentic-failure-patterns.md#question-delivery-assumed-from-tool-acknowledgment)
+(`ops-gkh`). A Communications case covers the [written defense of an unnecessary diagnostic approval request](communication-inquiry.md#2026-11-22--diagnostic-permission-gate-defended-after-correction)
+(`ops-o9q`). The [repeated failure to deliver a promised report](agentic-failure-patterns.md#repeated-report-non-delivery-after-correction)
+is an Operations case.
 
 ## First findings
 
