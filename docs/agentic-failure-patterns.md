@@ -488,3 +488,40 @@ primary or sole metric."
 **Ask:** "What exactly did the person reject: the thing, its weight, or one use of it? What
 stays?" Change that much and keep the rest. See Working with the human, directives 3 and 6, and
 the [post-mortem](https://github.com/mikepeiman/metabrain-mvp/blob/d2315e771691af0bf9920036f1a5a6b7490673f8/docs/active/postmortem-2026-11-05-rules-text-from-a-summary.md).
+
+
+## Actionable findings left without an executing repair owner
+
+Category: Operations. Owner correction, 2026-11-22: sources `98b4cccb-87bc-49be-9590-773983aaaaf1` and `0e088831-282b-41ec-869c-6a16ee86264e`. Record: ops-997. Root incorrectly filed the operational missed-dispatch incident as a communication defect. The original incident evidence is preserved below with that classification withdrawn.
+
+### Preserved incident: missed repair dispatch
+
+Project: Metabrain. Agent: Codex Master Coordinator. Record: ops-997.
+Owner sources: `a660a49d-9366-442c-a0ec-6ad8b42fedbd`, `651badbb-ed94-4900-b9d2-b41958364e7f`.
+
+The installed profile identified expensive recursive Chat history comparisons and repeated design/task searches. Root reported the findings and assigned a profiler timing correction, but left the measured hot paths without a repair owner until the owner objected. The independent lookup fixes did not depend on the held cross-chat invalidation repair.
+
+Pattern: diagnosis-to-action discontinuity and substitution of further diagnostic work for an already authorized remedy. Category: Operations. A known finding was communicated as progress without the follow-on action needed to fulfill the instruction.
+
+Immediate correction: repair assignment736f889a now executes asb03d2a17 in the existing UI owner conversation. Its acceptance requires equivalent message/search behavior, measured removal of repeated work, exact publication and follow-up remeasurement. That running assignment is evidence of changed behavior for this instance, not proof of a permanent prevention mechanism.
+
+Owner requirement: "A post-mortem does not satisfy a failure. Correction is required. That means changed behavior. That means a mechanism to cause changed behavior, and measure to prove it, and followup to check it."
+
+Mechanism work is assigned separately through545aefa8 to reuse the existing Coordinator hooks, work records and execution checks. It must reproduce the missed-action case, distinguish active work from a queued handoff, check delivery, and schedule outcome review. Unclassified findings remain an explicit detection limit. Neither this document nor a passing synthetic check settles the actual repair.
+
+## Replacement worker starved by continued work admission
+
+Category: Operations. Record: ops-qfd (engineering/operational portion). Root had not managed a drain boundary and continued dispatching work to a worker whose replacement required idleness. This operational defect is distinct from the inadequate explanation given to the owner. The original evidence follows; its earlier combined classification is withdrawn.
+
+### Preserved incident: handover management
+
+Project: Metabrain. Agent: Codex Master Coordinator. Record: ops-qfd.
+Owner sources: `eb2cd40d-48cd-412d-9db6-f55c3d90caa3`, `79d36f6f-3541-47fe-a105-7c79b35808d3`.
+
+Root repeatedly said Gemini handover was waiting for legacy worker11364 to finish active turns, without identifying the active jobs or examining whether the old worker continued admitting work. The owner explicitly classified this as a documentable mandated operational failure.
+
+Evidence: the exact installed legacy runtime43a48636 feedback-agent.mjs467-468 drains feedback/chat work before checking disconnected && !busy() && !chat.busy(). At the inspected instant, the running records were Rootcb8d0c75 and hot-path repairb03d2a17. The old lease owner was alive and no successor control endpoint existed. This establishes a starvation mechanism and the current obstruction; it does not attribute every earlier hour to those two jobs.
+
+Pattern: a technically true state label concealed the missing causal investigation and effective action. Root's continuing dispatches could prolong the reported condition. Category: Operations; the inadequate blocker explanation is recorded separately in the Communication inquiry.
+
+Correction required: identify participant/work phase, inspect the actual wait condition, avoid adding unnecessary work that defeats shutdown, and provide a coordinated admission/drain boundary preserving active and queued work. Verify a successor lease and matching control endpoint, then separately verify user-initiated sign-in. No worker termination or OAuth attempt is authorized by filing this incident. Root must follow the effect rather than repeat "waiting".

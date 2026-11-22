@@ -1263,29 +1263,16 @@ Required correction: join the source request, authored response and actual saved
 
 ### 2026-11-22 — actionable profile without repair owner
 
-Project: Metabrain. Agent: Codex Master Coordinator. Record: ops-997.
-Owner sources: `a660a49d-9366-442c-a0ec-6ad8b42fedbd`, `651badbb-ed94-4900-b9d2-b41958364e7f`.
-
-The installed profile identified expensive recursive Chat history comparisons and repeated design/task searches. Root reported the findings and assigned a profiler timing correction, but left the measured hot paths without a repair owner until the owner objected. The independent lookup fixes did not depend on the held cross-chat invalidation repair.
-
-Pattern: diagnosis-to-action discontinuity and substitution of further diagnostic work for an already authorized remedy. Category: Operational Communications. A known finding was communicated as progress without the follow-on action needed to fulfill the instruction.
-
-Immediate correction: repair assignment736f889a now executes asb03d2a17 in the existing UI owner conversation. Its acceptance requires equivalent message/search behavior, measured removal of repeated work, exact publication and follow-up remeasurement. That running assignment is evidence of changed behavior for this instance, not proof of a permanent prevention mechanism.
-
-Owner requirement: "A post-mortem does not satisfy a failure. Correction is required. That means changed behavior. That means a mechanism to cause changed behavior, and measure to prove it, and followup to check it."
-
-Mechanism work is assigned separately through545aefa8 to reuse the existing Coordinator hooks, work records and execution checks. It must reproduce the missed-action case, distinguish active work from a queued handoff, check delivery, and schedule outcome review. Unclassified findings remain an explicit detection limit. Neither this document nor a passing synthetic check settles the actual repair.
-
+**Classification withdrawn, 2026-11-22:** this is an Operations incident, not a communication defect. Root confused failed execution with failed communication. The complete original evidence and correction obligations are preserved under [Actionable findings left without an executing repair owner](agentic-failure-patterns.md#actionable-findings-left-without-an-executing-repair-owner). Record: ops-997. Owner corrections: `98b4cccb-87bc-49be-9590-773983aaaaf1`, `0e088831-282b-41ec-869c-6a16ee86264e`.
 
 ### 2026-11-22 — blocker repeated without causal followthrough
 
-Project: Metabrain. Agent: Codex Master Coordinator. Record: ops-qfd.
-Owner sources: `eb2cd40d-48cd-412d-9db6-f55c3d90caa3`, `79d36f6f-3541-47fe-a105-7c79b35808d3`.
+**Corrected scope, 2026-11-22:** Communication defect only. Root repeatedly reported "waiting for active turns" without naming the participant, explaining the causal wait condition or giving the owner an effective next action. The state label left the owner unable to understand the blockage. Sources: `eb2cd40d-48cd-412d-9db6-f55c3d90caa3`, `79d36f6f-3541-47fe-a105-7c79b35808d3`.
 
-Root repeatedly said Gemini handover was waiting for legacy worker11364 to finish active turns, without identifying the active jobs or examining whether the old worker continued admitting work. The owner explicitly classified this as a documentable mandated operational failure.
+The failure to manage work admission and worker replacement is a separate [Operations incident](agentic-failure-patterns.md#replacement-worker-starved-by-continued-work-admission), where the complete original combined account is preserved. That engineering/operational failure is not counted as a Communications defect.
 
-Evidence: the exact installed legacy runtime43a48636 feedback-agent.mjs467-468 drains feedback/chat work before checking disconnected && !busy() && !chat.busy(). At the inspected instant, the running records were Rootcb8d0c75 and hot-path repairb03d2a17. The old lease owner was alive and no successor control endpoint existed. This establishes a starvation mechanism and the current obstruction; it does not attribute every earlier hour to those two jobs.
+### 2026-11-22 — promised report repeatedly not delivered
 
-Pattern: a technically true state label concealed the missing causal investigation and effective action. Root's continuing dispatches could prolong the reported condition. Category: Operational Communications, linked to the engineering handover defect.
+Category: Operational Communications. Source: `d7a8aee1-df98-4ffa-b2d4-8fdad77de093`, directly replying to Coordinator statement `5db098bf-bdf5-5685-a7bc-513aa19b4b84`. The owner classified THIS exchange: the agent described a report and promised to present it, but repeatedly did not deliver its content or location. The person had to repeat the request. This extends the report-delivery incident ops-nzh.
 
-Correction required: identify participant/work phase, inspect the actual wait condition, avoid adding unnecessary work that defeats shutdown, and provide a coordinated admission/drain boundary preserving active and queued work. Verify a successor lease and matching control endpoint, then separately verify user-initiated sign-in. No worker termination or OAuth attempt is authorized by filing this incident. Root must follow the effect rather than repeat "waiting".
+Correction must provide the requested report and verify actual saved response delivery. An artifact, a promise, an apology or a post-mortem does not satisfy the communication. Verification of the prevention mechanism remains a separate open obligation.
