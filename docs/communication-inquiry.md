@@ -1057,3 +1057,151 @@ internal motive or prove that recurrence has been prevented. The local
 also preserves the preceding full-content Chat search failure and the owner's
 description of its effect as betrayal and sabotage, explicitly without alleging
 motive. The retrieval defect remains open independently of the communication edits.
+
+### 2026-11-22 — loss implication in reviewing existing experiment results
+
+Project: Metabrain. Agent: Codex Master Coordinator. Observed by the owner in
+message `0f8c5d91-5112-4ca8-9bd8-0c1363c1b8bf`. Incident: `ops-78t`.
+
+**Instance:** “Recover existing quality findings.” The actual task was to read,
+assess and apply results from completed experiments. The owner asked why this
+suggested a loss he had not been told about. No loss was evidenced.
+
+**Pattern:** a loss-implying lexical choice introduces an unsupported presupposition
+into an otherwise ordinary retrieval task. The sentence makes the owner infer an
+incident instead of receiving the findings. This belongs to Accuracy, Context and
+Relevance; it is not evidence about a storage failure.
+
+**Correction:** “Review the existing findings and apply what they support.” The
+Nov 21 Metabrain communication post-mortem already records this family under
+internal accounting language implying loss. This instance is a recurrence, not a
+new reason to add another general prohibition. No model-internal motive is inferred.
+
+### 2026-11-22 — undefined technical referent in a performance report
+
+Project: Metabrain. Agent: Codex Master Coordinator. Observed by the owner in
+message `b7cfb260-c549-4a60-8a7a-195dad060de7`.
+
+**Instance:** “The review found a concrete cost defect: the refresh candidate ran
+51 separate schema queries to validate its triggers.” The owner asked what
+“refresh candidate” referred to, how many queries should run, and when.
+
+**Pattern:** referential ambiguity and omitted operational context. The writer
+uses a shorthand meaningful within its working context without establishing the
+referent for the reader. The number alone does not explain the defective operation.
+This is the existing Context family, specifically an undefined technical antecedent.
+
+**Correction:** identify the proposed Chat change that avoids reloading unchanged
+conversation history; explain that the implementation looked up each of 51 trigger
+definitions separately during a full read before issuing a reusable revision token.
+One schema query can retrieve the definitions for comparison in memory. The
+unnecessary-query implementation has its own engineering review; this entry records
+the failure to explain it. The clarifying reply is
+`8a5a2027-ba76-5146-94ae-26f8a5977074`.
+
+### 2026-11-22 — old-session evidence reported as current service failure
+
+Project: Metabrain. Agent: Codex Master Coordinator. Context: the owner reported
+Chat error 10060 in `9a44bf55-8196-4787-8426-73f3d02bae3a`.
+
+**Instance:** the Coordinator reported that the current Core diagnostic writer
+had stopped after “no storage space” and never resumed. The investigator's next
+build/session correlation showed that the disk-full line belonged to an older
+Core session. The current 2714 request trace was readable.
+
+**Pattern:** temporal and session-indexical misbinding, followed by overconfident
+causal attribution. A true historical event was assigned to the wrong current
+process. An initial zero-byte observation plus an old stop line did not establish
+a permanent failure of the current writer. This is the existing Accuracy family
+and the Nov 21 post-mortem's “stale evidence reported as current state.”
+
+**Correction:** withdraw that current-writer explanation. The current trace joined
+29 failed conversation-list attempts taking 48–327 seconds inside Core; 26 finished
+after the desktop timed out. At that point the expensive list phase remained under
+investigation. Preserve both the wrong statement and the correction; the subsequent
+query repair is a separate engineering outcome.
+
+### 2026-11-22 — an unqualified speed claim omitted the measured time scope
+
+Project: Metabrain. Agent: Codex Master Coordinator. Evidence: the known-case packing
+experiment and its report in Metabrain's
+`docs/evidence/harness-backend-comparison-2026-11-22/REPORT.md`.
+
+**Instance:** the packed layout “finished 23.9% faster.” One 24-case request took
+20.385 seconds; two 12-case requests totalled 26.795 seconds. Both layouts scored
+24/24 on those known cases.
+
+**Pattern:** omitted metric scope and dimensional ambiguity. “Finished faster” does
+not name summed request wall time and can be read as end-to-end throughput. It also
+omits the known-case quality boundary. This belongs to Accuracy and Context; the
+arithmetic itself was not the failure.
+
+**Correction:** “The known-case packed layout used 23.9% less summed request time;
+both layouts scored 24/24.” A general harness winner, unseen-task quality improvement
+or deployment outcome does not follow from this measurement.
+
+### 2026-11-22 — activities substituted for the requested progress explanation
+
+Project: Metabrain. Agent: Codex Master Coordinator. Observed by the owner in
+`ff171228-fd92-4408-9d79-72bf0cf5d6eb`.
+
+**Instance:** a start-of-day report named two specialists, listed current tasks and
+offered a queue review. The owner said he was not content with it and asked what the
+agent was actively attempting to learn, achieve, improve and implement.
+
+**Pattern:** omission of the relationship between activity and intended outcome.
+The writer names work without answering the explanatory question the reader asked.
+This is Relevance and Context. It is not a finding that no underlying work existed.
+
+**Correction:** for each governing priority, state the intended result, current
+attempt, checked result, unresolved scope and next executable action. Delegated work
+needs its responsible chat pointer. Report evidence useful to the owner's decisions,
+not the existence of an agent turn as an achievement.
+
+### 2026-11-22 — task headings misrepresented the owner's governing priorities
+
+Project: Metabrain. Agent: Codex Master Coordinator. Observed by the owner in
+`25e6af1b-0bb2-48e5-b1dd-959dc621425d`.
+
+**Instance:** the Coordinator called responsiveness/refresh repair, the Cannabis
+tracker and small queued improvements its top three priorities. The owner corrected
+the hierarchy to app-wide/system-wide performance; agentic effectiveness and
+efficiency, including complete cost accounting and daily applied improvements; and
+effective user logging across desktop and mobile, with desktop leading.
+
+**Pattern:** semantic scope substitution and a hierarchical category error in the
+report. Current task names were presented as though they were the governing outcomes.
+The wording made the full priority 2 programme supplementary and narrowed priority 3
+to one use-case. This records the misrepresentation in the message; work allocation
+is evaluated separately.
+
+**Correction:** retain the owner's outcome hierarchy in reports. Refresh and Cannabis
+are subordinate work items. The date or recency of a task does not confer governing
+priority. Existing Context and Relevance guidance already covers the error.
+
+### 2026-11-22 — a communication audit answered with mixed failure categories
+
+Project: Metabrain. Agent: Codex Master Coordinator. Exact reply:
+`d71f85df-ce04-5421-bf16-8a7827bfdcec`. Owner correction:
+`e4180603-4600-4093-83a8-dcbf5c4bf5b8`.
+
+**Instance:** the owner requested communication failures. The reply listed operational
+priority drift and scope narrowing alongside wording and reporting errors without
+isolating the communication acts. The owner said the list failed to respect the
+requested category.
+
+**Pattern:** an extensional category error and scope expansion in answering. The
+writer answers a broader category of failures instead of the one requested. This
+belongs to Conduct and Relevance. A renamed operational defect is not automatically
+a communication incident.
+
+**Correction:** identify each authored statement, its context, the meaning conveyed,
+the semantic/grammatical/contextual pattern and the corrected statement. Keep the
+underlying engineering and operational incidents separate. The owner's subsequent
+instruction in `6535d45a-f7f3-49eb-a7e4-49359ebbd031` requires distinct incident filing.
+
+The initial temporary “morning audit” did not complete that permanent filing. The
+owner challenged that choice in `67d4a2ea-3797-4074-a650-201fa2ea14b7`. These entries
+belong in this existing inquiry alongside their prior patterns. Metabrain already
+had a permanent Nov 21 communication post-mortem describing several of the same
+failures; drafting another temporary list did not apply its corrective actions.
