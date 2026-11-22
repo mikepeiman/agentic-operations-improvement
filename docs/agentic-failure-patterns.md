@@ -108,6 +108,39 @@ reusable components and consistent behavior. See the
 Portable record: [ops-g5x, revision 9799f57](https://github.com/mikepeiman/agentic-operations-improvement/commit/9799f57),
 contributed from `metabrain-mvp-9f7i` on 2026-10-27.
 
+### 2026-11-22 — reasoning from implementation before purpose
+
+Owner clarification in Coordinator message `e05cbb3a-d147-4f2b-ae3c-57bae744ed39`:
+"agents reason from what is, without questioning whether it should be. Goals and
+user intent would be better fulfilled by reasoning from what should be and what
+must be." The owner describes existing implementation as suspect because it may
+embody errors, defects, incomplete work or misunderstanding.
+
+**Operations failure:** the Coordinator organized repeated full-conversation-read
+work around diagnosing the existing read gates. The owner instead required an
+answer to when a full conversation should be read, followed by elimination of
+redundant reads (`f6c25160-281b-4df3-b66a-77e9836ffdc8`). A second instance treated
+the shared web-link preview menu as appropriate behavior used in the wrong place,
+although primary web-link navigation itself violated the intended interaction
+(`e393eba5-fce2-41c4-9d3c-4e8f234f6173`).
+
+**Cause evident in the decisions:** existing branches and widgets supplied the
+starting specification. The earlier documented existence-bias rule was not applied
+to the operation or interaction as a whole. Another explanation of those branches
+would leave that failure intact.
+
+**Correction:** the operating guide now orders purpose and necessary behavior
+before implementation inspection. The active read-repair brief requires justified
+initial/recovery reads and zero redundant routine full reads, with old-message
+changes still delivered. The shared link repair covers primary navigation across
+callers, with optional preview separately available. Both repairs remain subject
+to review and installed measurement; this record does not establish their delivery.
+
+**Follow-up check:** review each repair for a stated necessity condition, removal
+of operations without that condition, preserved required behavior, and measured
+results. Reassess the same distinction in subsequent dispatches. Completed checks
+and further failures belong on `ops-g5x`, preserving these source references.
+
 ## A solved problem treated as new
 
 Named by the owner on 2026-10-29 and made a rule in Metabrain's AGENTS.md section 8 ("Solve the

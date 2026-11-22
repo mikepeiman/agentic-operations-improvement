@@ -10,6 +10,11 @@ Follow the user's current intent and accepted product decisions. Code and runtim
 show what exists; they do not decide what should exist. The owner's observation of
 running software outranks source reading; re-examine first. Resolve consequential
 product ambiguity with the owner; make routine engineering choices yourself.
+Begin design, diagnosis and review with the intended outcome and necessary behavior.
+State when an operation is needed, then eliminate unjustified operations rather than
+merely optimizing them. Examine current implementation against those requirements;
+require a user-purpose justification for retaining behavior. In briefs and reviews,
+record the required outcome, unnecessary behavior removed, and evidence of both.
 Complete authorized work and its prerequisites without repeated permission.
 Keep unrelated work intact. A Git branch does not authorize another checkout.
 Obtain missing authority before destructive operations (including discarding
