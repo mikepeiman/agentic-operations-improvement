@@ -1,21 +1,22 @@
 {
   "scope": "Five obligations from the Master Coordinator assignment d43180f2-3716-5757-986e-5d2dc5e347ae on owner message 3da39d49-ef25-45cb-99bc-1806e41d885a. Source and local artifact snapshot, not a live desktop inspection.",
-  "asOf": "2026-11-22T18:58:30Z",
+  "asOf": "2026-11-22T19:02:31Z",
   "obligations": [
     {
       "id": "native-webview",
-      "outcome": "Obtain a native WebView CPU profile for the exact desktop build.",
+      "outcome": "Obtain an exact-build native WebView CPU profile and follow up on the hot paths it attributes.",
       "required": [
         "published",
         "prepared",
         "installed",
-        "runtime"
+        "runtime",
+        "remediation"
       ],
       "evidence": [
         {
           "stage": "fixture",
           "source": "Metabrain coordinator message fcdb8971-8410-5541-b311-1471de0b9ad3",
-          "result": "Node, Bun and marked Chromium isolates emitted fixture captures. The native workload was not exercised."
+          "result": "Node, Bun and marked Chromium isolates emitted fixture captures. The native workload was not exercised. The Bun fixture emitted counts with timing unavailable."
         },
         {
           "stage": "handoff",
@@ -26,10 +27,15 @@
           "stage": "candidate",
           "source": "Metabrain coordinator message 36825c4c-5116-5ec0-bddf-d4b4bc0eb7e7",
           "result": "Publisher reported native shell type-check active. No corresponding native acceptance receipt was in the reviewed update."
+        },
+        {
+          "stage": "blocked",
+          "source": "Metabrain publisher a9bbcaf2-4e83-45ec-80d2-5954143ec7e2 message 5318df1e-beb2-5bbe-8ede-88b871546edb",
+          "result": "Windows shell check found unsupported get_webview. The publisher identified get_webview_window as the locked Tauri API and is checking the change."
         }
       ],
       "nextOwner": "Sole publisher a9bbcaf2-4e83-45ec-80d2-5954143ec7e2",
-      "nextAction": "Finish native type-check and publish exact combined source. The designated preparer 07 then supplies the package receipt. Runtime capture owner b6baa63d-0c6a-409d-8ef0-4b0687257ac1 verifies the exact-build sample after owner restart.",
+      "nextAction": "Verify the get_webview_window correction and publish exact combined source. Preparer 07 supplies package identity. Capture owner b6baa63d-0c6a-409d-8ef0-4b0687257ac1 verifies an exact-build sample after owner restart; Coordinator assigns and tracks fixes for confirmed hot paths. Remeasure the repaired hot paths.",
       "cost": {
         "elapsedMs": null,
         "inputTokens": null,
@@ -44,6 +50,7 @@
       "required": [
         "fixture",
         "published",
+        "prepared",
         "installed",
         "runtime"
       ],
@@ -54,20 +61,34 @@
           "result": "Build 2715 log window recorded 55 full reads totaling 1.879 GB in four minutes, including roughly 34.16 MB replies. Repeated full reads remained in 2716. The mounted-pane path omits the selected-chat conditional check."
         },
         {
-          "stage": "dispatched",
+          "stage": "planned",
           "source": "Metabrain coordinator message bd071df9-29cc-5492-b161-75e8de464905",
-          "result": "Coordinator explicitly routed the repair to the frontend owner with streaming coverage."
+          "result": "Coordinator announced routing the repair to the frontend owner with streaming coverage. The actual assignment is recorded separately."
         },
         {
           "stage": "candidate",
           "source": "Metabrain .tmp/chat-amplification-7tvsa-fcc3/candidate.py",
           "result": "A candidate generator is present. Its presence does not establish successful application or runnable proof."
+        },
+        {
+          "stage": "dispatched",
+          "source": "Metabrain b6baa63d-0c6a-409d-8ef0-4b0687257ac1 assignment fcc33a67-8f53-57ab-93a2-b087587b46ef and reply 84afe1ab-f005-5a9b-b72e-1e29f24eef34",
+          "result": "B6 owns shared updates and identified separate repeated mounted-history reads and a saved-history index rebuild during streaming."
+        },
+        {
+          "stage": "blocked",
+          "source": "Metabrain .tmp/chat-amplification-7tvsa-fcc3/proof.log and proof.mjs:94",
+          "result": "Headless proof did not reach assertions: waitForFunction timed out at 10 seconds while opening the fixture tab."
         }
       ],
-      "nextOwner": "Master Coordinator (coordinator), routing metabrain-mvp-7tvsa to its frontend owner",
-      "nextAction": "Obtain or confirm the named repair assignee and a runnable proof for mounted panes and live streaming. Route the verified candidate to the sole publisher and require comparable exact-build response bytes.",
+      "nextOwner": "Shared Chat read owner b6baa63d-0c6a-409d-8ef0-4b0687257ac1",
+      "nextAction": "Resolve fixture startup timeout and verify mounted panes and live streaming, then route the verified candidate to the sole publisher and compare exact-build response bytes.",
       "cost": {
-        "elapsedMs": null,
+        "elapsedMs": {
+          "value": 33169.5,
+          "source": "Metabrain .tmp/chat-amplification-7tvsa-fcc3/proof.log, process.run attempt-failed entry",
+          "scope": "One failed instrumented headless proof command only"
+        },
         "inputTokens": null,
         "outputTokens": null,
         "ownerAttentionMs": null
@@ -76,7 +97,7 @@
     },
     {
       "id": "pending-ui-packets",
-      "outcome": "Deliver task navigation, Chat editor corrections and the relay-layout change.",
+      "outcome": "Deliver the ordered message-reference, task/editor and collapsed-relay packets.",
       "required": [
         "published",
         "prepared",
@@ -92,7 +113,7 @@
         {
           "stage": "fixture",
           "source": "Metabrain coordinator message b462b8ee-1ad9-5794-9d5c-c788b6781f21",
-          "result": "Combined headless task/editor fixture reported passing after both patches. Isolated evidence scope excludes live desktop."
+          "result": "Combined headless task/editor fixture reported passing after both patches, with substituted native transport."
         },
         {
           "stage": "candidate",
@@ -103,10 +124,25 @@
           "stage": "dispatched",
           "source": "Metabrain coordinator message b6461ccc-214b-5d3b-8e3c-eb28ef1a6da5",
           "result": "Coordinator retained the owner-visible editor, relay-layout and task-navigation delivery obligations."
+        },
+        {
+          "stage": "fixture",
+          "source": "Metabrain publisher a9bbcaf2-4e83-45ec-80d2-5954143ec7e2 message 871ee9bc-312b-5561-b61e-e01f362ec553",
+          "result": "Publisher reported combined headless relay rendering passed. Overlapping Questions packet remains separate and this does not establish installed behavior."
+        },
+        {
+          "stage": "dispatched",
+          "source": "Metabrain publisher assignment 6edb6fbe-9928-59ca-8ac7-ad7adcd982ea",
+          "result": "Publisher assigned the message-reference packet first, incremental task/editor packet second, and collapsed-relay packet third."
+        },
+        {
+          "stage": "fixture",
+          "source": "Metabrain Coordinator message a550df78-5763-531c-a6ae-c65f5dc00a6a",
+          "result": "Separate isolated relay fixture proved first-render collapse, expansion across remount and aligned headers."
         }
       ],
       "nextOwner": "Sole publisher a9bbcaf2-4e83-45ec-80d2-5954143ec7e2",
-      "nextAction": "Supply a combined remote source receipt covering each UI packet, then hand off to preparer 07 for the package and installed verification.",
+      "nextAction": "Supply a combined remote source receipt covering each UI packet, then hand off to preparer 07 for the package and installed verification. The Coordinator owns installed checks after the owner restarts.",
       "cost": {
         "elapsedMs": null,
         "inputTokens": null,
@@ -121,6 +157,7 @@
       "required": [
         "fixture",
         "published",
+        "prepared",
         "installed",
         "runtime"
       ],
@@ -134,10 +171,15 @@
           "stage": "withheld",
           "source": "Metabrain coordinator message 36825c4c-5116-5ec0-bddf-d4b4bc0eb7e7",
           "result": "Publisher held reclamation after finding spawnWithArtifacts could treat a signal-free child close as tree settlement even when descendants remained."
+        },
+        {
+          "stage": "dispatched",
+          "source": "Metabrain b6baa63d-0c6a-409d-8ef0-4b0687257ac1 assignment d78a347d-8816-5e09-9e9c-9c2ba8108107 and response e5b407f2-d006-5851-880a-8c7e794a98fa",
+          "result": "Identifies the original lifecycle packet author. This assignment predates the publisher’s surviving-descendant finding."
         }
       ],
-      "nextOwner": "Master Coordinator (coordinator), routing the correction to the artifact lifecycle packet author",
-      "nextAction": "Return the exact surviving-descendant case to the author, obtain executable evidence that the lease remains protected, and send a corrected packet to the sole publisher for re-review.",
+      "nextOwner": "Master Coordinator, to route the correction to lifecycle author b6baa63d-0c6a-409d-8ef0-4b0687257ac1",
+      "nextAction": "Send the surviving-descendant case to the lifecycle author. Require a fixture that protects the lease while descendants are alive and reclaims only after positive tree settlement. Return the corrected packet to the sole publisher.",
       "cost": {
         "elapsedMs": null,
         "inputTokens": null,

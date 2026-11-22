@@ -16,10 +16,10 @@ Use three actual Operational Communications failures for review. [Instructions a
 
 ## First findings
 
-- Native profiling has fixtures, a source handoff, and a native check reported underway. The installed capture is missing. The sole publisher must close native checks and record the release identity. The designated preparer can then prepare it and the runtime-capture owner can obtain a noninteractive, exact-build native sample through the verified route. Desktop or app control remains consent-bound.
-- The Chat leak investigation established repeated approximately 34 MB full responses and a missing revision guard on mounted panes. A candidate file exists. The Coordinator must obtain the frontend owner's runnable proof for unchanged panes and streamed updates, then route it to the sole publisher and obtain an exact-build byte comparison.
-- Task navigation, the two editor corrections and relay layout have source packets. The task/editor combined fixture passed and the publisher reported matching three UI manifests. The publisher must supply the combined remote source identity and the preparer the corresponding package receipt. Installed behavior remains open.
-- Cleanup was held because closing the tracked process can leave descendants using its Temp. The Coordinator must obtain an author correction and a fixture with a surviving descendant that demonstrates output protection before the publisher reconsiders reclamation.
+- Native profiling has fixtures, a source handoff, and a native check reported underway. The installed capture is missing. The native shell check found that the locked Tauri build lacks the API used by the packet. Publisher a9 must verify the correction and record the release identity. The designated preparer can then prepare it and the runtime-capture owner can obtain a noninteractive, exact-build native sample through the verified route. The Coordinator then owns fixing and remeasuring confirmed hot paths. Desktop or app control remains consent-bound.
+- The Chat read investigation established repeated approximately 34 MB full responses and a missing revision guard on mounted panes. B6 owns the repair. The headless proof timed out opening the fixture tab. B6 owes runnable proof for unchanged panes and streamed updates, followed by an exact-build byte comparison after release.
+- The three ordered UI packets cover message references, task navigation and editor corrections, and collapsed relay layout. The task/editor combined fixture passed and the publisher reported matching three UI manifests. The publisher must supply the combined remote source identity and the preparer the corresponding package receipt. Installed behavior remains open.
+- Cleanup was held because closing the tracked process can leave descendants using its Temp. The Coordinator owes B6 the surviving-descendant case. The next fixture must show both lease protection while the descendant survives and reclamation after positive process-tree settlement.
 - None of the reviewed updates explicitly claimed that these owner-visible outcomes were delivered. Source handoffs and checks are recorded at their observed stages. The Master Coordinator still owns the path through publication, preparation and runtime evidence.
 
 Recorded byte volumes describe the historical transport window. They do not establish time or tokens spent by agents, owner attention, or the cause of native WebView memory and GPU use. These unknown costs remain open in the snapshot.
@@ -27,3 +27,16 @@ Recorded byte volumes describe the historical transport window. They do not esta
 ## Independent review
 
 The reviewer receives the five rows, the check, and the original source pointers. The review asks for a verdict on missing obligations, incorrect evidence stages or costs, and exact next owners. An expert is worth adding only when the first review identifies a concrete question requiring that expertise.
+
+One Codex review ran to completion in **142.814 seconds** measured from its
+recorded start to terminal update. That is elapsed time for the review run.
+Token use and owner attention were unmeasured. The independent reviewer found
+no explicit claim in the original snapshot that any owner-facing outcome had
+shipped. The reviewer identified missing evidence and obligations, including
+hot-path remediation, the ordered message-reference packet, the isolated
+collapsed-relay proof and the exact preparation gates. The refreshed snapshot
+incorporates these corrections and cites the mounted-Chat dispatch receipt
+that distinguishes assignment from routing intent. Its 33.1695 seconds for the
+failed proof command exclude earlier engineering and later recovery.
+
+[Independent verdict](metabrain://chat/844256d4-9c6a-4656-bdf2-8ef52f886855?message=aabdd3b6-6230-5c2b-a269-d792708c20fe)

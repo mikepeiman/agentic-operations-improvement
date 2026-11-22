@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 
-const stages = new Set(['dispatched', 'measured', 'candidate', 'fixture', 'handoff', 'published', 'prepared', 'installed', 'runtime', 'accepted', 'blocked', 'withheld']);
+const stages = new Set(['planned', 'dispatched', 'measured', 'candidate', 'fixture', 'handoff', 'published', 'prepared', 'installed', 'runtime', 'remediation', 'accepted', 'blocked', 'withheld']);
 const costFields = ['elapsedMs', 'inputTokens', 'outputTokens', 'ownerAttentionMs'];
 
 function requireText(value, name) {
