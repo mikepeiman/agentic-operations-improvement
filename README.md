@@ -28,6 +28,15 @@ proposed versioned review of agents' understanding and plans, are recorded in
 The owner determines this project's completion. Agents maintain its records and
 present improvements and evidence in support of effective product development.
 
+## Agentic Operations Improvement
+
+The dedicated Codex conversation (`a3e43da7-6a88-449f-b5a1-51860909dcec`) develops
+and evaluates improvements to agent effectiveness and efficiency. Resume from
+the latest source-backed checkpoint in `ops-5yq`. The
+[offline classifier evaluation](docs/classifier-evaluation.md) is the first
+experiment. Metabrain retains its implementation and runtime evidence in its
+own repository. The Coordinator retains cross-project priorities.
+
 ## Use in a project
 
 For initialization or adoption, run the on-demand
