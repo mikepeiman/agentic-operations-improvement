@@ -1246,3 +1246,14 @@ The failure to manage work admission and worker replacement is a separate [Opera
 ### 2026-11-22 — promised report repeatedly not delivered
 
 **Classification withdrawn under owner clarification `f6bad7a7-73ef-4e44-806b-b80523fe019a`.** This is Operations: repeated report non-delivery after correction. The complete original incident is preserved in [the operational failure record](agentic-failure-patterns.md#repeated-report-non-delivery-after-correction). It is not counted as a Communications failure. A separate defect in actual written wording must be identified on its own evidence.
+
+
+### 2026-11-22 — undefined technical roles in Gemini status
+
+Category: Communications. Record: ops-9y5. Owner source: `9cf8b6ef-45c7-468b-b1bd-2521716f6309`.
+
+The Coordinator wrote: "Gemini is still unavailable because I left its worker migration unfinished. The old worker keeps accepting jobs before checking whether it can exit; my continued dispatches prolonged that condition." The owner replied: "Define your terms so I can understand. Your reports are not worth much when they are opaque."
+
+Pattern: implementation-specific roles and actions were presented as shared context. Worker did not identify the Node.js program running agent chats; migration did not identify replacing that program; dispatches did not identify newly queued agent tasks. The result required the owner to ask for an explanation of the explanation. This is a Context defect in the written report. It is separate from the operational failure to manage the replacement.
+
+Correction in this exchange: identify the actual background program, define the replacement and queued tasks, explain the wait condition and report the observed replacement time. Future reports should first give the actor, action, effect and next step in language usable by the recipient. Existing communication-style Context guidance owns that rule; this instance adds evidence rather than another competing rule. No claim of automatic prevention is made.
