@@ -141,6 +141,53 @@ of operations without that condition, preserved required behavior, and measured
 results. Reassess the same distinction in subsequent dispatches. Completed checks
 and further failures belong on `ops-g5x`, preserving these source references.
 
+### 2026-11-22 — a missing requirement is converted into an investigation
+
+**Owner evidence and correction:** Gemini showed no model selector and reported
+that a model must be selected. The owner supplied that information before the
+next repair and build, then reported the same failure after installing it
+(`00f35d29-1ec8-4b56-8b1a-a280fd4bbbbc`). The Coordinator answered that the
+evidence "demanded tracing the running path that produced them."
+
+The owner corrected the action itself (`a2ac26a8-7b56-4651-ac27-35976c970f20`):
+"That evidence demanded adding in the missing requirement that was made evident."
+He supplied the direct interpretation: "It says that it is missing the model
+selector. I need to add that." He explicitly requested this post-mortem and
+failure-pattern record in `810e3429-a1b5-43c6-9896-8f3bd4ab64ed`.
+
+**Operations failure:** the Coordinator replaced a clear feature obligation with
+an investigation objective. Parser corrections, isolated checks, publication and
+a new installer became the work milestones, while a usable Gemini model selector
+remained absent for the owner. The actual background worker also continued to run
+the older code after the desktop update. Explaining that mechanism did not repair
+the earlier failure to recognize and implement the requirement.
+
+**Failure mechanism:** the agent interpreted the report through its current
+technical investigation instead of deriving the missing required behavior. It
+then prescribed more investigation as though that were the action requested.
+This is an instance of reasoning from existing machinery before user purpose.
+
+**Required correction:** record "Gemini provides a usable model selector" as the
+deliverable; implement the selection control and its necessary model-loading and
+dispatch behavior; ensure the running components use the implementation; and
+check that the owner can choose a model and use that choice. Necessary engineering
+work supports this deliverable. Its completion cannot substitute for it.
+
+**Current disposition:** the requirement is explicit on `metabrain-mvp-7bpmb`.
+The installed desktop is 0.2.2730, but the old background worker was still running
+when inspected. Its replacement is being observed after active responses finish.
+The usable selector and a successful Gemini reply remain unaccepted.
+
+**Follow-up check:** compare the next disposition with the missing requirement:
+was it explicitly recognized, implemented at the appropriate interaction point,
+and made usable? Diagnostic progress is an incomplete answer when the deliverable
+is a feature. Apply the same check to other reports revealing missing controls,
+actions or behavior.
+
+The separate written failure was attributing the result to "missing proof" and
+misstating what the owner's evidence demanded. Its Communications record is in
+[Communication inquiry](communication-inquiry.md#2026-11-22--missing-requirement-described-as-missing-proof).
+
 ## A solved problem treated as new
 
 Named by the owner on 2026-10-29 and made a rule in Metabrain's AGENTS.md section 8 ("Solve the

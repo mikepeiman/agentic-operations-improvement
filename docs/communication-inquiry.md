@@ -1248,6 +1248,29 @@ The failure to manage work admission and worker replacement is a separate [Opera
 **Classification withdrawn under owner clarification `f6bad7a7-73ef-4e44-806b-b80523fe019a`.** This is Operations: repeated report non-delivery after correction. The complete original incident is preserved in [the operational failure record](agentic-failure-patterns.md#repeated-report-non-delivery-after-correction). It is not counted as a Communications failure. A separate defect in actual written wording must be identified on its own evidence.
 
 
+### 2026-11-22 — missing requirement described as missing proof
+
+Category: Communications. Owner sources: `dacccee0-ae0e-43f0-a238-11f0f9fc7596`
+and `a2ac26a8-7b56-4651-ac27-35976c970f20`.
+
+The Coordinator wrote: "The offline checks I relied on did not establish that
+the repair handled your actual catalogue response. I released the build without
+that proof." It then wrote: "That evidence demanded tracing the running path
+that produced them."
+
+The owner had already supplied the missing selector and missing-model error.
+He corrected both interpretations: the failure was not a lack of proof, and the
+required response was to add and implement the missing model-selector requirement.
+
+Pattern: the explanation translated actionable user evidence into a preferred
+technical investigation and represented that substitution as what the feedback
+demanded. The phrase "without that proof" also redirected accountability toward
+verification instead of recognizing the requirement already evident.
+
+Correction: state the requirement plainly, then report its implementation and
+remaining usability. Keep the substantive failure to act in the separate
+[Operations post-mortem](agentic-failure-patterns.md#2026-11-22--a-missing-requirement-is-converted-into-an-investigation).
+
 ### 2026-11-22 — undefined technical roles in Gemini status
 
 Category: Communications. Record: ops-9y5. Owner source: `9cf8b6ef-45c7-468b-b1bd-2521716f6309`.
