@@ -1247,3 +1247,45 @@ Owner sources: `2a9f6f1a-b971-4489-92da-e4cf5a56ae63`.
 **Pattern:** transport acknowledgment substituted for successful communication. Tool availability and an accepted request do not establish that the recipient received a visible, understandable question or can answer it.
 
 **Correction in progress:** Metabrain work item s2r8n owns visible question rendering and answer routing through the existing message/provenance system. Until verified, use plain Chat questions. Preserve exact origin and distinguish question delivery, answer delivery and granted authority; a UI acknowledgment is not user consent.
+
+
+### 2026-11-22 — report created without delivery
+
+Project: Metabrain. Agent: Codex Master Coordinator. Record: ops-nzh.
+Owner sources: `08cf741a-9f4a-4e72-af49-eeacf97f05d7`, `a6170dbd-ba77-4475-ac08-457dc87076b2`.
+
+The owner requested an external-research summary of tools, processes, Mermaid flow, strengths, weaknesses and known defects. Root wrote the report in a repository-local file and repeatedly carried the unsent answer as outstanding work. The owner had to ask where the response was.
+
+Pattern: artifact completion substituted for communication delivery. A file and an internal reminder do not establish that the person received the requested answer. Category: Operational Communications.
+
+Required correction: join the source request, authored response and actual saved delivery receipt. An undelivered artifact must remain an actionable obligation. Measure delivery coverage against requested reports and review the saved answer, not a draft. This incident stays open until the substantive report is delivered; the mechanism's own implementation and verification have separate acceptance.
+
+
+### 2026-11-22 — actionable profile without repair owner
+
+Project: Metabrain. Agent: Codex Master Coordinator. Record: ops-997.
+Owner sources: `a660a49d-9366-442c-a0ec-6ad8b42fedbd`, `651badbb-ed94-4900-b9d2-b41958364e7f`.
+
+The installed profile identified expensive recursive Chat history comparisons and repeated design/task searches. Root reported the findings and assigned a profiler timing correction, but left the measured hot paths without a repair owner until the owner objected. The independent lookup fixes did not depend on the held cross-chat invalidation repair.
+
+Pattern: diagnosis-to-action discontinuity and substitution of further diagnostic work for an already authorized remedy. Category: Operational Communications. A known finding was communicated as progress without the follow-on action needed to fulfill the instruction.
+
+Immediate correction: repair assignment736f889a now executes asb03d2a17 in the existing UI owner conversation. Its acceptance requires equivalent message/search behavior, measured removal of repeated work, exact publication and follow-up remeasurement. That running assignment is evidence of changed behavior for this instance, not proof of a permanent prevention mechanism.
+
+Owner requirement: "A post-mortem does not satisfy a failure. Correction is required. That means changed behavior. That means a mechanism to cause changed behavior, and measure to prove it, and followup to check it."
+
+Mechanism work is assigned separately through545aefa8 to reuse the existing Coordinator hooks, work records and execution checks. It must reproduce the missed-action case, distinguish active work from a queued handoff, check delivery, and schedule outcome review. Unclassified findings remain an explicit detection limit. Neither this document nor a passing synthetic check settles the actual repair.
+
+
+### 2026-11-22 — blocker repeated without causal followthrough
+
+Project: Metabrain. Agent: Codex Master Coordinator. Record: ops-qfd.
+Owner sources: `eb2cd40d-48cd-412d-9db6-f55c3d90caa3`, `79d36f6f-3541-47fe-a105-7c79b35808d3`.
+
+Root repeatedly said Gemini handover was waiting for legacy worker11364 to finish active turns, without identifying the active jobs or examining whether the old worker continued admitting work. The owner explicitly classified this as a documentable mandated operational failure.
+
+Evidence: the exact installed legacy runtime43a48636 feedback-agent.mjs467-468 drains feedback/chat work before checking disconnected && !busy() && !chat.busy(). At the inspected instant, the running records were Rootcb8d0c75 and hot-path repairb03d2a17. The old lease owner was alive and no successor control endpoint existed. This establishes a starvation mechanism and the current obstruction; it does not attribute every earlier hour to those two jobs.
+
+Pattern: a technically true state label concealed the missing causal investigation and effective action. Root's continuing dispatches could prolong the reported condition. Category: Operational Communications, linked to the engineering handover defect.
+
+Correction required: identify participant/work phase, inspect the actual wait condition, avoid adding unnecessary work that defeats shutdown, and provide a coordinated admission/drain boundary preserving active and queued work. Verify a successor lease and matching control endpoint, then separately verify user-initiated sign-in. No worker termination or OAuth attempt is authorized by filing this incident. Root must follow the effect rather than repeat "waiting".
