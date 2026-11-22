@@ -1,0 +1,186 @@
+{
+  "scope": "Five obligations from the Master Coordinator assignment d43180f2-3716-5757-986e-5d2dc5e347ae on owner message 3da39d49-ef25-45cb-99bc-1806e41d885a. Source and local artifact snapshot, not a live desktop inspection.",
+  "asOf": "2026-11-22T18:58:30Z",
+  "obligations": [
+    {
+      "id": "native-webview",
+      "outcome": "Obtain a native WebView CPU profile for the exact desktop build.",
+      "required": [
+        "published",
+        "prepared",
+        "installed",
+        "runtime"
+      ],
+      "evidence": [
+        {
+          "stage": "fixture",
+          "source": "Metabrain coordinator message fcdb8971-8410-5541-b311-1471de0b9ad3",
+          "result": "Node, Bun and marked Chromium isolates emitted fixture captures. The native workload was not exercised."
+        },
+        {
+          "stage": "handoff",
+          "source": "Metabrain coordinator message e1dbe777-fb37-50cc-ae54-54e910b5f986",
+          "result": "Final runtime-profile packet relayed. Exact candidate includes native diagnostics activation."
+        },
+        {
+          "stage": "candidate",
+          "source": "Metabrain coordinator message 36825c4c-5116-5ec0-bddf-d4b4bc0eb7e7",
+          "result": "Publisher reported native shell type-check active. No corresponding native acceptance receipt was in the reviewed update."
+        }
+      ],
+      "nextOwner": "Sole publisher a9bbcaf2-4e83-45ec-80d2-5954143ec7e2",
+      "nextAction": "Finish native type-check and publish exact combined source. The designated preparer 07 then supplies the package receipt. Runtime capture owner b6baa63d-0c6a-409d-8ef0-4b0687257ac1 verifies the exact-build sample after owner restart.",
+      "cost": {
+        "elapsedMs": null,
+        "inputTokens": null,
+        "outputTokens": null,
+        "ownerAttentionMs": null
+      },
+      "completionClaim": null
+    },
+    {
+      "id": "chat-read-amplification",
+      "outcome": "Avoid repeated full Chat payloads for unchanged mounted panes while retaining live updates.",
+      "required": [
+        "fixture",
+        "published",
+        "installed",
+        "runtime"
+      ],
+      "evidence": [
+        {
+          "stage": "measured",
+          "source": "Metabrain coordinator message 8d90d1b6-5392-5664-aeb4-a1dc7305888d",
+          "result": "Build 2715 log window recorded 55 full reads totaling 1.879 GB in four minutes, including roughly 34.16 MB replies. Repeated full reads remained in 2716. The mounted-pane path omits the selected-chat conditional check."
+        },
+        {
+          "stage": "dispatched",
+          "source": "Metabrain coordinator message bd071df9-29cc-5492-b161-75e8de464905",
+          "result": "Coordinator explicitly routed the repair to the frontend owner with streaming coverage."
+        },
+        {
+          "stage": "candidate",
+          "source": "Metabrain .tmp/chat-amplification-7tvsa-fcc3/candidate.py",
+          "result": "A candidate generator is present. Its presence does not establish successful application or runnable proof."
+        }
+      ],
+      "nextOwner": "Master Coordinator (coordinator), routing metabrain-mvp-7tvsa to its frontend owner",
+      "nextAction": "Obtain or confirm the named repair assignee and a runnable proof for mounted panes and live streaming. Route the verified candidate to the sole publisher and require comparable exact-build response bytes.",
+      "cost": {
+        "elapsedMs": null,
+        "inputTokens": null,
+        "outputTokens": null,
+        "ownerAttentionMs": null
+      },
+      "completionClaim": null
+    },
+    {
+      "id": "pending-ui-packets",
+      "outcome": "Deliver task navigation, Chat editor corrections and the relay-layout change.",
+      "required": [
+        "published",
+        "prepared",
+        "installed",
+        "runtime"
+      ],
+      "evidence": [
+        {
+          "stage": "handoff",
+          "source": "Metabrain coordinator message b462b8ee-1ad9-5794-9d5c-c788b6781f21",
+          "result": "Task/editor package sent to publisher. Records m9iwp, nfqb4 and e5jdb remained open at lookup."
+        },
+        {
+          "stage": "fixture",
+          "source": "Metabrain coordinator message b462b8ee-1ad9-5794-9d5c-c788b6781f21",
+          "result": "Combined headless task/editor fixture reported passing after both patches. Isolated evidence scope excludes live desktop."
+        },
+        {
+          "stage": "candidate",
+          "source": "Metabrain coordinator message 36825c4c-5116-5ec0-bddf-d4b4bc0eb7e7",
+          "result": "Publisher reported matching the three UI packets to their manifests."
+        },
+        {
+          "stage": "dispatched",
+          "source": "Metabrain coordinator message b6461ccc-214b-5d3b-8e3c-eb28ef1a6da5",
+          "result": "Coordinator retained the owner-visible editor, relay-layout and task-navigation delivery obligations."
+        }
+      ],
+      "nextOwner": "Sole publisher a9bbcaf2-4e83-45ec-80d2-5954143ec7e2",
+      "nextAction": "Supply a combined remote source receipt covering each UI packet, then hand off to preparer 07 for the package and installed verification.",
+      "cost": {
+        "elapsedMs": null,
+        "inputTokens": null,
+        "outputTokens": null,
+        "ownerAttentionMs": null
+      },
+      "completionClaim": null
+    },
+    {
+      "id": "process-ownership",
+      "outcome": "Keep leased output available until owned process-tree settlement is established.",
+      "required": [
+        "fixture",
+        "published",
+        "installed",
+        "runtime"
+      ],
+      "evidence": [
+        {
+          "stage": "handoff",
+          "source": "Metabrain .tmp/artifact-lifecycle-d78a/handoff.md",
+          "result": "Scoped lifecycle source and ordinary-exit, forced-exit and replaced-path fixtures documented. Native full preparation remained open."
+        },
+        {
+          "stage": "withheld",
+          "source": "Metabrain coordinator message 36825c4c-5116-5ec0-bddf-d4b4bc0eb7e7",
+          "result": "Publisher held reclamation after finding spawnWithArtifacts could treat a signal-free child close as tree settlement even when descendants remained."
+        }
+      ],
+      "nextOwner": "Master Coordinator (coordinator), routing the correction to the artifact lifecycle packet author",
+      "nextAction": "Return the exact surviving-descendant case to the author, obtain executable evidence that the lease remains protected, and send a corrected packet to the sole publisher for re-review.",
+      "cost": {
+        "elapsedMs": null,
+        "inputTokens": null,
+        "outputTokens": null,
+        "ownerAttentionMs": null
+      },
+      "completionClaim": null
+    },
+    {
+      "id": "delivery-accounting",
+      "outcome": "Carry source handoffs through remote publication, exact preparation and installed evidence before crediting delivery.",
+      "required": [
+        "published",
+        "prepared",
+        "installed",
+        "runtime"
+      ],
+      "evidence": [
+        {
+          "stage": "dispatched",
+          "source": "Metabrain coordinator message b6461ccc-214b-5d3b-8e3c-eb28ef1a6da5",
+          "result": "Coordinator identified the outstanding release and diagnostic actions in the owner-facing commitment."
+        },
+        {
+          "stage": "blocked",
+          "source": "Metabrain integrate-upstream refusal 7415c02f-ffac-4eaf-a293-2563bb7b193f",
+          "result": "Shared primary divergence and foreign staged changes prevent ordinary integration. The sole publisher uses the guarded release lane."
+        },
+        {
+          "stage": "handoff",
+          "source": "Metabrain docs/active/agent-coordinator.md, delivery guidance; coordinator messages b462b8ee-1ad9-5794-9d5c-c788b6781f21 and e1dbe777-fb37-50cc-ae54-54e910b5f986",
+          "result": "The reviewed updates reported handoffs and pending release steps. The audit found no explicit claim that the corresponding owner outcomes were already delivered."
+        }
+      ],
+      "nextOwner": "Master Coordinator (coordinator)",
+      "nextAction": "Reconcile exact release, preparation and runtime receipts by obligation before reporting delivered. Keep the prepared 3bt5f matrix separate from any authorized execution.",
+      "cost": {
+        "elapsedMs": null,
+        "inputTokens": null,
+        "outputTokens": null,
+        "ownerAttentionMs": null
+      },
+      "completionClaim": null
+    }
+  ]
+}

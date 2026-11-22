@@ -34,7 +34,8 @@ The dedicated Codex conversation (`a3e43da7-6a88-449f-b5a1-51860909dcec`) develo
 and evaluates improvements to agent effectiveness and efficiency. Resume from
 the latest source-backed checkpoint in `ops-5yq`. The
 [offline classifier evaluation](docs/classifier-evaluation.md) is the first
-experiment. Metabrain retains its implementation and runtime evidence in its
+experiment. The [bounded supervision audit](docs/supervision-audit.md) checks
+execution and delivery evidence. Metabrain retains its implementation and runtime evidence in its
 own repository. The Coordinator retains cross-project priorities.
 
 ## Use in a project
