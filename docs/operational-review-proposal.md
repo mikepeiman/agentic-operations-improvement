@@ -78,26 +78,24 @@ the current review. Parallel sessions have distinct directories and receipts.
 
 ## Purpose-first check for a brief or review
 
-Before inspecting the implementation, state the owner's intended outcome and describe
-when the proposed operation is necessary. Say what should happen under the contrary
-condition. Name required behavior to preserve and the boundary where it can be
-observed. Refer to the exact owner source and the supporting evidence. Put this in
-the existing V1 brief or review, then record any change in V2 and the comparison.
+Apply the brief and review instructions in [AGENTS.md](../AGENTS.md#work-from-the-outcome)
+when you write or review the existing brief. In V2 and the comparison, record
+what changed in the operation, what must still work and which observation could
+disprove the decision. Use the same brief or review record.
 
-A reviewer starts with the same outcome and evidence. Challenge the problem
-selection before checking implementation details. Specifically, ask what would
-break if the operation were removed, and what evidence would distinguish a justified
-retention from an inherited assumption. One explicit conditional statement can be
-enough. Judge whether it changes the work.
+The review starts with whether the premise follows from the owner's purpose.
+For example, a faster full-history read still wastes work if the watched
+conversation never changed. An unchanged token is equally wrong when it hides a
+real edit. A reviewer asks which user behavior would break, then uses a case
+that could distinguish those outcomes. Reviewing the record's completeness
+comes afterward. The [scoped full-read decision](evidence/purpose-first-ops-gjo/assessment.md#saved-operational-review)
+shows how this affected real acceptance.
 
-The programme can check an evidence-backed review record with
-`node checks/purpose-review.mjs <case-packet.json> <review.json>`. The check
-validates case/source references, an explicit necessity condition, a preservation
-list and positive and contrary checks at the selected boundary. It compares any
-declared delivery claim with the evidence level entered in the record. The supplied
-source type and boundary remain reviewer judgments. An app message link is checked
-for shape by the command. The [first replay and comparison plan](evidence/purpose-first-ops-gjo/assessment.md)
-records the applied brief and how these checks are used.
+The programme can check a frozen evaluation record with
+`node checks/purpose-review.mjs <case-packet.json> <review.json>`. It checks
+references, recorded conditions and evidence levels. A wrong premise can satisfy
+those checks. Use the packet's checker for the evaluation, and use the normal
+brief and review for work.
 
 ## Questions and required consequences
 

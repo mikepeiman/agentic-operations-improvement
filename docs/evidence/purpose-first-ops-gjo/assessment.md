@@ -36,6 +36,51 @@ Those tests exercise the record rules. An explicitly written but wrong
 necessity condition can still pass the record check, so the reviewer must judge
 whether it follows from the purpose and evidence.
 
+## Instruction path and invocation
+
+The shared [AGENTS.md](../../../AGENTS.md#work-from-the-outcome) now puts the
+necessity question directly in the existing author and reviewer instructions.
+The author states the necessary and contrary conditions in the brief. The
+reviewer asks what required behavior would fail without the operation and
+what evidence shows it. Claude's existing `CLAUDE.md` pointer leads to the
+same guide. The draft, review and acceptance stay in their existing records.
+
+For this turn, the existing Metabrain `renderWorkingRules(read)` context
+renderer was invoked with the central repository reader. Its output included
+both amended instructions and the Claude pointer was verified. The
+LF-normalized guide SHA-256 was
+`8d2f3d0952c5dfa61486f6243c0bb39b6cad445b9aa9ef39f197a71f95d6d430`.
+This exercised the existing loading function directly. A live provider reload
+or adoption by a different checkout was not exercised.
+
+The same instruction was applied to this evaluation brief after the
+Coordinator's saved review. The third arm needs the independent judgment
+about a purpose-led draft. Generating a second draft first added work and
+made it harder to isolate what the review changed. The comparison below
+now shares the frozen draft with the reviewer, saving six proposed starts
+and retaining a scope-preservation control.
+[Coordinator's proposal review](metabrain://chat/a3e43da7-6a88-449f-b5a1-51860909dcec?message=ddea3b50-43aa-56ab-b4c7-a7f0138d5be3)
+
+## Saved operational review
+
+The owner redirected the 7tvsa investigation from enumerating existing read
+gates to deciding when anyone needs a full read. The old objective, source
+`9551085f-ea15-526a-b93b-d06b67377bd4`, had a passing isolated result and was
+described as ready for publication review. The review exercised the normal writer
+and compared conditional answers with full reads. It withheld overall acceptance.
+The published 2727 subset passed its scoped checks, but changing selected
+conversation metadata could still trigger full catch-up. Supplements had
+discrete tests and lacked integrated or installed evidence. The review kept the
+original completion limit at four author runs. The objective state was
+`budget-exhausted` and the saved review decision was `changes-required`.
+[Owner's necessity direction](metabrain://chat/coordinator?message=f6c25160-281b-4df3-b66a-77e9836ffdc8)
+[Earlier fixture report](metabrain://chat/coordinator?message=15eceea4-4443-5cbf-97b0-728f4c4b6ed6)
+[Saved fourth-pass review](metabrain://chat/1f99f3c7-833f-4ab2-bb64-49884c4ed0fd?message=15a35ab7-d280-5ed3-b597-8b33008e8c0e)
+
+That is a changed acceptance decision in live work, initiated by the owner's
+correction. It predates this wording change and cannot prove the new instruction
+would have caused an agent to make the same discovery autonomously.
+
 ## Retrospective replay
 
 One author reconstructed each response from the cited evidence and scored it
@@ -60,51 +105,44 @@ source evidence and did not occur during this replay.
 
 ## Bounded prospective comparison
 
-Use three frozen failure cases from this packet as an initial calibration.
-Reserve the controls as counterexamples for the reviewer. This
-set is known to the preparer and is unsuitable for claims about unseen work.
-Keep source facts and owner constraints equal across conditions. Strip the
-assessment, expected outcomes and arm labels from author inputs. Hold the
-rubric and preservation checks for a reviewer who does not prepare or execute
-the runs.
+Use two contrasting known cases from the frozen packet. Test unnecessary work
+with `full-reads` and preservation of a bounded assignment with
+`fixture-only-scope`. Keep the other cases in the offline replay. Keep the
+rubric and counterexamples with a reviewer who does not prepare or execute the
+runs. Give authors the same case facts and owner constraints, with expected
+outcomes, arm labels and earlier assessments withheld.
 
-| Case | Condition order |
+| Case | Order |
 | --- | --- |
-| Full reads | Implementation-led, purpose-led, independent challenge |
-| Primary web link | Purpose-led, independent challenge, implementation-led |
-| Fixture as delivery | Independent challenge, implementation-led, purpose-led |
+| Full reads | Ordinary author, purpose-led author, independent challenge |
+| Fixture-only scope | Purpose-led author, independent challenge, ordinary author |
 
-Hold the exact harness, model, effort, provider, baseline source, common
-instructions, and access policy fixed. All work is read-only and no native tool
-or provider exploration is required. The implementation-led author receives
-the ordinary brief. The purpose-led author receives the necessity and contrary
-condition prompt. The independent-challenge arm uses the same purpose-led
-condition and a fresh reviewer sees its draft and the same evidence. Keep the
-draft and reviewer decision together as the final output for scoring. The
-reviewer may accept or revise the plan and must cite the actual reason.
+Use the same fixed harness, model, effort, provider, source snapshot, common
+instructions and read-only access. Give the ordinary author the existing brief.
+Ask the purpose-led author to state the necessary condition and contrary case.
+Freeze that response as the purpose-led result. A fresh reviewer receives that
+exact draft and the same case evidence. The reviewer can accept or revise it
+with a reason. Score the draft alone and then the draft with the challenge.
+This compares the marginal effect of a challenge on an identical draft and
+avoids a second author call for that condition.
 
-The calibration has nine author cells and three challenge calls, totaling
-**12 native starts at most**. The proposed absolute ceilings are 90 seconds
-per call, 360 seconds per case and 1,080 seconds for the round, with no retries,
-substitutions, auxiliary grader or provider fallback. Stop if any material
-constraint, call identity, terminal event or usage receipt is missing. Proposed
-soft token stops are 60,000 reported tokens per call and 720,000 aggregate,
-subject to offline admission based on exact prepared prompt size. An in-flight
-call can overshoot a soft stop. These are preparation limits for owner review.
+Maximum **six native starts** across two cases. Proposed ceilings are 90 seconds
+per call, 270 seconds per case and 540 seconds for the round. No retries,
+replacement cells, auxiliary graders or fallback. Stop if a required identity,
+terminal event, usage receipt or execution constraint is missing. Proposed soft
+stops are 60,000 observed tokens per call and 360,000 total, subject to offline
+admission using exact prepared prompt size. The reviewer-arm cost includes its
+author draft when comparing workflows. Count the shared author call only once
+in actual round consumption.
 
 Reuse Metabrain's `scripts/harness-evaluate.mjs` preflight, one-use release,
 pinned runtime and attempt receipts, and `scripts/harness-evaluate-runtime.mjs`
-for the existing bounded harness execution. The current runner hard-codes two
-harness-mode arms that share task text. It cannot express this three-condition
-matrix with per-arm premise instructions and an independent challenge. The
-smallest prospective change is to let the existing packet admit a fixed
-condition and challenge stage over the same evidence with the existing
-authority and usage checks. That adapter remains unimplemented. Avoid
-confounding the purpose treatment with a different harness mode, and keep the
-earlier 3bt5f comparison and its authority intact.
+for bounded execution. The existing two-arm common-task runner needs a narrowly
+scoped packet extension to accept the fixed conditions and share the frozen
+draft with its challenge stage. Implementation and any execution authority remain
+open. Preserve the earlier 3bt5f plan and release boundary.
 
-Score the paired per-case changes in an independent human review, flag hard
-failures and retain disagreements. Separately report total wall time to usable
-answer, token/cache counters, reviewer time, and actual corrections or rework
-if those are observed. The trial may establish a measured tradeoff for these
-cases. A standing default would need further owner review and unseen cases.
+Score paired results independently. Retain hard failures, reviewer disagreement,
+actual corrections, wall time to usable answer, observed token and cache counters,
+and review time. These known cases can support a follow-up decision. They cannot
+establish unseen performance or a standing default.
