@@ -448,9 +448,12 @@ The process directives (1 to 7, 21, 22, 26, 27, 31, 33, 46 and 47) are in [Worki
     rewritten as "A capability a surface lacks is added to the shared component" and as "Add a
     missing capability to the shared component" (2026-10-26, `metabrain-mvp-kxlc`).
 
-60. **Make file references usable.** When linking a local file, verify that it exists and use
-    its absolute path with forward slashes. Ask: "Does the link resolve to this file? What
-    did the app confirm?" Report a queued open request as queued.
+60. **Link to a useful destination.** When a link helps the reader act or verify a result,
+    link to the exact conversation, message, design, artifact, or screen they need. Say what
+    opens. A screen link earns its place when it takes the reader to a useful destination.
+    Omit a link to the screen already open when it adds no target. Keep exact work and design
+    links in delivery. For a local file, verify it exists and use its absolute path with
+    forward slashes. Report a queued open request as queued.
 
 ## Improving the directives
 

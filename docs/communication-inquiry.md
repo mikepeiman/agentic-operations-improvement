@@ -1280,3 +1280,13 @@ The Coordinator wrote: "Gemini is still unavailable because I left its worker mi
 Pattern: implementation-specific roles and actions were presented as shared context. Worker did not identify the Node.js program running agent chats; migration did not identify replacing that program; dispatches did not identify newly queued agent tasks. The result required the owner to ask for an explanation of the explanation. This is a Context defect in the written report. It is separate from the operational failure to manage the replacement.
 
 Correction in this exchange: identify the actual background program, define the replacement and queued tasks, explain the wait condition and report the observed replacement time. Future reports should first give the actor, action, effect and next step in language usable by the recipient. Existing communication-style Context guidance owns that rule; this instance adds evidence rather than another competing rule. No claim of automatic prevention is made.
+
+### 2026-11-23 — generic link to the screen already open
+
+Category: Communications. [Original reply](metabrain://chat/coordinator?message=40746667-efd4-592b-b26c-0c8e6a1aa1a3) · [First owner correction](metabrain://chat/coordinator?message=cd0f4cb8-f357-4eab-bb97-dabd7c824fd8) · [Owner confirms the current screen](metabrain://chat/coordinator?message=96486087-615b-4d45-b6e2-8a1a0ed7a810)
+
+The Coordinator wrote: “I’ll treat Chat as the first example of an app-wide control: one launcher per view, a list of that view’s components, and a two-column editor for typography and other style settings. I’ll use the design and mockup skills to frame the round and delegate it.” It appended a generic `Chat` link with destination `metabrain://ui/build?screen=chat`.
+
+The owner asked, “Was that supposed to be a chat thread dealing with the relevant issue?” and clarified, “We are in the Chat view. Added a link to the view we are in is idiotic!”
+
+The link suggested a place to see the work and only pointed to the already-open screen. The repair is to omit that link from the acknowledgment. At delivery, label the verified thread, message or design with what it opens. A specific link that fails to navigate needs its own reproduction and evidence.
