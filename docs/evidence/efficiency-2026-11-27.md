@@ -115,3 +115,35 @@ a measured charge. A tool or activity event is not necessarily a model request.
 The share of runs in named coordination chats does not measure dispensable work.
 These distinctions matter when choosing which operation to remove. The design
 uses retained evidence and opens no new experiment.
+
+## Scoring and review inventory
+
+Source at Metabrain d5465d922 (0.2.3004) and read-only saved desktop records
+checked November 27 Eastern. Coverage is scoring of agent replies or work and
+the judgments easily mistaken for it. Owner-message text was excluded from
+the audit output. No provider calls were used to audit scoring.
+
+| Mechanism | When it runs and what it does | Evidence of actual use and visibility |
+| --- | --- | --- |
+| Numeric clarity score | scripts/agent-harness.mjs runs one extra model turn after producing the text for each selected non-Lean Harness mode. The reader sees the supplied conversation and the final draft, returns SCORE: 0–100, and does not revise or choose the reply. The worker uses a fresh reader session on the selected provider/backend. | The saved Rules instruction test used 26,935 reported tokens and 10.407s for score 90. The other arm used 26,912 and 11.298s for score 94. The desktop showed 329 Direct reply records, 328 completed and one stopped, with zero stored numeric scores and zero clarity steps. When present, the score is in Reply details and its median is in Harness modes → Record so far. No active saved conversation in the snapshot had a mode selection. |
+| Selected-mode substantive review | One editor pass and Rules and editor together check writing. Claim checker checks factual support. Cold reader checks gaps and context. Six family readers check separate groups of rules. Findings can cause an author revision that accepts or rejects them. Fresh writer produces a reply from collected facts. Plain, Rules instruction and Your corrections as examples have no standalone editor, but still get the clarity score. Lean context omits both. | The saved experiment exercised editor, revision and clarity. Live reply step rows in the audit used only ordinary provider-reply and observed Codex-turn labels. Defined extra model turns per reply, excluding the author, are 1 for Rules instruction, Your corrections as examples and Plain, up to 3 for either editor mode, Claim checker or Cold reader, 2 for Fresh writer, up to 8 for Six family readers, and 0 for Lean. |
+| Automatic complaint reader | scripts/agent-complaints.mjs runs at worker startup and around runs, after an owner message immediately follows a recorded reply. It asks a separate model whether the owner complained about the writing. It stores fine, failed with the owner's exact quote, or error. It can read the reply, the preceding owner message and the new owner message. | 51 saved outcomes across five conversations, all on Direct replies and all with Claude Sonnet low. 47 fine and four errors, three mentioning allowance or 429. 34 of the reviewed replies were Claude and 17 Codex. There is no per-verdict token total in this table and overwritten retry attempts cannot be counted from rows. The reader model is set in Harness modes → Record so far → Summaries and reply review. The metric is Failures you named. |
+| Claude Code draft hook | The Claude UserPromptSubmit, PreToolUse and Stop registrations invoke .claude/hooks/reply-draft.mjs. When active, it asks for a draft, runs local writing checks and can launch one extra Claude Sonnet low editor on the eligible draft write. Editor findings can influence the reply. It exits when a Metabrain Harness mode supplies its own pipeline. Immediate acknowledgments are exempt. | Source-configured. No matching reply-draft receipt appeared in the bounded November 25–27 receipt read (about 1.37 MB). That leaves actual invocation and editor spend unverified in this window. The Codex registration does not include this draft editor. |
+| Explicit reviews and experiments | Code, design and delivery reviews assess requirements when a reviewer runs. Owner verdicts and supervision decisions are stored judgments. The harness pilot used internal model clarity and a separate unblinded rubric assessment. Micro-screen and packing have deterministic answer-key grading. Purpose-first and design/diagnosis evaluations use their experiment rubrics. | These are named tasks or explicit evaluation paths with their own evidence and costs. Stored verdicts and local rubric calculations do not themselves start a model. Arbitrary chat requests asking an agent for a judgment are accounted for as ordinary assigned work. |
+| Local rules and ranks | Hook and contract conditions, search relevance, text similarity, recommended-action ordering and owner verdict buttons use code or explicit input. | These are not paid language-model scoring. They can still use local CPU and require their own performance measurements. |
+
+The original metabrain-mvp-f2iw5.2 approval limited automatic complaint reading
+to owner messages after sub-chat replies. The complaint reader now scans
+every agent_reply_record. The later direct accounting writer inserts
+mode=Direct reply into that table. Together those paths admit ordinary Chat.
+This is the actual recurring review expense found in the snapshot. The
+26,935-token clarity scorer is evidence about the selected Harness mode in
+the test. It cannot be counted as a saving on ordinary direct replies.
+
+Source paths include scripts/agent-harness.mjs, scripts/agent-chat-worker.mjs,
+scripts/agent-reply-accounting.mjs, scripts/agent-complaints.mjs,
+.claude/hooks/reply-draft.mjs, .claude/settings.json, .codex/hooks.json,
+src/lib/build/chat/HarnessModes.svelte, ReplyDetails.svelte, and harness-modes.json
+in the same directory. Runtime counts are from agent_reply_record,
+agent_reply_step and agent_reply_complaint. Estimates of spending from unseen
+native retries or provider billing are outside these observations.
