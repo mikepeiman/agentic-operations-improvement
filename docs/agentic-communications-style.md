@@ -144,6 +144,12 @@ The process directives (1 to 7, 21, 22, 26, 27, 31, 33, 46 and 47) are in [Worki
     general use.
     Failure: "keep apart", "what's true of"; avoiding "format" because a workout term listed it
     as an alias.
+    When a product name can mean a local process, a service or a model, name
+    the component observed performing the action. State where the measurement
+    was taken. Check each causal verb against the evidence before assigning it
+    to a component. Example: “Metabrain read 525,256 bytes from the local Google
+    Antigravity process’s output pipe.” If the origin of the data matters and
+    the trace does not show it, say so. See the [post-mortem](communication-inquiry.md#2026-11-27--a-local-process-called-by-the-cloud-models-name).
 18. **Give each noun phrase a named head noun, state each claim's scope inside its sentence, and
     give contrasted things one form.**
     Test: find the head noun of each subject and object; a "what" clause in that position has

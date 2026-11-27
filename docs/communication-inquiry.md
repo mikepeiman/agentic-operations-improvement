@@ -1293,8 +1293,37 @@ The link suggested a place to see the work and only pointed to the already-open 
 
 ### 2026-11-27 — a local process called by the cloud model's name
 
-Category: Communications. The agent wrote “Gemini sent Metabrain a copy of events from the saved conversation.” The owner read “Gemini” as Google's cloud model and asked whether the 525 KB came from the cloud. He then said, “When you name things wrong, you are wrong.”
+**Impact.** The owner asked what software had sent 525 KB of historical
+activity during a failed reply. The explanation appeared to implicate Google’s
+cloud model, so it pointed the diagnosis toward a different system. The owner
+had to ask again which component did the work.
 
-The trace measured the bytes Metabrain read from the local Google Antigravity process. The agent shortened the process name to “Gemini” and introduced an unsupported source for the traffic. The owner had to ask which system actually did the work.
+**Sequence.** The agent first wrote “Gemini’s connection opened, replayed 525 KB
+of old session activity, and timed out before submitting your prompt.” When
+asked what “replayed” meant, the agent wrote “Gemini sent Metabrain a copy of
+events from the saved conversation.” The owner asked whether it meant the
+Google cloud LLM or software on his PC. He then said, “When you name things
+wrong, you are wrong. Try doing math using the wrong symbols; that is literally
+how you operate.”
 
-Corrected account: Metabrain asked the local Google Antigravity process to reopen the saved session. The process emitted historical updates through its output pipe. The trace measured 525,256 bytes at that pipe. The source of the history within that process remains unobserved. Evidence is in Metabrain revision 52685e534, scripts/gemini-acp.mjs and docs/evidence/metabrain-mvp-xoa8.21/gemini-reply-2026-11-27.md. This is another instance of the existing Context failure to name the technical actor precisely.
+**Cause.** A product name served as shorthand for two components with distinct
+roles. The explanation retained the byte count from the run trace and dropped
+the trace’s measurement point, the local Google Antigravity process’s output
+pipe. It then assigned the action to “Gemini.” That changed what the sentence
+claimed about the source. Knowing what the adapter calls is insufficient to
+determine where the responding process acquired its data.
+
+**Corrected account.** Metabrain asked the local Google Antigravity process to
+reopen the saved session. The process emitted historical message and tool
+updates. Metabrain read 525,256 bytes in total from the process’s output pipe
+and timed out before sending the new prompt. The trace leaves the history’s
+upstream source and any network activity unobserved. See Metabrain revision
+52685e534, scripts/gemini-acp.mjs and
+docs/evidence/metabrain-mvp-xoa8.21/gemini-reply-2026-11-27.md.
+
+**Correction applied.** [Directive 17](agentic-communications-style.md#context)
+now requires the observed actor and measurement point when one name spans
+multiple components. The before-and-after check assigns “asked” and “read” to
+Metabrain and “emitted” to the local Google Antigravity process. Every verb
+maps to the adapter or its trace. Apply the same check at the next report that
+uses evidence from local software to explain a connected service.

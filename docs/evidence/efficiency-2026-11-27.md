@@ -26,3 +26,11 @@ The earlier completed Rules-and-editor arm used 145,219 tokens and 92.395s versu
 ## Next discriminating comparison
 
 Use the existing diagnosis-cache and review-durable-save cases. On each, hold provider, model, effort, required guidance and task fixed. Compare one author pass to the same initial author pass with the existing targeted editor when a durable-write or source-integrity question justifies it. Check the saved outputs first using the frozen factual and preservation rubrics. Track each added stage, token/cache counters, wall time, and corrections that change whether the result is usable. Retain the one-pass result where it meets acceptance and added work supplies no consequential correction. Claim an exact improvement only for measured workloads. No provider experiment was started here.
+
+## Session replay and handoff decision
+
+Preserve the context of a resumed session through the provider's saved session identity. A new chat or agent needs the task and the small amount of evidence its work depends on. Re-send a prior tool result only for a stated need, such as recovering an interrupted action or inspecting the exact result in an audit. Full historical tool output has no default role in either flow.
+
+The direct adapter at Metabrain commit 52685e534 selects session/resume when the local Google Antigravity process advertises it. The isolated test confirmed the same session ID and one new prompt. Session/load is still the fallback for a process that supports loading but lacks resume. It has a 45-second request deadline and still permits historical output to reach the diagnostic stream. It is compatibility behavior. An explicit history recovery can justify showing prior updates. An ordinary reply has no use for those updates.
+
+Read-only check of the three latest completed Gemini runs after the failed attempt found three saved replies. The two newest runs were 3b4ab730 and c2e97e84. The saved session-ready events lacked the method field that would distinguish session/resume from session/load or session/new. This confirms delivery in those runs. It cannot establish installation of the new path or a matched speedup. The exact next evidence is a natural resumed turn with provider.session-ready detail.method=session/resume and the matching saved reply.
