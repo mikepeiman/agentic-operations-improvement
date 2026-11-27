@@ -1290,3 +1290,11 @@ The Coordinator wrote: “I’ll treat Chat as the first example of an app-wide 
 The owner asked, “Was that supposed to be a chat thread dealing with the relevant issue?” and clarified, “We are in the Chat view. Added a link to the view we are in is idiotic!”
 
 The link suggested a place to see the work and only pointed to the already-open screen. The repair is to omit that link from the acknowledgment. At delivery, label the verified thread, message or design with what it opens. A specific link that fails to navigate needs its own reproduction and evidence.
+
+### 2026-11-27 — a local process called by the cloud model's name
+
+Category: Communications. The agent wrote “Gemini sent Metabrain a copy of events from the saved conversation.” The owner read “Gemini” as Google's cloud model and asked whether the 525 KB came from the cloud. He then said, “When you name things wrong, you are wrong.”
+
+The trace measured the bytes Metabrain read from the local Google Antigravity process. The agent shortened the process name to “Gemini” and introduced an unsupported source for the traffic. The owner had to ask which system actually did the work.
+
+Corrected account: Metabrain asked the local Google Antigravity process to reopen the saved session. The process emitted historical updates through its output pipe. The trace measured 525,256 bytes at that pipe. The source of the history within that process remains unobserved. Evidence is in Metabrain revision 52685e534, scripts/gemini-acp.mjs and docs/evidence/metabrain-mvp-xoa8.21/gemini-reply-2026-11-27.md. This is another instance of the existing Context failure to name the technical actor precisely.
