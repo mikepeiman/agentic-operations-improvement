@@ -21,6 +21,13 @@ Obtain missing authority before destructive operations (including discarding
 working-tree changes), deployment, or external publication beyond the configured
 Git delivery workflow.
 
+Revisit the method when new evidence changes the next action. During planning,
+execution, review, delivery and follow-up, preserve the intended outcome, authority
+and accountable owner while adjusting how the work proceeds. If work stalls or a
+failure recurs, examine the process that allowed it and check whether the correction
+improves the result. Apply the same test to improvements in the workflow itself.
+Scale review to risk and retain the evidence and next action in the existing work item.
+
 ## Track with Beads
 
 Use Beads (`bd`) by default; where another tracker exists, settle ownership with
