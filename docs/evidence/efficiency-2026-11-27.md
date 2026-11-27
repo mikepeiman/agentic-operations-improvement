@@ -34,3 +34,84 @@ Preserve the context of a resumed session through the provider's saved session i
 The direct adapter at Metabrain commit 52685e534 selects session/resume when the local Google Antigravity process advertises it. The isolated test confirmed the same session ID and one new prompt. Session/load is still the fallback for a process that supports loading but lacks resume. It has a 45-second request deadline and still permits historical output to reach the diagnostic stream. It is compatibility behavior. An explicit history recovery can justify showing prior updates. An ordinary reply has no use for those updates.
 
 Read-only check of the three latest completed Gemini runs after the failed attempt found three saved replies. The two newest runs were 3b4ab730 and c2e97e84. The saved session-ready events lacked the method field that would distinguish session/resume from session/load or session/new. This confirms delivery in those runs. It cannot establish installation of the new path or a matched speedup. The exact next evidence is a natural resumed turn with provider.session-ready detail.method=session/resume and the matching saved reply.
+
+## Two operating levels
+
+The owner clarified on November 27 that the ability to plan, conduct and
+analyze controlled experiments is essential. He wants an immediate operating
+approach that delivers good results and a longer-term system that can keep
+improving. Both optimize the cost of an accepted result, including every retry,
+handoff, review and delivery attempt.
+
+### Immediate triage
+
+1. Give a routine task one execution owner through verification and delivery.
+   Keep existing publication ownership. Bring in a reviewer for a concrete
+   decision the executor cannot verify cheaply. Omit optional scores and second
+   readings that have no effect on delivery. Work from the exact owner request,
+   the relevant source and a narrow acceptance check. Batch independent reads
+   and keep log and transcript extracts to the lines that establish the claim.
+2. Pack compatible small decisions that share setup and can be scored
+   separately. The retained calibration used 56,048 reported tokens in one
+   request versus 108,355 in two, with 24/24 on both layouts. The cases were
+   familiar. A small sample of unfamiliar cases should check transfer before a
+   broad workflow change.
+3. Concentrate background work on a new actionable event, a changed dependency,
+   or a requested status deadline. An unchanged blocked list can be rendered
+   from saved state. Verify existing wake-up repairs before assigning another
+   implementation. Trace any repeated prefix changes at the provider request
+   boundary. Treat storage growth as a separate reliability repair with its own
+   measurements and data-preservation requirements.
+4. For the first new split test, change only optional context assembly. Choose
+   two fresh cases, an exact diagnosis and a small repair with a preservation
+   requirement. Use the same provider, model, effort, tool policy, required
+   guidance, worktree snapshot and acceptance checks. Use fresh isolated
+   sessions, order AB for the first case and BA for the second, and make one
+   author attempt per cell. Compare the usual optional prefill with a short
+   task-specific packet. Keep required rules and exact evidence available to
+   both. Freeze the checks first. Score artifacts without arm labels and count
+   tool calls, time to verified result, and each token category. Four author
+   turns screen for a large effect. Stop expansion on a quality or authority
+   failure. Use retained outputs and deterministic checks while provider
+   execution is outside the current scope.
+
+The same design can later test effort, action batching, reviewer placement or
+session handoffs. Start with the change most likely to matter in the next
+actual workload. Vary one factor unless the choice is between two already
+defined operating policies. In that case the result belongs to the policies as
+a whole. A task retained from prior development can debug the measurement,
+while a fresh task is needed for convincing quality evidence.
+
+### Complete operational system
+
+- **Accounting.** Add missing joins to the existing operation log and provider
+  receipts. Attribute the owner objective, exact input, execution run, native
+  attempt, tools and child runs, saved result and delivery. Keep fresh input,
+  cache reads, cache writes and output separate. Track queue, setup, tool,
+  provider and delivery intervals without adding overlapping wall times.
+  Provider-side work without an authoritative counter stays unknown.
+- **Experiment.** Extend the existing harness evaluator. One experiment record
+  fixes the decision, unit of comparison, cases, held factors, assignment,
+  acceptance and budget. One result records all attempts, independent
+  judgments, costs and outcomes. Derive outcomes from the existing ledger.
+  Use deterministic task checks where possible and blind semantic review only
+  for material quality questions.
+- **Adoption.** Every completed comparison has an owner and a decision:
+  adopt in a narrow workload, reject, or name the one missing observation.
+  A promising small screen earns a reversible rollout on real comparable work.
+  Check quality, owner corrections, retries and total cost per verified
+  delivery. Roll back a consequential regression and keep its evidence.
+  Widen only when the same saving survives different cases and normal use.
+- **Use.** Through the existing operations dashboard work, expose per-objective
+  delivery time and usage by source, attempts and missing coverage. Keep
+  process, disk and cache metrics attributable to their writers. Report changes
+  with a before/after outcome people can use, such as a previously unnecessary
+  reviewer or history copy eliminated.
+
+The pasted analysis mixes recorded totals and causal estimates. The micro-screen
+measured 167,389 input tokens out of 168,626 total; per-component fixed overhead
+was unknown. A cached-input count represents provider-reported processing, not
+a measured charge. A tool or activity event is not necessarily a model request.
+The share of runs in named coordination chats does not measure dispensable work.
+These distinctions matter when choosing which operation to remove. The design
+uses retained evidence and opens no new experiment.
